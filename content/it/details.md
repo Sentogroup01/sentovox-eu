@@ -1,31 +1,101 @@
 ---
-title: "In dettaglio"
-description: "Come funziona SentoVox - metodo, moduli e approccio di ricerca."
+layout: "single"
+type: "details"
+title: "Come funziona SentoVox"
+description: "Metodologia, moduli, sicurezza e sedi target — a colpo d'occhio."
+kicker: "In dettaglio"
+lead: "SentoVox si basa su domande centrali standardizzate, sviluppate da un consorzio di sette università europee, con domande locali opzionali per sede. Il risultato: dati ricchi e comparabili, con sforzo minimo da parte vostra."
+
+modules_kicker: "Moduli di ricerca"
+modules_title: "Nove temi nell'indagine"
+modules_intro: "Ogni modulo produce risultati operativi a sé stante — insieme dipingono un quadro completo del vostro pubblico."
+modules:
+  - title: "Esperienza del visitatore"
+    desc: "Come i visitatori vivono davvero la visita, dall'inizio alla fine."
+    icon: "i-survey"
+  - title: "Valutazione della programmazione"
+    desc: "Quali programmi risuonano, quali no, e perché."
+    icon: "i-list"
+  - title: "Modello Impact Compass"
+    desc: "Misurazione quadridimensionale dell'impatto culturale."
+    icon: "i-compass"
+  - title: "Infrastruttura & strutture"
+    desc: "Valutazione pratica di accessibilità, comfort e dotazioni."
+    icon: "i-pin"
+  - title: "Strategia di comunicazione"
+    desc: "Come i visitatori vi hanno trovato e cosa li convince."
+    icon: "i-monitor"
+  - title: "Profilo del pubblico"
+    desc: "Chi viene — demografia, motivazioni, comportamenti."
+    icon: "i-users"
+  - title: "Net Promoter Score"
+    desc: "Indicatore standardizzato di fedeltà, confrontato in Europa."
+    icon: "i-impact"
+  - title: "Non-visitatori"
+    desc: "Perché le persone non vengono — e come raggiungerle."
+    icon: "i-help"
+  - title: "Domande locali"
+    desc: "Aggiungete le vostre domande per esigenze specifiche."
+    icon: "i-clip"
+
+compass_kicker: "Modello Impact Compass"
+compass_title: "Quattro dimensioni dell'impatto culturale"
+compass_intro: "Sviluppato da sette università, il modello Impact Compass quantifica l'impatto lungo quattro assi scientificamente fondati."
+compass:
+  - label: "Rifugio"
+    title: "Emotivo"
+    desc: "Uno spazio sicuro per l'esperienza emotiva e il recupero."
+    color: "#d4809e"
+  - label: "Prospettiva"
+    title: "Intellettuale"
+    desc: "Amplia gli orizzonti e mette in discussione le convinzioni."
+    color: "#486DBF"
+  - label: "Comunità"
+    title: "Sociale"
+    desc: "Crea connessione, appartenenza ed esperienza condivisa."
+    color: "#6b9f9f"
+  - label: "Creatività"
+    title: "Creativo"
+    desc: "Stimola idee, espressione e coinvolgimento creativo."
+    color: "#e6b84e"
+
+security_kicker: "Sicurezza & privacy"
+security_title: "Protetto per rispondenti e sedi"
+security_intro: "SentoVox è pienamente conforme al GDPR. Nessun dato personale viene raccolto dai rispondenti; i dati della sede sono crittografati."
+security:
+  - title: "Completamente anonimo"
+    desc: "Nessun dato personale raccolto — per design."
+    icon: "i-shield"
+  - title: "HTTPS / SSL"
+    desc: "Tutto il traffico è crittografato end-to-end."
+    icon: "i-shield"
+  - title: "Conforme GDPR"
+    desc: "Standard europei di protezione dati integrati."
+    icon: "i-check"
+  - title: "Backup continuo"
+    desc: "I dati delle indagini sono salvati continuamente."
+    icon: "i-doclock"
+  - title: "Misure anti-bot"
+    desc: "Le risposte sono filtrate contro invii automatici."
+    icon: "i-shield"
+  - title: "Server sicuri"
+    desc: "Ospitati nell'UE su infrastruttura auditata."
+    icon: "i-monitor"
+
+venues_kicker: "Per quali sedi"
+venues_title: "Progettato per le arti performative"
+venues_intro: "Il filo rosso è la performance dal vivo. Se la vostra sede programma arti vive, SentoVox è adatto."
+venue_types:
+  - title: "Teatri"
+    desc: "Teatro drammatico, comico, danza e palcoscenici multidisciplinari."
+    icon: "t-experience"
+  - title: "Sale da concerto"
+    desc: "Sale di musica classica, jazz, popolare e contemporanea."
+    icon: "t-star"
+  - title: "Centri culturali"
+    desc: "Sedi multidisciplinari con un mix delle arti."
+    icon: "t-impact"
+
+cta_label: "Partecipa a SentoVox"
+cta_url: "/it/participate/"
 ---
-
-## Cosa indaga SentoVox?
-
-SentoVox è composto da moduli standardizzati che ogni centro culturale può attivare in base alle proprie esigenze. Il questionario combina domande europee comuni e domande locali opzionali.
-
-- **Esperienza del visitatore** - percezione di spettacolo, edificio e personale
-- **Valutazione della programmazione** - apprezzamento dell'offerta e suggerimenti
-- **Modello Impact Compass** - misura l'impatto sociale e personale
-- **Infrastruttura** - comfort, accessibilità e dotazioni
-- **Valutazione della comunicazione** - portata ed efficacia dei canali di marketing
-- **Profilo del pubblico** - dati anagrafici, motivazioni e frequenza
-- **Net Promoter Score (NPS)** - propensione a raccomandare
-- **Ricerca sui non-visitatori** - perché alcuni non vengono
-
-## Approccio scientifico
-
-SentoVox è sviluppato da un team accademico di 7 università europee, tra cui Università di Groninga, Università di Anversa, FH Kufstein Tirol e HAWK Hildesheim. Il metodo è standardizzato per consentire confronti europei, ma lascia spazio a domande locali rilevanti per il vostro luogo. L'helpdesk e l'analisi dei dati sono a cura del team accademico.
-
-## Sicurezza e privacy
-
-Tutte le indagini avvengono tramite connessione sicura HTTPS/SSL. I rispondenti sono completamente anonimi; non vengono raccolti dati personali. Lo studio è conforme al GDPR. I risultati a livello di luogo restano riservati e accessibili solo al centro partecipante.
-
-## Per quali luoghi?
-
-SentoVox si rivolge a tutte le organizzazioni che propongono spettacolo dal vivo a un pubblico: teatri, sale da concerto, centri culturali multidisciplinari e centri d'arte. Il filo comune è lo spettacolo dal vivo - ciò rende significativo il confronto tra paesi e tipologie.
-
-Domande sull'approccio? [Contattaci](/it/contatti/) o consulta i [dettagli per partecipare](/it/partecipa/).

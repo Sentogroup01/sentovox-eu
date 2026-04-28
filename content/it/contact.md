@@ -1,12 +1,22 @@
 ---
-title: "Contatti"
-description: "Contatta il team SentoVox."
+title: "Contattaci"
+description: "Domande su SentoVox? Siamo qui per aiutarti."
+type: "contact"
+layout: "single"
+kicker: "Contatto"
+lead: "Che siate una sede che valuta la partecipazione al prossimo ciclo, un ricercatore con domande sulla metodologia, o un partner di settore che cerca collaborazione — vorremmo sentirvi."
+
+contact_email: "info@sentovox.eu"
+email_label: "E-mail"
+contact_hours: "Lun - Ven, 9:00 - 17:00 CET"
+hours_label: "Orari d'ufficio"
+contact_response: "Stessa giornata lavorativa"
+response_label: "Tempo di risposta"
+
+form_title: "Inviaci un messaggio"
+lbl_name: "Nome"
+lbl_org: "Sede / Organizzazione"
+lbl_email: "Indirizzo e-mail"
+lbl_msg: "Come possiamo aiutare?"
+lbl_submit: "Invia"
 ---
-
-Domande su SentoVox, sulla partecipazione o sulla metodologia? Il team SentoVox è a tua disposizione.
-
-**E-mail:** [info@sentovox.eu](mailto:info@sentovox.eu)
-
-L'helpdesk è gestito dal team accademico. Di norma rispondiamo entro due giorni lavorativi. Per richieste specifiche su analisi dei dati o metodologia, vi metteremo in contatto con il ricercatore o la ricercatrice di riferimento.
-
-Usa il modulo qui sotto per inviare un messaggio.

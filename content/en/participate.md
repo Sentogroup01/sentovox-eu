@@ -1,34 +1,54 @@
 ---
-title: "Participate"
-description: "Register your venue for the SentoVox study 2026."
+title: "How to participate"
+description: "Timing, pricing and process — everything you need to know."
+type: "participate"
+layout: "single"
+kicker: "Participate"
+lead: "SentoVox runs as one coordinated edition per cycle. Registration is open until **30 June 2026**, and the research period runs until **31 October 2026**. Below: pricing, timeline and what we'll ask from you."
+
+steps_kicker: "Three steps"
+steps_title: "From registration to results"
+steps:
+  - title: "Confirm your participation"
+    desc: "Reach out via the contact page or email info@sentovox.eu. We confirm your venue's place in the cycle and send onboarding materials."
+  - title: "Provide venue details"
+    desc: "Through a dedicated research platform you share the basics about your venue: programming, infrastructure, audience profile baseline. Based on this, your survey is configured and (optionally) extended with local questions."
+  - title: "Field, dashboard, report"
+    desc: "Your survey runs during the research period. You receive a live dashboard during fielding and a full report with European benchmarks at the end."
+
+pricing_kicker: "Participation fee"
+pricing_title: "Pricing scaled to visitor volume"
+pricing_intro: "The participation fee depends on your annual visitor volume. Group discounts are available for cities or regions registering multiple venues."
+pricing_col_size: "Annual visitors"
+pricing_col_fee: "Fee (excl. VAT)"
+price_tiers:
+  - size: "Up to 25,000 visitors"
+    fee: "€625"
+  - size: "25,000 - 75,000"
+    fee: "€1,000"
+  - size: "75,000 - 150,000"
+    fee: "€1,400"
+  - size: "150,000+ visitors"
+    fee: "€1,750"
+
+pricing_note: "Group discounts apply automatically when 3 or more venues from the same city, region or network register together."
+
+timing_kicker: "Calendar"
+timing_title: "Key dates"
+timing_items:
+  - when: "Until 30 June 2026"
+    what: "Registration open — confirm your venue's participation."
+  - when: "July - September 2026"
+    what: "Onboarding, survey configuration and (optional) local questions."
+  - when: "Until 31 October 2026"
+    what: "Field period — visitors complete the survey at and after their visit."
+  - when: "November - December 2026"
+    what: "Final reports, European benchmarks and venue-level insights delivered."
+
+helpdesk_title: "Helpdesk"
+helpdesk_desc: "Our team supports you throughout the cycle — from setup to result interpretation. Average response time during business hours: same day."
+helpdesk_email: "info@sentovox.eu"
+
+cta_label: "Get in touch to register"
+cta_url: "/en/contact/"
 ---
-
-## Timeline
-
-- **Registration open until 30 June 2026**
-- **Research period until 31 October 2026**
-
-## Participation fee
-
-The fee ranges from **EUR 625 to EUR 1,750**, depending on the visitor numbers of your venue. Groups and networks receive a discount.
-
-## Three steps
-
-1. **Confirm participation** - let us know your venue is taking part.
-2. **Provide information** through the research platform: visitor numbers, programming, contact details and any local questions you want to add.
-3. **The study is tailored** by the academic team. You will receive personal survey links and QR codes for your audience.
-
-Throughout the study, the helpdesk is on hand for questions about methodology, communication and data.
-
-## What you get
-
-- A complete, personalised survey of your audience
-- Access to the SentoVox platform with live results
-- Comparison with other European venues
-- Guidance from the academic team
-
-## Our impact
-
-For every completed survey, 1 m² of threatened rainforest is protected through World Land Trust. Every respondent gives back to the planet.
-
-Ready to join? [Contact us](/en/contact/) and the SentoVox team will be in touch.

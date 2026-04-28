@@ -1,31 +1,101 @@
 ---
-title: "Im Detail"
-description: "Wie SentoVox funktioniert - Methode, Module und Forschungsansatz."
+layout: "single"
+type: "details"
+title: "Wie SentoVox funktioniert"
+description: "Methode, Module, Sicherheit und Zielhäuser — im Überblick."
+kicker: "Im Detail"
+lead: "SentoVox basiert auf standardisierten Kernfragen, entwickelt von einem Konsortium aus sieben europäischen Universitäten, mit optionalen lokalen Fragen pro Haus. Das Ergebnis: reichhaltige, vergleichbare Daten bei geringem Aufwand für Sie."
+
+modules_kicker: "Forschungsmodule"
+modules_title: "Neun Themen in der Befragung"
+modules_intro: "Jedes Modul liefert für sich umsetzbare Erkenntnisse — zusammen ergeben sie ein vollständiges Bild Ihres Publikums."
+modules:
+  - title: "Besuchererfahrung"
+    desc: "Wie Besucher den Besuch tatsächlich erleben, von Anfang bis Ende."
+    icon: "i-survey"
+  - title: "Programmevaluation"
+    desc: "Welche Programme ankommen, welche nicht — und warum."
+    icon: "i-list"
+  - title: "Impact Compass Modell"
+    desc: "Vierdimensionale Messung kultureller Wirkung auf Besucher."
+    icon: "i-compass"
+  - title: "Infrastruktur & Ausstattung"
+    desc: "Praktische Bewertung von Zugänglichkeit, Komfort und Einrichtungen."
+    icon: "i-pin"
+  - title: "Kommunikationsstrategie"
+    desc: "Wie Besucher Sie gefunden haben und was sie überzeugt."
+    icon: "i-monitor"
+  - title: "Publikumsprofil"
+    desc: "Wer kommt — Demografie, Motivationen, Verhalten."
+    icon: "i-users"
+  - title: "Net Promoter Score"
+    desc: "Standardisierter Loyalitätsindikator, europaweit benchmarkbar."
+    icon: "i-impact"
+  - title: "Nicht-Besucher"
+    desc: "Warum Menschen nicht kommen — und wie man sie erreicht."
+    icon: "i-help"
+  - title: "Lokale Fragen"
+    desc: "Eigene Fragen für hausspezifische Forschungsanliegen."
+    icon: "i-clip"
+
+compass_kicker: "Impact Compass Modell"
+compass_title: "Vier Dimensionen kultureller Wirkung"
+compass_intro: "Entwickelt von sieben Universitäten, quantifiziert das Impact Compass Modell die Wirkung entlang vier wissenschaftlich fundierter Achsen."
+compass:
+  - label: "Hafen"
+    title: "Emotional"
+    desc: "Ein sicherer Raum für emotionale Erfahrung und Erholung."
+    color: "#d4809e"
+  - label: "Perspektive"
+    title: "Intellektuell"
+    desc: "Erweitert Horizonte und hinterfragt Annahmen."
+    color: "#486DBF"
+  - label: "Gemeinschaft"
+    title: "Sozial"
+    desc: "Schafft Verbindung, Zugehörigkeit und gemeinsame Erfahrung."
+    color: "#6b9f9f"
+  - label: "Kreativität"
+    title: "Kreativ"
+    desc: "Inspiriert Ideen, Ausdruck und kreatives Engagement."
+    color: "#e6b84e"
+
+security_kicker: "Sicherheit & Datenschutz"
+security_title: "Schutz für Befragte und Häuser"
+security_intro: "SentoVox ist vollständig DSGVO-konform. Es werden keine personenbezogenen Daten von Befragten erhoben; Hausdaten sind verschlüsselt."
+security:
+  - title: "Vollständig anonym"
+    desc: "Keine personenbezogenen Daten — by design."
+    icon: "i-shield"
+  - title: "HTTPS / SSL"
+    desc: "Gesamter Datenverkehr Ende-zu-Ende verschlüsselt."
+    icon: "i-shield"
+  - title: "DSGVO-konform"
+    desc: "Europäische Datenschutzstandards integriert."
+    icon: "i-check"
+  - title: "Kontinuierliche Sicherung"
+    desc: "Umfragedaten werden laufend regional gesichert."
+    icon: "i-doclock"
+  - title: "Anti-Bot-Maßnahmen"
+    desc: "Antworten werden gegen automatisierte Eingaben gefiltert."
+    icon: "i-shield"
+  - title: "Sichere Server"
+    desc: "EU-gehostet auf auditierter Infrastruktur."
+    icon: "i-monitor"
+
+venues_kicker: "Für welche Häuser"
+venues_title: "Konzipiert für darstellende Künste"
+venues_intro: "Der gemeinsame Nenner ist darstellende Kunst. Wenn Ihr Haus Live-Performances programmiert, passt SentoVox."
+venue_types:
+  - title: "Theater"
+    desc: "Drama, Komödie, Tanz und multidisziplinäre Bühnen."
+    icon: "t-experience"
+  - title: "Konzerthäuser"
+    desc: "Klassik, Jazz, populäre und zeitgenössische Musik."
+    icon: "t-star"
+  - title: "Kulturzentren"
+    desc: "Multidisziplinäre Häuser mit einem Mix der Künste."
+    icon: "t-impact"
+
+cta_label: "An SentoVox teilnehmen"
+cta_url: "/de/participate/"
 ---
-
-## Was untersucht SentoVox?
-
-SentoVox besteht aus standardisierten Modulen, die jedes Haus passgenau einsetzen kann. Der Fragebogen kombiniert europaweit zentrale Fragen mit optionalen lokalen Fragen.
-
-- **Besuchserlebnis** - Wahrnehmung von Vorstellung, Haus und Personal
-- **Programmevaluation** - Bewertung des Angebots und Vorschläge
-- **Impact Compass Modell** - misst gesellschaftliche und persönliche Wirkung
-- **Infrastruktur** - Komfort, Barrierefreiheit und Ausstattung
-- **Kommunikationsevaluation** - Reichweite und Wirkung der Marketingkanäle
-- **Publikumsprofil** - Demografie, Motive und Besuchshäufigkeit
-- **Net Promoter Score (NPS)** - Weiterempfehlungsbereitschaft
-- **Nicht-Besucher:innen-Forschung** - warum Menschen fernbleiben
-
-## Wissenschaftlicher Ansatz
-
-SentoVox wird von einem akademischen Team aus 7 europäischen Universitäten entwickelt, darunter Universität Groningen, Universität Antwerpen, FH Kufstein Tirol und HAWK Hildesheim. Die Methode ist standardisiert, sodass Ergebnisse europaweit vergleichbar sind, lässt aber Raum für relevante lokale Fragen. Helpdesk und Datenanalyse übernimmt das akademische Team.
-
-## Sicherheit und Datenschutz
-
-Alle Befragungen laufen über eine sichere HTTPS/SSL-Verbindung. Befragte antworten vollständig anonym; es werden keine personenbezogenen Daten erhoben. Die Studie ist DSGVO-konform. Ergebnisse auf Hausebene bleiben vertraulich und sind nur dem teilnehmenden Haus zugänglich.
-
-## Für welche Häuser?
-
-SentoVox richtet sich an alle Einrichtungen, die darstellende Künste einem Publikum präsentieren: Theater, Konzerthäuser, multidisziplinäre Kulturzentren und Kunsthäuser. Der gemeinsame Nenner sind die darstellenden Künste - das macht den Vergleich über Länder und Haustypen hinweg sinnvoll.
-
-Fragen zum Vorgehen? [Kontaktieren Sie uns](/de/kontakt/) oder lesen Sie die [Teilnahmebedingungen](/de/participate/).

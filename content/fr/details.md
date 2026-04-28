@@ -1,31 +1,101 @@
 ---
-title: "En détail"
-description: "Comment fonctionne SentoVox - méthode, modules et démarche de recherche."
+layout: "single"
+type: "details"
+title: "Comment fonctionne SentoVox"
+description: "Méthode, modules, sécurité et salles cibles — en un coup d'œil."
+kicker: "En détail"
+lead: "SentoVox repose sur des questions centrales standardisées, développées par un consortium de sept universités européennes, avec des questions locales optionnelles par salle. Résultat : des données riches et comparables, avec un effort minime de votre côté."
+
+modules_kicker: "Modules de recherche"
+modules_title: "Neuf thèmes couverts par l'enquête"
+modules_intro: "Chaque module produit des résultats exploitables à lui seul — ensemble, ils brossent un tableau complet de votre public."
+modules:
+  - title: "Expérience visiteur"
+    desc: "Comment les visiteurs vivent réellement la visite, de bout en bout."
+    icon: "i-survey"
+  - title: "Évaluation de la programmation"
+    desc: "Quels programmes résonnent, lesquels non, et pourquoi."
+    icon: "i-list"
+  - title: "Modèle Impact Compass"
+    desc: "Mesure quadridimensionnelle de l'impact culturel."
+    icon: "i-compass"
+  - title: "Infrastructure & équipements"
+    desc: "Évaluation pratique de l'accessibilité et du confort."
+    icon: "i-pin"
+  - title: "Stratégie de communication"
+    desc: "Comment les visiteurs vous trouvent et ce qui les convainc."
+    icon: "i-monitor"
+  - title: "Profil du public"
+    desc: "Qui vient — démographie, motivations, comportements."
+    icon: "i-users"
+  - title: "Net Promoter Score"
+    desc: "Indicateur standardisé de fidélité, comparé en Europe."
+    icon: "i-impact"
+  - title: "Non-visiteurs"
+    desc: "Pourquoi les gens ne viennent pas — et comment les atteindre."
+    icon: "i-help"
+  - title: "Questions locales"
+    desc: "Ajoutez vos propres questions pour des besoins spécifiques."
+    icon: "i-clip"
+
+compass_kicker: "Modèle Impact Compass"
+compass_title: "Quatre dimensions de l'impact culturel"
+compass_intro: "Développé par sept universités, le modèle Impact Compass quantifie l'impact selon quatre axes scientifiquement fondés."
+compass:
+  - label: "Refuge"
+    title: "Émotionnel"
+    desc: "Un espace sûr pour l'expérience émotionnelle et la récupération."
+    color: "#d4809e"
+  - label: "Perspective"
+    title: "Intellectuel"
+    desc: "Élargit les horizons et remet en question les acquis."
+    color: "#486DBF"
+  - label: "Communauté"
+    title: "Social"
+    desc: "Crée du lien, du sentiment d'appartenance et de partage."
+    color: "#6b9f9f"
+  - label: "Créativité"
+    title: "Créatif"
+    desc: "Suscite idées, expression et engagement créatif."
+    color: "#e6b84e"
+
+security_kicker: "Sécurité & confidentialité"
+security_title: "Conçu pour protéger répondants et salles"
+security_intro: "SentoVox est entièrement conforme au RGPD. Aucune donnée personnelle n'est collectée des répondants ; les données de la salle sont chiffrées en transit et au repos."
+security:
+  - title: "Entièrement anonyme"
+    desc: "Aucune donnée personnelle n'est collectée — par conception."
+    icon: "i-shield"
+  - title: "HTTPS / SSL"
+    desc: "Tout le trafic est chiffré de bout en bout."
+    icon: "i-shield"
+  - title: "Conforme RGPD"
+    desc: "Standards européens de protection, intégrés dès la conception."
+    icon: "i-check"
+  - title: "Sauvegarde continue"
+    desc: "Les données d'enquête sont sauvegardées en continu."
+    icon: "i-doclock"
+  - title: "Mesures anti-bot"
+    desc: "Les réponses sont filtrées contre les soumissions automatisées."
+    icon: "i-shield"
+  - title: "Serveurs sécurisés"
+    desc: "Hébergés dans l'UE sur une infrastructure auditée."
+    icon: "i-monitor"
+
+venues_kicker: "Pour quelles salles"
+venues_title: "Conçu pour les arts du spectacle"
+venues_intro: "Le fil rouge est le spectacle vivant. Si votre salle programme des arts vivants, SentoVox vous correspond."
+venue_types:
+  - title: "Théâtres"
+    desc: "Théâtre dramatique, comique, danse et scènes multidisciplinaires."
+    icon: "t-experience"
+  - title: "Salles de concert"
+    desc: "Salles de musique classique, jazz, populaire et contemporaine."
+    icon: "t-star"
+  - title: "Centres culturels"
+    desc: "Lieux multidisciplinaires programmant un mix d'arts."
+    icon: "t-impact"
+
+cta_label: "Participer à SentoVox"
+cta_url: "/fr/participate/"
 ---
-
-## Que mesure SentoVox ?
-
-SentoVox repose sur un ensemble de modules standardisés que chaque lieu peut activer selon ses besoins. Le questionnaire combine des questions européennes communes et des questions locales facultatives.
-
-- **Expérience visiteur** - perception du spectacle, du lieu et du personnel
-- **Évaluation de la programmation** - appréciation de l'offre et suggestions
-- **Modèle Impact Compass** - mesure l'impact sociétal et personnel
-- **Infrastructure** - confort, accessibilité et équipements
-- **Évaluation de la communication** - portée et efficacité des canaux marketing
-- **Profil du public** - démographie, motivations et fréquence
-- **Net Promoter Score (NPS)** - propension à recommander
-- **Étude des non-publics** - pourquoi certains ne viennent pas
-
-## Démarche scientifique
-
-SentoVox est élaboré par une équipe académique issue de 7 universités européennes, dont l'Université de Groningue, l'Université d'Anvers, FH Kufstein Tirol et HAWK Hildesheim. La méthode est standardisée pour permettre des comparaisons à l'échelle européenne, tout en laissant place à des questions locales pertinentes pour votre lieu. Le helpdesk et l'analyse des données sont assurés par l'équipe académique.
-
-## Sécurité et confidentialité
-
-Toutes les enquêtes sont menées sur une connexion sécurisée HTTPS/SSL. Les répondants restent entièrement anonymes ; aucune donnée personnelle n'est collectée. L'étude est conforme au RGPD. Les résultats au niveau du lieu restent confidentiels et accessibles uniquement au lieu participant.
-
-## Pour quels lieux ?
-
-SentoVox s'adresse à tous les lieux qui proposent du spectacle vivant à un public : théâtres, salles de concert, centres culturels pluridisciplinaires et centres d'art. Le dénominateur commun est le spectacle vivant - ce qui rend la comparaison entre pays et types de lieux pertinente.
-
-Des questions sur la démarche ? [Contactez-nous](/fr/contact/) ou consultez les [modalités de participation](/fr/participate/).

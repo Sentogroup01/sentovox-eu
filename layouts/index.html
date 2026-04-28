@@ -27,7 +27,13 @@
 <p class="uniLabel">{{ .Params.uni_label | default "Academic partners" }}</p>
 <div class="logoGrid" role="list" aria-label="Partner universities">
   {{ range .Params.universities }}
-  <div class="logoPill" role="listitem"><a class="logoLink" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}"><img loading="lazy" src="{{ .logo }}" alt="{{ .name }}"></a></div>
+  <div class="logoPill logoPillText" role="listitem">
+    {{ if .url }}<a class="logoLink" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}">{{ end }}
+    {{ if .logo }}<img loading="lazy" src="{{ .logo }}" alt="{{ .name }}">
+    {{ else }}<span class="uniName">{{ .name }}</span>{{ if .country }}<span class="uniCountry">{{ .country }}</span>{{ end }}
+    {{ end }}
+    {{ if .url }}</a>{{ end }}
+  </div>
   {{ end }}
 </div>
 </div>
@@ -61,7 +67,7 @@
         {{ end }}
         {{ $about := .Site.GetPage "/about" }}
         <span class="flagLink" style="margin-top:4px;padding-top:6px;border-top:1px solid var(--tealBorder);display:flex">
-          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" style="flex:0 0 auto;margin-right:4px"><path d="M2 1h10c1 0 2 1 2 2v4c0 1-1 2-2 2H7l-2 2V9H2c-1 0-2-1-2-2V3c0-1 1-2 2-2z" fill="#c8102e"/></svg>
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" style="flex:0 0 auto;margin-right:4px"><path d="M2 1h10c1 0 2 1 2 2v4c0 1-1 2-2 2H7l-2 2V9H2c-1 0-2-1-2-2V3c0-1 1-2 2-2z" fill="#e63946"/></svg>
           <a href="{{ if $about }}{{ $about.RelPermalink }}{{ else }}{{ "/about/" | relLangURL }}{{ end }}#spotlight">{{ .Params.pub_conferences | default "SentoVox publications & conferences" }}</a>
         </span>
       </div>
@@ -75,13 +81,13 @@
 <div class="photoRatingWrap">
 <div class="photoStrip">
 <div class="photoGrid">
-  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1759949205882-eaa31dc36174?w=940&h=528&fit=crop" alt="Modern library with bright white shelves and stairs" loading="lazy"></div>
-  <div class="photoTile"><img class="photoMedia" src="https://images.unsplash.com/photo-1747515204290-6bf2511fb05b?w=940&h=528&fit=crop" alt="Modern library interior with bright skylight" loading="lazy"></div>
-  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=940&h=528&fit=crop" alt="Colourful books stacked in a library" loading="lazy"></div>
-  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1568667256549-094345857637?w=940&h=528&fit=crop" alt="Modern public library with visitors" loading="lazy"></div>
+  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=940&h=528&fit=crop" alt="Theatre stage with red velvet curtain" loading="lazy"></div>
+  <div class="photoTile"><img class="photoMedia" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=940&h=528&fit=crop" alt="Concert hall with empty seats and lit stage" loading="lazy"></div>
+  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=940&h=528&fit=crop" alt="Concert audience with hands raised at performance" loading="lazy"></div>
+  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?w=940&h=528&fit=crop" alt="Theatre stage lights from above" loading="lazy"></div>
 </div>
 </div>
-<div class="ratingStrip" role="region" aria-label="Library satisfaction ratings">
+<div class="ratingStrip" role="region" aria-label="Venue satisfaction ratings">
 <div class="ratingInner">
   <div class="ratingHead">
     <span class="ratingTitle">{{ .Params.ratings_title | default "How venues rate SentoVox" }}</span>
@@ -92,7 +98,7 @@
     <div class="ratingRow"><span class="ratingRowLabel">{{ .label }}</span><div class="barWrap"><div class="bar"><div class="barFill" style="width:{{ .pct }}%"></div></div><span class="barScore">{{ .score }}</span></div></div>
     {{ end }}
   </div>
-  <div class="ratingFoot"><span class="ratingNote">{{ .Params.ratings_note | default "Based on 152 verified ratings from participating libraries" }}</span></div>
+  <div class="ratingFoot"><span class="ratingNote">{{ .Params.ratings_note | default "Based on verified ratings from participating cultural venues" }}</span></div>
 </div>
 </div>
 </div>
@@ -248,15 +254,15 @@
 {{ if .Params.team }}
 <section class="sec is-off" id="team">
 <div class="wrap">
-<div style="text-align:center;margin-bottom:24px"><h2>{{ .Params.team_title | default "Academic team behind the library visitor study" }}</h2></div>
-<div class="teamGrid" role="list">
+<div style="text-align:center;margin-bottom:8px"><p class="kicker ks">Academic team</p><h2>{{ .Params.team_title | default "Backed by leading European universities" }}</h2></div>
+<div class="teamGrid">
   {{ range .Params.team }}
-  <article class="teamCard" role="listitem">
-    <img class="teamUniLogo" src="{{ .uni_logo }}" alt="{{ .uni }}" loading="lazy">
-    <img class="teamPhoto" src="{{ .photo }}" alt="{{ .name }}" loading="lazy" onerror="this.style.visibility='hidden'">
+  <div class="teamCard">
+    <div class="teamAvatar">{{ .initials | default (substr .name 0 2 | upper) }}</div>
     <p class="teamName">{{ .name }}</p>
     <p class="teamRole">{{ .role }}</p>
-  </article>
+    <p class="teamOrg">{{ .org }}</p>
+  </div>
   {{ end }}
 </div>
 </div>

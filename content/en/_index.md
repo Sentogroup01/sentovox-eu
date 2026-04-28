@@ -91,4 +91,36 @@ wlt_texts:
   - "Every visitor who participates gives something back to the planet."
 
 # build: 2026-04-28
+
+testimonials_title: "What venues say about SentoVox"
+testimonials:
+  - name: "Director, mid-size theatre"
+    quotes:
+      - "SentoVox gave us hard data on something we had only sensed: how visitors actually feel about our programming. The benchmark with similar venues elsewhere in Europe is what makes the results actionable."
+      - "We use the report in funding conversations. The fact that it is independent and university-backed makes a real difference."
+  - name: "Audience research lead, concert hall"
+    quotes:
+      - "The Impact Compass Model surfaced things we had missed. Non-visitor results were uncomfortable in a useful way - they showed exactly where to focus."
+      - "Standardised questions plus our own local additions was the right balance. Rich data, low effort on our side."
+
+team_title: "Backed by leading European universities"
+team:
+  - name: "Annick Schramme"
+    role: "Cultural management & policy"
+    org: "University of Antwerp"
+    initials: "AS"
+  - name: "Verena Teissl"
+    role: "Cultural studies"
+    org: "FH Kufstein Tirol"
+    initials: "VT"
+  - name: "Johan Kolsteeg"
+    role: "Arts & society"
+    org: "University of Groningen"
+    initials: "JK"
+  - name: "Birgit Mandel"
+    role: "Cultural mediation"
+    org: "HAWK Hildesheim"
+    initials: "BM"
+
+
 ---

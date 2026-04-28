@@ -1,31 +1,101 @@
 ---
-title: "In detail"
-description: "Hoe SentoVox werkt - methode, modules en onderzoeksaanpak."
+layout: "single"
+type: "details"
+title: "Hoe SentoVox werkt"
+description: "Methode, modules, beveiliging en doelgroep — in één oogopslag."
+kicker: "In detail"
+lead: "SentoVox is gebouwd rond gestandaardiseerde kernvragen, ontwikkeld door een consortium van zeven Europese universiteiten, met optionele lokale vragen per cultuurhuis. Het resultaat: rijke, vergelijkbare data met weinig werk aan jouw kant."
+
+modules_kicker: "Onderzoeksmodules"
+modules_title: "Negen thema's in de bevraging"
+modules_intro: "Elke module levert op zich bruikbare inzichten — samen schetsen ze een volledig beeld van wie je publiek is en hoe het je cultuurhuis beleeft."
+modules:
+  - title: "Bezoekerservaring"
+    desc: "Hoe bezoekers het bezoek écht beleven, van begin tot eind."
+    icon: "i-survey"
+  - title: "Programmering-evaluatie"
+    desc: "Welke programma's resoneren, welke niet, en waarom."
+    icon: "i-list"
+  - title: "Impact Compass Model"
+    desc: "Vier-dimensionale meting van culturele impact op bezoekers."
+    icon: "i-compass"
+  - title: "Infrastructuur & faciliteiten"
+    desc: "Praktische evaluatie van toegankelijkheid, comfort en voorzieningen."
+    icon: "i-pin"
+  - title: "Communicatie-strategie"
+    desc: "Hoe bezoekers je vonden en wat hen overtuigt."
+    icon: "i-monitor"
+  - title: "Publieksprofiel"
+    desc: "Wie er komt — demografie, motivaties, gedrag."
+    icon: "i-users"
+  - title: "Net Promoter Score"
+    desc: "Gestandaardiseerde loyaliteit-metric, vergeleken in Europa."
+    icon: "i-impact"
+  - title: "Niet-bezoekers"
+    desc: "Waarom mensen niet komen — en hoe je ze kunt bereiken."
+    icon: "i-help"
+  - title: "Lokale vragen"
+    desc: "Voeg eigen vragen toe voor cultuurhuis-specifiek onderzoek."
+    icon: "i-clip"
+
+compass_kicker: "Impact Compass Model"
+compass_title: "Vier dimensies van culturele impact"
+compass_intro: "Ontwikkeld over zeven universiteiten heen kwantificeert het Impact Compass Model de impact op bezoekers via vier wetenschappelijk onderbouwde assen."
+compass:
+  - label: "Haven"
+    title: "Emotioneel"
+    desc: "Een veilige ruimte voor emotionele beleving en herstel."
+    color: "#d4809e"
+  - label: "Perspectief"
+    title: "Intellectueel"
+    desc: "Verruimt horizonten en daagt overtuigingen uit."
+    color: "#486DBF"
+  - label: "Community"
+    title: "Sociaal"
+    desc: "Bouwt verbinding, verbondenheid en gedeelde ervaring."
+    color: "#6b9f9f"
+  - label: "Creativiteit"
+    title: "Creatief"
+    desc: "Wekt ideeën, expressie en creatieve betrokkenheid."
+    color: "#e6b84e"
+
+security_kicker: "Beveiliging & privacy"
+security_title: "Gebouwd om respondenten en cultuurhuizen te beschermen"
+security_intro: "SentoVox is volledig GDPR-conform. Er worden geen persoonsgegevens verzameld van respondenten, en cultuurhuis-data is versleuteld zowel onderweg als opgeslagen."
+security:
+  - title: "Volledig anoniem"
+    desc: "Er worden geen persoonsgegevens verzameld van respondenten — by design."
+    icon: "i-shield"
+  - title: "HTTPS / SSL"
+    desc: "Al het verkeer is end-to-end versleuteld."
+    icon: "i-shield"
+  - title: "GDPR-conform"
+    desc: "Europese standaarden voor gegevensbescherming, ingebouwd."
+    icon: "i-check"
+  - title: "Continue back-up"
+    desc: "Survey-data wordt continu over regio's geback-upt."
+    icon: "i-doclock"
+  - title: "Anti-bot maatregelen"
+    desc: "Antwoorden worden gefilterd tegen automatische submissions."
+    icon: "i-shield"
+  - title: "Veilige servers"
+    desc: "Gehost in de EU op infrastructuur met auditbare controls."
+    icon: "i-monitor"
+
+venues_kicker: "Voor welke cultuurhuizen"
+venues_title: "Ontwikkeld voor podiumkunsten"
+venues_intro: "De gemene deler is podiumkunsten. Als jouw cultuurhuis live performance programmeert, past SentoVox."
+venue_types:
+  - title: "Theaters"
+    desc: "Drama, comedy, dans en multidisciplinaire podia."
+    icon: "t-experience"
+  - title: "Concertzalen"
+    desc: "Klassieke, jazz, populaire en hedendaagse muziekzalen."
+    icon: "t-star"
+  - title: "Cultuurhuizen"
+    desc: "Multidisciplinaire huizen met een mix van kunsten."
+    icon: "t-impact"
+
+cta_label: "Doe mee met SentoVox"
+cta_url: "/nl/participate/"
 ---
-
-## Wat onderzoekt SentoVox?
-
-SentoVox bestaat uit een set gestandaardiseerde modules die elk cultuurhuis kan inzetten op maat van zijn vragen. De vragenlijst combineert centrale Europese vragen met optionele lokale vragen.
-
-- **Bezoekerservaring** - hoe ervaren bezoekers de voorstelling, het gebouw en het personeel
-- **Programmering-evaluatie** - waardering van het aanbod en suggesties voor uitbreiding
-- **Impact Compass Model** - meet de bredere maatschappelijke en persoonlijke impact
-- **Infrastructuur** - comfort, toegankelijkheid en faciliteiten
-- **Communicatie-evaluatie** - bereik en effectiviteit van marketingkanalen
-- **Publieksprofiel** - demografie, motivaties en bezoekfrequentie
-- **Net Promoter Score (NPS)** - aanbevelingsbereidheid van uw publiek
-- **Niet-bezoekersonderzoek** - waarom blijven mensen weg en hoe bereikt u ze
-
-## Wetenschappelijke aanpak
-
-SentoVox is ontwikkeld door een academisch team uit 7 Europese universiteiten, waaronder de Rijksuniversiteit Groningen, Universiteit Antwerpen, FH Kufstein Tirol en HAWK Hildesheim. De methode is gestandaardiseerd zodat resultaten Europees vergelijkbaar zijn, maar laat ruimte voor lokale vragen die voor uw cultuurhuis relevant zijn. Helpdesk en data-analyse worden door het academisch team verzorgd.
-
-## Beveiliging en privacy
-
-Alle bevragingen verlopen via een beveiligde HTTPS/SSL-omgeving. Respondenten geven volledig anoniem antwoord; er worden geen persoonsgegevens verzameld. Het onderzoek voldoet aan de GDPR. Resultaten op huisniveau blijven vertrouwelijk en zijn enkel toegankelijk voor het deelnemende cultuurhuis.
-
-## Voor welke cultuurhuizen?
-
-SentoVox is gericht op alle organisaties die podiumkunsten brengen aan een publiek: theaters, concertzalen, multidisciplinaire cultuurhuizen en kunstencentra. De gemeenschappelijke noemer is podiumkunsten - dat maakt vergelijking over landen en typen huizen heen mogelijk.
-
-Heeft u vragen over de aanpak? [Neem contact op](/nl/contact/) of bekijk de [deelnamevoorwaarden](/nl/participate/).

@@ -1,31 +1,101 @@
 ---
-title: "En detalle"
-description: "Cómo funciona SentoVox - método, módulos y enfoque de investigación."
+layout: "single"
+type: "details"
+title: "Cómo funciona SentoVox"
+description: "Metodología, módulos, seguridad y salas objetivo — de un vistazo."
+kicker: "En detalle"
+lead: "SentoVox se construye sobre preguntas centrales estandarizadas, desarrolladas por un consorcio de siete universidades europeas, con preguntas locales opcionales por sala. Resultado: datos ricos y comparables, con esfuerzo mínimo por su parte."
+
+modules_kicker: "Módulos de investigación"
+modules_title: "Nueve temas cubiertos por la encuesta"
+modules_intro: "Cada módulo produce hallazgos accionables por sí mismo — juntos dan una imagen completa de su público."
+modules:
+  - title: "Experiencia del visitante"
+    desc: "Cómo viven realmente los visitantes la visita, de principio a fin."
+    icon: "i-survey"
+  - title: "Evaluación de programación"
+    desc: "Qué programas conectan, cuáles no y por qué."
+    icon: "i-list"
+  - title: "Modelo Impact Compass"
+    desc: "Medición tetradimensional del impacto cultural."
+    icon: "i-compass"
+  - title: "Infraestructura & instalaciones"
+    desc: "Evaluación práctica de accesibilidad, confort y servicios."
+    icon: "i-pin"
+  - title: "Estrategia de comunicación"
+    desc: "Cómo le encontraron los visitantes y qué les convence."
+    icon: "i-monitor"
+  - title: "Perfil del público"
+    desc: "Quién viene — demografía, motivaciones, comportamientos."
+    icon: "i-users"
+  - title: "Net Promoter Score"
+    desc: "Indicador estandarizado de lealtad, comparado en Europa."
+    icon: "i-impact"
+  - title: "No-visitantes"
+    desc: "Por qué la gente no viene — y cómo alcanzarles."
+    icon: "i-help"
+  - title: "Preguntas locales"
+    desc: "Añada sus propias preguntas para necesidades específicas."
+    icon: "i-clip"
+
+compass_kicker: "Modelo Impact Compass"
+compass_title: "Cuatro dimensiones del impacto cultural"
+compass_intro: "Desarrollado por siete universidades, el modelo Impact Compass cuantifica el impacto en cuatro ejes científicamente fundados."
+compass:
+  - label: "Refugio"
+    title: "Emocional"
+    desc: "Un espacio seguro para la experiencia emocional y la recuperación."
+    color: "#d4809e"
+  - label: "Perspectiva"
+    title: "Intelectual"
+    desc: "Amplía horizontes y desafía suposiciones."
+    color: "#486DBF"
+  - label: "Comunidad"
+    title: "Social"
+    desc: "Construye conexión, pertenencia y experiencia compartida."
+    color: "#6b9f9f"
+  - label: "Creatividad"
+    title: "Creativo"
+    desc: "Provoca ideas, expresión y compromiso creativo."
+    color: "#e6b84e"
+
+security_kicker: "Seguridad & privacidad"
+security_title: "Protegido para encuestados y salas"
+security_intro: "SentoVox cumple plenamente con el RGPD. No se recopilan datos personales de los encuestados; los datos de la sala están cifrados."
+security:
+  - title: "Totalmente anónimo"
+    desc: "No se recopilan datos personales — por diseño."
+    icon: "i-shield"
+  - title: "HTTPS / SSL"
+    desc: "Todo el tráfico cifrado de extremo a extremo."
+    icon: "i-shield"
+  - title: "Cumple RGPD"
+    desc: "Estándares europeos de protección integrados."
+    icon: "i-check"
+  - title: "Copia de seguridad continua"
+    desc: "Los datos de encuesta se respaldan continuamente."
+    icon: "i-doclock"
+  - title: "Medidas anti-bot"
+    desc: "Las respuestas se filtran contra envíos automáticos."
+    icon: "i-shield"
+  - title: "Servidores seguros"
+    desc: "Alojados en la UE en infraestructura auditada."
+    icon: "i-monitor"
+
+venues_kicker: "Para qué salas"
+venues_title: "Diseñado para las artes escénicas"
+venues_intro: "El hilo común es el espectáculo en vivo. Si su sala programa artes vivas, SentoVox encaja."
+venue_types:
+  - title: "Teatros"
+    desc: "Teatro dramático, cómico, danza y escenarios multidisciplinares."
+    icon: "t-experience"
+  - title: "Salas de conciertos"
+    desc: "Salas de música clásica, jazz, popular y contemporánea."
+    icon: "t-star"
+  - title: "Centros culturales"
+    desc: "Sedes multidisciplinares con una mezcla de artes."
+    icon: "t-impact"
+
+cta_label: "Participar en SentoVox"
+cta_url: "/es/participate/"
 ---
-
-## ¿Qué investiga SentoVox?
-
-SentoVox se basa en un conjunto de módulos estandarizados que cada centro puede activar según sus necesidades. El cuestionario combina preguntas europeas comunes y preguntas locales opcionales.
-
-- **Experiencia del visitante** - cómo perciben los espectadores el espectáculo, el edificio y el personal
-- **Evaluación de la programación** - valoración de la oferta y propuestas
-- **Modelo Impact Compass** - mide el impacto social y personal
-- **Infraestructura** - confort, accesibilidad y equipamiento
-- **Evaluación de la comunicación** - alcance y eficacia de los canales de marketing
-- **Perfil de público** - demografía, motivaciones y frecuencia
-- **Net Promoter Score (NPS)** - propensión a recomendar
-- **Investigación de no-públicos** - por qué algunas personas no acuden
-
-## Enfoque científico
-
-SentoVox lo desarrolla un equipo académico de 7 universidades europeas, entre ellas la Universidad de Groninga, la Universidad de Amberes, FH Kufstein Tirol y HAWK Hildesheim. El método está estandarizado para permitir comparaciones europeas, pero deja espacio a preguntas locales relevantes para tu centro. El helpdesk y el análisis de datos los gestiona el equipo académico.
-
-## Seguridad y privacidad
-
-Todas las encuestas se realizan a través de una conexión segura HTTPS/SSL. Los participantes responden de forma totalmente anónima; no se recopilan datos personales. El estudio cumple el RGPD. Los resultados a nivel de centro se mantienen confidenciales y son accesibles sólo para el centro participante.
-
-## ¿Para qué centros?
-
-SentoVox está dirigido a toda organización que ofrezca artes escénicas a un público: teatros, salas de conciertos, centros culturales multidisciplinares y centros de arte. El denominador común son las artes escénicas, lo que permite comparar de forma significativa entre países y tipos de centro.
-
-¿Dudas sobre el enfoque? [Contáctanos](/es/contacto/) o consulta los [detalles para participar](/es/participa/).

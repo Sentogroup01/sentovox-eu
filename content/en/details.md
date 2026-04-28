@@ -1,31 +1,101 @@
 ---
-title: "In detail"
-description: "How SentoVox works - method, modules and research approach."
+layout: "single"
+type: "details"
+title: "How SentoVox works"
+description: "Methodology, modules, security and target venues — at a glance."
+kicker: "In detail"
+lead: "SentoVox is built around standardised core questions developed by a consortium of seven European universities, with optional local questions per venue. The result is rich, comparable data with low effort on the venue side."
+
+modules_kicker: "Research modules"
+modules_title: "Nine themes covered by the survey"
+modules_intro: "Each module produces actionable findings on its own — together they paint a complete picture of who your visitors are and how they experience your venue."
+modules:
+  - title: "Visitor experience"
+    desc: "How visitors actually experience the visit, end to end."
+    icon: "i-survey"
+  - title: "Programming evaluation"
+    desc: "Which programmes resonate, which don't, and why."
+    icon: "i-list"
+  - title: "Impact Compass Model"
+    desc: "Four-dimensional measurement of cultural impact on visitors."
+    icon: "i-compass"
+  - title: "Infrastructure & facilities"
+    desc: "Practical evaluation of accessibility, comfort and amenities."
+    icon: "i-pin"
+  - title: "Communication strategy"
+    desc: "How visitors found you and what convinces them."
+    icon: "i-monitor"
+  - title: "Audience profile"
+    desc: "Who comes — demographics, motivations, behaviours."
+    icon: "i-users"
+  - title: "Net Promoter Score"
+    desc: "Standardised loyalty metric, benchmarked across Europe."
+    icon: "i-impact"
+  - title: "Non-visitor research"
+    desc: "Why people don't come — and how to reach them."
+    icon: "i-help"
+  - title: "Local questions"
+    desc: "Add your own questions for venue-specific research needs."
+    icon: "i-clip"
+
+compass_kicker: "Impact Compass Model"
+compass_title: "Four dimensions of cultural impact"
+compass_intro: "Developed across seven universities, the Impact Compass Model quantifies impact on visitors along four research-backed axes."
+compass:
+  - label: "Haven"
+    title: "Emotional"
+    desc: "A safe space for emotional experiences and recovery."
+    color: "#d4809e"
+  - label: "Perspective"
+    title: "Intellectual"
+    desc: "Broadens horizons and challenges assumptions."
+    color: "#486DBF"
+  - label: "Community"
+    title: "Social"
+    desc: "Builds connection, belonging and shared experience."
+    color: "#6b9f9f"
+  - label: "Creativity"
+    title: "Creative"
+    desc: "Sparks ideas, expression and creative engagement."
+    color: "#e6b84e"
+
+security_kicker: "Security & privacy"
+security_title: "Built to protect respondents and venues"
+security_intro: "SentoVox is fully GDPR-compliant. No personal data is collected from respondents, and venue data is encrypted in transit and at rest."
+security:
+  - title: "Fully anonymous"
+    desc: "No personal data is collected from respondents — by design."
+    icon: "i-shield"
+  - title: "HTTPS / SSL"
+    desc: "All traffic is encrypted end-to-end."
+    icon: "i-shield"
+  - title: "GDPR compliant"
+    desc: "European data protection standards, by design."
+    icon: "i-check"
+  - title: "Continuous backup"
+    desc: "Survey data is backed up continuously across regions."
+    icon: "i-doclock"
+  - title: "Anti-bot measures"
+    desc: "Survey responses are filtered against automated submissions."
+    icon: "i-shield"
+  - title: "Secure servers"
+    desc: "Hosted in the EU on infrastructure with audited security controls."
+    icon: "i-monitor"
+
+venues_kicker: "For which venues"
+venues_title: "Designed for performing arts venues"
+venues_intro: "The common thread is performing arts. If your venue programmes live performance, SentoVox fits."
+venue_types:
+  - title: "Theatres"
+    desc: "Dramatic, comedic, dance and multidisciplinary stages."
+    icon: "t-experience"
+  - title: "Concert halls"
+    desc: "Classical, jazz, popular and contemporary music venues."
+    icon: "t-star"
+  - title: "Cultural centres"
+    desc: "Multidisciplinary venues programming a mix of arts."
+    icon: "t-impact"
+
+cta_label: "Participate in SentoVox"
+cta_url: "/en/participate/"
 ---
-
-## What does SentoVox research?
-
-SentoVox is built around a set of standardised modules that each venue can deploy to fit its needs. The questionnaire combines core European questions with optional local ones.
-
-- **Visitor experience** - how audiences experience the performance, building and staff
-- **Programming evaluation** - appreciation of the offering and suggestions for new content
-- **Impact Compass Model** - measures wider societal and personal impact
-- **Infrastructure** - comfort, accessibility and facilities
-- **Communication evaluation** - reach and effectiveness of marketing channels
-- **Audience profile** - demographics, motivations and visit frequency
-- **Net Promoter Score (NPS)** - how likely visitors are to recommend you
-- **Non-visitor research** - why people stay away and how to reach them
-
-## Scientific approach
-
-SentoVox is developed by an academic team across 7 European universities, including the University of Groningen, University of Antwerp, FH Kufstein Tirol and HAWK Hildesheim. The method is standardised so that results are comparable across Europe, while leaving room for local questions relevant to your venue. The helpdesk and data analysis are run by the academic team.
-
-## Security and privacy
-
-All surveys run over a secure HTTPS/SSL connection. Respondents answer fully anonymously; no personal data is collected. The research complies with GDPR. Venue-level results remain confidential and are only accessible to the participating venue.
-
-## Which venues is it for?
-
-SentoVox is aimed at any organisation presenting the performing arts to an audience: theatres, concert halls, multidisciplinary cultural centres and arts centres. The common thread is the performing arts - which makes comparison across countries and venue types meaningful.
-
-Questions about the approach? [Get in touch](/en/contact/) or read the [participation details](/en/participate/).

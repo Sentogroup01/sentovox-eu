@@ -91,4 +91,36 @@ wlt_texts:
   - "Zo geeft elke bezoeker die deelneemt direct iets terug aan de planeet."
 
 # build: 2026-04-28
+
+testimonials_title: "Wat cultuurhuizen zeggen over SentoVox"
+testimonials:
+  - name: "Directeur, middelgroot theater"
+    quotes:
+      - "SentoVox gaf ons harde cijfers over wat we alleen aanvoelden: hoe ons publiek onze programmering écht beleeft. De benchmark met vergelijkbare cultuurhuizen elders in Europa maakt de resultaten bruikbaar."
+      - "We gebruiken het rapport in subsidiegesprekken. Dat het onafhankelijk en universitair onderbouwd is, maakt het verschil."
+  - name: "Publieksonderzoeker, concertzaal"
+    quotes:
+      - "Het Impact Compass Model bracht zaken naar boven die we gemist hadden. De niet-bezoekersresultaten waren ongemakkelijk in goede zin - ze toonden precies waar focus nodig is."
+      - "Gestandaardiseerde vragen plus onze eigen lokale toevoegingen, dat was de juiste balans. Rijke data, weinig werk aan onze kant."
+
+team_title: "Ondersteund door toonaangevende Europese universiteiten"
+team:
+  - name: "Annick Schramme"
+    role: "Cultuurmanagement & beleid"
+    org: "Universiteit Antwerpen"
+    initials: "AS"
+  - name: "Verena Teissl"
+    role: "Cultuurwetenschappen"
+    org: "FH Kufstein Tirol"
+    initials: "VT"
+  - name: "Johan Kolsteeg"
+    role: "Kunst & maatschappij"
+    org: "Rijksuniversiteit Groningen"
+    initials: "JK"
+  - name: "Birgit Mandel"
+    role: "Cultuurbemiddeling"
+    org: "HAWK Hildesheim"
+    initials: "BM"
+
+
 ---

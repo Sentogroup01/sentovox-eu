@@ -91,4 +91,36 @@ wlt_texts:
   - "Cada participante devuelve directamente algo al planeta."
 
 # build: 2026-04-28
+
+testimonials_title: "Lo que dicen las salas sobre SentoVox"
+testimonials:
+  - name: "Director, teatro de tamaño medio"
+    quotes:
+      - "SentoVox nos dio datos concretos sobre lo que solo intuíamos: cómo experimenta realmente nuestro público la programación. El benchmark con salas comparables en Europa hace que los resultados sean accionables."
+      - "Usamos el informe en las conversaciones con financiadores. El hecho de que sea independiente y respaldado por universidades marca la diferencia."
+  - name: "Responsable de estudios de público, sala de conciertos"
+    quotes:
+      - "El modelo Impact Compass sacó a la luz cosas que habíamos pasado por alto. Los resultados sobre no-visitantes fueron incómodos en el buen sentido - mostraban exactamente dónde actuar."
+      - "Preguntas estandarizadas más nuestras adiciones locales: el equilibrio adecuado. Datos ricos, poco esfuerzo por nuestra parte."
+
+team_title: "Respaldado por universidades europeas líderes"
+team:
+  - name: "Annick Schramme"
+    role: "Gestión & política cultural"
+    org: "Universidad de Amberes"
+    initials: "AS"
+  - name: "Verena Teissl"
+    role: "Estudios culturales"
+    org: "FH Kufstein Tirol"
+    initials: "VT"
+  - name: "Johan Kolsteeg"
+    role: "Arte & sociedad"
+    org: "Universidad de Groninga"
+    initials: "JK"
+  - name: "Birgit Mandel"
+    role: "Mediación cultural"
+    org: "HAWK Hildesheim"
+    initials: "BM"
+
+
 ---

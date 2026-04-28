@@ -1,25 +1,104 @@
-{{/* Simple content-driven layout — body is in the markdown content file */}}
+{{/* SentoVox contact page */}}
 {{ define "main" }}
-<section class="sec is-off" style="padding-top:64px;padding-bottom:24px">
-  <div class="wrap" style="max-width:780px">
-    <h1 style="font-family:var(--fontD);font-size:34px;font-weight:700;color:var(--teal);margin:0 0 6px;line-height:1.15">{{ .Title }}</h1>
-    {{ with .Description }}<p style="color:var(--inkSoft);font-size:16.5px;margin:0 0 28px">{{ . }}</p>{{ end }}
+{{- $formspree := .Site.Params.formspree_contact | default "xaqpbyqy" -}}
+
+<section class="sec is-off" style="padding:64px 0 24px;">
+  <div class="wrap" style="max-width:780px;text-align:center">
+    {{ with .Params.kicker }}<p class="kicker ks">{{ . }}</p>{{ end }}
+    <h1 style="font-family:var(--fontD);font-size:38px;font-weight:700;color:var(--teal);margin:0 0 12px;line-height:1.18">{{ .Title }}</h1>
+    {{ with .Description }}<p style="color:var(--inkSoft);font-size:17px;margin:0 0 12px">{{ . }}</p>{{ end }}
+    {{ with .Params.lead }}<p style="font-size:17px;line-height:1.65;color:var(--ink);margin:0 auto;max-width:680px">{{ . | markdownify }}</p>{{ end }}
   </div>
 </section>
-<section class="sec is-white" style="padding-top:0;padding-bottom:80px">
+
+<section class="sec is-white" id="contact-form" style="padding:32px 0">
+  <div class="wrap" style="max-width:980px">
+    <div class="contactGrid">
+      <!-- LEFT: Contact info cards -->
+      <div class="contactInfo">
+        {{ with .Params.contact_email }}
+        <div class="contactCard">
+          <div class="ccIco"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <p class="ccLabel">{{ $.Params.email_label | default "Email" }}</p>
+            <a href="mailto:{{ . }}" class="ccVal">{{ . }}</a>
+          </div>
+        </div>
+        {{ end }}
+        {{ with .Params.contact_hours }}
+        <div class="contactCard">
+          <div class="ccIco"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+          <div>
+            <p class="ccLabel">{{ $.Params.hours_label | default "Office hours" }}</p>
+            <p class="ccVal">{{ . }}</p>
+          </div>
+        </div>
+        {{ end }}
+        {{ with .Params.contact_response }}
+        <div class="contactCard">
+          <div class="ccIco"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div>
+            <p class="ccLabel">{{ $.Params.response_label | default "Response time" }}</p>
+            <p class="ccVal">{{ . }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contactFormWrap">
+        <h2 style="font-family:var(--fontD);font-size:22px;color:var(--ink);margin:0 0 14px">{{ .Params.form_title | default "Send us a message" }}</h2>
+        <form action="https://formspree.io/f/{{ $formspree }}" method="POST" class="contactForm">
+          <label class="cfLabel">
+            <span>{{ .Params.lbl_name | default "Name" }}</span>
+            <input type="text" name="name" required>
+          </label>
+          <label class="cfLabel">
+            <span>{{ .Params.lbl_org | default "Venue / Organisation" }}</span>
+            <input type="text" name="organisation">
+          </label>
+          <label class="cfLabel">
+            <span>{{ .Params.lbl_email | default "Email" }}</span>
+            <input type="email" name="email" required>
+          </label>
+          <label class="cfLabel">
+            <span>{{ .Params.lbl_msg | default "Message" }}</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="heroBtn heroBtn-p" style="display:inline-flex;align-items:center;gap:8px;padding:12px 26px">
+            {{ .Params.lbl_submit | default "Send" }}
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec is-off" style="padding-top:24px;padding-bottom:64px">
   <div class="wrap article-prose" style="max-width:780px">
     {{ .Content }}
   </div>
 </section>
+
 <style>
-  .article-prose h2{font-family:var(--fontD);font-size:24px;color:var(--teal);margin:36px 0 12px;line-height:1.25}
-  .article-prose h3{font-size:18px;font-weight:700;margin:24px 0 8px;color:var(--ink)}
-  .article-prose p{margin:0 0 14px;color:var(--ink);font-size:16px;line-height:1.7}
-  .article-prose ul, .article-prose ol{margin:8px 0 18px;padding-left:22px}
-  .article-prose li{margin:0 0 6px;line-height:1.6}
-  .article-prose strong{font-weight:700}
-  .article-prose a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
-  .article-prose a:hover{text-decoration:none;color:var(--tealDark)}
-  .article-prose blockquote{border-left:3px solid var(--tealBorder);padding:6px 14px;margin:18px 0;color:var(--inkMuted);background:var(--tealPale);border-radius:6px}
+  .contactGrid{display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:start}
+  @media(max-width:760px){.contactGrid{grid-template-columns:1fr}}
+  .contactInfo{display:flex;flex-direction:column;gap:14px}
+  .contactCard{display:flex;gap:14px;padding:18px;background:var(--white);border:1px solid var(--tealBorder);border-radius:12px;align-items:center}
+  .ccIco{flex:0 0 auto;width:42px;height:42px;border-radius:10px;background:var(--tealPale);color:var(--teal);display:flex;align-items:center;justify-content:center}
+  .ccIco svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .ccLabel{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--inkSoft);margin:0 0 2px;font-weight:700}
+  .ccVal{font-size:15px;color:var(--ink);font-weight:500;text-decoration:none;word-break:break-word}
+  a.ccVal{color:var(--teal);font-weight:600}
+  a.ccVal:hover{text-decoration:underline}
+
+  .contactFormWrap{background:var(--white);border:1px solid var(--tealBorder);border-radius:14px;padding:28px;box-shadow:0 4px 22px rgba(26,26,26,.05)}
+  .contactForm{display:flex;flex-direction:column;gap:14px}
+  .cfLabel{display:flex;flex-direction:column;gap:5px}
+  .cfLabel span{font-size:13px;font-weight:600;color:var(--ink)}
+  .cfLabel input, .cfLabel textarea{font-family:var(--fontB);font-size:15px;padding:11px 13px;border:1px solid var(--tealBorder);border-radius:10px;background:var(--offWhite);color:var(--ink);transition:border-color .15s,background .15s}
+  .cfLabel input:focus, .cfLabel textarea:focus{outline:none;border-color:var(--teal);background:var(--white)}
+  .cfLabel textarea{resize:vertical;min-height:90px;font-family:var(--fontB)}
 </style>
 {{ end }}

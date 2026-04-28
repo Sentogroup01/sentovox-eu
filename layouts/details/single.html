@@ -1,17 +1,150 @@
-{{/* Simple content-driven layout — body is in the markdown content file */}}
+{{/* SentoVox details page — rich layout driven by front-matter */}}
 {{ define "main" }}
-<section class="sec is-off" style="padding-top:64px;padding-bottom:24px">
-  <div class="wrap" style="max-width:780px">
-    <h1 style="font-family:var(--fontD);font-size:34px;font-weight:700;color:var(--teal);margin:0 0 6px;line-height:1.15">{{ .Title }}</h1>
-    {{ with .Description }}<p style="color:var(--inkSoft);font-size:16.5px;margin:0 0 28px">{{ . }}</p>{{ end }}
+
+<!-- HERO / INTRO -->
+<section class="sec is-off" style="padding:64px 0 24px;">
+  <div class="wrap" style="max-width:780px;text-align:center">
+    {{ with .Params.kicker }}<p class="kicker ks">{{ . }}</p>{{ end }}
+    <h1 style="font-family:var(--fontD);font-size:38px;font-weight:700;color:var(--teal);margin:0 0 12px;line-height:1.18">{{ .Title }}</h1>
+    {{ with .Description }}<p style="color:var(--inkSoft);font-size:17px;margin:0 0 12px">{{ . }}</p>{{ end }}
+    {{ with .Params.lead }}<p style="font-size:17px;line-height:1.65;color:var(--ink);margin:0 auto;max-width:680px">{{ . | markdownify }}</p>{{ end }}
   </div>
 </section>
-<section class="sec is-white" style="padding-top:0;padding-bottom:80px">
+
+<!-- 9 MODULES / RESEARCH THEMES -->
+{{ if .Params.modules }}
+<section class="sec is-white" id="modules">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:24px">
+      <p class="kicker ks">{{ .Params.modules_kicker | default "Research modules" }}</p>
+      <h2>{{ .Params.modules_title | default "What SentoVox measures" }}</h2>
+      {{ with .Params.modules_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
+    </div>
+    <div class="modulesGrid">
+      {{ range .Params.modules }}
+      <div class="moduleCard">
+        <div class="moduleIcon"><svg viewBox="0 0 24 24"><use href="#{{ .icon | default "i-survey" }}"/></svg></div>
+        <h3 class="moduleTitle">{{ .title }}</h3>
+        <p class="moduleDesc">{{ .desc }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- IMPACT COMPASS MODEL -->
+{{ if .Params.compass }}
+<section class="sec is-off" id="compass">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:24px">
+      <p class="kicker ks">{{ .Params.compass_kicker | default "Impact Compass Model" }}</p>
+      <h2>{{ .Params.compass_title | default "Four dimensions of cultural impact" }}</h2>
+      {{ with .Params.compass_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
+    </div>
+    <div class="compassGrid">
+      {{ range .Params.compass }}
+      <div class="compassQuadrant" style="--cq:{{ .color | default "var(--teal)" }}">
+        <div class="cqLabel">{{ .label }}</div>
+        <h3 class="cqTitle">{{ .title }}</h3>
+        <p class="cqDesc">{{ .desc }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- SECURITY & PRIVACY -->
+{{ if .Params.security }}
+<section class="sec is-white" id="security">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:24px">
+      <p class="kicker ks">{{ .Params.security_kicker | default "Security & privacy" }}</p>
+      <h2>{{ .Params.security_title | default "Built to protect respondents and venues" }}</h2>
+      {{ with .Params.security_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
+    </div>
+    <div class="secGrid">
+      {{ range .Params.security }}
+      <div class="secItem">
+        <div class="secIco"><svg viewBox="0 0 24 24"><use href="#{{ .icon | default "i-shield" }}"/></svg></div>
+        <div>
+          <h3 class="secTitle">{{ .title }}</h3>
+          <p class="secDesc">{{ .desc }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- TARGET VENUES -->
+{{ if .Params.venue_types }}
+<section class="sec is-off" id="venues">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:24px">
+      <p class="kicker ks">{{ .Params.venues_kicker | default "For which venues" }}</p>
+      <h2>{{ .Params.venues_title | default "Designed for performing arts venues" }}</h2>
+      {{ with .Params.venues_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
+    </div>
+    <div class="venueGrid">
+      {{ range .Params.venue_types }}
+      <div class="venueCard">
+        <div class="venueIcon"><svg viewBox="0 0 24 24"><use href="#{{ .icon | default "i-pin" }}"/></svg></div>
+        <h3 class="venueTitle">{{ .title }}</h3>
+        <p class="venueDesc">{{ .desc }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- CTA + free-form markdown body -->
+<section class="sec is-white" style="padding:24px 0 64px">
   <div class="wrap article-prose" style="max-width:780px">
     {{ .Content }}
+    {{ if .Params.cta_label }}
+    <div style="text-align:center;margin-top:32px">
+      <a href="{{ .Params.cta_url | default "/participate/" | relLangURL }}" class="heroBtn heroBtn-p" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px">{{ .Params.cta_label }}
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    {{ end }}
   </div>
 </section>
+
 <style>
+  .modulesGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:8px}
+  .moduleCard{background:var(--white);border:1px solid var(--tealBorder);border-radius:14px;padding:22px;transition:transform .15s,box-shadow .15s}
+  .moduleCard:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(230,57,70,.08)}
+  .moduleIcon{width:44px;height:44px;border-radius:10px;background:var(--tealPale);color:var(--teal);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .moduleIcon svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .moduleTitle{font-family:var(--fontD);font-size:17px;font-weight:700;color:var(--ink);margin:0 0 6px;line-height:1.3}
+  .moduleDesc{font-size:14.5px;color:var(--inkSoft);line-height:1.6;margin:0}
+
+  .compassGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;max-width:840px;margin:0 auto}
+  .compassQuadrant{padding:24px 22px;border-radius:14px;border-left:4px solid var(--cq);background:var(--white);box-shadow:0 4px 18px rgba(26,26,26,0.06)}
+  .cqLabel{font-size:11px;font-weight:700;color:var(--cq);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:6px}
+  .cqTitle{font-family:var(--fontD);font-size:18px;font-weight:700;color:var(--ink);margin:0 0 6px;line-height:1.3}
+  .cqDesc{font-size:14.5px;color:var(--inkSoft);line-height:1.6;margin:0}
+
+  .secGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .secItem{display:flex;gap:14px;background:var(--offWhite);border:1px solid var(--tealBorder);border-radius:12px;padding:18px}
+  .secIco{flex:0 0 auto;width:44px;height:44px;background:var(--teal);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center}
+  .secIco svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .secTitle{font-family:var(--fontD);font-size:16px;font-weight:700;color:var(--ink);margin:0 0 4px;line-height:1.3}
+  .secDesc{font-size:14px;color:var(--inkSoft);line-height:1.55;margin:0}
+
+  .venueGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:900px;margin:0 auto}
+  .venueCard{text-align:center;padding:30px 22px;border:1px solid var(--tealBorder);border-radius:14px;background:var(--white);transition:transform .15s,box-shadow .15s}
+  .venueCard:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(230,57,70,.10)}
+  .venueIcon{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--teal),var(--tealDark));color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+  .venueIcon svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .venueTitle{font-family:var(--fontD);font-size:18px;font-weight:700;color:var(--ink);margin:0 0 6px;line-height:1.3}
+  .venueDesc{font-size:14.5px;color:var(--inkSoft);line-height:1.6;margin:0}
+
   .article-prose h2{font-family:var(--fontD);font-size:24px;color:var(--teal);margin:36px 0 12px;line-height:1.25}
   .article-prose h3{font-size:18px;font-weight:700;margin:24px 0 8px;color:var(--ink)}
   .article-prose p{margin:0 0 14px;color:var(--ink);font-size:16px;line-height:1.7}
@@ -19,7 +152,5 @@
   .article-prose li{margin:0 0 6px;line-height:1.6}
   .article-prose strong{font-weight:700}
   .article-prose a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
-  .article-prose a:hover{text-decoration:none;color:var(--tealDark)}
-  .article-prose blockquote{border-left:3px solid var(--tealBorder);padding:6px 14px;margin:18px 0;color:var(--inkMuted);background:var(--tealPale);border-radius:6px}
 </style>
 {{ end }}

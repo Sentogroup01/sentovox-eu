@@ -91,4 +91,36 @@ wlt_texts:
   - "Ogni visitatore che partecipa restituisce qualcosa al pianeta."
 
 # build: 2026-04-28
+
+testimonials_title: "Cosa dicono le sedi di SentoVox"
+testimonials:
+  - name: "Direttore, teatro di medie dimensioni"
+    quotes:
+      - "SentoVox ci ha fornito dati concreti su ciò che intuivamo: come il nostro pubblico vive davvero la programmazione. Il benchmark con sedi simili in Europa rende i risultati operativi."
+      - "Usiamo il rapporto nei colloqui con i finanziatori. Il fatto che sia indipendente e universitario fa la differenza."
+  - name: "Responsabile ricerca pubblico, sala da concerto"
+    quotes:
+      - "Il modello Impact Compass ha portato alla luce cose che avevamo trascurato. I risultati sui non-visitatori sono stati scomodi nel senso buono - mostravano esattamente dove agire."
+      - "Domande standardizzate più le nostre aggiunte locali: il giusto equilibrio. Dati ricchi, sforzo minimo per noi."
+
+team_title: "Sostenuto dalle principali università europee"
+team:
+  - name: "Annick Schramme"
+    role: "Gestione & politica culturale"
+    org: "Università di Anversa"
+    initials: "AS"
+  - name: "Verena Teissl"
+    role: "Studi culturali"
+    org: "FH Kufstein Tirol"
+    initials: "VT"
+  - name: "Johan Kolsteeg"
+    role: "Arte & società"
+    org: "Università di Groninga"
+    initials: "JK"
+  - name: "Birgit Mandel"
+    role: "Mediazione culturale"
+    org: "HAWK Hildesheim"
+    initials: "BM"
+
+
 ---
