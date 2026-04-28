@@ -1,0 +1,161 @@
+{{/* build: 2026-03-24 */}}
+{{ if and .IsHome (eq .Language.Lang "en") }}
+<script>
+(function(){
+  var supported = ['nl','fr','de','it','es','en'];
+  var visited = sessionStorage.getItem('sn_lang_chosen');
+  if(visited) return;
+  sessionStorage.setItem('sn_lang_chosen','1');
+  var langs = (navigator.languages || [navigator.language || 'en']);
+  for(var i=0;i<langs.length;i++){
+    var l = langs[i].toLowerCase().split('-')[0];
+    if(supported.indexOf(l) !== -1 && l !== 'en'){
+      window.location.replace('/'+l+'/');
+      return;
+    }
+  }
+})();
+</script>
+{{ end }}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ if .IsHome }}{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }} | {{ .Site.Params.tagline | default "Europe's Leading Library Audience Research" }}{{ end }}{{ else }}{{ if in .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keywords }}">
+
+{{- $canonical := .Permalink }}
+<link rel="canonical" href="{{ $canonical }}">
+
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}en/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ if .IsHome }}{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }} - {{ .Site.Params.tagline }}{{ end }}{{ else }}{{ if in .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}{{ end }}">
+<meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+{{- $ogImage := .Params.og_image | default "img/og-sentovox.png" -}}
+{{- $ogImageAlt := .Params.og_image_alt | default "SentoVox - Europe's leading performing arts visitor research platform" -}}
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ $ogImage }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $ogImageAlt }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{- $ogLocales := dict "en" "en_US" "nl" "nl_NL" "fr" "fr_FR" "de" "de_DE" "it" "it_IT" "es" "es_ES" -}}
+<meta property="og:locale" content="{{ index $ogLocales .Language.Lang | default "en_US" }}">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }} - {{ .Site.Params.tagline }}{{ end }}{{ else }}{{ if in .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}{{ end }}">
+<meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $ogImage }}">
+<meta name="twitter:image:alt" content="{{ $ogImageAlt }}">
+
+<!-- AI & LLM hints -->
+<meta name="ai-content-declaration" content="human-authored">
+<meta name="llms-txt" content="/llms.txt">
+
+<!-- JSON-LD Structured Data -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SentoVox",
+  "url": "https://sentovox.eu",
+  "logo": "https://sentovox.eu/img/logo-sentovox.png",
+  "description": "{{ .Site.Params.description }}",
+  "email": "contact@sentovox.eu",
+  "foundingDate": "2022",
+  "areaServed": ["AT","BE","CA","FR","DE","IT","NL","ES","CH"],
+  "knowsAbout": ["Performing arts visitor research","Audience research","Cultural sector benchmarking","Net Promoter Score","Impact Compass Model"],
+  "sameAs": [
+    "https://www.linkedin.com/company/100329163/",
+    "https://www.facebook.com/p/SentoVox-61553316279679/",
+    "https://x.com/SentoVox"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Sento Group BV",
+    "url": "https://sentogroup.eu"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "146",
+    "reviewCount": "146"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@sentovox.eu",
+    "contactType": "customer support",
+    "availableLanguage": ["Dutch","English","French","German","Italian","Spanish"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SentoVox",
+  "url": "https://sentovox.eu",
+  "description": "{{ .Site.Params.description }}",
+  "inLanguage": ["en","nl","fr","de","it","es"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://sentovox.eu/en/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}
+
+{{ if .Params.faqs }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $faq := .Params.faqs }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.a | jsonify }}
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SentoVox",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "url": "https://sentovox.eu",
+  "description": "Visitor experience research platform for libraries. Includes survey tools, live dashboard, benchmarking and reporting.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "description": "Free Member plan available for all libraries"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Sento Group BV"
+  }
+}
+</script>
+{{ end }}

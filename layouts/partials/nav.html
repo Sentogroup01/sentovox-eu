@@ -1,0 +1,85 @@
+{{/* build: 2026-03-24 */}}
+{{- $lang := .Language.Lang -}}
+{{- $cta := .Site.Language.Params.cta | default "Participate" -}}
+
+<nav class="sn-nav" id="snNav" role="navigation" aria-label="{{ i18n "nav_main" }}">
+  <div class="sn-inner">
+
+    {{/* Logo */}}
+    <a href="{{ "/" | relLangURL }}" class="sn-logo" aria-label="{{ i18n "sentovox_home" }}">
+      <svg class="sn-logo-mark" viewBox="0 0 32 26" fill="none" aria-hidden="true">
+        <rect x="2" y="0" width="28" height="20" rx="6" fill="#c8102e"/>
+        <path d="M11 20 L9 26 L18 20" fill="#c8102e"/>
+        <text x="16" y="15" text-anchor="middle" font-family="Georgia,serif" font-weight="800" font-size="13" fill="white">B</text>
+      </svg>
+      <span class="sn-logo-text">SentoVox</span>
+    </a>
+
+    {{/* Desktop nav links */}}
+    <ul class="sn-links" id="snLinks" role="list">
+      {{- range .Site.Menus.main }}
+        {{- $active := eq $.RelPermalink .URL -}}
+        <li>
+          <a href="{{ .URL }}" class="sn-link{{ if $active }} active{{ end }}" data-key="{{ .Identifier }}">
+            {{ i18n (printf "nav_%s" .Identifier) }}
+          </a>
+        </li>
+      {{- end }}
+    </ul>
+
+    {{/* Right-side group: language switcher + CTA + burger */}}
+    <div class="sn-right">
+
+      {{/* Language switcher */}}
+      <div class="sn-lang" id="snLang">
+        <button class="sn-lang-btn" id="snLangBtn" aria-haspopup="true" aria-expanded="false">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          <span id="snLangCode">{{ $lang | upper }}</span>
+          <svg viewBox="0 0 10 10" width="10" height="10"><polyline points="1,3 5,7 9,3" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="sn-lang-drop" id="snLangDrop" role="menu">
+          {{- range .AllTranslations }}
+            <a href="{{ .RelPermalink }}" role="menuitem"
+               class="sn-lang-item{{ if eq .Language.Lang $lang }} cur{{ end }}"
+               data-lang="{{ .Language.Lang }}">
+              <span style="font-size:.75rem;font-weight:700;color:var(--inkSoft);min-width:20px;">{{ .Language.Lang | upper }}</span>
+              {{ .Language.LanguageName }}
+            </a>
+          {{- end }}
+        </div>
+      </div>
+
+      {{/* CTA button */}}
+      {{- $participate := .Site.GetPage "participate" -}}
+      <a href="{{ if $participate }}{{ $participate.RelPermalink }}{{ else }}/{{ .Language.Lang }}/participate/{{ end }}" class="sn-cta" id="snCta">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        {{ $cta }}
+      </a>
+
+      {{/* Burger menu */}}
+      <button class="sn-burger" id="snBurger" aria-label="{{ i18n "menu" }}" aria-expanded="false">
+        <svg viewBox="0 0 18 18"><line x1="1" y1="4" x2="17" y2="4"/><line x1="1" y1="9" x2="17" y2="9"/><line x1="1" y1="14" x2="17" y2="14"/></svg>
+      </button>
+
+    </div>
+
+  </div>
+</nav>
+
+{{/* Mobile drawer - pages + CTA only (language via globe dropdown) */}}
+<div class="sn-drawer" id="snDrawer" aria-hidden="true">
+  <div class="sn-drawer-bg" id="snDrawerBg"></div>
+  <div class="sn-drawer-panel">
+    <button class="sn-drawer-close" id="snDrawerClose" aria-label="{{ i18n "close" }}">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    {{- range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="sn-drawer-link" data-key="{{ .Identifier }}">
+        {{ i18n (printf "nav_%s" .Identifier) }}
+      </a>
+    {{- end }}
+    <div class="sn-drawer-divider"></div>
+    <a href="{{ if $participate }}{{ $participate.RelPermalink }}{{ else }}/{{ .Language.Lang }}/participate/{{ end }}" class="sn-drawer-cta" id="snDrCta">{{ $cta }} →</a>
+  </div>
+</div>
+

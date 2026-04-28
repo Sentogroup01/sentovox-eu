@@ -1,0 +1,29 @@
+{{/* build: 2026-04-16 footer multilingual fix */}}
+{{- $lang := .Language.Lang -}}
+{{- $privacy := .Site.GetPage "/privacy" -}}
+{{- $terms := .Site.GetPage "/terms" -}}
+{{- $contact := .Site.GetPage "/contact" -}}
+<footer class="sn-footer">
+  <div class="sn-footer-inner">
+    <div>
+      <strong style="color:var(--teal);font-family:'Playfair Display',serif">SentoVox</strong>
+      <span style="margin-left:8px;color:var(--inkMuted);font-size:13px">© {{ now.Year }}</span>
+    </div>
+    <div class="sn-footer-links">
+      <a id="snFooterPrivacy" href="{{ if $privacy }}{{ $privacy.RelPermalink }}{{ else }}{{ "/privacy/" | relLangURL }}{{ end }}">{{ i18n "nav_privacy" }}</a>
+      <span>·</span>
+      <a id="snFooterTerms" href="{{ if $terms }}{{ $terms.RelPermalink }}{{ else }}{{ "/terms/" | relLangURL }}{{ end }}">{{ i18n "nav_terms" }}</a>
+      <span>·</span>
+      <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">{{ i18n "nav_contact" }}</a>
+    </div>
+  </div>
+</footer>
+
+<button class="top-btn" id="topBtn" aria-label="{{ i18n "back_to_top" }}" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+<script>
+window.addEventListener('scroll',function(){
+  document.getElementById('topBtn').classList.toggle('visible',window.scrollY>300);
+},{passive:true});
+</script>

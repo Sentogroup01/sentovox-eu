@@ -1,0 +1,93 @@
+{{/* build: 2026-03-17 08:31:56 */}}
+{{- $lang := .Language.Lang -}}
+
+{{/* Contact slug per language (matches the `slug:` in each content/xx/contact.md frontmatter) */}}
+{{- $contactSlugs := dict "en" "contact" "nl" "contact" "fr" "contact" "de" "kontakt" "it" "contatto" "es" "contacto" -}}
+{{- $contactSlug := index $contactSlugs $lang | default "contact" -}}
+
+{{/* Regional platform URLs per language */}}
+{{- $regions := dict
+  "en" (slice
+    (dict "flag" "🇧🇪" "name" "België - Nederlandstalig" "url" "https://benl.sentovox.eu/customer/sign-up" "subdomain" "benl.sentovox.eu")
+    (dict "flag" "🇧🇪" "name" "Belgique - Francophone" "url" "https://befr.sentovox.eu/customer/sign-up" "subdomain" "befr.sentovox.eu")
+    (dict "flag" "🇫🇷" "name" "France" "url" "https://fr.sentovox.eu/customer/sign-up" "subdomain" "fr.sentovox.eu")
+    (dict "flag" "🇨🇭" "name" "Suisse - Francophone" "url" "https://chfr.sentovox.eu/customer/sign-up" "subdomain" "chfr.sentovox.eu")
+    (dict "flag" "🇩🇪" "name" "Deutschland" "url" "https://de.sentovox.eu/customer/sign-up" "subdomain" "de.sentovox.eu")
+    (dict "flag" "🇦🇹" "name" "Österreich" "url" "https://at.sentovox.eu/customer/sign-up" "subdomain" "at.sentovox.eu")
+    (dict "flag" "🇨🇭" "name" "Schweiz - Deutschsprachig" "url" "https://chde.sentovox.eu/customer/sign-up" "subdomain" "chde.sentovox.eu")
+    (dict "flag" "🇮🇹" "name" "Italia" "url" "https://it.sentovox.eu/customer/sign-up" "subdomain" "it.sentovox.eu")
+    (dict "flag" "🇨🇭" "name" "Svizzera - Italiana" "url" "https://chit.sentovox.eu/customer/sign-up" "subdomain" "chit.sentovox.eu")
+    (dict "flag" "🇳🇱" "name" "Nederland" "url" "https://nl.sentovox.eu/customer/sign-up" "subdomain" "nl.sentovox.eu")
+    (dict "flag" "🇪🇸" "name" "España" "url" "https://es.sentovox.eu/customer/sign-up" "subdomain" "es.sentovox.eu")
+  )
+  "nl" (slice
+    (dict "flag" "🇧🇪" "name" "België - Nederlandstalig" "url" "https://benl.sentovox.eu/customer/sign-up" "subdomain" "benl.sentovox.eu")
+    (dict "flag" "🇳🇱" "name" "Nederland" "url" "https://nl.sentovox.eu/customer/sign-up" "subdomain" "nl.sentovox.eu")
+  )
+  "fr" (slice
+    (dict "flag" "🇫🇷" "name" "France" "url" "https://fr.sentovox.eu/customer/sign-up" "subdomain" "fr.sentovox.eu")
+    (dict "flag" "🇧🇪" "name" "Belgique - Francophone" "url" "https://befr.sentovox.eu/customer/sign-up" "subdomain" "befr.sentovox.eu")
+    (dict "flag" "🇨🇭" "name" "Suisse - Francophone" "url" "https://chfr.sentovox.eu/customer/sign-up" "subdomain" "chfr.sentovox.eu")
+  )
+  "de" (slice
+    (dict "flag" "🇩🇪" "name" "Deutschland" "url" "https://de.sentovox.eu/customer/sign-up" "subdomain" "de.sentovox.eu")
+    (dict "flag" "🇦🇹" "name" "Österreich" "url" "https://at.sentovox.eu/customer/sign-up" "subdomain" "at.sentovox.eu")
+    (dict "flag" "🇨🇭" "name" "Schweiz - Deutschsprachig" "url" "https://chde.sentovox.eu/customer/sign-up" "subdomain" "chde.sentovox.eu")
+  )
+  "it" (slice
+    (dict "flag" "🇮🇹" "name" "Italia" "url" "https://it.sentovox.eu/customer/sign-up" "subdomain" "it.sentovox.eu")
+    (dict "flag" "🇨🇭" "name" "Svizzera - Italiana" "url" "https://chit.sentovox.eu/customer/sign-up" "subdomain" "chit.sentovox.eu")
+  )
+  "es" (slice
+    (dict "flag" "🇪🇸" "name" "España" "url" "https://es.sentovox.eu/customer/sign-up" "subdomain" "es.sentovox.eu")
+  )
+-}}
+
+{{- $currentRegions := index $regions $lang | default (index $regions "en") -}}
+
+<div class="reg-overlay" id="regOverlay" role="dialog" aria-modal="true" aria-labelledby="regTitle">
+  <div class="reg-modal">
+    <button class="reg-close" id="regClose" aria-label="{{ i18n "close" }}">
+      <svg width="16" height="16" viewBox="0 0 24 24" stroke="#c8102e" fill="none" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <h2 class="reg-title" id="regTitle">{{ i18n "choose_region" }}</h2>
+    <p class="reg-sub">{{ i18n "region_sub" }}</p>
+    <div class="reg-options">
+      {{- range $currentRegions }}
+        <a class="reg-btn" href="{{ .url }}" target="_blank" rel="noopener">
+          <span class="reg-btn-flag">{{ .flag }}</span>
+          <span class="reg-btn-info">
+            <span class="reg-btn-name">{{ .name }}</span>
+            <span class="reg-btn-url">{{ .subdomain }}</span>
+          </span>
+          <svg class="reg-btn-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      {{- end }}
+      <div class="reg-divider"></div>
+      <a class="reg-btn reg-btn--other" href="{{ (printf "/%s/%s/" $lang $contactSlug) | relURL }}">
+        <span class="reg-btn-flag">✉️</span>
+        <span class="reg-btn-info">
+          <span class="reg-btn-name">{{ i18n "other_countries" | default "Other countries" }}</span>
+          <span class="reg-btn-url">{{ i18n "contact_us" | default "Contact us" }}</span>
+        </span>
+        <svg class="reg-btn-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var ov = document.getElementById('regOverlay');
+  if(!ov) return;
+  function openM(e){ e.preventDefault(); ov.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeM(){ ov.classList.remove('open'); document.body.style.overflow=''; }
+  var cb = document.getElementById('regClose');
+  if(cb) cb.addEventListener('click', closeM);
+  ov.addEventListener('click', function(e){ if(e.target===ov) closeM(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeM(); });
+  document.querySelectorAll('[data-reg]').forEach(function(el){ el.addEventListener('click', openM); });
+})();
+</script>

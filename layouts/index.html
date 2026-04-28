@@ -1,0 +1,459 @@
+{{/* build: 2026-04-16 hero CTA -> participate page */}}
+{{ define "main" }}
+{{- $lang := .Language.Lang -}}
+{{- $cta := .Site.Language.Params.cta | default "Participate" -}}
+{{- $participate := .Site.GetPage "/participate" -}}
+{{- $contact := .Site.GetPage "/contact" -}}
+
+<!-- 1. HERO -->
+<section class="hero" id="hero" aria-label="Performing arts visitor research by SentoVox">
+<div class="wrap">
+<div class="heroContent">
+<h1 class="heroTitle">{{ .Params.hero_title | safeHTML }}</h1>
+<p class="heroSub">{{ .Params.hero_sub | safeHTML }}</p>
+<p class="heroTag">{{ .Params.hero_note }}</p>
+<div class="heroCtas">
+  <a class="heroBtn heroBtn-p" href="{{ if $participate }}{{ $participate.RelPermalink }}{{ else }}{{ "/participate/" | relLangURL }}{{ end }}">{{ .Params.btn_primary }}</a>
+  <a class="heroBtn heroBtn-s" href="#plans">{{ .Params.btn_secondary }}</a>
+</div>
+</div>
+<div class="trustBar" role="list" aria-label="Key facts">
+  {{ range .Params.trust_items }}
+  <div class="trustItem" role="listitem"><svg class="ico"><use href="#{{ if .icon }}{{ .icon }}{{ else }}i-library{{ end }}"/></svg><span>{{ .value }}{{ if .label }}&nbsp;{{ .label }}{{ end }}</span></div>
+  <div class="trustSep" aria-hidden="true"></div>
+  {{ end }}
+</div>
+<div class="uniSection">
+<p class="uniLabel">{{ .Params.uni_label | default "Academic partners" }}</p>
+<div class="logoGrid" role="list" aria-label="Partner universities">
+  {{ range .Params.universities }}
+  <div class="logoPill" role="listitem"><a class="logoLink" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}"><img loading="lazy" src="{{ .logo }}" alt="{{ .name }}"></a></div>
+  {{ end }}
+</div>
+</div>
+</div>
+</section>
+
+<!-- 2. INTRO -->
+<section class="sec is-off" id="intro" aria-label="About SentoVox">
+<div class="wrap">
+  <h2 class="introTitle">{{ .Params.intro_title }}</h2>
+  <p style="font-size:1.05rem;color:var(--inkSoft);line-height:1.75;margin-bottom:1.5rem">{{ .Params.intro_lead | markdownify }}</p>
+  {{ if .Params.why_blocks }}
+  <div class="det-outcomes" style="margin:0 0 2rem;">
+    {{ range .Params.why_blocks }}
+    <div class="det-outcome">
+      <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">{{ .icon | safeHTML }}</svg></div>
+      <div><h4>{{ .title }}</h4><p>{{ .text }}</p></div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  <div class="introGrid">
+    <div class="introMain">
+      {{ .Params.intro_body | markdownify }}
+    </div>
+    {{ if .Params.publications }}<aside class="introSidebar" aria-label="Publications about SentoVox">
+      <div class="sideLabel">{{ .Params.pub_label }}</div>
+      <div class="pubLinks">
+        {{ range .Params.publications }}
+        <span class="flagLink"><img class="flagIcon" src="https://flagcdn.com/{{ .flag_code }}.svg" alt="{{ .flag_code | upper }}" loading="lazy"><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></span><br>
+        {{ end }}
+        {{ $about := .Site.GetPage "/about" }}
+        <span class="flagLink" style="margin-top:4px;padding-top:6px;border-top:1px solid var(--tealBorder);display:flex">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" style="flex:0 0 auto;margin-right:4px"><path d="M2 1h10c1 0 2 1 2 2v4c0 1-1 2-2 2H7l-2 2V9H2c-1 0-2-1-2-2V3c0-1 1-2 2-2z" fill="#c8102e"/></svg>
+          <a href="{{ if $about }}{{ $about.RelPermalink }}{{ else }}{{ "/about/" | relLangURL }}{{ end }}#spotlight">{{ .Params.pub_conferences | default "SentoVox publications & conferences" }}</a>
+        </span>
+      </div>
+    </aside>{{ end }}
+  </div>
+</div>
+</section>
+
+<!-- 3. PHOTOS + RATINGS -->
+<section class="sec is-white" id="photos" style="padding-top:0;padding-bottom:24px">
+<div class="photoRatingWrap">
+<div class="photoStrip">
+<div class="photoGrid">
+  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1759949205882-eaa31dc36174?w=940&h=528&fit=crop" alt="Modern library with bright white shelves and stairs" loading="lazy"></div>
+  <div class="photoTile"><img class="photoMedia" src="https://images.unsplash.com/photo-1747515204290-6bf2511fb05b?w=940&h=528&fit=crop" alt="Modern library interior with bright skylight" loading="lazy"></div>
+  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=940&h=528&fit=crop" alt="Colourful books stacked in a library" loading="lazy"></div>
+  <div class="photoTile photo-mob-hide"><img class="photoMedia" src="https://images.unsplash.com/photo-1568667256549-094345857637?w=940&h=528&fit=crop" alt="Modern public library with visitors" loading="lazy"></div>
+</div>
+</div>
+<div class="ratingStrip" role="region" aria-label="Library satisfaction ratings">
+<div class="ratingInner">
+  <div class="ratingHead">
+    <span class="ratingTitle">{{ .Params.ratings_title | default "How venues rate SentoVox" }}</span>
+    <div class="ratingOverall"><span class="ratingNum">4.5</span><span class="ratingMax">/ 5</span><span class="ratingLabel">{{ .Params.ratings_overall | default "overall" }}</span></div>
+  </div>
+  <div class="ratingRows">
+    {{ range .Params.ratings }}
+    <div class="ratingRow"><span class="ratingRowLabel">{{ .label }}</span><div class="barWrap"><div class="bar"><div class="barFill" style="width:{{ .pct }}%"></div></div><span class="barScore">{{ .score }}</span></div></div>
+    {{ end }}
+  </div>
+  <div class="ratingFoot"><span class="ratingNote">{{ .Params.ratings_note | default "Based on 152 verified ratings from participating libraries" }}</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 4. VIDEO -->
+<section class="sec is-off" id="video" style="display:none">
+<div class="wrap">
+<div style="text-align:center;margin-bottom:18px"><h2>{{ .Params.video_title | default "SentoVox in 3 minutes" }}</h2></div>
+<div class="videoWrap" style="display:none">
+{{ if .Params.video_id }}
+<div class="videoShell"><div class="videoFrame"><iframe src="https://www.youtube.com/embed/{{ .Params.video_id }}" allowfullscreen loading="lazy"></iframe></div></div>
+{{ else }}
+<div class="videoPlaceholder">
+  <svg viewBox="0 0 24 24" stroke="var(--teal)" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="var(--teal)" stroke="none" opacity="0.3"/></svg>
+  <p style="margin:0;max-width:none">Video placeholder - embed YouTube or Vimeo link here</p>
+</div>
+{{ end }}
+</div>
+</div>
+</section>
+
+<!-- 5. PLANS -->
+{{ if .Params.plans_kicker }}
+<section class="sec is-white" id="plans" style="padding-top:24px">
+<div class="wrap">
+<div style="text-align:center;margin-bottom:8px">
+  <p class="kicker ks">{{ .Params.plans_kicker | default "Membership plans" }}</p>
+  <h2>{{ .Params.plans_title }}</h2>
+  <p style="max-width:78ch;margin:0 auto 8px">{{ .Params.plans_sub | safeHTML }}</p>
+  {{ if .Params.plans_intro }}<p style="max-width:78ch;margin:0 auto 12px;color:var(--inkSoft)">{{ .Params.plans_intro }}</p>{{ end }}
+  <p style="max-width:78ch;margin:0 auto">{{ .Params.plans_note }}</p>
+</div>
+<p class="plansScrollHint" aria-hidden="false">{{ .Params.plans_scroll_hint | default "Tip: scroll horizontally to compare all plans →" }}</p>
+<div class="plansScroll">
+<table class="compareTable">
+<thead><tr>
+  <th style="width:34%;vertical-align:top">{{ .Params.feature_col | default "Feature" }}</th>
+  {{ range .Params.plan_cols }}
+  <th style="width:22%;vertical-align:top;text-align:center">{{ .name }}<br>{{ if and .badge (ne .badge_type "a") }}<span class="badge badge-{{ .badge_type }}" style="margin-top:4px">{{ .badge }}</span>{{ else }}<span style="display:inline-block;height:22px"></span>{{ end }}</th>
+  {{ end }}
+</tr></thead>
+<tbody>
+  {{ range .Params.feature_rows }}
+  <tr>
+    <td class="rl">{{ .feature }}{{ if .new_label }} <span class="badge-new">{{ .new_label }}</span>{{ end }}</td>
+    {{ range .values }}
+    <td>{{ if eq . "yes" }}<span class="ck">✓</span>{{ else if eq . "no" }}<span class="da">-</span>{{ else }}{{ . }}{{ end }}</td>
+    {{ end }}
+  </tr>
+  {{ end }}
+</tbody>
+</table>
+</div>
+
+<div class="planCtaRow">
+  <a class="btnOut" href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">{{ .Params.contact_btn | default "Contact us" }}</a>
+  <button class="btnOut btnOut--teal" type="button" id="pricingToggle" aria-expanded="false" aria-controls="pricingPanel">
+    <span id="pricingToggleLabel">{{ .Params.pricing_btn | default "View participation fees" }}</span>
+    <svg class="ico" style="width:16px;height:16px"><use href="#i-down"/></svg>
+  </button>
+</div>
+
+<div class="pricingPanel" id="pricingPanel">
+<div class="pricingInner">
+  <div class="pricingHead">
+    <div class="currencyPicker">
+      <label for="currSelect" class="currLabel">{{ .Params.currency_label | default "Currency" }}</label>
+      <select id="currSelect" class="currSelect">
+        <option value="EUR" selected>€ EUR</option>
+        <option value="GBP">£ GBP</option>
+        <option value="USD">$ USD</option>
+        <option value="CHF">CHF</option>
+        <option value="SEK">kr SEK</option>
+        <option value="DKK">kr DKK</option>
+        <option value="NOK">kr NOK</option>
+        <option value="PLN">zł PLN</option>
+        <option value="CZK">Kč CZK</option>
+        <option value="CAD">CA$ CAD</option>
+      </select>
+    </div>
+    <h3 style="font-family:var(--fontD);font-size:20px;font-weight:700;color:var(--teal);margin:0">{{ .Params.pricing_title | default "Participation fees" }}</h3>
+  </div>
+  <div style="overflow-x:auto;border:1px solid var(--tealBorder);border-radius:var(--R)">
+  <table class="priceTable" id="priceTable">
+  <thead><tr>
+    <th>{{ .Params.fte_col | default "Inhabitants (× 1,000)" }}</th>
+    <th>Member <span class="badge badge-f">{{ .Params.free_label | default "Free" }}</span></th>
+    <th>Pro <span class="badge" aria-hidden="true" style="visibility:hidden">·</span></th>
+    <th>Ambassador <span class="badge badge-pr">Premium</span></th>
+  </tr></thead>
+  <tbody>
+    {{ range .Params.pricing_rows }}
+    <tr><td class="rl">{{ .fte }}</td><td class="prFree">{{ $.Params.free_label | default "Free" }}</td><td class="prCell" data-eur="{{ .pro }}">€{{ .pro }}</td><td class="prCell" data-eur="{{ .amb }}">€{{ .amb }}</td></tr>
+    {{ end }}
+  </tbody>
+  </table>
+  </div>
+  <div class="pricingNotes">
+    <p style="margin:0 0 4px;font-size:12.5px;color:var(--inkSoft)">{{ .Params.pricing_note }}</p>
+    <p style="margin:0;font-size:11px;color:var(--inkSoft);font-style:italic" id="rateNote">{{ .Params.rate_note | default "Exchange rates are approximate and updated periodically." }}</p>
+  </div>
+</div>
+</div>
+
+<button class="detailToggle" type="button" id="detailToggle" aria-expanded="false" aria-controls="planDetailsGrid">
+  <span id="toggleLabel">{{ .Params.detail_toggle | default "Show full plan details" }}</span>
+  <svg class="ico"><use href="#i-down"/></svg>
+</button>
+
+<div class="planGrid" id="planDetailsGrid">
+  {{ range .Params.plan_details }}
+  <article class="planCard">
+    <h3 class="planName">{{ .name }}</h3><p class="planTag">{{ .tagline | safeHTML }}</p>
+    <div class="planSections">
+      {{ range .sections }}
+      <div class="planSec"><h4 class="planSecTitle">{{ .title }}</h4><ul class="planFeatures">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul></div>
+      {{ end }}
+    </div>
+    <div class="planFooter">{{ .footer }}</div>
+  </article>
+  {{ end }}
+</div>
+</div>
+</section>
+{{ end }}
+
+<!-- 6. TESTIMONIALS -->
+{{ if .Params.testimonials }}
+<section class="sec is-teal" id="testimonials">
+<div class="wrap">
+<h2>{{ .Params.testimonials_title | default "What venues say about SentoVox" }}</h2>
+<div class="tSlider" role="region">
+<div class="tTrack" id="tTrack">
+  {{ range .Params.testimonials }}
+  <article class="tSlide">
+    <p class="tName">{{ .name }}</p>
+    {{ range .quotes }}<blockquote class="tQuote">"{{ . }}"</blockquote>{{ end }}
+  </article>
+  {{ end }}
+</div>
+<div class="tControls">
+  <button class="tArrow tPrev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <div class="tDots" id="tDots"></div>
+  <button class="tArrow tNext" type="button" aria-label="Next"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+</div>
+</div>
+</section>
+{{ end }}
+
+<!-- 7. TEAM -->
+{{ if .Params.team }}
+<section class="sec is-off" id="team">
+<div class="wrap">
+<div style="text-align:center;margin-bottom:24px"><h2>{{ .Params.team_title | default "Academic team behind the library visitor study" }}</h2></div>
+<div class="teamGrid" role="list">
+  {{ range .Params.team }}
+  <article class="teamCard" role="listitem">
+    <img class="teamUniLogo" src="{{ .uni_logo }}" alt="{{ .uni }}" loading="lazy">
+    <img class="teamPhoto" src="{{ .photo }}" alt="{{ .name }}" loading="lazy" onerror="this.style.visibility='hidden'">
+    <p class="teamName">{{ .name }}</p>
+    <p class="teamRole">{{ .role }}</p>
+  </article>
+  {{ end }}
+</div>
+</div>
+</section>
+{{ end }}
+
+<!-- 8. FAQ -->
+<section class="sec is-white" id="faq">
+<div class="wrap">
+<div style="text-align:center;margin-bottom:20px"><p class="kicker ks">FAQ</p><h2>{{ .Params.faq_title | default "Frequently asked questions" }}</h2></div>
+<div class="faqList">
+  {{ range .Params.faqs }}
+  <div class="faqItem"><button class="faqBtn" type="button" aria-expanded="false"><span>{{ .q }}</span><svg class="ico"><use href="#i-down"/></svg></button><div class="faqAnswer"><p>{{ .a }}</p></div></div>
+  {{ end }}
+</div>
+</div>
+</section>
+
+<!-- 9. WLT -->
+<section class="sec is-off" id="wlt" style="padding-bottom:24px">
+<div class="wrap">
+<div style="text-align:center;margin-bottom:20px"><p class="kicker ks">{{ .Params.wlt_kicker | default "Incentives" }}</p><h2>{{ .Params.wlt_title | default "World Land Trust partnership" }}</h2></div>
+<div class="wltGrid">
+  <div class="wltCard wltLogoCard"><a href="https://www.worldlandtrust.org/" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/1424c9_bb1d5a2fa334458c839a6ad63b0beb3b~mv2.jpg" alt="World Land Trust logo" loading="lazy"></a></div>
+  <div class="wltCard wltTextCard">
+    <h3 class="wltTitle">{{ .Params.wlt_card_title | default "World Land Trust partnership" }}</h3>
+    {{ range .Params.wlt_texts }}<p class="wltText">{{ . }}</p>{{ end }}
+    <p class="wltNote">{{ .Params.wlt_note }}</p>
+  </div>
+  <div class="wltCard wltCounterCard">
+    <div class="wltCounterLabel">{{ .Params.wlt_counter_label | default "Rainforest preserved" }}</div>
+    <div class="wltCounterRow"><span class="wltCounterVal">85,000</span><span class="wltCounterUnit">m<sup>2</sup></span></div>
+    <div class="wltCounterNote">{{ .Params.wlt_counter_note | default "and counting" }}</div>
+  </div>
+</div>
+</div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+
+/* ── Nav i18n ── */
+var LANG_LABELS={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+
+var T={
+  en:{cta:'Participate',pages:{
+    home:       {slug:'',           nav:'Home'},
+    details:    {slug:'details',    nav:'Details'},
+    content:    {slug:'content',    nav:'Content'},
+    about:      {slug:'about',      nav:'About'},
+    participate:{slug:'participate',nav:'Participate'},
+    groups:     {slug:'groups',     nav:'Groups'},
+    contact:    {slug:'contact',    nav:'Contact'}
+  }},
+  nl:{cta:'Deelnemen',pages:{
+    home:       {slug:'',           nav:'Home'},
+    details:    {slug:'details',    nav:'Details'},
+    content:    {slug:'inhoud',     nav:'Inhoud'},
+    about:      {slug:'over',       nav:'Over'},
+    participate:{slug:'deelnemen',  nav:'Deelnemen'},
+    groups:     {slug:'groepen',    nav:'Groepen'},
+    contact:    {slug:'contact',    nav:'Contact'}
+  }},
+  fr:{cta:'Participer',pages:{
+    home:       {slug:'',    nav:'Accueil'},
+    details:    {slug:'details',    nav:'Détails'},
+    content:    {slug:'contenu',     nav:'Contenu'},
+    about:      {slug:'a-propos',   nav:'À propos'},
+    participate:{slug:'participer', nav:'Participer'},
+    groups:     {slug:'groupes',    nav:'Groupes'},
+    contact:    {slug:'contact',    nav:'Contact'}
+  }},
+  de:{cta:'Teilnehmen',pages:{
+    home:       {slug:'', nav:'Startseite'},
+    details:    {slug:'details',    nav:'Details'},
+    content:    {slug:'inhalte',     nav:'Inhalte'},
+    about:      {slug:'uber-uns',   nav:'Über uns'},
+    participate:{slug:'teilnehmen', nav:'Teilnehmen'},
+    groups:     {slug:'gruppen',    nav:'Gruppen'},
+    contact:    {slug:'kontakt',    nav:'Kontakt'}
+  }},
+  it:{cta:'Partecipare',pages:{
+    home:       {slug:'',       nav:'Home'},
+    details:    {slug:'dettagli',  nav:'Dettagli'},
+    content:    {slug:'contenuti', nav:'Contenuti'},
+    about:      {slug:'chi-siamo',  nav:'Chi siamo'},
+    participate:{slug:'partecipare',nav:'Partecipare'},
+    groups:     {slug:'gruppi',     nav:'Gruppi'},
+    contact:    {slug:'contatto',   nav:'Contatto'}
+  }},
+  es:{cta:'Participar',pages:{
+    home:       {slug:'',     nav:'Inicio'},
+    details:    {slug:'detalles',  nav:'Detalles'},
+    content:    {slug:'contenido',  nav:'Contenido'},
+    about:      {slug:'acerca-de',  nav:'Acerca de'},
+    participate:{slug:'participar', nav:'Participar'},
+    groups:     {slug:'grupos',     nav:'Grupos'},
+    contact:    {slug:'contacto',   nav:'Contacto'}
+  }}
+};
+var ORDER=['home','details','content','groups','contact'];
+var LIVE=['en','nl','fr','de','it','es'];
+function url(lang,page){var s=T[lang].pages[page].slug;return'/'+lang+(s?'/'+s:'/')}
+function setCookie(n,v,d){var e=new Date();e.setTime(e.getTime()+d*864e5);document.cookie=n+'='+v+';expires='+e.toUTCString()+';path=/;SameSite=Lax'}
+function getCookie(n){var v=document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)');return v?v.pop():''}
+function detectLang(){var m=window.location.pathname.match(/^\/(en|nl|fr|de|it|es)(\/|$)/);if(m&&T[m[1]]){setCookie('sn_lang',m[1],365);return m[1];}var c=getCookie('sn_lang');if(c&&T[c])return c;var b=(navigator.language||'').slice(0,2).toLowerCase();if(T[b])return b;return'en'}
+var lang=detectLang();
+function el(id){return document.getElementById(id)}
+function renderNav(){
+  var t=T[lang];
+  if(el('snLogoLink'))el('snLogoLink').href='/'+lang+'/';
+  ORDER.forEach(function(k){
+    ['#snLinks','#snDrLinks'].forEach(function(sel){
+      var a=document.querySelector(sel+' a[data-key="'+k+'"]');
+      if(!a)return;a.href=url(lang,k);a.textContent=t.pages[k].nav;
+      a.className=k==='home'?'active':'';
+    });
+  });
+  if(el('snCta'))el('snCta').href=url(lang,'participate');
+  if(el('snCtaTxt'))el('snCtaTxt').textContent=t.cta;
+
+  
+  var _codes={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+  
+  if(el('snLangCode'))el('snLangCode').textContent=_codes[lang]||'EN';
+  document.querySelectorAll('#snLangDrop a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang)});
+  document.querySelectorAll('#snDrLangs a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang)});
+  if(el('snDrCta')){el('snDrCta').href=url(lang,'participate');el('snDrCta').textContent=t.cta+' →';}
+  document.documentElement.lang=lang;
+}
+renderNav();
+
+/* Lang switch */
+function switchLang(l){if(!LIVE.includes(l))return;setCookie('sn_lang',l,365);window.location.href=url(l,'home')}
+/* lang onclick in HTML */
+
+
+/* Footer */
+if(el('snFooterCopy'))el('snFooterCopy').textContent='SentoVox © '+new Date().getFullYear();
+var ft={en:{terms:'Terms & Conditions',privacy:'Privacy Policy',ts:'terms',ps:'privacy'},nl:{terms:'Algemene voorwaarden',privacy:'Privacybeleid',ts:'voorwaarden',ps:'privacy'},fr:{terms:'Conditions générales',privacy:'Politique de confidentialité',ts:'terms',ps:'privacy'},de:{terms:'Allgemeine Geschäftsbedingungen',privacy:'Datenschutzerklärung',ts:'terms',ps:'privacy'},it:{terms:'Termini e condizioni',privacy:'Informativa sulla privacy',ts:'terms',ps:'privacy'},es:{terms:'Términos y condiciones',privacy:'Política de privacidad',ts:'terms',ps:'privacy'}};
+var flt=ft[lang]||ft.en;
+if(el('snFooterTerms')){el('snFooterTerms').textContent=flt.terms;el('snFooterTerms').href='/'+lang+'/'+flt.ts;}
+if(el('snFooterPrivacy')){el('snFooterPrivacy').textContent=flt.privacy;el('snFooterPrivacy').href='/'+lang+'/'+flt.ps;}
+
+/* Plan detail toggle */
+var tgl=document.getElementById('detailToggle'),pg=document.getElementById('planDetailsGrid'),tl=document.getElementById('toggleLabel');
+var _dOpen='{{ .Params.detail_toggle | default "Show full plan details" }}',_dClose='{{ .Params.detail_toggle_close | default "Hide plan details" }}';
+function fixTableFonts(container){
+  if(window.innerWidth>700)return;
+  var els=(container||document).querySelectorAll('.compareTable th,.compareTable td,.priceTable th,.priceTable td');
+  els.forEach(function(el){
+    el.style.fontSize='12px';
+    el.style.lineHeight='1.4';
+    if(el.classList.contains('rl')){el.style.whiteSpace='normal';el.style.wordBreak='break-word';el.style.fontWeight='400';}
+  });
+}
+if(tgl&&pg)tgl.addEventListener('click',function(){var o=pg.classList.toggle('show');tgl.classList.toggle('open',o);tgl.setAttribute('aria-expanded',o);tl.textContent=o?_dClose:_dOpen;if(o){setTimeout(function(){tgl.scrollIntoView({behavior:'smooth',block:'start'})},50);setTimeout(function(){fixTableFonts(pg)},80);setTimeout(function(){fixTableFonts(pg)},250);setTimeout(function(){fixTableFonts(pg)},600);}});
+fixTableFonts();
+setTimeout(fixTableFonts,300);
+// JS backup: hide extra photos on mobile (CSS fallback)
+if(window.innerWidth<=640){document.querySelectorAll('.photo-mob-hide').forEach(function(el){el.style.display='none';});}
+
+/* Pricing toggle */
+var ptgl=document.getElementById('pricingToggle'),pp=document.getElementById('pricingPanel'),ptl=document.getElementById('pricingToggleLabel');
+var _pOpen='{{ .Params.pricing_btn | default "View participation fees" }}',_pClose='{{ .Params.pricing_btn_close | default "Hide participation fees" }}';
+if(ptgl&&pp)ptgl.addEventListener('click',function(){var o=pp.classList.toggle('show');ptgl.setAttribute('aria-expanded',o);ptl.textContent=o?_pClose:_pOpen;if(o)setTimeout(function(){pp.scrollIntoView({behavior:'smooth',block:'start'})},50)});
+
+/* Currency converter */
+var rates={EUR:1,GBP:0.86,USD:1.09,CHF:0.98,SEK:11.3,DKK:7.46,NOK:11.8,PLN:4.3,CZK:25.2,CAD:1.48};
+var symbols={EUR:'€',GBP:'£',USD:'$',CHF:'CHF ',SEK:'kr ',DKK:'kr ',NOK:'kr ',PLN:'zł ',CZK:'Kč ',CAD:'CA$ '};
+var cs=document.getElementById('currSelect'),rn=document.getElementById('rateNote');
+function updatePrices(){var c=cs.value,r=rates[c],s=symbols[c];document.querySelectorAll('.prCell').forEach(function(td){var eur=parseFloat(td.getAttribute('data-eur'));if(c==='EUR'){td.textContent='€'+eur}else{var conv=Math.ceil((eur+10)*r/5)*5;td.textContent=s+conv}});rn.style.display=c==='EUR'?'none':'block'}
+if(cs){cs.addEventListener('change',updatePrices);if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',updatePrices)}else{updatePrices()}}
+
+/* FAQ accordion */
+document.querySelectorAll('.faqBtn').forEach(function(btn){
+  btn.addEventListener('click',function(){var ans=btn.nextElementSibling;var open=ans.classList.toggle('open');btn.setAttribute('aria-expanded',open)});
+});
+
+/* Testimonial slider */
+var tTrack=document.getElementById('tTrack'),tDotsCt=document.getElementById('tDots');
+if(tTrack&&tDotsCt){
+  var slides=tTrack.querySelectorAll('.tSlide'),cur=0,total=slides.length,autoTimer;
+  for(var si=0;si<total;si++){
+    var d=document.createElement('button');d.className='tDot'+(si===0?' active':'');d.type='button';d.setAttribute('aria-label','Testimonial '+(si+1));
+    (function(idx){d.addEventListener('click',function(){goTo(idx)})})(si);
+    tDotsCt.appendChild(d);
+  }
+  function goTo(i){cur=((i%total)+total)%total;tTrack.style.transform='translateX(-'+cur*100+'%)';var dots=tDotsCt.querySelectorAll('.tDot');dots.forEach(function(dot,di){dot.className='tDot'+(di===cur?' active':'')});resetAuto()}
+  function resetAuto(){clearInterval(autoTimer);autoTimer=setInterval(function(){goTo(cur+1)},5000)}
+  resetAuto();
+  document.querySelector('.tPrev').addEventListener('click',function(){goTo(cur-1)});
+  document.querySelector('.tNext').addEventListener('click',function(){goTo(cur+1)});
+}
+})();
+</script>
+{{ end }}

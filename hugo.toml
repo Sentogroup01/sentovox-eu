@@ -1,0 +1,189 @@
+baseURL = "https://sentovox.eu/"
+title = "SentoVox"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[params]
+  red = "#c8102e"
+  formspree_contact = "xaqpbyqy"
+  formspree_groups = "myknpyke"
+  description = "European visitor research for performing arts venues. Trusted by 130+ theatres, concert halls and cultural centres, supported by 7 universities. Benchmark with peer institutions across Europe."
+  keywords = "performing arts visitor research, theatre audience study, cultural venue benchmark, visitor satisfaction, NPS theatre, Impact Compass Model, theatre survey, Europe, bezoekersonderzoek podiumkunsten, publieksonderzoek theater, SentoVox, Sento Group, audience research"
+  tagline = "Connect with your visitors through SentoVox visitor research"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+    [languages.en.params]
+      flag = ""
+      cta = "Participate"
+  [languages.nl]
+    languageName = "Nederlands"
+    weight = 2
+    contentDir = "content/nl"
+    [languages.nl.params]
+      flag = "🇳🇱"
+      cta = "Deelnemen"
+  [languages.fr]
+    languageName = "Français"
+    weight = 3
+    contentDir = "content/fr"
+    [languages.fr.params]
+      flag = "🇫🇷"
+      cta = "Participer"
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 4
+    contentDir = "content/de"
+    [languages.de.params]
+      flag = "🇩🇪"
+      cta = "Teilnehmen"
+  [languages.it]
+    languageName = "Italiano"
+    weight = 5
+    contentDir = "content/it"
+    [languages.it.params]
+      flag = "🇮🇹"
+      cta = "Partecipare"
+  [languages.es]
+    languageName = "Español"
+    weight = 6
+    contentDir = "content/es"
+    [languages.es.params]
+      flag = "🇪🇸"
+      cta = "Participar"
+
+[languages.en.menus]
+  [[languages.en.menus.main]]
+    identifier = "home"
+    url = "/en/"
+    weight = 1
+  [[languages.en.menus.main]]
+    identifier = "details"
+    url = "/en/details/"
+    weight = 2
+
+
+  [[languages.en.menus.main]]
+    identifier = "participate"
+    url = "/en/participate/"
+    weight = 3
+  [[languages.en.menus.main]]
+    identifier = "contact"
+    url = "/en/contact/"
+    weight = 4
+
+[languages.nl.menus]
+  [[languages.nl.menus.main]]
+    identifier = "home"
+    url = "/nl/"
+    weight = 1
+  [[languages.nl.menus.main]]
+    identifier = "details"
+    url = "/nl/details/"
+    weight = 2
+
+
+  [[languages.nl.menus.main]]
+    identifier = "participate"
+    url = "/nl/participate/"
+    weight = 3
+  [[languages.nl.menus.main]]
+    identifier = "contact"
+    url = "/nl/contact/"
+    weight = 4
+
+[languages.fr.menus]
+  [[languages.fr.menus.main]]
+    identifier = "home"
+    url = "/fr/"
+    weight = 1
+  [[languages.fr.menus.main]]
+    identifier = "details"
+    url = "/fr/details/"
+    weight = 2
+
+
+  [[languages.fr.menus.main]]
+    identifier = "participate"
+    url = "/fr/participate/"
+    weight = 3
+  [[languages.fr.menus.main]]
+    identifier = "contact"
+    url = "/fr/contact/"
+    weight = 4
+
+[languages.de.menus]
+  [[languages.de.menus.main]]
+    identifier = "home"
+    url = "/de/"
+    weight = 1
+  [[languages.de.menus.main]]
+    identifier = "details"
+    url = "/de/details/"
+    weight = 2
+
+
+  [[languages.de.menus.main]]
+    identifier = "participate"
+    url = "/de/participate/"
+    weight = 3
+  [[languages.de.menus.main]]
+    identifier = "contact"
+    url = "/de/kontakt/"
+    weight = 4
+
+[languages.it.menus]
+  [[languages.it.menus.main]]
+    identifier = "home"
+    url = "/it/"
+    weight = 1
+  [[languages.it.menus.main]]
+    identifier = "details"
+    url = "/it/dettagli/"
+    weight = 2
+
+
+  [[languages.it.menus.main]]
+    identifier = "participate"
+    url = "/it/participate/"
+    weight = 3
+  [[languages.it.menus.main]]
+    identifier = "contact"
+    url = "/it/contatto/"
+    weight = 4
+
+[languages.es.menus]
+  [[languages.es.menus.main]]
+    identifier = "home"
+    url = "/es/"
+    weight = 1
+  [[languages.es.menus.main]]
+    identifier = "details"
+    url = "/es/detalles/"
+    weight = 2
+
+
+  [[languages.es.menus.main]]
+    identifier = "participate"
+    url = "/es/participate/"
+    weight = 3
+  [[languages.es.menus.main]]
+    identifier = "contact"
+    url = "/es/contacto/"
+    weight = 4
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "Sitemap"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+[taxonomies]
+  # Disable default taxonomies (tags, categories)
