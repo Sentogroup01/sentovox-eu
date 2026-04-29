@@ -40,7 +40,7 @@ hugo.toml            Main config (title, baseURL, languages, menus)
 
 ## Brand
 
-- Primary red: `#ef9a9a` — defined as CSS variable `--teal` (variable name kept from template; value swapped). Dark variant `#d97171`, light `#ffcccc`.
+- Primary red: `#ec7c25` — defined as CSS variable `--teal` (variable name kept from template; value swapped). Dark variant `#c46220`, light `#f5a566`.
 - Fonts: Playfair Display (display) + DM Sans (body).
 - Logo + favicon + 1200x630 og-image: `static/img/{logo,favicon,og-sentovox}.svg` (PNG fallbacks alongside).
 
