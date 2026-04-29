@@ -1,11 +1,11 @@
 ---
 type: "content"
 slug: "contenido"
-title: "Qué Mide SentoVox - Experiencia, NPS, Impacto & Más"
+title: "Qué mide SentoVox - Experiencia, NPS, Impacto & más"
 description: "SentoVox mide la experiencia del visitante, NPS, impacto social (Impact Compass Model) y perfil del público. Todo en un estudio."
-keywords: "experiencia visitantes sala cultural, Impact Compass Model, NPS sala cultural, no-visitantes investigación"
+keywords: "experiencia visitantes artes escénicas, Impact Compass Model, NPS sala cultural, no-visitantes investigación"
 kicker: "Temas de investigación"
-intro: "El estudio SentoVox cubre todos los aspectos relevantes de la experiencia sala cultural. Un cuestionario bien equilibrado proporciona información sobre la experiencia del visitante, satisfacción, perfiles de audiencia e impacto social."
+intro: "El estudio SentoVox cubre todos los aspectos relevantes de la experiencia del visitante en las salas culturales. Un cuestionario bien equilibrado proporciona información sobre la experiencia del visitante, satisfacción, perfiles de audiencia e impacto social."
 
 themes_kicker: "Haga clic en un tema para explorar"
 themes:
@@ -36,17 +36,17 @@ themes:
 
 theme_sections:
   - id: "experience"
-    kicker: "Visita a la sala cultural"
-    title: "Cómo los visitantes viven la sala cultural"
+    kicker: "La visita"
+    title: "Cómo los visitantes viven su sala"
     teal: false
     body: |
-      SentoVox va más allá de preguntar "¿le gustó?" - captura cómo los visitantes viven la sala cultural en múltiples dimensiones: la colección en sí, la atmósfera, la respuesta emocional, el nivel de compromiso y el recorrido general.
-      
+      SentoVox va más allá de preguntar «¿le gustó?» - captura cómo los visitantes viven su sala en múltiples dimensiones: el espectáculo en sí, la atmósfera, la respuesta emocional, el nivel de compromiso y el recorrido general.
+
       Se pide a los visitantes que evalúen aspectos específicos de su visita, desde el momento en que llegan hasta que se van. Esto proporciona a las salas culturales una imagen detallada de lo que funciona bien y dónde hay margen de mejora.
 
       Los datos pueden filtrarse por tipo de visitante, idioma, frecuencia de visita y más.
     items:
-      - "Experiencia de la colección"
+      - "Experiencia del espectáculo"
       - "Atmósfera y ambiente"
       - "Compromiso emocional"
       - "Recorrido general de la visita"
@@ -58,12 +58,12 @@ theme_sections:
     body: |
       Los visitantes evalúan los aspectos prácticos de la sala cultural: la calidad y diversidad de la oferta, la infraestructura, la señalización, accesibilidad, instalaciones, amabilidad del personal y condiciones generales.
     items:
-      - "Calidad & diversidad de la oferta"
+      - "Calidad & diversidad de la programación"
       - "Señalización y orientación"
       - "Accesibilidad"
       - "Amabilidad del personal"
-      - "Instalaciones (cafetería, tienda, aseos)"
-      - "Cuotas de socio y horarios de apertura"
+      - "Instalaciones (cafetería, bar, guardarropa, aseos)"
+      - "Precios de las entradas y horarios de apertura"
 
   - id: "demographics"
     kicker: "Perfil del público"
@@ -134,5 +134,5 @@ new_body: |
   
   Una nueva herramienta innovadora permitirá realizar **entrevistas de voz interactivas** a través de cuestionarios de audio, usando los smartphones de los visitantes.
   
-# build: 2026-03-26
+# build:
 ---

@@ -1812,3 +1812,48 @@ table.price-table tbody tr td:first-child{
 .teamName{font-family:var(--fontD);font-size:17px;font-weight:700;color:var(--ink);margin:0 0 4px;line-height:1.25;}
 .teamRole{font-size:13px;color:var(--inkSoft);margin:0 0 6px;line-height:1.45;}
 .teamOrg{font-size:12px;color:var(--inkMuted);font-weight:500;}
+
+
+/* SentoVox nav fix: 7 menu items + lang picker + CTA was te breed; verklein padding/gap voor middenscherm */
+@media(min-width:861px) and (max-width:1280px){
+  .sn-link, .sn-links a{padding:7px 9px !important;font-size:13.5px !important;}
+  .sn-inner{gap:4px !important;}
+  .sn-cta{padding:8px 14px !important;font-size:13px !important;}
+  .sn-lang-btn{padding:6px 8px !important;font-size:12.5px !important;}
+}
+@media(max-width:1100px){
+  .sn-link, .sn-links a{padding:6px 7px !important;font-size:13px !important;}
+  .sn-inner .sn-logo-text{font-size:17px !important;}
+}
+
+
+/* SentoVox academic partners: center the row + uniform width pills */
+.uniSection{text-align:center;margin-top:18px}
+.uniSection .uniLabel{margin-bottom:14px}
+.uniSection .logoGrid{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:stretch}
+.uniSection .logoPillText{flex:0 0 auto;min-width:170px;max-width:200px}
+
+/* Team grid: also centered */
+.teamGrid{justify-content:center;}
+
+
+/* SentoVox step-card readability override
+   Original Sentobib step cards used white text on dark teal background.
+   With the soft red palette the parent gradient is light, so white text
+   becomes unreadable. Force dark text + slightly darker card bg. */
+.det-steps .det-step,
+.det-steps-grid .det-step-card{
+  background:rgba(255,255,255,0.85) !important;
+  border:1px solid rgba(0,0,0,0.08) !important;
+  color:var(--ink) !important;
+}
+.det-steps .det-step h3,
+.det-steps-grid .det-step-card h3{color:var(--ink) !important;}
+.det-steps .det-step p,
+.det-steps-grid .det-step-card p{color:var(--inkSoft) !important;}
+.det-steps .det-step-num,
+.det-steps-grid .det-step-num{
+  background:#ffffff !important;
+  color:var(--tealDark) !important;
+  border:1.5px solid var(--teal) !important;
+}

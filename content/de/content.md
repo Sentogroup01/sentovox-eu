@@ -1,11 +1,11 @@
 ---
 type: "content"
 slug: "inhalte"
-title: "Was SentoVox Misst - Besuchererlebnis, NPS, Impact & Mehr"
+title: "Was SentoVox misst - Besuchererlebnis, NPS, Impact & mehr"
 description: "SentoVox erfasst Besuchererlebnis, NPS, gesellschaftliche Wirkung (Impact Compass Model) und Publikumsprofile - alles in einer Studie."
-keywords: "Besuchererlebnis Kulturhaus, Impact Compass Model, Kulturhaus NPS, Nicht-Besucher Forschung"
+keywords: "Besuchererlebnis Kulturhaus, Impact Compass Model, Theater NPS, Nicht-Besucher-Forschung"
 kicker: "Forschungsthemen"
-intro: "Die SentoVox-Studie deckt alle relevanten Aspekte des Kulturhauserlebnisses ab. Ein ausgewogener Fragebogen liefert Erkenntnisse zu Besuchererlebnis, Zufriedenheit, Publikumsprofilen und gesellschaftlicher Wirkung."
+intro: "Die SentoVox-Studie deckt alle relevanten Aspekte des Besuchserlebnisses in Kulturhäusern ab. Ein ausgewogener Fragebogen liefert Erkenntnisse zu Besuchserlebnis, Zufriedenheit, Publikumsprofilen und gesellschaftlicher Wirkung."
 
 themes_kicker: "Klicken Sie auf ein Thema, um es zu erkunden"
 themes:
@@ -40,16 +40,16 @@ themes:
 theme_sections:
   - id: "experience"
     kicker: "Kulturhausbesuch"
-    title: "Wie Besucher die Kulturhaus erleben"
+    title: "Wie Besucher das Kulturhaus erleben"
     teal: false
     body: |
-      SentoVox geht über "Hat es Ihnen gefallen?" hinaus - es erfasst, wie Besucher die Kulturhaus über mehrere Dimensionen erleben: die Sammlung, die Atmosphäre, die emotionale Reaktion, das Engagement-Niveau und die Gesamtreise.
-      
-      Die Besucher werden gebeten, spezifische Aspekte ihres Besuchs zu bewerten - vom Moment der Ankunft bis zur Abreise. Dies gibt Kulturhäuser ein detailliertes Bild davon, was gut funktioniert und wo Verbesserungspotenzial besteht.
+      SentoVox geht über „Hat es Ihnen gefallen?" hinaus - es erfasst, wie Besucher das Kulturhaus über mehrere Dimensionen erleben: das Programm, die Atmosphäre, die emotionale Reaktion, das Engagement-Niveau und die gesamte Reise.
+
+      Die Besucher werden gebeten, spezifische Aspekte ihres Besuchs zu bewerten - vom Moment der Ankunft bis zur Abreise. Dies gibt Kulturhäusern ein detailliertes Bild davon, was gut funktioniert und wo Verbesserungspotenzial besteht.
 
       Die Ergebnisse können nach Besuchertyp, Sprache, Besuchshäufigkeit und mehr gefiltert werden.
     items:
-      - "Sammlungserlebnis"
+      - "Programmerlebnis"
       - "Atmosphäre und Ambiente"
       - "Emotionales Engagement"
       - "Gesamte Besuchsreise"
@@ -59,21 +59,21 @@ theme_sections:
     title: "Angebot, Infrastruktur und allgemeine Bedingungen"
     teal: true
     body: |
-      Besucher bewerten die praktischen Aspekte der Kulturhaus: die Qualität und Vielfalt des Angebots, die Infrastruktur, die Wegeführung, Barrierefreiheit, Einrichtungen und allgemeine Bedingungen.
+      Besucher bewerten die praktischen Aspekte des Kulturhauses: die Qualität und Vielfalt des Programms, die Infrastruktur, die Wegeführung, Barrierefreiheit, Einrichtungen und allgemeine Bedingungen.
     items:
-      - "Qualität & Vielfalt des Angebots"
+      - "Qualität & Vielfalt des Programms"
       - "Wegeführung und Beschilderung"
       - "Barrierefreiheit"
       - "Freundlichkeit des Personals"
-      - "Einrichtungen (Café, Shop, Toiletten)"
-      - "Mitgliedsbeiträge und Öffnungszeiten"
+      - "Einrichtungen (Café, Bar, Garderobe, Toiletten)"
+      - "Eintrittspreise und Öffnungszeiten"
 
   - id: "demographics"
     kicker: "Publikumsprofil"
     title: "Demografie, Präferenzen und Motivationen"
     teal: false
     body: |
-      SentoVox liefert ein detailliertes Profil des Kulturhauspublikums: Alter, Geschlecht, Bildungsniveau, geografische Herkunft, Gruppenkomposition, Besuchshäufigkeit und wie sie von der Kulturhaus erfahren haben.
+      SentoVox liefert ein detailliertes Profil des Kulturhauspublikums: Alter, Geschlecht, Bildungsniveau, geografische Herkunft, Gruppenzusammensetzung, Besuchshäufigkeit und wie sie vom Kulturhaus erfahren haben.
       
       Die Studie untersucht auch **Besuchsmotivationen**: Warum haben Besucher entschieden zu kommen?
 
@@ -82,10 +82,10 @@ theme_sections:
 
   - id: "communication"
     kicker: "Marketing"
-    title: "Wie Besucher die Kommunikation der Kulturhaus bewerten"
+    title: "Wie Besucher die Kommunikation des Kulturhauses bewerten"
     teal: true
     body: |
-      SentoVox misst, wie Besucher von der Kulturhaus erfahren haben und wie sie die Kommunikation bewerten. Das Verständnis, welche Kanäle für verschiedene Besuchersegmente am effektivsten sind, hilft Kulturhäuser dabei, Ressourcen effizienter einzusetzen.
+      SentoVox misst, wie Besucher vom Kulturhaus erfahren haben und wie sie die Kommunikation bewerten. Das Verständnis, welche Kanäle für verschiedene Besuchersegmente am effektivsten sind, hilft Kulturhäusern dabei, Ressourcen effizienter einzusetzen.
     items:
       - "Kanaleffektivität"
       - "Website-Bewertung"
@@ -97,7 +97,7 @@ theme_sections:
     title: "Gesellschaftlicher Wert und Besucherentwicklung"
     teal: false
     body: |
-      Die Kulturhaus hat eine gesellschaftliche Rolle: Es unterstützt die Entwicklung und das Wohlbefinden seiner Besucher. SentoVox nutzt das **Impact Compass Model** - ein Rahmenwerk zur Messung der Wirkung kultureller Institutionen.
+      Das Kulturhaus hat eine gesellschaftliche Rolle: Es unterstützt die Entwicklung und das Wohlbefinden seiner Besucher. SentoVox nutzt das **Impact Compass Model** - ein Rahmenwerk zur Messung der Wirkung kultureller Institutionen.
     items:
       - "Konzentration und Immersion"
       - "Kritisches Denken und Problemlösung"
@@ -125,7 +125,7 @@ theme_sections:
 nps_kicker: "Loyalitätsindikator"
 nps_title: "Net Promoter Score (NPS)"
 nps_body: |
-  Wir fragen Kulturhausbesucher, ob sie die Kulturhaus Familie, Freunden oder Kollegen empfehlen würden. Sie geben eine Bewertung von **1** (würde überhaupt nicht empfehlen) bis **10** (würde sehr empfehlen).
+  Wir fragen Kulturhausbesucher, ob sie das Kulturhaus Familie, Freunden oder Kollegen empfehlen würden. Sie geben eine Bewertung von **1** (würde überhaupt nicht empfehlen) bis **10** (würde sehr empfehlen).
   
   Je nach Antwort werden die Teilnehmer als **Promotoren** (Bewertung 9-10) oder **Detraktoren** (Bewertung 1-6) eingestuft.
   
@@ -133,9 +133,7 @@ nps_body: |
 new_kicker: "Demnächst"
 new_title: "Thematische Studien & Sprachinterviews"
 new_body: |
-  **Pro-Mitglieder** werden die Möglichkeit haben, kurze **thematische Studien** durchzuführen - vertieft zu Themen wie Impact, Ökologie, Barrierefreiheit, Kulturhaus der Zukunft und mehr.
-  
-  Ein neues innovatives Tool wird es ermöglichen, **interaktive Sprachinterviews** über Audio-Befragungen auf Smartphones der Besucher durchzuführen.
-  
-# build: 2026-03-26
+  **Pro-Mitglieder** werden die Möglichkeit haben, kurze **thematische Studien** durchzuführen - vertieft zu Themen wie Wirkung, Ökologie, Barrierefreiheit, das Kulturhaus der Zukunft, Nachhaltigkeit und mehr.
+
+  Ein neues innovatives Tool wird es ermöglichen, **interaktive Sprachinterviews** über Audio-Befragungen auf Smartphones der Besucher durch
 ---

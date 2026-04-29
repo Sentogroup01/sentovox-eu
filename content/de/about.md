@@ -21,7 +21,7 @@ history_title: "Geschichte & Expansionsweg"
 history_body: |
   Das Projekt startete **2024** in **Belgien** mit einer Pilotstudie an Kulturhäusern aus dem Cult-Netzwerk, in enger Zusammenarbeit mit der **Universität Antwerpen**. Der Pilot bestätigte die Methodik und wuchs zu einer festen Teilnehmergruppe von über 100 flämischen und Brüsseler Häusern.
 
-  **2025** weitete SentoVox sich in die **Niederlande** aus, in Kooperation mit VSCD-Theatern, mit der Teilnahme von Häusern wie Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven und Parktheater Eindhoven. **2025-2026** folgte die Ausweitung nach **Deutschland** (Bühnenverein-Partner) und **Österreich**, mit Forschungspartnern an der HAWK Hildesheim und der FH Kufstein Tirol.
+  **2025** weitete SentoVox sich in die **Niederlande** aus, in Kooperation mit VSCD-Theatern, mit der Teilnahme von Häusern wie Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven und Concertgebouw de Doelen. **2025-2026** folgte die Ausweitung nach **Deutschland** (Bühnenverein-Partner) und **Österreich**, mit Forschungspartnern an der HAWK Hildesheim und der FH Kufstein Tirol.
 
   **2026** wird SentoVox in **Frankreich, Italien, Spanien und der Schweiz** ausgerollt und damit zu einem wahrhaft paneuropäischen Instrument. Heute ist die Plattform in 6 Sprachen aktiv, mit 130+ teilnehmenden Häusern und Partnerhochschulen in 7 Ländern.
 

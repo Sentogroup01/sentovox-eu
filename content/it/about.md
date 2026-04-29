@@ -21,7 +21,7 @@ history_title: "Storia & percorso di espansione"
 history_body: |
   Il progetto è nato nel **2024** in **Belgio** con un pilota presso centri culturali della rete Cult, in stretta collaborazione con l'**Università di Anversa**. Il pilota ha confermato la metodologia ed è diventato un panel permanente di oltre 100 sedi fiamminghe e bruxellesi.
 
-  Nel **2025** SentoVox si è estesa ai **Paesi Bassi** in cooperazione con i teatri VSCD, con la partecipazione di sedi come Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven e Parktheater Eindhoven. Nel **2025-2026** il programma è arrivato in **Germania** (partner Bühnenverein) e in **Austria**, con partner di ricerca a HAWK Hildesheim e FH Kufstein Tirol.
+  Nel **2025** SentoVox si è estesa ai **Paesi Bassi** in cooperazione con i teatri VSCD, con la partecipazione di sedi come Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven e Concertgebouw de Doelen. Nel **2025-2026** il programma è arrivato in **Germania** (partner Bühnenverein) e in **Austria**, con partner di ricerca a HAWK Hildesheim e FH Kufstein Tirol.
 
   Nel **2026** SentoVox viene esteso a **Francia, Italia, Spagna e Svizzera**, diventando uno strumento veramente paneuropeo. Oggi la piattaforma è attiva in 6 lingue, con oltre 130 sedi partecipanti e università partner in 7 paesi.
 

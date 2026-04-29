@@ -1,11 +1,11 @@
 ---
 type: "content"
 slug: "contenu"
-title: "Ce que Mesure SentoVox - Expérience, NPS, Impact & Plus"
+title: "Ce que mesure SentoVox - Expérience, NPS, Impact & Plus"
 description: "SentoVox mesure l'expérience visiteurs, NPS, l'impact sociétal (Impact Compass Model) et le profil du public - en une seule étude."
-keywords: "expérience visiteurs salle culturelle, Impact Compass Model, NPS salle culturelle, non-visiteurs recherche"
+keywords: "expérience visiteurs spectacle vivant, Impact Compass Model, NPS salle culturelle, non-visiteurs recherche"
 kicker: "Thèmes de recherche"
-intro: "L'étude SentoVox couvre tous les aspects pertinents de l'expérience muséale. Un questionnaire bien équilibré fournit des informations sur l'expérience des visiteurs, la satisfaction, les profils du public, l'impact sociétal et bien plus encore."
+intro: "L'étude SentoVox couvre tous les aspects pertinents de l'expérience visiteur dans les lieux culturels. Un questionnaire bien équilibré fournit des informations sur l'expérience des visiteurs, la satisfaction, les profils du public, l'impact sociétal et bien plus encore."
 
 themes_kicker: "Cliquez sur un thème pour explorer"
 themes:
@@ -39,17 +39,17 @@ themes:
 
 theme_sections:
   - id: "experience"
-    kicker: "Visite à la salle culturelle"
-    title: "Comment les visiteurs vivent la salle culturelle"
+    kicker: "La visite"
+    title: "Comment les visiteurs vivent votre lieu"
     teal: false
     body: |
-      SentoVox va au-delà de la question "avez-vous aimé ?" - il saisit comment les visiteurs vivent la salle culturelle sur plusieurs dimensions : l'collection elle-même, l'atmosphère, la réponse émotionnelle, le niveau d'engagement et le parcours global.
-      
+      SentoVox va au-delà de la question « avez-vous aimé ? » : il saisit comment les visiteurs vivent votre lieu sur plusieurs dimensions : le spectacle lui-même, l'atmosphère, la réponse émotionnelle, le niveau d'engagement et le parcours global.
+
       Les visiteurs sont invités à évaluer des aspects spécifiques de leur visite, du moment où ils arrivent jusqu'à leur départ. Cela fournit aux salles culturelles un tableau détaillé de ce qui fonctionne bien et des axes d'amélioration possibles.
 
       Les données peuvent être filtrées par type de visiteur, langue, fréquence de visite, et plus encore.
     items:
-      - "Expérience de l'collection"
+      - "Expérience du spectacle"
       - "Atmosphère et ambiance"
       - "Engagement émotionnel"
       - "Parcours de visite global"
@@ -61,12 +61,12 @@ theme_sections:
     body: |
       Au-delà de l'expérience elle-même, les visiteurs évaluent les aspects pratiques : la qualité et la diversité de l'offre, l'infrastructure, l'orientation, l'accessibilité, les installations, la convivialité du personnel et les conditions générales.
     items:
-      - "Qualité & diversité de l'offre"
+      - "Qualité & diversité de la programmation"
       - "Orientation et signalétique"
       - "Accessibilité"
       - "Convivialité du personnel"
-      - "Installations (café, boutique, toilettes)"
-      - "Cotisations et horaires d'ouverture"
+      - "Installations (café, bar, vestiaire, toilettes)"
+      - "Tarifs des billets et horaires d'ouverture"
 
   - id: "demographics"
     kicker: "Profil du public"
@@ -97,7 +97,7 @@ theme_sections:
     title: "Valeur sociétale et développement des visiteurs"
     teal: false
     body: |
-      La salle culturelle a un rôle sociétal : il soutient le développement et le bien-être de ses visiteurs. SentoVox utilise l'**Impact Compass Model** - un cadre mesurant l'impact des institutions culturelles sur leurs publics.
+      La salle culturelle a un rôle sociétal : elle soutient le développement et le bien-être de ses visiteurs. SentoVox utilise l'**Impact Compass Model** - un cadre mesurant l'impact des institutions culturelles sur leurs publics.
     items:
       - "Concentration et immersion"
       - "Sens critique et résolution de problèmes"

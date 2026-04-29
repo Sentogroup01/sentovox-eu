@@ -1,11 +1,11 @@
 ---
 type: "content"
 slug: "contenuti"
-title: "Cosa Misura SentoVox - Esperienza, NPS, Impatto & Altro"
+title: "Cosa misura SentoVox - Esperienza, NPS, Impatto & altro"
 description: "SentoVox copre esperienza visitatori, NPS, impatto sociale (Impact Compass Model), profilo del pubblico e ricerca sui non-visitatori."
-keywords: "esperienza visitatori sede culturale, Impact Compass Model, NPS sede culturale, non-visitatori ricerca"
+keywords: "esperienza visitatori spettacolo dal vivo, Impact Compass Model, NPS sede culturale, non-visitatori ricerca"
 kicker: "Temi di ricerca"
-intro: "Lo studio SentoVox copre tutti gli aspetti rilevanti dell'esperienza sede culturale. Un questionario ben equilibrato fornisce informazioni sull'esperienza dei visitatori, la soddisfazione, i profili del pubblico e l'impatto sociale."
+intro: "Lo studio SentoVox copre tutti gli aspetti rilevanti dell'esperienza dei visitatori nelle sedi culturali. Un questionario ben equilibrato fornisce informazioni sull'esperienza dei visitatori, la soddisfazione, i profili del pubblico e l'impatto sociale."
 
 themes_kicker: "Cliccate su un tema per esplorarlo"
 themes:
@@ -39,17 +39,17 @@ themes:
 
 theme_sections:
   - id: "experience"
-    kicker: "Visita alla sede culturale"
-    title: "Come i visitatori vivono la sede culturale"
+    kicker: "La visita"
+    title: "Come i visitatori vivono la vostra sede"
     teal: false
     body: |
-      SentoVox va oltre la domanda "vi è piaciuto?" - cattura come i visitatori vivono la sede culturale su più dimensioni: la collezione stessa, l'atmosfera, la risposta emotiva, il livello di coinvolgimento e il percorso complessivo.
-      
+      SentoVox va oltre la domanda «vi è piaciuto?» - cattura come i visitatori vivono la vostra sede su più dimensioni: lo spettacolo stesso, l'atmosfera, la risposta emotiva, il livello di coinvolgimento e il percorso complessivo.
+
       I visitatori sono invitati a valutare aspetti specifici della loro visita, dal momento in cui arrivano fino alla partenza. Questo fornisce alle sedi culturali un quadro dettagliato di ciò che funziona bene e dove c'è margine di miglioramento.
 
       I dati possono essere filtrati per tipo di visitatore, lingua, frequenza di visita e altro.
     items:
-      - "Esperienza della collezione"
+      - "Esperienza dello spettacolo"
       - "Atmosfera e ambiente"
       - "Coinvolgimento emotivo"
       - "Percorso di visita complessivo"
@@ -61,12 +61,12 @@ theme_sections:
     body: |
       I visitatori valutano gli aspetti pratici della sede culturale: la qualità e la diversità dell'offerta, l'infrastruttura, l'orientamento, l'accessibilità, le strutture, la cordialità del personale e le condizioni generali.
     items:
-      - "Qualità & diversità dell'offerta"
+      - "Qualità & diversità della programmazione"
       - "Orientamento e segnaletica"
       - "Accessibilità"
       - "Cordialità del personale"
-      - "Strutture (caffè, negozio, bagni)"
-      - "Quote associative e orari di apertura"
+      - "Strutture (caffè, bar, guardaroba, bagni)"
+      - "Prezzi dei biglietti e orari di apertura"
 
   - id: "demographics"
     kicker: "Profilo del pubblico"
@@ -137,5 +137,5 @@ new_body: |
   
   Un nuovo strumento innovativo permetterà di condurre **interviste vocali interattive** tramite questionari audio, utilizzando gli smartphone dei visitatori.
   
-# build: 2026-03-26
+# buil
 ---
