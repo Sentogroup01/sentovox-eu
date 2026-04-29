@@ -1888,3 +1888,37 @@ table.price-table tbody tr td:first-child{
   flex:0 0 170px !important;
   max-width:200px !important;
 }
+
+
+/* SentoVox nav fix v2: 7 menu items + lang + CTA passen niet op 1100-1400px desktop.
+   Strategie: 
+   1) Burger drawer activeren zodra het krap wordt (<1200px ipv <860px)
+   2) Compactere padding tussen 1200-1400px
+   3) Active item: geen pill-padding meer, alleen kleur + onderlijn (bespaart breedte)
+*/
+@media(max-width:1199px){
+  .sn-links, .sn-right .sn-cta, .sn-right .sn-lang{display:none !important}
+  .sn-burger{display:flex !important}
+  .sn-mob-lang{display:flex !important}
+  .sn-drawer{display:block}
+}
+@media(min-width:1200px) and (max-width:1399px){
+  .sn-link, .sn-links a{padding:6px 8px !important;font-size:13px !important;}
+  .sn-inner{gap:4px !important;padding:0 16px !important;}
+  .sn-cta{padding:8px 14px !important;font-size:13px !important;}
+  .sn-lang-btn{padding:6px 8px !important;font-size:12.5px !important;}
+}
+/* Active item: subtiele underline + bold + kleur, geen pill-background dat extra ruimte vraagt */
+.sn-link.active, .sn-links a.active{
+  background:transparent !important;
+  border-color:transparent !important;
+  color:var(--teal) !important;
+  font-weight:700 !important;
+  position:relative;
+}
+.sn-link.active::after, .sn-links a.active::after{
+  content:'';position:absolute;left:13px;right:13px;bottom:2px;height:2px;background:var(--teal);border-radius:2px;
+}
+@media(min-width:1200px) and (max-width:1399px){
+  .sn-link.active::after, .sn-links a.active::after{left:8px;right:8px}
+}
