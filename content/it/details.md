@@ -4,7 +4,7 @@ type: "details"
 title: "Come funziona SentoVox"
 description: "Metodologia, moduli, sicurezza e sedi target — a colpo d'occhio."
 kicker: "In dettaglio"
-lead: "SentoVox si basa su domande centrali standardizzate, sviluppate da un consorzio di sette università europee, con domande locali opzionali per sede. Il risultato: dati ricchi e comparabili, con sforzo minimo da parte vostra."
+lead: "SentoVox si basa su domande centrali standardizzate, sviluppate da un consorzio di quattro università europee, con domande locali opzionali per sede. Il risultato: dati ricchi e comparabili, con sforzo minimo da parte vostra."
 
 modules_kicker: "Moduli di ricerca"
 modules_title: "Nove temi nell'indagine"
@@ -40,7 +40,7 @@ modules:
 
 compass_kicker: "Modello Impact Compass"
 compass_title: "Quattro dimensioni dell'impatto culturale"
-compass_intro: "Sviluppato da sette università, il modello Impact Compass quantifica l'impatto lungo quattro assi scientificamente fondati."
+compass_intro: "Sviluppato da quattro università, il modello Impact Compass quantifica l'impatto lungo quattro assi scientificamente fondati."
 compass:
   - label: "Rifugio"
     title: "Emotivo"

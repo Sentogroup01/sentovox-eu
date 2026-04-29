@@ -1,10 +1,10 @@
 ---
 title: "SentoVox | Étude européenne des publics du spectacle vivant"
-description: "Étude scientifique des publics pour théâtres, salles de concert et centres culturels. 130+ lieux participants, 60 000+ répondants, soutenue par 7 universités européennes."
+description: "Étude scientifique des publics pour théâtres, salles de concert et centres culturels. 130+ lieux participants, 60 000+ répondants, soutenue par 4 universités européennes."
 keywords: "étude des publics spectacle vivant, enquête théâtre, recherche salle de concert, centre culturel publics, NPS spectacle vivant, Europe"
 
 hero_title: "Connectez-vous à votre public.<br>Renforcez votre lieu culturel."
-hero_sub: "Une étude européenne portant sur 130+ lieux culturels et 60 000+ visiteurs, conçue avec 7 universités."
+hero_sub: "Une étude européenne portant sur 130+ lieux culturels et 60 000+ visiteurs, conçue avec 4 universités."
 btn_primary: "Participer"
 hero_note: "Scientifiquement fondée, conforme au RGPD et entièrement anonyme pour les répondants."
 btn_secondary: "Découvrir le fonctionnement"
@@ -59,7 +59,7 @@ intro_body: |
   - Comparaison avec d'autres lieux européens
 
   **Pourquoi SentoVox :**
-  - Conçu avec 7 universités européennes
+  - Conçu avec 4 universités européennes
   - Enquête indépendante et anonyme
   - Questions standard plus questions locales facultatives
   - Helpdesk et analyse assurés par une équipe académique
@@ -69,7 +69,7 @@ intro_body: |
 faq_title: "Questions fréquentes"
 faqs:
   - q: "Qu'est-ce que SentoVox ?"
-    a: "SentoVox est une étude européenne indépendante des publics, dédiée aux théâtres, salles de concert et centres culturels. Elle s'appuie sur une méthode standardisée et scientifiquement fondée, soutenue par 7 universités et des partenaires sectoriels comme l'ENCC, la VSCD et Cult."
+    a: "SentoVox est une étude européenne indépendante des publics, dédiée aux théâtres, salles de concert et centres culturels. Elle s'appuie sur une méthode standardisée et scientifiquement fondée, soutenue par 4 universités et des partenaires sectoriels comme l'ENCC, la VSCD et Cult."
   - q: "Qui peut participer ?"
     a: "Tout lieu culturel programmant du spectacle vivant : théâtres, salles de concert, centres culturels pluridisciplinaires et organisations similaires en Europe."
   - q: "Combien cela coûte-t-il ?"

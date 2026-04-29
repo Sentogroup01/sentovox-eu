@@ -1,15 +1,15 @@
 ---
 type: "about"
 title: "About SentoVox - European performing-arts visitor research since 2024"
-description: "About SentoVox - Europe's audience-research programme for theatres, concert halls and cultural centres. 130+ venues, 7 universities, scientifically grounded."
+description: "About SentoVox - Europe's audience-research programme for theatres, concert halls and cultural centres. 130+ venues, 4 universities, scientifically grounded."
 keywords: "about SentoVox, performing arts research, European theatre study, audience benchmark history"
 kicker: "The European performing-arts audience study"
-intro: "SentoVox is a scientifically grounded visitor-research programme for theatres, concert halls and cultural venues across Europe. Built with a consortium of 7 universities and supported by leading sector partners."
+intro: "SentoVox is a scientifically grounded visitor-research programme for theatres, concert halls and cultural venues across Europe. Built with a consortium of 4 universities and supported by leading sector partners."
 
 stats:
   - value: "130+"
     label: "Cultural venues across Europe"
-  - value: "7"
+  - value: "4"
     label: "University partners"
   - value: "6"
     label: "Languages"

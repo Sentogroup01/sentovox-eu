@@ -4,7 +4,7 @@ description: "Scientific audience research for theatres, concert halls and cultu
 keywords: "performing arts audience research, theatre visitor survey, concert hall research, cultural venue benchmark, NPS performing arts, Europe"
 
 hero_title: "Connect with your visitors.<br>Strengthen your venue."
-hero_sub: "A European study of 130+ cultural venues and 60,000+ visitors, developed with 7 universities."
+hero_sub: "A European study of 130+ cultural venues and 60,000+ visitors, developed with 4 universities."
 btn_primary: "Participate"
 hero_note: "Scientifically grounded, GDPR-compliant and fully anonymous for respondents."
 btn_secondary: "Discover how it works"
@@ -59,7 +59,7 @@ intro_body: |
   - Comparison with other European venues
 
   **Why SentoVox:**
-  - Scientifically developed with 7 universities
+  - Scientifically developed with 4 universities
   - Independent, anonymous survey
   - Standard questions plus optional local questions
   - Helpdesk and analysis by an academic team
@@ -69,7 +69,7 @@ intro_body: |
 faq_title: "Frequently asked questions"
 faqs:
   - q: "What is SentoVox?"
-    a: "SentoVox is an independent European audience research study for theatres, concert halls and cultural venues. It is built on a standardised, scientifically grounded method and supported by 7 universities and sector partners such as ENCC, VSCD and Cult."
+    a: "SentoVox is an independent European audience research study for theatres, concert halls and cultural venues. It is built on a standardised, scientifically grounded method and supported by 4 universities and sector partners such as ENCC, VSCD and Cult."
   - q: "Who can participate?"
     a: "Any venue programming the performing arts: theatres, concert halls, multidisciplinary cultural centres and similar organisations across Europe."
   - q: "What does it cost?"

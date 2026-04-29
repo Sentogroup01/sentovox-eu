@@ -2,15 +2,15 @@
 type: "about"
 slug: "chi-siamo"
 title: "Chi siamo SentoVox - Ricerca europea sui visitatori delle arti dello spettacolo dal 2024"
-description: "Chi siamo SentoVox - Programma europeo di ricerca sui visitatori per teatri, sale da concerto e centri culturali. 130+ sedi, 7 università."
+description: "Chi siamo SentoVox - Programma europeo di ricerca sui visitatori per teatri, sale da concerto e centri culturali. 130+ sedi, 4 università."
 keywords: "chi siamo SentoVox, ricerca arti dello spettacolo, studio teatrale europeo, benchmark pubblico"
 kicker: "Lo studio europeo del pubblico delle arti dello spettacolo"
-intro: "SentoVox è un programma di ricerca scientifica sui visitatori per teatri, sale da concerto e sedi culturali in tutta Europa. Costruito con 7 università e partner di settore."
+intro: "SentoVox è un programma di ricerca scientifica sui visitatori per teatri, sale da concerto e sedi culturali in tutta Europa. Costruito con 4 università e partner di settore."
 
 stats:
   - value: "130+"
     label: "Sedi culturali in Europa"
-  - value: "7"
+  - value: "4"
     label: "Partner universitari"
   - value: "6"
     label: "Lingue"

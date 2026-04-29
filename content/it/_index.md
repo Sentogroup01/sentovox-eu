@@ -1,10 +1,10 @@
 ---
 title: "SentoVox | Ricerca europea sul pubblico dello spettacolo dal vivo"
-description: "Ricerca scientifica sul pubblico per teatri, sale da concerto e centri culturali. 130+ luoghi partecipanti, 60.000+ rispondenti, sostenuta da 7 università europee."
+description: "Ricerca scientifica sul pubblico per teatri, sale da concerto e centri culturali. 130+ luoghi partecipanti, 60.000+ rispondenti, sostenuta da 4 università europee."
 keywords: "ricerca pubblico spettacolo dal vivo, indagine teatro, ricerca sala da concerto, centro culturale pubblico, NPS spettacolo dal vivo, Europa"
 
 hero_title: "Connettiti con il tuo pubblico.<br>Rafforza il tuo centro culturale."
-hero_sub: "Uno studio europeo su 130+ centri culturali e 60.000+ visitatori, sviluppato con 7 università."
+hero_sub: "Uno studio europeo su 130+ centri culturali e 60.000+ visitatori, sviluppato con 4 università."
 btn_primary: "Partecipa"
 hero_note: "Scientificamente fondato, conforme al GDPR e completamente anonimo per i rispondenti."
 btn_secondary: "Scopri come funziona"
@@ -59,7 +59,7 @@ intro_body: |
   - Confronto con altri centri culturali europei
 
   **Perché SentoVox:**
-  - Sviluppato scientificamente con 7 università
+  - Sviluppato scientificamente con 4 università
   - Indagine indipendente e anonima
   - Domande standard più domande locali opzionali
   - Helpdesk e analisi a cura di un team accademico
@@ -69,7 +69,7 @@ intro_body: |
 faq_title: "Domande frequenti"
 faqs:
   - q: "Cos'è SentoVox?"
-    a: "SentoVox è una ricerca europea indipendente sul pubblico, dedicata a teatri, sale da concerto e centri culturali. Si basa su un metodo standardizzato e scientificamente fondato, sostenuto da 7 università e da partner di settore come ENCC, VSCD e Cult."
+    a: "SentoVox è una ricerca europea indipendente sul pubblico, dedicata a teatri, sale da concerto e centri culturali. Si basa su un metodo standardizzato e scientificamente fondato, sostenuto da 4 università e da partner di settore come ENCC, VSCD e Cult."
   - q: "Chi può partecipare?"
     a: "Qualsiasi luogo che programma spettacolo dal vivo: teatri, sale da concerto, centri culturali multidisciplinari e organizzazioni simili in Europa."
   - q: "Quanto costa?"

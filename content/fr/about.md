@@ -2,15 +2,15 @@
 type: "about"
 slug: "a-propos"
 title: "À propos de SentoVox - Étude européenne des publics des arts de la scène depuis 2024"
-description: "À propos de SentoVox - Programme européen d'étude des publics pour les théâtres, salles de concert et centres culturels. 130+ salles, 7 universités."
+description: "À propos de SentoVox - Programme européen d'étude des publics pour les théâtres, salles de concert et centres culturels. 130+ salles, 4 universités."
 keywords: "à propos SentoVox, recherche arts de la scène, étude européenne théâtre, benchmark public"
 kicker: "L'étude européenne des publics des arts de la scène"
-intro: "SentoVox est un programme d'étude scientifique des visiteurs pour les théâtres, salles de concert et centres culturels d'Europe, en collaboration avec 7 universités."
+intro: "SentoVox est un programme d'étude scientifique des visiteurs pour les théâtres, salles de concert et centres culturels d'Europe, en collaboration avec 4 universités."
 
 stats:
   - value: "130+"
     label: "Salles culturelles en Europe"
-  - value: "7"
+  - value: "4"
     label: "Partenaires universitaires"
   - value: "6"
     label: "Langues"

@@ -2,15 +2,15 @@
 type: "about"
 slug: "acerca-de"
 title: "Acerca de SentoVox - Investigación europea de visitantes en artes escénicas desde 2024"
-description: "Acerca de SentoVox - Programa europeo de investigación de visitantes para teatros, salas de conciertos y centros culturales. 130+ salas, 7 universidades."
+description: "Acerca de SentoVox - Programa europeo de investigación de visitantes para teatros, salas de conciertos y centros culturales. 130+ salas, 4 universidades."
 keywords: "acerca de SentoVox, investigación artes escénicas, estudio teatral europeo, benchmark público"
 kicker: "El estudio europeo del público de las artes escénicas"
-intro: "SentoVox es un programa de investigación científica de visitantes para teatros, salas de conciertos y salas culturales en toda Europa. Construido con 7 universidades y socios del sector."
+intro: "SentoVox es un programa de investigación científica de visitantes para teatros, salas de conciertos y salas culturales en toda Europa. Construido con 4 universidades y socios del sector."
 
 stats:
   - value: "130+"
     label: "Salas culturales en Europa"
-  - value: "7"
+  - value: "4"
     label: "Socios universitarios"
   - value: "6"
     label: "Idiomas"

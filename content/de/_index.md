@@ -4,7 +4,7 @@ description: "Wissenschaftliche Publikumsforschung für Theater, Konzerthäuser 
 keywords: "Publikumsforschung darstellende Künste, Theaterbesucher, Konzerthaus Studie, Kulturzentrum Publikum, NPS Theater, Europa"
 
 hero_title: "Verbinden Sie sich mit Ihrem Publikum.<br>Stärken Sie Ihr Haus."
-hero_sub: "Eine europäische Studie mit 130+ Kulturhäusern und 60.000+ Besucher:innen, entwickelt mit 7 Universitäten."
+hero_sub: "Eine europäische Studie mit 130+ Kulturhäusern und 60.000+ Besucher:innen, entwickelt mit 4 Universitäten."
 btn_primary: "Teilnehmen"
 hero_note: "Wissenschaftlich fundiert, DSGVO-konform und vollständig anonym für Befragte."
 btn_secondary: "Funktionsweise entdecken"
@@ -59,7 +59,7 @@ intro_body: |
   - Vergleich mit anderen europäischen Häusern
 
   **Warum SentoVox:**
-  - Wissenschaftlich entwickelt mit 7 Universitäten
+  - Wissenschaftlich entwickelt mit 4 Universitäten
   - Unabhängige, anonyme Befragung
   - Standardfragen plus optionale lokale Fragen
   - Helpdesk und Datenanalyse durch ein akademisches Team
@@ -69,7 +69,7 @@ intro_body: |
 faq_title: "Häufig gestellte Fragen"
 faqs:
   - q: "Was ist SentoVox?"
-    a: "SentoVox ist eine unabhängige europäische Publikumsstudie für Theater, Konzerthäuser und Kulturzentren. Sie basiert auf einer standardisierten, wissenschaftlich fundierten Methode und wird von 7 Universitäten und Branchenpartnern wie ENCC, VSCD und Cult unterstützt."
+    a: "SentoVox ist eine unabhängige europäische Publikumsstudie für Theater, Konzerthäuser und Kulturzentren. Sie basiert auf einer standardisierten, wissenschaftlich fundierten Methode und wird von 4 Universitäten und Branchenpartnern wie ENCC, VSCD und Cult unterstützt."
   - q: "Wer kann teilnehmen?"
     a: "Jedes Haus, das darstellende Künste programmiert: Theater, Konzerthäuser, multidisziplinäre Kulturzentren und vergleichbare Einrichtungen in Europa."
   - q: "Was kostet die Teilnahme?"

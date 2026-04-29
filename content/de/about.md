@@ -2,15 +2,15 @@
 type: "about"
 slug: "ueber-uns"
 title: "Über SentoVox - Europäische Besucherforschung für die darstellenden Künste seit 2024"
-description: "Über SentoVox - Europäisches Publikumsforschungsprogramm für Theater, Konzerthäuser und Kulturhäuser. 130+ Häuser, 7 Universitäten, wissenschaftlich fundiert."
+description: "Über SentoVox - Europäisches Publikumsforschungsprogramm für Theater, Konzerthäuser und Kulturhäuser. 130+ Häuser, 4 Universitäten, wissenschaftlich fundiert."
 keywords: "über SentoVox, darstellende Künste Forschung, europäische Theaterstudie, Publikumsbenchmark"
 kicker: "Die europäische Publikumsstudie für die darstellenden Künste"
-intro: "SentoVox ist ein wissenschaftlich fundiertes Besucherforschungsprogramm für Theater, Konzerthäuser und Kulturhäuser in ganz Europa. Aufgebaut mit 7 Universitäten und Sektorpartnern."
+intro: "SentoVox ist ein wissenschaftlich fundiertes Besucherforschungsprogramm für Theater, Konzerthäuser und Kulturhäuser in ganz Europa. Aufgebaut mit 4 Universitäten und Sektorpartnern."
 
 stats:
   - value: "130+"
     label: "Kulturhäuser in Europa"
-  - value: "7"
+  - value: "4"
     label: "Universitätspartner"
   - value: "6"
     label: "Sprachen"

@@ -1,10 +1,10 @@
 ---
 title: "SentoVox | Estudio europeo de públicos de las artes escénicas"
-description: "Investigación científica de públicos para teatros, salas de conciertos y centros culturales. 130+ recintos participantes, 60.000+ encuestados, respaldado por 7 universidades europeas."
+description: "Investigación científica de públicos para teatros, salas de conciertos y centros culturales. 130+ recintos participantes, 60.000+ encuestados, respaldado por 4 universidades europeas."
 keywords: "investigación públicos artes escénicas, encuesta teatro, estudio sala de conciertos, centro cultural públicos, NPS artes escénicas, Europa"
 
 hero_title: "Conecta con tu público.<br>Refuerza tu centro cultural."
-hero_sub: "Un estudio europeo con 130+ centros culturales y 60.000+ visitantes, desarrollado con 7 universidades."
+hero_sub: "Un estudio europeo con 130+ centros culturales y 60.000+ visitantes, desarrollado con 4 universidades."
 btn_primary: "Participar"
 hero_note: "Científicamente fundamentado, conforme al RGPD y totalmente anónimo para los participantes."
 btn_secondary: "Descubre cómo funciona"
@@ -59,7 +59,7 @@ intro_body: |
   - Comparación con otros centros europeos
 
   **Por qué SentoVox:**
-  - Desarrollado científicamente con 7 universidades
+  - Desarrollado científicamente con 4 universidades
   - Encuesta independiente y anónima
   - Preguntas estándar más preguntas locales opcionales
   - Helpdesk y análisis a cargo de un equipo académico
@@ -69,7 +69,7 @@ intro_body: |
 faq_title: "Preguntas frecuentes"
 faqs:
   - q: "¿Qué es SentoVox?"
-    a: "SentoVox es un estudio europeo independiente de públicos para teatros, salas de conciertos y centros culturales. Se basa en un método estandarizado y científicamente fundamentado, respaldado por 7 universidades y socios sectoriales como ENCC, VSCD y Cult."
+    a: "SentoVox es un estudio europeo independiente de públicos para teatros, salas de conciertos y centros culturales. Se basa en un método estandarizado y científicamente fundamentado, respaldado por 4 universidades y socios sectoriales como ENCC, VSCD y Cult."
   - q: "¿Quién puede participar?"
     a: "Cualquier centro que programe artes escénicas: teatros, salas de conciertos, centros culturales multidisciplinares y organizaciones similares en Europa."
   - q: "¿Cuánto cuesta?"

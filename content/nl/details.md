@@ -40,7 +40,7 @@ modules:
 
 compass_kicker: "Impact Compass Model"
 compass_title: "Vier dimensies van culturele impact"
-compass_intro: "Ontwikkeld over zeven universiteiten heen kwantificeert het Impact Compass Model de impact op bezoekers via vier wetenschappelijk onderbouwde assen."
+compass_intro: "Ontwikkeld over vier universiteiten heen kwantificeert het Impact Compass Model de impact op bezoekers via vier wetenschappelijk onderbouwde assen."
 compass:
   - label: "Haven"
     title: "Emotioneel"
