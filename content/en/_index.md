@@ -123,4 +123,134 @@ team:
     initials: "BM"
 
 
+
+ratings_title: "How venues rate SentoVox"
+ratings_overall: "overall"
+ratings_note: "Based on verified ratings from participating cultural venues"
+ratings:
+  - label: "Quality of the questionnaire"
+    pct: 92
+    score: "4.6"
+  - label: "Ease of use"
+    pct: 90
+    score: "4.5"
+  - label: "Dashboard & insights"
+    pct: 90
+    score: "4.5"
+  - label: "Support & guidance"
+    pct: 88
+    score: "4.4"
+  - label: "Implementation effort"
+    pct: 86
+    score: "4.3"
+  - label: "Value for investment"
+    pct: 92
+    score: "4.6"
+
+plans_kicker: "Membership plans"
+plans_title: "Research plans"
+plans_sub: "SentoVox is a paid annual subscription for cultural venues. Pick the plan that matches your venue size and reporting needs."
+plans_intro: "Standard, Premium and Network plans give increasing levels of scale, reporting and benchmarking."
+plans_note: "Switching between plans during your study is possible at any time."
+plans_scroll_hint: "Tip: scroll horizontally to compare all plans →"
+feature_col: "Feature"
+contact_btn: "Contact us"
+pricing_btn: "View participation fees"
+pricing_btn_close: "Hide participation fees"
+detail_toggle: "Show full plan details"
+detail_toggle_close: "Hide plan details"
+currency_label: "Currency"
+pricing_title: "Participation fees"
+fte_col: "Annual visitors"
+free_label: "incl."
+rate_note: "Exchange rates are approximate and updated periodically."
+
+plan_cols:
+  - name: "Standard"
+    badge: ""
+    badge_type: "f"
+  - name: "Premium"
+    badge: ""
+    badge_type: "a"
+  - name: "Network"
+    badge: "Premium"
+    badge_type: "pr"
+
+feature_rows:
+  - feature: "Full personalised visitor survey"
+    values: ["yes", "yes", "yes"]
+  - feature: "Live dynamic dashboard"
+    values: ["yes", "yes", "yes"]
+  - feature: "Multilingual"
+    values: ["yes", "yes", "yes"]
+  - feature: "European benchmarking report + webinar"
+    values: ["yes", "yes", "yes"]
+  - feature: "Survey availability"
+    values: ["6 months", "12 months", "12 months"]
+  - feature: "Extra helpdesk support"
+    values: ["no", "yes", "yes"]
+  - feature: "Trend measurement over time"
+    values: ["no", "yes", "yes"]
+  - feature: "Individual venue research report"
+    values: ["no", "no", "yes"]
+  - feature: "Benchmarking with peer venues"
+    values: ["no", "no", "yes"]
+  - feature: "Executive summary for board"
+    values: ["no", "no", "yes"]
+  - feature: "Raw visitor data access"
+    values: ["no", "no", "yes"]
+
+pricing_rows:
+  - fte: "Up to 25,000"
+    std: 625
+    pro: 1000
+    amb: 1400
+  - fte: "25,000 to 75,000"
+    std: 750
+    pro: 1250
+    amb: 1500
+  - fte: "75,000 to 150,000"
+    std: 900
+    pro: 1400
+    amb: 1650
+  - fte: "150,000 or more"
+    std: 1000
+    pro: 1500
+    amb: 1750
+pricing_note: "Prices based on annual visitor numbers, exclusive VAT if applicable. Network plan starts at €1,400 per year."
+
+plan_details:
+  - name: "SentoVox Standard"
+    tagline: "Annual subscription with the full SentoVox visitor study"
+    sections:
+      - title: "Timeline"
+        items: ["Duration: 6 months", "Can be renewed annually"]
+      - title: "Survey"
+        items: ["Access to the SentoVox platform", "Full survey with all topics and local-question option", "Personalised interactive dashboard", "Multilingual questionnaire"]
+      - title: "Results"
+        items: ["Live dashboard", "Filters, flexible charts and crosstabs", "Results confidential to the venue"]
+      - title: "Reporting"
+        items: ["European benchmarking report", "Webinar"]
+    footer: "Foundation plan. Premium and Network add services on top."
+  - name: "SentoVox Premium"
+    tagline: "<strong>Everything in Standard, plus:</strong>"
+    sections:
+      - title: "Timeline"
+        items: ["Duration: 12 months"]
+      - title: "Survey"
+        items: ["Extra helpdesk support"]
+      - title: "Results"
+        items: ["Trend measurement over time"]
+    footer: "Suitable for venues that want richer insights and longer measurement windows."
+  - name: "SentoVox Network"
+    tagline: "<strong>Everything in Premium, plus:</strong>"
+    sections:
+      - title: "Timeline"
+        items: ["Duration: 12 months", "Report delivered in June or December"]
+      - title: "Results"
+        items: ["Raw data available", "Additional modifications to the questionnaire"]
+      - title: "Reporting & benchmarking"
+        items: ["Personalised research report", "Benchmarking with peers, national and international results", "Executive summary"]
+    footer: "Full option for venues that need an individual research report including benchmarking."
+
 ---

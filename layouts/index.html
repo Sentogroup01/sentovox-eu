@@ -186,13 +186,13 @@
   <table class="priceTable" id="priceTable">
   <thead><tr>
     <th>{{ .Params.fte_col | default "Inhabitants (× 1,000)" }}</th>
-    <th>Member <span class="badge badge-f">{{ .Params.free_label | default "Free" }}</span></th>
-    <th>Pro <span class="badge" aria-hidden="true" style="visibility:hidden">·</span></th>
-    <th>Ambassador <span class="badge badge-pr">Premium</span></th>
+    <th>Standard</th>
+    <th>Premium</th>
+    <th>Network <span class="badge badge-pr">Premium</span></th>
   </tr></thead>
   <tbody>
     {{ range .Params.pricing_rows }}
-    <tr><td class="rl">{{ .fte }}</td><td class="prFree">{{ $.Params.free_label | default "Free" }}</td><td class="prCell" data-eur="{{ .pro }}">€{{ .pro }}</td><td class="prCell" data-eur="{{ .amb }}">€{{ .amb }}</td></tr>
+    <tr><td class="rl">{{ .fte }}</td><td class="prCell" data-eur="{{ .std }}">€{{ .std }}</td><td class="prCell" data-eur="{{ .pro }}">€{{ .pro }}</td><td class="prCell" data-eur="{{ .amb }}">€{{ .amb }}</td></tr>
     {{ end }}
   </tbody>
   </table>

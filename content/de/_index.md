@@ -123,4 +123,134 @@ team:
     initials: "BM"
 
 
+
+ratings_title: "Wie Häuser SentoVox bewerten"
+ratings_overall: "gesamt"
+ratings_note: "Basierend auf verifizierten Bewertungen teilnehmender Kulturhäuser"
+ratings:
+  - label: "Qualität des Fragebogens"
+    pct: 92
+    score: "4.6"
+  - label: "Benutzerfreundlichkeit"
+    pct: 90
+    score: "4.5"
+  - label: "Dashboard & Analysen"
+    pct: 90
+    score: "4.5"
+  - label: "Begleitung & Support"
+    pct: 88
+    score: "4.4"
+  - label: "Implementierungsaufwand"
+    pct: 86
+    score: "4.3"
+  - label: "Preis-Leistungs-Verhältnis"
+    pct: 92
+    score: "4.6"
+
+plans_kicker: "Mitgliedschaften"
+plans_title: "Forschungspläne"
+plans_sub: "SentoVox ist ein bezahltes Jahresabonnement für Kulturhäuser. Wählen Sie den Plan, der zu Ihrer Hausgröße und Ihrem Berichtsbedarf passt."
+plans_intro: "Standard, Premium und Network bieten zunehmende Stufen an Reichweite, Berichten und Benchmarking."
+plans_note: "Ein Plan-Wechsel während der Studie ist jederzeit möglich."
+plans_scroll_hint: "Tipp: Horizontal scrollen, um alle Pläne zu vergleichen →"
+feature_col: "Funktion"
+contact_btn: "Kontakt"
+pricing_btn: "Teilnahmegebühren ansehen"
+pricing_btn_close: "Gebühren ausblenden"
+detail_toggle: "Alle Details anzeigen"
+detail_toggle_close: "Details ausblenden"
+currency_label: "Währung"
+pricing_title: "Teilnahmegebühren"
+fte_col: "Besucher pro Jahr"
+free_label: "inkl."
+rate_note: "Wechselkurse sind annähernd und werden regelmäßig aktualisiert."
+
+plan_cols:
+  - name: "Standard"
+    badge: ""
+    badge_type: "f"
+  - name: "Premium"
+    badge: ""
+    badge_type: "a"
+  - name: "Network"
+    badge: "Premium"
+    badge_type: "pr"
+
+feature_rows:
+  - feature: "Vollständig personalisierte Besucherbefragung"
+    values: ["yes", "yes", "yes"]
+  - feature: "Live-Dashboard"
+    values: ["yes", "yes", "yes"]
+  - feature: "Mehrsprachig"
+    values: ["yes", "yes", "yes"]
+  - feature: "Europäischer Benchmark-Bericht + Webinar"
+    values: ["yes", "yes", "yes"]
+  - feature: "Studiendauer"
+    values: ["6 Monate", "12 Monate", "12 Monate"]
+  - feature: "Erweiterter Helpdesk-Support"
+    values: ["no", "yes", "yes"]
+  - feature: "Trendmessung über die Zeit"
+    values: ["no", "yes", "yes"]
+  - feature: "Individueller Bericht"
+    values: ["no", "no", "yes"]
+  - feature: "Benchmark mit Vergleichshäusern"
+    values: ["no", "no", "yes"]
+  - feature: "Zusammenfassung für Vorstand"
+    values: ["no", "no", "yes"]
+  - feature: "Zugriff auf Rohdaten"
+    values: ["no", "no", "yes"]
+
+pricing_rows:
+  - fte: "Bis 25.000"
+    std: 625
+    pro: 1000
+    amb: 1400
+  - fte: "25.000 bis 75.000"
+    std: 750
+    pro: 1250
+    amb: 1500
+  - fte: "75.000 bis 150.000"
+    std: 900
+    pro: 1400
+    amb: 1650
+  - fte: "150.000 oder mehr"
+    std: 1000
+    pro: 1500
+    amb: 1750
+pricing_note: "Preise basieren auf der jährlichen Besucherzahl, ohne MwSt., wenn zutreffend."
+
+plan_details:
+  - name: "SentoVox Standard"
+    tagline: "Jahresabonnement mit der vollständigen SentoVox-Studie"
+    sections:
+      - title: "Zeitrahmen"
+        items: ["Dauer: 6 Monate", "Jährlich verlängerbar"]
+      - title: "Befragung"
+        items: ["Zugang zur SentoVox-Plattform", "Vollständige Befragung mit allen Themen und optionalen lokalen Fragen", "Personalisiertes interaktives Dashboard", "Mehrsprachiger Fragebogen"]
+      - title: "Ergebnisse"
+        items: ["Live-Dashboard", "Filter, Diagramme und Kreuztabellen", "Ergebnisse vertraulich für das Haus"]
+      - title: "Reporting"
+        items: ["Europäischer Bericht", "Webinar"]
+    footer: "Basisplan. Premium und Network erweitern um zusätzliche Leistungen."
+  - name: "SentoVox Premium"
+    tagline: "<strong>Alles aus Standard, plus:</strong>"
+    sections:
+      - title: "Zeitrahmen"
+        items: ["Dauer: 12 Monate"]
+      - title: "Befragung"
+        items: ["Erweiterter Helpdesk-Support"]
+      - title: "Ergebnisse"
+        items: ["Trendmessung"]
+    footer: "Passend für Häuser mit umfassenderem Bedarf."
+  - name: "SentoVox Network"
+    tagline: "<strong>Alles aus Premium, plus:</strong>"
+    sections:
+      - title: "Zeitrahmen"
+        items: ["Dauer: 12 Monate", "Bericht im Juni oder Dezember"]
+      - title: "Ergebnisse"
+        items: ["Rohdaten verfügbar", "Zusätzliche Anpassungen am Fragebogen möglich"]
+      - title: "Reporting & Benchmarking"
+        items: ["Personalisierter Bericht", "Benchmark mit Vergleichshäusern, national und international", "Executive Summary"]
+    footer: "Vollständige Option mit Benchmark."
+
 ---

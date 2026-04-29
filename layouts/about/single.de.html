@@ -1,0 +1,536 @@
+{{/* build: 2026-04-01 */}}
+
+{{ define "before_main" }}
+<div class="det-nav" id="detNav">
+  <div class="det-nav-inner is-links">
+    <a href="#history" class="det-link" data-sec="history">Geschichte</a>
+    <a href="#team" class="det-link" data-sec="team">Team &amp; Partner</a>
+    <a href="#report" class="det-link" data-sec="report">Europäischer Bericht</a>
+    <a href="#spotlight" class="det-link" data-sec="spotlight">Präsentationen &amp; Medien</a>
+    <a href="#testimonials" class="det-link" data-sec="testimonials">Erfahrungsberichte</a>
+    <a href="#participating-venues" class="det-link" data-sec="participating-venues">Teilnehmende Kulturhäuser</a>
+  </div>
+</div>
+{{ end }}
+
+{{ define "main" }}
+<h1 class="sr">Über SentoVox - Europäische Besucherforschung für die darstellenden Künste seit 2024</h1>
+
+<style>
+/* Jump nav - single line, horizontal scroll */
+.cnt-theme-nav{overflow-x:auto!important;scrollbar-width:none;-ms-overflow-style:none;}
+.cnt-theme-nav::-webkit-scrollbar{display:none;}
+.cnt-theme-nav-inner{flex-wrap:nowrap!important;justify-content:flex-start!important;}
+.cnt-pill{flex-shrink:0!important;}
+
+.abt-page {
+  --abt-teal:#e57373;--abt-teal-dark:#bf5959;--abt-teal-bg:#e57373;--abt-teal-light:#e8f4f1;
+  --abt-text:#2c2c2c;--abt-text-soft:#5a5a5a;
+  --abt-bg-off:#f5f3ef;--abt-border:#e2e0db;--abt-white:#ffffff;--abt-gold:#c8a951;
+}
+
+/* HERO */
+.abt-hero{background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#1f6060 100%);color:var(--abt-white);padding:4.5rem 0 3.5rem;}
+.abt-hero-inner{max-width:1140px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1.3fr .7fr;gap:3rem;align-items:center;}
+.abt-hero h2{font-family:var(--fontD);font-size:2.5rem;font-weight:800;color:var(--abt-white);margin-bottom:1rem;line-height:1.2;}
+.abt-hero p{font-size:1.05rem;color:rgba(255,255,255,0.88);line-height:1.75;margin-bottom:1.5rem;max-width:560px;}
+.abt-hero-link{color:var(--abt-white);text-decoration:underline;font-weight:500;font-size:.9rem;opacity:.75;}
+.abt-hero-link:hover{opacity:1;color:var(--abt-white);}
+.abt-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.abt-stat{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:1.3rem;text-align:center;}
+.abt-stat .abt-stat-num{font-family:var(--fontD);font-size:2rem;font-weight:700;color:var(--abt-white);}
+.abt-stat .abt-stat-label{font-size:.78rem;color:rgba(255,255,255,0.7);margin-top:.15rem;}
+
+/* LAYOUT */
+.abt-wrap{max-width:1140px;margin:0 auto;padding:0 2rem;}
+.abt-sec{padding:4.5rem 0;background:var(--abt-white);}
+.abt-sec-alt{padding:4.5rem 0;background:var(--abt-bg-off);}
+.abt-sec-dark{padding:4.5rem 0;background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#1f6060 100%);color:var(--abt-white);}
+
+/* LABELS & TITLES */
+.abt-label{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--abt-teal);margin-bottom:.6rem;}
+.abt-sec-dark .abt-label{color:rgba(255,255,255,0.6);}
+.abt-title{font-family:var(--fontD);font-size:1.85rem;font-weight:800;margin-bottom:.5rem;line-height:1.2;}
+.abt-sec-dark .abt-title{color:var(--abt-white);}
+.abt-intro{font-size:1rem;color:var(--abt-text-soft);max-width:640px;margin-bottom:2.5rem;line-height:1.75;}
+.abt-sec-dark .abt-intro{color:rgba(255,255,255,0.8);}
+
+/* TIMELINE */
+.abt-timeline{position:relative;padding-left:2.5rem;}
+.abt-timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--abt-border);}
+.abt-tl-item{position:relative;margin-bottom:2.5rem;}
+.abt-tl-item:last-child{margin-bottom:0;}
+.abt-tl-dot{position:absolute;left:-2.5rem;top:.3rem;width:18px;height:18px;border-radius:50%;background:var(--abt-white);border:3px solid var(--abt-teal);z-index:1;}
+.abt-tl-item.active .abt-tl-dot{background:var(--abt-teal);}
+.abt-tl-year{font-size:.75rem;font-weight:700;color:var(--abt-teal);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem;}
+.abt-tl-item h3{font-size:1rem;font-weight:600;margin-bottom:.3rem;color:var(--abt-text);}
+.abt-tl-item p{font-size:.9rem;color:var(--abt-text-soft);line-height:1.65;}
+
+/* TEAM */
+.abt-team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.25rem;margin-top:2rem;}
+.abt-team-card{text-align:center;padding:1.5rem 1rem;background:var(--abt-white);border:1px solid var(--abt-border);border-radius:12px;}
+.abt-sec-alt .abt-team-card{background:var(--abt-white);}
+.abt-team-avatar{width:64px;height:64px;border-radius:50%;background:var(--abt-teal-light);display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;color:var(--abt-teal);}
+.abt-team-avatar svg{width:28px;height:28px;}
+.abt-team-card h4{font-size:.9rem;font-weight:600;margin-bottom:.15rem;color:var(--abt-text);}
+.abt-team-role{font-size:.78rem;color:var(--abt-text-soft);}
+.abt-team-org{font-size:.72rem;color:var(--abt-teal);font-weight:500;}
+
+/* REPORT BANNER */
+.abt-report-banner{display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:center;}
+.abt-report-mock{width:180px;height:240px;background:var(--abt-white);border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;text-align:center;flex-shrink:0;}
+.abt-report-mock-icon{width:48px;height:48px;background:var(--abt-teal-light);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--abt-teal);margin-bottom:.8rem;}
+.abt-report-mock-icon svg{width:24px;height:24px;}
+.abt-report-mock h4{font-size:.8rem;font-weight:600;color:var(--abt-text);margin-bottom:.3rem;}
+.abt-report-mock p{font-size:.7rem;color:var(--abt-text-soft);}
+.abt-report-text h2{color:var(--abt-white);margin-bottom:.75rem;}
+.abt-report-text p{color:rgba(255,255,255,0.82);font-size:.95rem;line-height:1.7;margin-bottom:1rem;}
+.abt-report-hl{display:flex;gap:1.5rem;margin-bottom:1.5rem;flex-wrap:wrap;}
+.abt-report-hl span{font-size:.8rem;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:.35rem;}
+.abt-report-hl svg{width:14px;height:14px;color:var(--abt-gold);}
+.abt-btn-report{display:inline-flex;align-items:center;gap:.5rem;background:var(--abt-white);color:var(--abt-teal-dark);padding:.65rem 1.4rem;border-radius:8px;font-weight:600;font-size:.9rem;transition:transform .2s,box-shadow .2s;text-decoration:none;}
+.abt-btn-report:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,0.15);color:var(--abt-teal-dark);}
+
+/* PHOTO GRID */
+.abt-photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:2.5rem;}
+.abt-photo-card{background:var(--abt-white);border:1px solid var(--abt-border);border-radius:12px;overflow:hidden;transition:box-shadow .25s;}
+.abt-photo-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+.abt-photo-card-img{height:160px;overflow:hidden;position:relative;}
+.abt-photo-card-img img{width:100%;height:100%;object-fit:cover;object-position:top;}
+.abt-photo-card-img.img-blur-top::after{content:'';position:absolute;top:0;left:0;right:0;height:45%;background:linear-gradient(to bottom,rgba(30,61,111,0.85) 0%,rgba(30,61,111,0.5) 60%,transparent 100%);pointer-events:none;}
+.abt-photo-card-body{padding:.75rem 1rem;}
+.abt-photo-card-body h3{font-size:.85rem;font-weight:600;margin-bottom:.15rem;color:var(--abt-text);}
+.abt-photo-card-body p{font-size:.75rem;color:var(--abt-text-soft);}
+
+/* MEDIA GRID */
+.abt-media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem;}
+.abt-media-card{padding:1.2rem;border:1px solid var(--abt-border);border-radius:10px;background:var(--abt-white);transition:box-shadow .2s,border-color .2s;}
+.abt-media-card:hover{box-shadow:0 2px 12px rgba(0,0,0,0.05);border-color:var(--abt-teal);}
+.abt-mc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;flex-wrap:wrap;gap:.3rem;}
+.abt-mc-source{font-size:.75rem;font-weight:600;color:var(--abt-teal);}
+.abt-mc-meta{display:flex;gap:.4rem;align-items:center;}
+.abt-mc-date{font-size:.7rem;color:var(--abt-text-soft);}
+.abt-mc-lang{font-size:.6rem;font-weight:700;text-transform:uppercase;padding:.15rem .4rem;border-radius:3px;background:var(--abt-teal-light);color:var(--abt-teal);}
+.abt-media-card h4{font-size:.88rem;font-weight:600;margin-bottom:.3rem;line-height:1.35;color:var(--abt-text);}
+.abt-media-card p{font-size:.78rem;color:var(--abt-text-soft);line-height:1.5;}
+.abt-media-more{margin-top:1rem;grid-column:1/-1;text-align:center;padding:1.5rem;background:var(--abt-bg-off);border-radius:10px;}
+.abt-media-more p{font-size:.85rem;color:var(--abt-text-soft);}
+
+/* TESTIMONIALS */
+.abt-testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem;}
+.abt-testi{padding:1.5rem;border-radius:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);}
+.abt-testi.featured{grid-column:1/-1;background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.2);padding:2rem;}
+.abt-tq{font-size:.92rem;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.7;margin-bottom:1rem;}
+.abt-tq::before{content:'\201C';font-size:1.5rem;color:var(--abt-gold);margin-right:.2rem;}
+.abt-tq-author{font-size:.82rem;font-weight:600;color:var(--abt-white);}
+.abt-tq-role{font-size:.75rem;color:rgba(255,255,255,0.55);margin-top:.1rem;}
+
+/* LIBRARIES */
+.abt-library-list{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;}
+.abt-library-item{padding:.6rem .9rem;border-radius:6px;font-size:.85rem;color:var(--abt-text);background:var(--abt-bg-off);border:1px solid transparent;transition:all .15s;display:flex;align-items:center;gap:.5rem;text-decoration:none;}
+.abt-library-item:hover{border-color:var(--abt-teal);background:var(--abt-teal-light);}
+.abt-library-dot{width:6px;height:6px;border-radius:50%;background:var(--abt-teal);flex-shrink:0;}
+.abt-expand-btn{background:none;border:2px solid var(--abt-teal);color:var(--abt-teal);padding:.5rem 1.5rem;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;}
+.abt-expand-btn:hover{background:var(--abt-teal);color:var(--abt-white);}
+
+/* CTA */
+.abt-cta{background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#1f6060 100%);color:var(--abt-white);text-align:center;padding:5rem 0;}
+.abt-cta h2{font-family:var(--fontD);font-size:2rem;font-weight:800;color:var(--abt-white);margin-bottom:.75rem;}
+.abt-cta p{font-size:1rem;color:rgba(255,255,255,0.85);max-width:520px;margin:0 auto 2rem;}
+.abt-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.abt-btn-white{background:var(--abt-white);color:var(--abt-teal-dark);padding:.7rem 1.6rem;border-radius:8px;font-weight:600;font-size:.95rem;transition:transform .2s,box-shadow .2s;text-decoration:none;display:inline-flex;align-items:center;}
+.abt-btn-white:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,0.15);color:var(--abt-teal-dark);}
+.abt-btn-outline{background:transparent;color:var(--abt-white);padding:.65rem 1.6rem;border-radius:8px;font-weight:600;font-size:.95rem;border:2px solid rgba(255,255,255,0.4);transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;}
+.abt-btn-outline:hover{border-color:var(--abt-white);background:rgba(255,255,255,0.08);color:var(--abt-white);}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .abt-hero-inner{grid-template-columns:1fr;}
+  .abt-stats-grid{grid-template-columns:repeat(4,1fr);}
+  .abt-report-banner{grid-template-columns:1fr;text-align:center;}
+  .abt-report-mock{margin:0 auto;}
+  .abt-photo-grid,.abt-media-grid{grid-template-columns:1fr 1fr;}
+  .abt-testi-grid{grid-template-columns:1fr;}
+  .abt-library-list{grid-template-columns:1fr 1fr;}
+  .abt-hero h2{font-size:2rem;}
+}
+@media(max-width:600px){
+  .abt-stats-grid{grid-template-columns:1fr 1fr;}
+  .abt-photo-grid,.abt-media-grid,.abt-library-list{grid-template-columns:1fr;}
+}
+</style>
+
+<div class="abt-page">
+
+<!-- HERO -->
+<section class="abt-hero">
+  <div class="abt-hero-inner">
+    <div>
+      <h2>Die Geschichte hinter der Studie</h2>
+      <p>SentoVox entstand aus einem konkreten Bedarf im Bereich der darstellenden Künste. Kulturhäuser in Belgien suchten eine gemeinsame Studie zum Benchmarking ihrer Besucherergebnisse - zur Unterstützung von kulturpolitischer Arbeit und Förderanträgen. Über das ENCC und in Zusammenarbeit mit der Universität Antwerpen und Sento nahm diese Initiative Gestalt an. Heute nutzen über 130 Kulturhäuser, Theater und Konzerthäuser in ganz Europa SentoVox.</p>
+      <a href="{{ "/details/" | relLangURL }}" class="abt-hero-link">Sie suchen nach Funktionsweise? Besuchen Sie die Details-Seite &rarr;</a>
+    </div>
+    <div class="abt-stats-grid">
+      <div class="abt-stat">
+        <div class="abt-stat-num">130+</div>
+        <div class="abt-stat-label">Kulturhäuser in Europa</div>
+      </div>
+      <div class="abt-stat">
+        <div class="abt-stat-num">7</div>
+        <div class="abt-stat-label">Universitätspartner</div>
+      </div>
+      <div class="abt-stat">
+        <div class="abt-stat-num" style="font-size:1.5rem;">Pan-EU</div>
+        <div class="abt-stat-label">Europäische Reichweite</div>
+      </div>
+      <div class="abt-stat">
+        <div class="abt-stat-num">60,000+</div>
+        <div class="abt-stat-label">Besucherantworten</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section id="history" class="abt-sec">
+  <div class="abt-wrap">
+    <div class="abt-label">Unsere Geschichte</div>
+    <h2 class="abt-title">Wie SentoVox entstand und wuchs</h2>
+    <p class="abt-intro">SentoVox startete 2024 als praktische Antwort auf den Bedarf nach zugänglicher, verlässlicher Besucherforschung für die darstellenden Künste. Was als Initiative mit Wissenschaftler:innen begann, wuchs schnell zu einem jährlichen europäischen Messinstrument.</p>
+    <div class="abt-timeline">
+      <div class="abt-tl-item">
+        <div class="abt-tl-dot"></div>
+        <div class="abt-tl-year">2024 - Pilotstudie</div>
+        <h3>Ein belgischer Pilot mit 40 Kulturhäusern</h3>
+        <p>Vor dem europäischen Start wurde SentoVox in einer Pilotstudie in Belgien getestet. In Zusammenarbeit mit Cult und der Universität Antwerpen nahmen 40 Kulturhäuser teil. Der Pilot bestätigte die Methodik.</p>
+      </div>
+      <div class="abt-tl-item">
+        <div class="abt-tl-dot"></div>
+        <div class="abt-tl-year">2025 - Europäische Ausweitung</div>
+        <h3>Erste erfolgreiche europäische Ausgabe</h3>
+        <p>Die Ausgabe 2025 war ein großer Erfolg. Über 130 Kulturhäuser in ganz Europa nahmen teil und erreichten zusammen über 60.000 Befragte. Mit akademischen Partnern in Belgien, den Niederlanden, Frankreich, Deutschland, Österreich, Italien und Spanien.</p>
+      </div>
+      <div class="abt-tl-item">
+        <div class="abt-tl-dot"></div>
+        <div class="abt-tl-year">2025 - Jährliches Instrument</div>
+        <h3>SentoVox wird ein dauerhaftes Instrument</h3>
+        <p>Nach dem Erfolg 2025 ist SentoVox dauerhaft verfügbar. Die Ergebnisse wurden auf der ENCC-Konferenz 2025 vorgestellt. SentoVox arbeitet zudem mit dem World Land Trust zusammen, um 85.000 m² bedrohter Lebensräume zu schützen.</p>
+      </div>
+      <div class="abt-tl-item active"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM & PARTNERS -->
+<section id="team" class="abt-sec-light">
+  <div class="abt-wrap">
+    <div class="abt-label">Academic team</div>
+    <h2 class="abt-title">Backed by leading European universities</h2>
+    <p class="abt-intro">SentoVox is supported by an academic team of cultural-sector researchers across Europe.</p>
+    <div class="abt-team-grid">
+      <div class="abt-team-card"><div class="abt-team-avatar">AS</div><div class="abt-team-name">Annick Schramme</div><div class="abt-team-role">Cultural management & policy</div><div class="abt-team-org">University of Antwerp</div></div>
+      <div class="abt-team-card"><div class="abt-team-avatar">VT</div><div class="abt-team-name">Verena Teissl</div><div class="abt-team-role">Cultural studies</div><div class="abt-team-org">FH Kufstein Tirol</div></div>
+      <div class="abt-team-card"><div class="abt-team-avatar">JK</div><div class="abt-team-name">Johan Kolsteeg</div><div class="abt-team-role">Arts & society</div><div class="abt-team-org">University of Groningen</div></div>
+      <div class="abt-team-card"><div class="abt-team-avatar">BM</div><div class="abt-team-name">Birgit Mandel</div><div class="abt-team-role">Cultural mediation</div><div class="abt-team-org">HAWK Hildesheim</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EUROPEAN REPORT -->
+<section id="report" class="abt-sec">
+  <div class="abt-wrap">
+    <div class="abt-label">European report</div>
+    <h2 class="abt-title">A pan-European report on performing-arts audiences</h2>
+    <p class="abt-intro">SentoVox produces a yearly cross-country report covering visitor profiles, satisfaction, NPS, motivation and the Impact Compass Model. Data is anonymised, GDPR-compliant and benchmarked across peer venues.</p>
+    <ul class="abt-report-list" style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;">
+      <li style="padding:1rem;border:1px solid var(--abt-border);border-radius:8px;background:var(--abt-bg-off);"><strong>Visitor profiles</strong><br><span style="color:var(--abt-text-soft);">Demographics, frequency, channels.</span></li>
+      <li style="padding:1rem;border:1px solid var(--abt-border);border-radius:8px;background:var(--abt-bg-off);"><strong>Experience & NPS</strong><br><span style="color:var(--abt-text-soft);">Satisfaction, recommendation, loyalty.</span></li>
+      <li style="padding:1rem;border:1px solid var(--abt-border);border-radius:8px;background:var(--abt-bg-off);"><strong>Impact Compass Model</strong><br><span style="color:var(--abt-text-soft);">Cultural, social and personal impact.</span></li>
+      <li style="padding:1rem;border:1px solid var(--abt-border);border-radius:8px;background:var(--abt-bg-off);"><strong>Non-visitor research</strong><br><span style="color:var(--abt-text-soft);">Why audiences stay away and how to reach them.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRESENTATIONS & MEDIA -->
+<section id="spotlight" class="abt-sec">
+  <div class="abt-wrap">
+    <div class="abt-label">Präsentationen & Medien</div>
+    <h2 class="abt-title">SentoVox im Kultursektor</h2>
+    <p class="abt-intro">Präsentationen, Konferenzen und Medienberichte zu SentoVox in ganz Europa.</p>
+    <div class="abt-media-grid">
+      <div class="abt-media-card">
+        <div class="abt-mc-top"><span class="abt-mc-source">ENCC Conference</span><div class="abt-mc-meta"><span class="abt-mc-date">2025</span><span class="abt-mc-lang">EU</span></div></div>
+        <div class="abt-mc-title">SentoVox results presented at the ENCC Conference</div>
+        <div class="abt-mc-excerpt">First findings of the European visitor study were shared with cultural-sector leaders.</div>
+      </div>
+      <div class="abt-media-card">
+        <div class="abt-mc-top"><span class="abt-mc-source">Cult.be</span><div class="abt-mc-meta"><span class="abt-mc-date">2024</span><span class="abt-mc-lang">NL/FR</span></div></div>
+        <div class="abt-mc-title">SentoVox: a shared visitor study for Belgian cultural venues</div>
+        <div class="abt-mc-excerpt">Coverage of the Belgian pilot phase that preceded the European launch.</div>
+      </div>
+      <div class="abt-media-card">
+        <div class="abt-mc-top"><span class="abt-mc-source">VSCD</span><div class="abt-mc-meta"><span class="abt-mc-date">2025</span><span class="abt-mc-lang">NL</span></div></div>
+        <div class="abt-mc-title">Dutch theatres join the European audience benchmark</div>
+        <div class="abt-mc-excerpt">Dutch venues participate in SentoVox to benchmark visitor experience across borders.</div>
+      </div>
+      <div class="abt-media-card">
+        <div class="abt-mc-top"><span class="abt-mc-source">University of Antwerp</span><div class="abt-mc-meta"><span class="abt-mc-date">2025</span><span class="abt-mc-lang">EN</span></div></div>
+        <div class="abt-mc-title">Methodology paper - Impact Compass Model for performing arts</div>
+        <div class="abt-mc-excerpt">Academic publication on the Impact Compass Model used in SentoVox.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="abt-sec-dark">
+  <div class="abt-wrap">
+    <div class="abt-label">Kulturhäuser über SentoVox</div>
+    <h2 class="abt-title">Was Teilnehmer sagen</h2>
+    <p class="abt-intro">Rückmeldungen von Kulturhäusern, die an SentoVox teilgenommen haben.</p>
+    <div class="abt-testi-grid">
+      <div class="abt-testi">
+        <p class="abt-tq">Die Studie wurde gut aufgenommen und ist für uns sehr wertvoll. Wir erhielten konkrete Anregungen und der Benchmark mit anderen Häusern hilft uns, unser Programm zu optimieren.</p>
+        <div class="abt-tq-author">Direktion</div>
+        <div class="abt-tq-role">Concertgebouw Brugge, Belgien</div>
+      </div>
+      <div class="abt-testi">
+        <p class="abt-tq">Wir erhalten klare Ansatzpunkte, um unsere Strategie zu schärfen. Aus dem Dashboard wurde etwa ersichtlich, dass ein reichhaltigeres Mittwochabend-Programm geschätzt würde.</p>
+        <div class="abt-tq-author">Leitung Publikumsforschung</div>
+        <div class="abt-tq-role">Stadsschouwburg Amsterdam, Niederlande</div>
+      </div>
+      <div class="abt-testi">
+        <p class="abt-tq">Das Impact Compass Model brachte Dinge ans Licht, die wir übersehen hatten. Die Nicht-Besucher-Ergebnisse waren unbequem, aber nützlich.</p>
+        <div class="abt-tq-author">Kommunikation</div>
+        <div class="abt-tq-role">Theater Rotterdam, Niederlande</div>
+      </div>
+      <div class="abt-testi">
+        <p class="abt-tq">Vielen Dank für den Bericht - er enthält eine Fülle an Informationen, die wir gerne in unserer Organisation umsetzen.</p>
+        <div class="abt-tq-author">Direktion</div>
+        <div class="abt-tq-role">Opéra de Lyon, Frankreich</div>
+      </div>
+      <div class="abt-testi">
+        <p class="abt-tq">Der Fragebogen ist gut aufgebaut und die Unterstützung des Teams stets durchdacht. Unser Vorstand schätzt den unabhängigen Benchmark.</p>
+        <div class="abt-tq-author">Publikumsmanagement</div>
+        <div class="abt-tq-role">Konzerthaus Wien, Österreich</div>
+      </div>
+      <div class="abt-testi">
+        <p class="abt-tq">SentoVox liefert konkrete Einblicke, wie Besucher unser Haus erleben. Der europäische Benchmark macht unsere Ergebnisse viel aussagekräftiger.</p>
+        <div class="abt-tq-author">Audience Development</div>
+        <div class="abt-tq-role">Teatro alla Scala, Italien</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTICIPATING LIBRARIES -->
+<section id="participating-venues" class="abt-sec">
+  <div class="abt-wrap">
+    <div class="abt-label">Teilnehmende Häuser</div>
+    <h2 class="abt-title">Bereits teilnehmende Kulturhäuser</h2>
+    <p style="font-size:.85rem;color:var(--abt-text-soft);margin-bottom:1.25rem;">Eine Auswahl aus über 130 teilnehmenden Häusern in Europa.</p>
+    <style>
+    .abt-m-controls{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1rem;}
+    .abt-m-search{padding:.5rem 1rem;border:1px solid var(--abt-border);border-radius:8px;font-size:.88rem;width:300px;max-width:100%;outline:none;font-family:inherit;}
+    .abt-m-search:focus{border-color:var(--abt-teal);}
+    .abt-az{display:flex;gap:.25rem;flex-wrap:wrap;}
+    .abt-az-btn{padding:.2rem .45rem;border-radius:4px;font-size:.7rem;font-weight:700;border:1px solid var(--abt-border);background:var(--abt-white);color:var(--abt-text-soft);cursor:pointer;transition:all .15s;line-height:1.4;}
+    .abt-az-btn:hover,.abt-az-btn.active{background:var(--abt-teal);color:#fff;border-color:var(--abt-teal);}
+    .abt-m-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem;}
+    .abt-m-item{padding:.5rem .8rem;border-radius:6px;font-size:.83rem;color:var(--abt-text);background:var(--abt-bg-off);border:1px solid transparent;transition:all .15s;display:flex;align-items:center;gap:.45rem;text-decoration:none;}
+    .abt-m-item:hover{border-color:var(--abt-teal);background:var(--abt-teal-light);color:var(--abt-teal);}
+    .abt-m-dot{width:5px;height:5px;border-radius:50%;background:var(--abt-teal);flex-shrink:0;}
+    .abt-m-meta{font-size:.8rem;color:var(--abt-text-soft);margin-bottom:.75rem;}
+    @media(max-width:700px){.abt-m-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:480px){.abt-m-grid{grid-template-columns:1fr;}}
+    </style>
+    <div class="abt-m-controls">
+      <input class="abt-m-search" id="abtMSearch" type="search" placeholder="Kulturhaus suchen..." autocomplete="off">
+      <div class="abt-az" id="abtAZ"></div>
+    </div>
+    <div class="abt-m-meta" id="abtMMeta" style="display:none"></div>
+    <div class="abt-m-grid" id="abtMList"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="abt-cta">
+  <div class="abt-wrap">
+    <h2>Möchten Sie sich diesen Kulturhäusern anschließen?</h2>
+    <p>Melden Sie Ihr Haus an und erhalten Sie tiefe Einblicke in Publikum, Erlebnis und Wirkung.</p>
+    <div class="abt-cta-btns">
+      <a href="{{ "/participate/" | relLangURL }}" id="detRegLink4" class="abt-btn-white">Haus anmelden &rarr;</a>
+      <a href="{{ "/contact/" | relLangURL }}" class="abt-btn-outline">Kontakt</a>
+    </div>
+  </div>
+</section>
+
+</div><!-- .abt-page -->
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+var LIVE=['en','nl','fr','de','it','es'];
+var T={
+  en:{cta:'Participate',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'content',nav:'Content'},about:{slug:'about',nav:'About'},participate:{slug:'participate',nav:'Participate'},groups:{slug:'groups',nav:'Groups'},contact:{slug:'contact',nav:'Contact'}}},
+  nl:{cta:'Deelnemen',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'inhoud',nav:'Inhoud'},about:{slug:'over',nav:'Over'},participate:{slug:'deelnemen',nav:'Deelnemen'},groups:{slug:'groepen',nav:'Groepen'},contact:{slug:'contact',nav:'Contact'}}},
+  fr:{cta:'Participer',pages:{home:{slug:'',nav:'Accueil'},details:{slug:'details',nav:'Détails'},content:{slug:'contenu',nav:'Contenu'},about:{slug:'a-propos',nav:'À propos'},participate:{slug:'participer',nav:'Participer'},groups:{slug:'groupes',nav:'Groupes'},contact:{slug:'contact',nav:'Contact'}}},
+  de:{cta:'Teilnehmen',pages:{home:{slug:'',nav:'Startseite'},details:{slug:'details',nav:'Details'},content:{slug:'inhalte',nav:'Inhalte'},about:{slug:'uber-uns',nav:'Über uns'},participate:{slug:'teilnehmen',nav:'Teilnehmen'},groups:{slug:'gruppen',nav:'Gruppen'},contact:{slug:'kontakt',nav:'Kontakt'}}},
+  it:{cta:'Partecipare',pages:{home:{slug:'',nav:'Home'},details:{slug:'dettagli',nav:'Dettagli'},content:{slug:'contenuti',nav:'Contenuti'},about:{slug:'chi-siamo',nav:'Chi siamo'},participate:{slug:'partecipare',nav:'Partecipare'},groups:{slug:'gruppi',nav:'Gruppi'},contact:{slug:'contatto',nav:'Contatto'}}},
+  es:{cta:'Participar',pages:{home:{slug:'',nav:'Inicio'},details:{slug:'detalles',nav:'Detalles'},content:{slug:'contenido',nav:'Contenido'},about:{slug:'acerca-de',nav:'Acerca de'},participate:{slug:'participar',nav:'Participar'},groups:{slug:'grupos',nav:'Grupos'},contact:{slug:'contacto',nav:'Contacto'}}}
+};
+function url(lang,page){var s=T[lang].pages[page].slug;return'/'+lang+(s?'/'+s:'/')}
+function setCookie(n,v,d){var e=new Date();e.setTime(e.getTime()+d*864e5);document.cookie=n+'='+v+';expires='+e.toUTCString()+';path=/;SameSite=Lax'}
+function detectLang(){var m=window.location.pathname.match(/^\/(en|nl|fr|de|it|es)(\/|$)/);if(m&&T[m[1]]){setCookie('sn_lang',m[1],365);return m[1];}return'en'}
+var lang=detectLang();
+var ORDER=['home','details','content','groups','contact'];
+function renderNav(){
+  var t=T[lang];
+  var snLogoLink=document.getElementById('snLogoLink');if(snLogoLink)snLogoLink.href='/'+lang+'/';
+  ORDER.forEach(function(k){['#snLinks','#snDrLinks'].forEach(function(sel){var a=document.querySelector(sel+' a[data-key="'+k+'"]');if(!a)return;a.href=url(lang,k);a.textContent=t.pages[k].nav;});});
+  var snCta=document.getElementById('snCta');if(snCta)snCta.href=url(lang,'participate');
+  var snCtaTxt=document.getElementById('snCtaTxt');if(snCtaTxt)snCtaTxt.textContent=t.cta;
+  document.querySelectorAll('[id^="detRegLink"]').forEach(function(el){el.href=url(lang,'participate');});
+  
+  var _codes={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+  var snLangFlag=document.getElementById('snLangFlag');if(snLangFlag)snLangFlag.textContent=_flags[lang]||'🇬🇧';
+  var snLangCode=document.getElementById('snLangCode');if(snLangCode)snLangCode.textContent=_codes[lang]||'EN';
+  document.querySelectorAll('#snLangDrop a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'about');});
+  document.querySelectorAll('#snDrLangs a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'about');});
+  var snDrCta=document.getElementById('snDrCta');if(snDrCta){snDrCta.href=url(lang,'participate');snDrCta.textContent=t.cta+' →';}
+  document.documentElement.lang=lang;
+}
+renderNav();
+function switchLang(l){if(!LIVE.includes(l))return;setCookie('sn_lang',l,365);window.location.href=url(l,'about')}
+/* Jump nav */
+var snNav=document.getElementById('snNav');
+var detNav=document.getElementById('detNav');
+var jumpLinks=Array.prototype.slice.call(document.querySelectorAll('.det-link'));
+var sections=jumpLinks.map(function(a){return document.getElementById((a.getAttribute('href')||'').slice(1))}).filter(Boolean);
+function totalStickyH(){return(snNav?snNav.offsetHeight:64)+(detNav?detNav.offsetHeight:44)}
+function updateJumpNav(){
+  var y=window.scrollY+totalStickyH()+24;var cur=null;
+  for(var i=0;i<sections.length;i++){if(sections[i]&&sections[i].offsetTop<=y)cur=sections[i].id}
+  jumpLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-sec')===cur)});
+}
+window.addEventListener('scroll',updateJumpNav,{passive:true});
+updateJumpNav();
+var snFc=document.getElementById('snFooterCopy');if(snFc)snFc.textContent='SentoVox © '+new Date().getFullYear();
+var ft={en:{terms:'Terms & Conditions',privacy:'Privacy Policy',ts:'terms',ps:'privacy'},nl:{terms:'Algemene voorwaarden',privacy:'Privacybeleid',ts:'voorwaarden',ps:'privacy'},fr:{terms:'Conditions générales',privacy:'Politique de confidentialité',ts:'terms',ps:'privacy'},de:{terms:'Allgemeine Geschäftsbedingungen',privacy:'Datenschutzerklärung',ts:'terms',ps:'privacy'},it:{terms:'Termini e condizioni',privacy:'Informativa sulla privacy',ts:'terms',ps:'privacy'},es:{terms:'Términos y condiciones',privacy:'Política de privacidad',ts:'terms',ps:'privacy'}};
+var flt=ft[lang]||ft.en;
+var snFt=document.getElementById('snFooterTerms');if(snFt){snFt.textContent=flt.terms;snFt.href='/'+lang+'/'+flt.ts;}
+var snFp=document.getElementById('snFooterPrivacy');if(snFp){snFp.textContent=flt.privacy;snFp.href='/'+lang+'/'+flt.ps;}
+var topBtn=document.getElementById('topBtn');
+if(topBtn){window.addEventListener('scroll',function(){topBtn.classList.toggle('visible',scrollY>400);},{passive:true});topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+
+/* Kulturhaus list */
+var LIBRARIES=[
+{name:"Concertgebouw Brugge",url:"https://www.concertgebouw.be/"},
+{name:"De Singel Antwerpen",url:"https://www.desingel.be/"},
+{name:"Bozar Brussels",url:"https://www.bozar.be/"},
+{name:"Stadsschouwburg Amsterdam",url:"https://www.itastadsschouwburg.nl/"},
+{name:"Theater Rotterdam",url:"https://www.theaterrotterdam.nl/"},
+{name:"Concertgebouw Amsterdam",url:"https://www.concertgebouw.nl/"},
+{name:"Muziekgebouw aan 't IJ",url:"https://www.muziekgebouw.nl/"},
+{name:"TivoliVredenburg",url:"https://www.tivolivredenburg.nl/"},
+{name:"Chasse Theater Breda",url:"https://www.chassetheater.nl/"},
+{name:"Theater aan de Parade",url:"https://www.theateraandeparade.nl/"},
+{name:"De Doelen Rotterdam",url:"https://www.dedoelen.nl/"},
+{name:"Opera Vlaanderen",url:"https://www.operaballet.be/"},
+{name:"CC De Schakel",url:"https://www.descha.be/"},
+{name:"CC Hasselt",url:"https://www.ccha.be/"},
+{name:"Cultuurcentrum Brugge",url:"https://www.ccbrugge.be/"},
+{name:"Vooruit Gent",url:"https://viernulvier.gent/"},
+{name:"Kaaitheater Brussels",url:"https://kaaitheater.be/"},
+{name:"Théâtre National Wallonie-Bruxelles",url:"https://www.theatrenational.be/"},
+{name:"Opéra de Lyon",url:"https://www.opera-lyon.com/"},
+{name:"Théâtre du Châtelet",url:"https://www.chatelet.com/"},
+{name:"Philharmonie de Paris",url:"https://philharmoniedeparis.fr/"},
+{name:"Opéra national de Paris",url:"https://www.operadeparis.fr/"},
+{name:"Théâtre des Champs-Élysées",url:"https://www.theatrechampselysees.fr/"},
+{name:"MC2 Grenoble",url:"https://www.mc2grenoble.fr/"},
+{name:"Le Volcan Le Havre",url:"https://www.levolcan.com/"},
+{name:"Opéra de Bordeaux",url:"https://www.opera-bordeaux.com/"},
+{name:"Konzerthaus Berlin",url:"https://www.konzerthaus.de/"},
+{name:"Berliner Philharmonie",url:"https://www.berliner-philharmoniker.de/"},
+{name:"Elbphilharmonie Hamburg",url:"https://www.elbphilharmonie.de/"},
+{name:"Münchner Kammerspiele",url:"https://www.muenchner-kammerspiele.de/"},
+{name:"Schauspielhaus Köln",url:"https://www.schauspiel.koeln/"},
+{name:"Staatstheater Stuttgart",url:"https://www.staatstheater-stuttgart.de/"},
+{name:"Theater Bremen",url:"https://www.theaterbremen.de/"},
+{name:"Konzerthaus Dortmund",url:"https://www.konzerthaus-dortmund.de/"},
+{name:"Theater Bonn",url:"https://www.theater-bonn.de/"},
+{name:"Hessisches Staatstheater Wiesbaden",url:"https://www.staatstheater-wiesbaden.de/"},
+{name:"Konzerthaus Wien",url:"https://konzerthaus.at/"},
+{name:"Wiener Konzerthaus",url:"https://konzerthaus.at/"},
+{name:"Musikverein Wien",url:"https://www.musikverein.at/"},
+{name:"Volkstheater Wien",url:"https://www.volkstheater.at/"},
+{name:"Salzburger Festspielhaus",url:"https://www.salzburgerfestspiele.at/"},
+{name:"Tiroler Landestheater",url:"https://www.landestheater.at/"},
+{name:"Brucknerhaus Linz",url:"https://www.brucknerhaus.at/"},
+{name:"Festspielhaus Bregenz",url:"https://www.bregenzerfestspiele.com/"},
+{name:"Teatro alla Scala",url:"https://www.teatroallascala.org/"},
+{name:"Teatro La Fenice",url:"https://www.teatrolafenice.it/"},
+{name:"Teatro dell'Opera di Roma",url:"https://www.operaroma.it/"},
+{name:"Teatro Massimo Palermo",url:"https://www.teatromassimo.it/"},
+{name:"Teatro San Carlo Napoli",url:"https://www.teatrosancarlo.it/"},
+{name:"Auditorium Parco della Musica",url:"https://www.auditorium.com/"},
+{name:"Teatro Comunale Bologna",url:"https://www.tcbo.it/"},
+{name:"Teatro Regio Torino",url:"https://www.teatroregio.torino.it/"},
+{name:"Teatro Real Madrid",url:"https://www.teatro-real.com/"},
+{name:"Gran Teatre del Liceu",url:"https://www.liceubarcelona.cat/"},
+{name:"Auditorio Nacional de Música",url:"https://www.auditorionacional.mcu.es/"},
+{name:"Palau de la Música Catalana",url:"https://www.palaumusica.cat/"},
+{name:"Teatro de la Maestranza",url:"https://www.teatrodelamaestranza.es/"},
+{name:"Palacio Euskalduna",url:"https://euskalduna.eus/"},
+{name:"Auditorio de Tenerife",url:"https://auditoriodetenerife.com/"},
+{name:"Teatro Campoamor Oviedo",url:"https://www.teatrocampoamor.es/"}
+];
+function abtNorm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+var abtActiveLetter='',abtQuery='';
+var abtListEl=document.getElementById('abtMList');
+var abtAZEl=document.getElementById('abtAZ');
+var abtMetaEl=document.getElementById('abtMMeta');
+var abtSearchEl=document.getElementById('abtMSearch');
+var abtSorted=LIBRARIES.slice().sort(function(a,b){return a.name.localeCompare(b.name,undefined,{sensitivity:'base'});});
+function abtRender(){
+  if(!abtListEl)return;
+  var q=abtNorm(abtQuery);
+  var filtered=abtSorted.filter(function(m){
+    var first=(m.name.trim()[0]||'').toUpperCase();
+    return(abtActiveLetter?first===abtActiveLetter:true)&&(q?abtNorm(m.name).includes(q):true);
+  });
+  abtListEl.innerHTML='';
+  filtered.forEach(function(m){
+    var el;
+    if(m.url){el=document.createElement('a');el.href=m.url;el.target='_blank';el.rel='noopener';}
+    else{el=document.createElement('span');}
+    el.className='abt-m-item';
+    var dot=document.createElement('span');dot.className='abt-m-dot';
+    el.appendChild(dot);el.appendChild(document.createTextNode(m.name));
+    abtListEl.appendChild(el);
+  });
+  if(abtMetaEl){abtMetaEl.style.display='';abtMetaEl.textContent="Eine Auswahl teilnehmender Kulturhäuser";}
+}
+function abtBuildAZ(){
+  if(!abtAZEl)return;
+  abtAZEl.innerHTML='';
+  var allBtn=document.createElement('button');allBtn.type='button';
+  allBtn.className='abt-az-btn'+(abtActiveLetter===''?' active':'');
+  allBtn.textContent='All';
+  allBtn.addEventListener('click',function(){abtActiveLetter='';abtRender();abtBuildAZ();});
+  abtAZEl.appendChild(allBtn);
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){
+    var b=document.createElement('button');b.type='button';
+    b.className='abt-az-btn'+(abtActiveLetter===L?' active':'');
+    b.textContent=L;
+    b.addEventListener('click',function(){abtActiveLetter=L;abtRender();abtBuildAZ();});
+    abtAZEl.appendChild(b);
+  });
+}
+if(abtSearchEl)abtSearchEl.addEventListener('input',function(e){abtQuery=e.target.value||'';abtActiveLetter='';abtRender();abtBuildAZ();});
+abtBuildAZ();abtRender();
+})();
+</script>
+{{ end }}

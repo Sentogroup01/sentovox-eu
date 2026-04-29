@@ -123,4 +123,134 @@ team:
     initials: "BM"
 
 
+
+ratings_title: "Cómo valoran las salas SentoVox"
+ratings_overall: "total"
+ratings_note: "Basado en valoraciones verificadas de salas culturales participantes"
+ratings:
+  - label: "Calidad del cuestionario"
+    pct: 92
+    score: "4.6"
+  - label: "Facilidad de uso"
+    pct: 90
+    score: "4.5"
+  - label: "Panel & análisis"
+    pct: 90
+    score: "4.5"
+  - label: "Acompañamiento"
+    pct: 88
+    score: "4.4"
+  - label: "Esfuerzo de implementación"
+    pct: 86
+    score: "4.3"
+  - label: "Relación calidad-precio"
+    pct: 92
+    score: "4.6"
+
+plans_kicker: "Planes de membresía"
+plans_title: "Planes de investigación"
+plans_sub: "SentoVox es una suscripción anual para salas culturales. Elija el plan adecuado al tamaño y las necesidades de informe de su sala."
+plans_intro: "Standard, Premium y Network ofrecen niveles crecientes de escala, informes y benchmarking."
+plans_note: "Es posible cambiar de plan en cualquier momento."
+plans_scroll_hint: "Consejo: desplaza horizontalmente para comparar todos los planes →"
+feature_col: "Característica"
+contact_btn: "Contacto"
+pricing_btn: "Ver tarifas de participación"
+pricing_btn_close: "Ocultar tarifas"
+detail_toggle: "Mostrar todos los detalles"
+detail_toggle_close: "Ocultar los detalles"
+currency_label: "Moneda"
+pricing_title: "Tarifas de participación"
+fte_col: "Visitantes anuales"
+free_label: "incl."
+rate_note: "Los tipos de cambio son aproximados y se actualizan periódicamente."
+
+plan_cols:
+  - name: "Standard"
+    badge: ""
+    badge_type: "f"
+  - name: "Premium"
+    badge: ""
+    badge_type: "a"
+  - name: "Network"
+    badge: "Premium"
+    badge_type: "pr"
+
+feature_rows:
+  - feature: "Encuesta personalizada completa"
+    values: ["yes", "yes", "yes"]
+  - feature: "Panel en vivo"
+    values: ["yes", "yes", "yes"]
+  - feature: "Multilingüe"
+    values: ["yes", "yes", "yes"]
+  - feature: "Informe europeo + webinar"
+    values: ["yes", "yes", "yes"]
+  - feature: "Duración de la encuesta"
+    values: ["6 meses", "12 meses", "12 meses"]
+  - feature: "Soporte de helpdesk ampliado"
+    values: ["no", "yes", "yes"]
+  - feature: "Medición de tendencias"
+    values: ["no", "yes", "yes"]
+  - feature: "Informe individual"
+    values: ["no", "no", "yes"]
+  - feature: "Benchmark con salas comparables"
+    values: ["no", "no", "yes"]
+  - feature: "Resumen para la junta"
+    values: ["no", "no", "yes"]
+  - feature: "Acceso a datos brutos"
+    values: ["no", "no", "yes"]
+
+pricing_rows:
+  - fte: "Hasta 25.000"
+    std: 625
+    pro: 1000
+    amb: 1400
+  - fte: "25.000 a 75.000"
+    std: 750
+    pro: 1250
+    amb: 1500
+  - fte: "75.000 a 150.000"
+    std: 900
+    pro: 1400
+    amb: 1650
+  - fte: "150.000 o más"
+    std: 1000
+    pro: 1500
+    amb: 1750
+pricing_note: "Tarifas basadas en los visitantes anuales, IVA no incluido si procede."
+
+plan_details:
+  - name: "SentoVox Standard"
+    tagline: "Suscripción anual con el estudio SentoVox completo"
+    sections:
+      - title: "Plazos"
+        items: ["Duración: 6 meses", "Renovable anualmente"]
+      - title: "Encuesta"
+        items: ["Acceso a la plataforma SentoVox", "Encuesta completa con todos los temas y preguntas locales opcionales", "Panel interactivo personalizado", "Cuestionario multilingüe"]
+      - title: "Resultados"
+        items: ["Panel en vivo", "Filtros, gráficos y tablas cruzadas", "Resultados confidenciales para la sala"]
+      - title: "Informes"
+        items: ["Informe europeo", "Webinar"]
+    footer: "Plan base. Premium y Network añaden servicios."
+  - name: "SentoVox Premium"
+    tagline: "<strong>Todo Standard, más:</strong>"
+    sections:
+      - title: "Plazos"
+        items: ["Duración: 12 meses"]
+      - title: "Encuesta"
+        items: ["Soporte helpdesk ampliado"]
+      - title: "Resultados"
+        items: ["Medición de tendencias"]
+    footer: "Adecuado para salas que quieren análisis más ricos."
+  - name: "SentoVox Network"
+    tagline: "<strong>Todo Premium, más:</strong>"
+    sections:
+      - title: "Plazos"
+        items: ["Duración: 12 meses", "Informe en junio o diciembre"]
+      - title: "Resultados"
+        items: ["Datos brutos disponibles", "Modificaciones adicionales al cuestionario posibles"]
+      - title: "Informes & benchmarking"
+        items: ["Informe personalizado", "Benchmark con pares, resultados nacionales e internacionales", "Resumen ejecutivo"]
+    footer: "Opción completa con benchmark."
+
 ---

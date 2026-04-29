@@ -123,4 +123,134 @@ team:
     initials: "BM"
 
 
+
+ratings_title: "Come le sedi valutano SentoVox"
+ratings_overall: "totale"
+ratings_note: "Sulla base di valutazioni verificate di sedi culturali partecipanti"
+ratings:
+  - label: "Qualità del questionario"
+    pct: 92
+    score: "4.6"
+  - label: "Facilità d'uso"
+    pct: 90
+    score: "4.5"
+  - label: "Dashboard & analisi"
+    pct: 90
+    score: "4.5"
+  - label: "Supporto e assistenza"
+    pct: 88
+    score: "4.4"
+  - label: "Sforzo di implementazione"
+    pct: 86
+    score: "4.3"
+  - label: "Rapporto qualità-prezzo"
+    pct: 92
+    score: "4.6"
+
+plans_kicker: "Abbonamenti"
+plans_title: "Piani di ricerca"
+plans_sub: "SentoVox è un abbonamento annuale per sedi culturali. Scegli il piano in linea con la dimensione e le esigenze di rendicontazione della tua sede."
+plans_intro: "Standard, Premium e Network offrono livelli crescenti di scala, reporting e benchmarking."
+plans_note: "Il cambio di piano è possibile in qualunque momento."
+plans_scroll_hint: "Suggerimento: scorri orizzontalmente per confrontare tutti i piani →"
+feature_col: "Caratteristica"
+contact_btn: "Contatto"
+pricing_btn: "Vedi le tariffe"
+pricing_btn_close: "Nascondi le tariffe"
+detail_toggle: "Mostra tutti i dettagli"
+detail_toggle_close: "Nascondi i dettagli"
+currency_label: "Valuta"
+pricing_title: "Tariffe di partecipazione"
+fte_col: "Visitatori annuali"
+free_label: "incl."
+rate_note: "I tassi di cambio sono indicativi e aggiornati periodicamente."
+
+plan_cols:
+  - name: "Standard"
+    badge: ""
+    badge_type: "f"
+  - name: "Premium"
+    badge: ""
+    badge_type: "a"
+  - name: "Network"
+    badge: "Premium"
+    badge_type: "pr"
+
+feature_rows:
+  - feature: "Indagine personalizzata completa"
+    values: ["yes", "yes", "yes"]
+  - feature: "Dashboard live"
+    values: ["yes", "yes", "yes"]
+  - feature: "Multilingue"
+    values: ["yes", "yes", "yes"]
+  - feature: "Report europeo + webinar"
+    values: ["yes", "yes", "yes"]
+  - feature: "Durata dell'indagine"
+    values: ["6 mesi", "12 mesi", "12 mesi"]
+  - feature: "Supporto helpdesk esteso"
+    values: ["no", "yes", "yes"]
+  - feature: "Misurazione delle tendenze"
+    values: ["no", "yes", "yes"]
+  - feature: "Report individuale"
+    values: ["no", "no", "yes"]
+  - feature: "Benchmark con sedi comparabili"
+    values: ["no", "no", "yes"]
+  - feature: "Sintesi per il consiglio"
+    values: ["no", "no", "yes"]
+  - feature: "Accesso ai dati grezzi"
+    values: ["no", "no", "yes"]
+
+pricing_rows:
+  - fte: "Fino a 25.000"
+    std: 625
+    pro: 1000
+    amb: 1400
+  - fte: "25.000 - 75.000"
+    std: 750
+    pro: 1250
+    amb: 1500
+  - fte: "75.000 - 150.000"
+    std: 900
+    pro: 1400
+    amb: 1650
+  - fte: "150.000 o più"
+    std: 1000
+    pro: 1500
+    amb: 1750
+pricing_note: "Tariffe basate sui visitatori annuali, IVA esclusa se applicabile."
+
+plan_details:
+  - name: "SentoVox Standard"
+    tagline: "Abbonamento annuale con lo studio SentoVox completo"
+    sections:
+      - title: "Tempi"
+        items: ["Durata: 6 mesi", "Rinnovabile annualmente"]
+      - title: "Indagine"
+        items: ["Accesso alla piattaforma SentoVox", "Indagine completa con tutti i temi e domande locali opzionali", "Dashboard interattiva personalizzata", "Questionario multilingue"]
+      - title: "Risultati"
+        items: ["Dashboard live", "Filtri, grafici e tabelle incrociate", "Risultati riservati alla sede"]
+      - title: "Reporting"
+        items: ["Report europeo", "Webinar"]
+    footer: "Piano base. Premium e Network aggiungono servizi."
+  - name: "SentoVox Premium"
+    tagline: "<strong>Tutto Standard, più:</strong>"
+    sections:
+      - title: "Tempi"
+        items: ["Durata: 12 mesi"]
+      - title: "Indagine"
+        items: ["Supporto helpdesk esteso"]
+      - title: "Risultati"
+        items: ["Misurazione delle tendenze"]
+    footer: "Adatto alle sedi che vogliono analisi più ricche."
+  - name: "SentoVox Network"
+    tagline: "<strong>Tutto Premium, più:</strong>"
+    sections:
+      - title: "Tempi"
+        items: ["Durata: 12 mesi", "Report a giugno o dicembre"]
+      - title: "Risultati"
+        items: ["Dati grezzi disponibili", "Modifiche aggiuntive al questionario possibili"]
+      - title: "Reporting & benchmarking"
+        items: ["Report personalizzato", "Benchmark con pari, risultati nazionali e internazionali", "Sintesi esecutiva"]
+    footer: "Opzione completa con benchmark."
+
 ---

@@ -123,4 +123,134 @@ team:
     initials: "BM"
 
 
+
+ratings_title: "Comment les salles évaluent SentoVox"
+ratings_overall: "global"
+ratings_note: "Sur la base d'évaluations vérifiées de salles culturelles participantes"
+ratings:
+  - label: "Qualité du questionnaire"
+    pct: 92
+    score: "4.6"
+  - label: "Facilité d'utilisation"
+    pct: 90
+    score: "4.5"
+  - label: "Tableau de bord & analyses"
+    pct: 90
+    score: "4.5"
+  - label: "Accompagnement"
+    pct: 88
+    score: "4.4"
+  - label: "Effort de mise en place"
+    pct: 86
+    score: "4.3"
+  - label: "Rapport qualité-prix"
+    pct: 92
+    score: "4.6"
+
+plans_kicker: "Plans d'abonnement"
+plans_title: "Plans de recherche"
+plans_sub: "SentoVox est un abonnement annuel pour les salles culturelles. Choisissez le plan adapté à la taille et aux besoins de reporting de votre salle."
+plans_intro: "Standard, Premium et Network offrent des niveaux croissants d'échelle, de reporting et de benchmarking."
+plans_note: "Le changement de plan est possible à tout moment."
+plans_scroll_hint: "Astuce : faites défiler horizontalement pour comparer tous les plans →"
+feature_col: "Caractéristique"
+contact_btn: "Contact"
+pricing_btn: "Voir les frais de participation"
+pricing_btn_close: "Masquer les frais"
+detail_toggle: "Afficher tous les détails"
+detail_toggle_close: "Masquer les détails"
+currency_label: "Devise"
+pricing_title: "Frais de participation"
+fte_col: "Visiteurs annuels"
+free_label: "incl."
+rate_note: "Les taux de change sont approximatifs et mis à jour périodiquement."
+
+plan_cols:
+  - name: "Standard"
+    badge: ""
+    badge_type: "f"
+  - name: "Premium"
+    badge: ""
+    badge_type: "a"
+  - name: "Network"
+    badge: "Premium"
+    badge_type: "pr"
+
+feature_rows:
+  - feature: "Enquête personnalisée complète"
+    values: ["yes", "yes", "yes"]
+  - feature: "Tableau de bord dynamique"
+    values: ["yes", "yes", "yes"]
+  - feature: "Multilingue"
+    values: ["yes", "yes", "yes"]
+  - feature: "Rapport européen + webinaire"
+    values: ["yes", "yes", "yes"]
+  - feature: "Durée de l'enquête"
+    values: ["6 mois", "12 mois", "12 mois"]
+  - feature: "Support helpdesk étendu"
+    values: ["no", "yes", "yes"]
+  - feature: "Mesure des tendances dans le temps"
+    values: ["no", "yes", "yes"]
+  - feature: "Rapport individuel"
+    values: ["no", "no", "yes"]
+  - feature: "Benchmark avec salles comparables"
+    values: ["no", "no", "yes"]
+  - feature: "Synthèse pour le conseil"
+    values: ["no", "no", "yes"]
+  - feature: "Accès aux données brutes"
+    values: ["no", "no", "yes"]
+
+pricing_rows:
+  - fte: "Jusqu'à 25 000"
+    std: 625
+    pro: 1000
+    amb: 1400
+  - fte: "25 000 à 75 000"
+    std: 750
+    pro: 1250
+    amb: 1500
+  - fte: "75 000 à 150 000"
+    std: 900
+    pro: 1400
+    amb: 1650
+  - fte: "150 000 ou plus"
+    std: 1000
+    pro: 1500
+    amb: 1750
+pricing_note: "Tarifs basés sur le nombre de visiteurs annuels, hors TVA si applicable."
+
+plan_details:
+  - name: "SentoVox Standard"
+    tagline: "Abonnement annuel avec l'étude SentoVox complète"
+    sections:
+      - title: "Calendrier"
+        items: ["Durée : 6 mois", "Renouvelable annuellement"]
+      - title: "Enquête"
+        items: ["Accès à la plateforme SentoVox", "Enquête complète avec tous les thèmes et questions locales optionnelles", "Tableau de bord interactif personnalisé", "Questionnaire multilingue"]
+      - title: "Résultats"
+        items: ["Tableau de bord en direct", "Filtres, graphiques et tableaux croisés", "Résultats confidentiels pour la salle"]
+      - title: "Reporting"
+        items: ["Rapport européen", "Webinaire"]
+    footer: "Plan de base. Premium et Network ajoutent des services."
+  - name: "SentoVox Premium"
+    tagline: "<strong>Tout ce qui est inclus en Standard, plus :</strong>"
+    sections:
+      - title: "Calendrier"
+        items: ["Durée : 12 mois"]
+      - title: "Enquête"
+        items: ["Support helpdesk étendu"]
+      - title: "Résultats"
+        items: ["Mesure des tendances"]
+    footer: "Adapté aux salles qui veulent des analyses plus riches."
+  - name: "SentoVox Network"
+    tagline: "<strong>Tout ce qui est inclus en Premium, plus :</strong>"
+    sections:
+      - title: "Calendrier"
+        items: ["Durée : 12 mois", "Rapport en juin ou décembre"]
+      - title: "Résultats"
+        items: ["Données brutes disponibles", "Modifications supplémentaires du questionnaire"]
+      - title: "Reporting & benchmarking"
+        items: ["Rapport personnalisé", "Benchmark avec pairs, résultats nationaux et internationaux", "Synthèse exécutive"]
+    footer: "Option complète pour les salles qui ont besoin d'un rapport individuel avec benchmark."
+
 ---

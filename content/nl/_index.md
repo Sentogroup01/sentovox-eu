@@ -123,4 +123,134 @@ team:
     initials: "BM"
 
 
+
+ratings_title: "Hoe zalen SentoVox waarderen"
+ratings_overall: "totaal"
+ratings_note: "Op basis van geverifieerde ratings van deelnemende cultuurhuizen"
+ratings:
+  - label: "Kwaliteit van de vragenlijst"
+    pct: 92
+    score: "4.6"
+  - label: "Gebruiksgemak"
+    pct: 90
+    score: "4.5"
+  - label: "Dashboard & inzichten"
+    pct: 90
+    score: "4.5"
+  - label: "Begeleiding & ondersteuning"
+    pct: 88
+    score: "4.4"
+  - label: "Implementatie-inspanning"
+    pct: 86
+    score: "4.3"
+  - label: "Prijs-kwaliteitverhouding"
+    pct: 92
+    score: "4.6"
+
+plans_kicker: "Lidmaatschappen"
+plans_title: "Onderzoeksplannen"
+plans_sub: "SentoVox is een betaald jaarabonnement voor cultuurhuizen. Kies het plan dat past bij de grootte en rapportagebehoefte van je zaal."
+plans_intro: "Standard, Premium en Network bieden oplopende niveaus van schaal, rapportage en benchmarking."
+plans_note: "Tussentijds wisselen van plan is altijd mogelijk."
+plans_scroll_hint: "Tip: scroll horizontaal om alle plannen te vergelijken →"
+feature_col: "Onderdeel"
+contact_btn: "Contact"
+pricing_btn: "Bekijk deelnamekosten"
+pricing_btn_close: "Verberg deelnamekosten"
+detail_toggle: "Toon volledige plandetails"
+detail_toggle_close: "Verberg plandetails"
+currency_label: "Munteenheid"
+pricing_title: "Deelnamekosten"
+fte_col: "Bezoekers per jaar"
+free_label: "incl."
+rate_note: "Wisselkoersen zijn indicatief en worden periodiek bijgewerkt."
+
+plan_cols:
+  - name: "Standard"
+    badge: ""
+    badge_type: "f"
+  - name: "Premium"
+    badge: ""
+    badge_type: "a"
+  - name: "Network"
+    badge: "Premium"
+    badge_type: "pr"
+
+feature_rows:
+  - feature: "Volledig gepersonaliseerd bezoekersonderzoek"
+    values: ["yes", "yes", "yes"]
+  - feature: "Live dynamisch dashboard"
+    values: ["yes", "yes", "yes"]
+  - feature: "Meertalig"
+    values: ["yes", "yes", "yes"]
+  - feature: "Europees benchmarkrapport + webinar"
+    values: ["yes", "yes", "yes"]
+  - feature: "Looptijd onderzoek"
+    values: ["6 maanden", "12 maanden", "12 maanden"]
+  - feature: "Extra helpdesk-ondersteuning"
+    values: ["no", "yes", "yes"]
+  - feature: "Trendmeting in de tijd"
+    values: ["no", "yes", "yes"]
+  - feature: "Individueel onderzoeksrapport"
+    values: ["no", "no", "yes"]
+  - feature: "Benchmarking met vergelijkbare zalen"
+    values: ["no", "no", "yes"]
+  - feature: "Samenvatting voor bestuur"
+    values: ["no", "no", "yes"]
+  - feature: "Toegang tot ruwe data"
+    values: ["no", "no", "yes"]
+
+pricing_rows:
+  - fte: "Tot 25.000"
+    std: 625
+    pro: 1000
+    amb: 1400
+  - fte: "25.000 tot 75.000"
+    std: 750
+    pro: 1250
+    amb: 1500
+  - fte: "75.000 tot 150.000"
+    std: 900
+    pro: 1400
+    amb: 1650
+  - fte: "150.000 of meer"
+    std: 1000
+    pro: 1500
+    amb: 1750
+pricing_note: "Tarieven op basis van het aantal bezoekers per jaar, exclusief btw indien van toepassing."
+
+plan_details:
+  - name: "SentoVox Standard"
+    tagline: "Jaarabonnement met het volledige SentoVox bezoekersonderzoek"
+    sections:
+      - title: "Looptijd"
+        items: ["Duur: 6 maanden", "Jaarlijks verlengbaar"]
+      - title: "Onderzoek"
+        items: ["Toegang tot het SentoVox-platform", "Volledige vragenlijst met alle thema's en optionele lokale vragen", "Persoonlijk interactief dashboard", "Meertalige vragenlijst"]
+      - title: "Resultaten"
+        items: ["Live dashboard", "Filters, grafieken en kruistabellen", "Resultaten vertrouwelijk voor de zaal"]
+      - title: "Rapportage"
+        items: ["Europees benchmarkrapport", "Webinar"]
+    footer: "Basisplan. Premium en Network voegen extra diensten toe."
+  - name: "SentoVox Premium"
+    tagline: "<strong>Alles uit Standard, plus:</strong>"
+    sections:
+      - title: "Looptijd"
+        items: ["Duur: 12 maanden"]
+      - title: "Onderzoek"
+        items: ["Extra helpdesk-ondersteuning"]
+      - title: "Resultaten"
+        items: ["Trendmeting in de tijd"]
+    footer: "Geschikt voor zalen die rijkere inzichten en langere meetperiodes willen."
+  - name: "SentoVox Network"
+    tagline: "<strong>Alles uit Premium, plus:</strong>"
+    sections:
+      - title: "Looptijd"
+        items: ["Duur: 12 maanden", "Rapport in juni of december"]
+      - title: "Resultaten"
+        items: ["Toegang tot ruwe data", "Extra aanpassingen aan de vragenlijst mogelijk"]
+      - title: "Rapportage & benchmarking"
+        items: ["Persoonlijk onderzoeksrapport", "Benchmarking met collega's, nationaal en internationaal", "Samenvatting voor bestuur"]
+    footer: "Volledige optie voor zalen die een individueel rapport met benchmarking nodig hebben."
+
 ---
