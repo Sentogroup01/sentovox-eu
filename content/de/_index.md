@@ -16,7 +16,7 @@ trust_items:
   - value: "60.000+"
     label: "Besucher:innen"
     icon: "i-survey"
-  - value: "7"
+  - value: "4"
     label: "Universitäten"
     icon: "i-grad"
   - value: "6"

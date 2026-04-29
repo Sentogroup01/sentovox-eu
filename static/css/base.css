@@ -1857,3 +1857,34 @@ table.price-table tbody tr td:first-child{
   color:var(--tealDark) !important;
   border:1.5px solid var(--teal) !important;
 }
+
+
+/* SentoVox: stronger centering for team grid + academic partners
+   (overrides earlier rules). Use flex with center justify so the 4 cards
+   group in the middle of the section instead of stretching full-width. */
+.teamGrid{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  gap:20px !important;
+  margin:24px auto 0 !important;
+  max-width:1100px !important;
+}
+.teamGrid .teamCard{
+  flex:0 0 220px !important;
+  max-width:240px !important;
+}
+
+.uniSection{text-align:center !important;}
+.uniSection .logoGrid{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  gap:14px !important;
+  max-width:900px !important;
+  margin:0 auto !important;
+}
+.uniSection .logoPillText{
+  flex:0 0 170px !important;
+  max-width:200px !important;
+}
