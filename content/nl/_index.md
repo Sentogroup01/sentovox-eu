@@ -4,7 +4,7 @@ description: "Wetenschappelijk publieksonderzoek voor theaters, concertzalen en 
 keywords: "publieksonderzoek cultuurhuis, theaterbezoekers, concertzaal onderzoek, podiumkunsten publiek, NPS cultuurhuis, Europa"
 
 hero_title: "Verbind met uw publiek.<br>Versterk uw cultuurhuis of schouwburg."
-hero_sub: "Een Europese studie van 130+ cultuurhuizen en 60.000+ bezoekers, ontwikkeld met 7 universiteiten."
+hero_sub: "Een Europese studie van 130+ cultuurhuizen, theaters en schouwburgen, met 60.000+ bezoekers, ontwikkeld met 7 universiteiten."
 btn_primary: "Deelnemen"
 hero_note: "Wetenschappelijk onderbouwd, GDPR-conform en volledig anoniem voor respondenten."
 btn_secondary: "Ontdek hoe het werkt"
@@ -34,7 +34,7 @@ universities:
   - name: "HAWK Hildesheim"
     country: "Duitsland"
 
-intro_lead: "SentoVox helpt cultuurhuizen, theaters en concertzalen hun publiek beter te begrijpen. In een tijd van schaarse middelen is bewijs over uw bezoekers en impact onmisbaar."
+intro_lead: "SentoVox helpt cultuurhuizen, theaters, schouwburgen en concertzalen hun publiek beter te begrijpen. In een tijd van schaarse middelen is bewijs over uw bezoekers en impact onmisbaar."
 why_blocks:
   - title: "Neem data-gedreven beslissingen"
     text: "Gebruik bezoekersinzichten om programmering, infrastructuur en communicatie te prioriteren."
@@ -49,7 +49,7 @@ why_blocks:
     text: "Begrijp waarom niet-bezoekers wegblijven en hoe u hen kunt aanspreken."
     icon: '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>'
 
-intro_title: "Sluit aan bij 130+ cultuurhuizen die deelnemen aan Europa's publieksonderzoek voor podiumkunsten."
+intro_title: "Sluit aan bij 130+ cultuurhuizen, theaters en schouwburgen die deelnemen aan Europa's publieksonderzoek voor podiumkunsten."
 intro_body: |
   **Wat krijgt u:**
   - Inzicht in bezoekerservaring en tevredenheid
@@ -69,9 +69,9 @@ intro_body: |
 faq_title: "Veelgestelde vragen"
 faqs:
   - q: "Wat is SentoVox?"
-    a: "SentoVox is een onafhankelijk Europees publieksonderzoek voor theaters, concertzalen en cultuurhuizen. Het bouwt op een gestandaardiseerde, wetenschappelijk onderbouwde methode en wordt ondersteund door 7 universiteiten en sectorpartners zoals ENCC, VSCD en Cult."
+    a: "SentoVox is een onafhankelijk Europees publieksonderzoek voor theaters, schouwburgen, concertzalen en cultuurhuizen. Het bouwt op een gestandaardiseerde, wetenschappelijk onderbouwde methode en wordt ondersteund door 7 universiteiten en sectorpartners zoals ENCC, VSCD en Cult."
   - q: "Wie kan deelnemen?"
-    a: "Elk cultuurhuis dat podiumkunsten programmeert: theaters, concertzalen, multidisciplinaire cultuurhuizen en gelijkaardige organisaties in Europa."
+    a: "Elk cultuurhuis, theater, schouwburg of concertzaal dat podiumkunsten programmeert. Multidisciplinaire huizen en gelijkaardige cultuurorganisaties in Europa zijn welkom."
   - q: "Wat kost deelname?"
     a: "Deelname kost tussen €625 en €1.750, afhankelijk van het bezoekersaantal. Groepen krijgen korting."
   - q: "Hoe lang duurt het?"
