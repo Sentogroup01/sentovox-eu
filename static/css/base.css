@@ -1922,3 +1922,17 @@ table.price-table tbody tr td:first-child{
 @media(min-width:1200px) and (max-width:1399px){
   .sn-link.active::after, .sn-links a.active::after{left:8px;right:8px}
 }
+
+
+/* SentoVox team photo + uni logo image styles */
+.teamPhoto{
+  width:80px;height:80px;border-radius:999px;object-fit:cover;
+  border:2px solid var(--tealBorder);
+  margin:0 auto 14px;display:block;
+}
+.uniLogoImg{
+  max-width:140px;max-height:50px;width:auto;height:auto;display:block;
+  margin:0 auto;
+  filter:none;
+}
+.logoPillText:has(.uniLogoImg){padding:18px 22px}

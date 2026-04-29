@@ -28,8 +28,14 @@
 <div class="logoGrid" role="list" aria-label="Partner universities">
   {{ range .Params.universities }}
   <div class="logoPill logoPillText" role="listitem">
+    {{- $logo := .logo -}}
+    {{- $logoSvg := printf "static/img/uni/%s.svg" (or $logo "") -}}
+    {{- $logoPng := printf "static/img/uni/%s.png" (or $logo "") -}}
+    {{- $logoSrc := "" -}}
+    {{- if and $logo (fileExists $logoSvg) }}{{ $logoSrc = printf "/img/uni/%s.svg" $logo }}{{ end -}}
+    {{- if and $logo (not $logoSrc) (fileExists $logoPng) }}{{ $logoSrc = printf "/img/uni/%s.png" $logo }}{{ end -}}
     {{ if .url }}<a class="logoLink" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}">{{ end }}
-    {{ if .logo }}<img loading="lazy" src="{{ .logo }}" alt="{{ .name }}">
+    {{ if $logoSrc }}<img class="uniLogoImg" loading="lazy" src="{{ $logoSrc }}" alt="{{ .name }}">
     {{ else }}<span class="uniName">{{ .name }}</span>{{ if .country }}<span class="uniCountry">{{ .country }}</span>{{ end }}
     {{ end }}
     {{ if .url }}</a>{{ end }}
@@ -258,7 +264,13 @@
 <div class="teamGrid">
   {{ range .Params.team }}
   <div class="teamCard">
+    {{- $photo := .photo -}}
+    {{- $photoPath := printf "static/img/team/%s" (or $photo "") -}}
+    {{- if and $photo (fileExists $photoPath) -}}
+    <img class="teamPhoto" src="/img/team/{{ $photo }}" alt="{{ .name }}" loading="lazy">
+    {{- else -}}
     <div class="teamAvatar">{{ .initials | default (substr .name 0 2 | upper) }}</div>
+    {{- end }}
     <p class="teamName">{{ .name }}</p>
     <p class="teamRole">{{ .role }}</p>
     <p class="teamOrg">{{ .org }}</p>

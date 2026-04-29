@@ -28,6 +28,7 @@ universities:
   - name: "Université de Groningue"
     country: "Pays-Bas"
   - name: "Université d'Anvers"
+    logo: "antwerpen"
     country: "Belgique"
   - name: "FH Kufstein Tirol"
     country: "Autriche"
@@ -109,18 +110,25 @@ team:
     role: "Management & politique culturels"
     org: "Université d'Anvers"
     initials: "AS"
+    photo: "schramme.jpg"
   - name: "Verena Teissl"
     role: "Études culturelles"
     org: "FH Kufstein Tirol"
     initials: "VT"
+    photo: "teissl.jpg"
   - name: "Johan Kolsteeg"
     role: "Arts & société"
     org: "Université de Groningue"
     initials: "JK"
+    photo: "kolsteeg.jpg"
   - name: "Birgit Mandel"
     role: "Médiation culturelle"
     org: "HAWK Hildesheim"
     initials: "BM"
+
+
+
+    photo: "mandel.jpg"
 
 
 

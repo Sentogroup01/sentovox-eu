@@ -26,6 +26,7 @@ trust_items:
 uni_label: "Academic partners"
 universities:
   - name: "University of Groningen"
+    logo: "groningen"
     country: "Netherlands"
   - name: "University of Antwerp"
     country: "Belgium"
@@ -109,18 +110,25 @@ team:
     role: "Cultural management & policy"
     org: "University of Antwerp"
     initials: "AS"
+    photo: "schramme.jpg"
   - name: "Verena Teissl"
     role: "Cultural studies"
     org: "FH Kufstein Tirol"
     initials: "VT"
+    photo: "teissl.jpg"
   - name: "Johan Kolsteeg"
     role: "Arts & society"
     org: "University of Groningen"
     initials: "JK"
+    photo: "kolsteeg.jpg"
   - name: "Birgit Mandel"
     role: "Cultural mediation"
     org: "HAWK Hildesheim"
     initials: "BM"
+
+
+
+    photo: "mandel.jpg"
 
 
 

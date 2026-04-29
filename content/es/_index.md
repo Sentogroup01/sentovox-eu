@@ -28,6 +28,7 @@ universities:
   - name: "Universidad de Groninga"
     country: "Países Bajos"
   - name: "Universidad de Amberes"
+    logo: "antwerpen"
     country: "Bélgica"
   - name: "FH Kufstein Tirol"
     country: "Austria"
@@ -109,18 +110,25 @@ team:
     role: "Gestión & política cultural"
     org: "Universidad de Amberes"
     initials: "AS"
+    photo: "schramme.jpg"
   - name: "Verena Teissl"
     role: "Estudios culturales"
     org: "FH Kufstein Tirol"
     initials: "VT"
+    photo: "teissl.jpg"
   - name: "Johan Kolsteeg"
     role: "Arte & sociedad"
     org: "Universidad de Groninga"
     initials: "JK"
+    photo: "kolsteeg.jpg"
   - name: "Birgit Mandel"
     role: "Mediación cultural"
     org: "HAWK Hildesheim"
     initials: "BM"
+
+
+
+    photo: "mandel.jpg"
 
 
 
