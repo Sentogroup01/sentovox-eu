@@ -235,3 +235,6 @@ defaultContentLanguageInSubdir = true
     identifier = "contact"
     url = "/es/contacto/"
     weight = 7
+
+[taxonomies]
+  # Disabled

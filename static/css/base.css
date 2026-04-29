@@ -1838,7 +1838,7 @@ table.price-table tbody tr td:first-child{
 
 
 /* SentoVox step-card readability override
-   Original Sentobib step cards used white text on dark teal background.
+   Original step cards used white text on dark teal background.
    With the soft red palette the parent gradient is light, so white text
    becomes unreadable. Force dark text + slightly darker card bg. */
 .det-steps .det-step,

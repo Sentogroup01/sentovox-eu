@@ -61,8 +61,8 @@
         </div>
         <div class="formRow">
           <div class="formGroup">
-            <label for="g_libraries">Numero di sedi culturali nel vostro gruppo</label>
-            <input type="number" id="g_libraries" name="num_libraries" placeholder="es. 5" min="2">
+            <label for="g_venues">Numero di sedi culturali nel vostro gruppo</label>
+            <input type="number" id="g_venues" name="num_venues" placeholder="es. 5" min="2">
           </div>
         </div>
         <div class="formGroup">
@@ -182,7 +182,7 @@ if(btn)btn.addEventListener('click',function(){
   }
   var data={name:name,organisation:org,role:document.getElementById('g_role').value,
     email:email,
-    num_libraries:document.getElementById('g_libraries').value,
+    num_venues:document.getElementById('g_venues').value,
     countries:document.getElementById('g_countries').value,
     message:document.getElementById('g_msg').value};
   btn.disabled=true;btn.textContent='...';
