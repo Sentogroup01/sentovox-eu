@@ -17,11 +17,13 @@ stats:
   - value: "60.000+"
     label: "Besucherantworten"
 
-history_title: "Geschichte & Ursprung"
+history_title: "Geschichte & Expansionsweg"
 history_body: |
-  SentoVox begann als praktische Idee: Kulturhäusern den Weg zu robustem Besucherfeedback erleichtern und es in klare Erkenntnisse übersetzen. In enger Zusammenarbeit mit der **Universität Antwerpen** und dem Sektorpartner **Cult** wurde eine Pilotstudie mit Kulturhäusern in Belgien gestartet.
+  Das Projekt startete **2024** in **Belgien** mit einer Pilotstudie an Kulturhäusern aus dem Cult-Netzwerk, in enger Zusammenarbeit mit der **Universität Antwerpen**. Der Pilot bestätigte die Methodik und wuchs zu einer festen Teilnehmergruppe von über 100 flämischen und Brüsseler Häusern.
 
-  Die Pilotstudie bestätigte den Wert einer niedrigschwelligen Methode. Danach wuchs SentoVox zu einer europäischen Studie in Belgien, den Niederlanden, Deutschland, Frankreich, Österreich, Italien und Spanien.
+  **2025** weitete SentoVox sich in die **Niederlande** aus, in Kooperation mit VSCD-Theatern, mit der Teilnahme von Häusern wie Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven und Parktheater Eindhoven. **2025-2026** folgte die Ausweitung nach **Deutschland** (Bühnenverein-Partner) und **Österreich**, mit Forschungspartnern an der HAWK Hildesheim und der FH Kufstein Tirol.
+
+  **2026** wird SentoVox in **Frankreich, Italien, Spanien und der Schweiz** ausgerollt und damit zu einem wahrhaft paneuropäischen Instrument. Heute ist die Plattform in 6 Sprachen aktiv, mit 130+ teilnehmenden Häusern und Partnerhochschulen in 7 Ländern.
 
 report_kicker: "Europäischer Benchmark"
 report_title: "Europäischer Bericht von SentoVox"
@@ -34,13 +36,13 @@ testimonials_title: "Wie Kulturhäuser SentoVox bewerten"
 testimonials:
   - quote: "Die Studie wurde sehr gut aufgenommen. Wir erhielten konkrete Anregungen und der europäische Benchmark hilft uns, das Programm zu optimieren."
     name: "Direktion"
-    role: "Concertgebouw Brugge, Belgien"
+    role: "Cultuurcentrum Brugge, Belgien"
   - quote: "Wir erhalten klare Ansatzpunkte. Das Dashboard ist sofort einsetzbar für unsere Steuerungsgruppe."
     name: "Leitung Publikumsforschung"
-    role: "Stadsschouwburg Amsterdam, Niederlande"
+    role: "Concertgebouw de Doelen, Niederlande"
   - quote: "Das Impact Compass Model brachte Dinge ans Licht, die wir übersehen hatten."
     name: "Kommunikation"
-    role: "Theater Rotterdam, Niederlande"
+    role: "Parktheater Eindhoven, Niederlande"
   - quote: "Vielen Dank für den Bericht - eine Fülle an Informationen, die wir umsetzen werden."
     name: "Direktion"
     role: "Opéra de Lyon, Frankreich"

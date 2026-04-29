@@ -200,21 +200,27 @@
     <div class="abt-timeline">
       <div class="abt-tl-item">
         <div class="abt-tl-dot"></div>
-        <div class="abt-tl-year">2024 - Étude pilote</div>
-        <h3>Un pilote belge avec 40 salles culturelles</h3>
-        <p>Avant le lancement européen, SentoVox a été testée en Belgique. En collaboration avec Cult et l'Université d'Anvers, 40 salles culturelles ont participé. Ce pilote a confirmé la méthodologie.</p>
+        <div class="abt-tl-year">2024 - Pilote en Belgique</div>
+        <h3>Le projet démarre en Belgique</h3>
+        <p>SentoVox a vu le jour comme pilote belge avec des centres culturels du réseau Cult, en étroite collaboration avec l'Université d'Anvers. Ce pilote a confirmé la méthodologie et s'est rapidement transformé en un panel permanent de plus de 100 centres culturels, théâtres et salles de concert flamands et bruxellois.</p>
       </div>
       <div class="abt-tl-item">
         <div class="abt-tl-dot"></div>
-        <div class="abt-tl-year">2025 - Expansion européenne</div>
-        <h3>Première édition européenne réussie</h3>
-        <p>L'édition 2025 a été un grand succès. Plus de 130 salles culturelles à travers l'Europe ont participé, atteignant ensemble plus de 60 000 répondants. Avec des partenaires académiques en Belgique, aux Pays-Bas, en France, en Allemagne, en Autriche, en Italie et en Espagne.</p>
+        <div class="abt-tl-year">2025 - Extension aux Pays-Bas</div>
+        <h3>Les théâtres néerlandais rejoignent l'étude</h3>
+        <p>Suite à l'intérêt des théâtres membres de la VSCD, SentoVox s'est étendue aux Pays-Bas, incluant des salles comme le Theater aan het Vrijthof, Parktheater Eindhoven, Concertgebouw de Doelen, Schouwburg Hengelo et Stadstheater Zoetermeer. Un premier benchmark transfrontalier entre salles belges et néerlandaises a été publié.</p>
       </div>
       <div class="abt-tl-item">
         <div class="abt-tl-dot"></div>
-        <div class="abt-tl-year">2025 - Un instrument annuel</div>
-        <h3>SentoVox devient un instrument permanent</h3>
-        <p>Après le succès de 2025, SentoVox est désormais disponible en permanence. Les résultats ont été présentés à la conférence ENCC 2025. SentoVox s'est également associée au World Land Trust pour protéger 85 000 m² d'habitats menacés.</p>
+        <div class="abt-tl-year">2025-2026 - Extension à l'Allemagne &amp; l'Autriche</div>
+        <h3>Partenariats Bühnenverein et adoption DACH</h3>
+        <p>SentoVox s'étend au secteur culturel germanophone via des partenariats avec des chercheurs de la HAWK Hildesheim et FH Kufstein Tirol, et un dialogue avec la Deutscher Bühnenverein. Des salles pilotes à Berlin, Hambourg, Vienne et Innsbruck rejoignent le panel européen.</p>
+      </div>
+      <div class="abt-tl-item">
+        <div class="abt-tl-dot"></div>
+        <div class="abt-tl-year">2026 - Déploiement paneuropéen</div>
+        <h3>France, Italie, Espagne et Suisse</h3>
+        <p>SentoVox devient un véritable instrument paneuropéen avec des salles participantes en France, Italie, Espagne et Suisse, soutenu par des partenaires académiques dans sept pays. Aujourd'hui, la plateforme est active en 6 langues avec plus de 130 salles participantes.</p>
       </div>
       <div class="abt-tl-item active"></div>
     </div>
@@ -292,17 +298,17 @@
       <div class="abt-testi">
         <p class="abt-tq">L'étude a été bien accueillie et nous est très utile. Nous avons reçu des suggestions concrètes et le benchmark avec d'autres salles nous aide à optimiser la programmation.</p>
         <div class="abt-tq-author">Direction</div>
-        <div class="abt-tq-role">Concertgebouw Brugge, Belgique</div>
+        <div class="abt-tq-role">Cultuurcentrum Brugge, Belgique</div>
       </div>
       <div class="abt-testi">
         <p class="abt-tq">Nous obtenons des pistes claires pour affiner notre stratégie. Le tableau de bord a montré, par exemple, qu'une programmation plus riche le mercredi soir serait appréciée.</p>
         <div class="abt-tq-author">Responsable étude</div>
-        <div class="abt-tq-role">Stadsschouwburg Amsterdam, Pays-Bas</div>
+        <div class="abt-tq-role">Concertgebouw de Doelen, Pays-Bas</div>
       </div>
       <div class="abt-testi">
         <p class="abt-tq">Le modèle Impact Compass a révélé des choses que nous avions manquées. Les résultats non-visiteurs étaient inconfortables mais utiles.</p>
         <div class="abt-tq-author">Communication</div>
-        <div class="abt-tq-role">Theater Rotterdam, Pays-Bas</div>
+        <div class="abt-tq-role">Parktheater Eindhoven, Pays-Bas</div>
       </div>
       <div class="abt-testi">
         <p class="abt-tq">Merci pour le rapport - il contient une mine d'informations que nous sommes impatients de mettre en œuvre.</p>
@@ -350,6 +356,9 @@
     </div>
     <div class="abt-m-meta" id="abtMMeta" style="display:none"></div>
     <div class="abt-m-grid" id="abtMList"></div>
+    <noscript>
+      {{ partial "venue-list.html" . }}
+    </noscript>
   </div>
 </section>
 
@@ -426,66 +435,129 @@ if(topBtn){window.addEventListener('scroll',function(){topBtn.classList.toggle('
 
 /* Library list */
 var LIBRARIES=[
-{name:"Concertgebouw Brugge",url:"https://www.concertgebouw.be/"},
-{name:"De Singel Antwerpen",url:"https://www.desingel.be/"},
-{name:"Bozar Brussels",url:"https://www.bozar.be/"},
-{name:"Stadsschouwburg Amsterdam",url:"https://www.itastadsschouwburg.nl/"},
-{name:"Theater Rotterdam",url:"https://www.theaterrotterdam.nl/"},
-{name:"Concertgebouw Amsterdam",url:"https://www.concertgebouw.nl/"},
-{name:"Muziekgebouw aan 't IJ",url:"https://www.muziekgebouw.nl/"},
-{name:"TivoliVredenburg",url:"https://www.tivolivredenburg.nl/"},
-{name:"Chasse Theater Breda",url:"https://www.chassetheater.nl/"},
-{name:"Theater aan de Parade",url:"https://www.theateraandeparade.nl/"},
-{name:"De Doelen Rotterdam",url:"https://www.dedoelen.nl/"},
-{name:"Opera Vlaanderen",url:"https://www.operaballet.be/"},
-{name:"CC De Schakel",url:"https://www.descha.be/"},
-{name:"CC Hasselt",url:"https://www.ccha.be/"},
-{name:"Cultuurcentrum Brugge",url:"https://www.ccbrugge.be/"},
-{name:"Vooruit Gent",url:"https://viernulvier.gent/"},
-{name:"Kaaitheater Brussels",url:"https://kaaitheater.be/"},
-{name:"Théâtre National Wallonie-Bruxelles",url:"https://www.theatrenational.be/"},
-{name:"Opéra de Lyon",url:"https://www.opera-lyon.com/"},
-{name:"Théâtre du Châtelet",url:"https://www.chatelet.com/"},
-{name:"Philharmonie de Paris",url:"https://philharmoniedeparis.fr/"},
-{name:"Opéra national de Paris",url:"https://www.operadeparis.fr/"},
-{name:"Théâtre des Champs-Élysées",url:"https://www.theatrechampselysees.fr/"},
-{name:"MC2 Grenoble",url:"https://www.mc2grenoble.fr/"},
-{name:"Le Volcan Le Havre",url:"https://www.levolcan.com/"},
-{name:"Opéra de Bordeaux",url:"https://www.opera-bordeaux.com/"},
-{name:"Konzerthaus Berlin",url:"https://www.konzerthaus.de/"},
-{name:"Berliner Philharmonie",url:"https://www.berliner-philharmoniker.de/"},
-{name:"Elbphilharmonie Hamburg",url:"https://www.elbphilharmonie.de/"},
-{name:"Münchner Kammerspiele",url:"https://www.muenchner-kammerspiele.de/"},
-{name:"Schauspielhaus Köln",url:"https://www.schauspiel.koeln/"},
-{name:"Staatstheater Stuttgart",url:"https://www.staatstheater-stuttgart.de/"},
-{name:"Theater Bremen",url:"https://www.theaterbremen.de/"},
-{name:"Konzerthaus Dortmund",url:"https://www.konzerthaus-dortmund.de/"},
-{name:"Theater Bonn",url:"https://www.theater-bonn.de/"},
-{name:"Hessisches Staatstheater Wiesbaden",url:"https://www.staatstheater-wiesbaden.de/"},
-{name:"Konzerthaus Wien",url:"https://konzerthaus.at/"},
-{name:"Wiener Konzerthaus",url:"https://konzerthaus.at/"},
-{name:"Musikverein Wien",url:"https://www.musikverein.at/"},
-{name:"Volkstheater Wien",url:"https://www.volkstheater.at/"},
-{name:"Salzburger Festspielhaus",url:"https://www.salzburgerfestspiele.at/"},
-{name:"Tiroler Landestheater",url:"https://www.landestheater.at/"},
-{name:"Brucknerhaus Linz",url:"https://www.brucknerhaus.at/"},
-{name:"Festspielhaus Bregenz",url:"https://www.bregenzerfestspiele.com/"},
-{name:"Teatro alla Scala",url:"https://www.teatroallascala.org/"},
-{name:"Teatro La Fenice",url:"https://www.teatrolafenice.it/"},
-{name:"Teatro dell'Opera di Roma",url:"https://www.operaroma.it/"},
-{name:"Teatro Massimo Palermo",url:"https://www.teatromassimo.it/"},
-{name:"Teatro San Carlo Napoli",url:"https://www.teatrosancarlo.it/"},
-{name:"Auditorium Parco della Musica",url:"https://www.auditorium.com/"},
-{name:"Teatro Comunale Bologna",url:"https://www.tcbo.it/"},
-{name:"Teatro Regio Torino",url:"https://www.teatroregio.torino.it/"},
-{name:"Teatro Real Madrid",url:"https://www.teatro-real.com/"},
-{name:"Gran Teatre del Liceu",url:"https://www.liceubarcelona.cat/"},
-{name:"Auditorio Nacional de Música",url:"https://www.auditorionacional.mcu.es/"},
-{name:"Palau de la Música Catalana",url:"https://www.palaumusica.cat/"},
-{name:"Teatro de la Maestranza",url:"https://www.teatrodelamaestranza.es/"},
-{name:"Palacio Euskalduna",url:"https://euskalduna.eus/"},
-{name:"Auditorio de Tenerife",url:"https://auditoriodetenerife.com/"},
-{name:"Teatro Campoamor Oviedo",url:"https://www.teatrocampoamor.es/"}
+  {n:"GC 't Blikveld",c:"BE",u:"https://www.google.com/search?q=GC+%27t+Blikveld+Belgi%C3%AB"},
+  {n:"Cultuurcentrum 't Getouw",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+%27t+Getouw+Belgi%C3%AB"},
+  {n:"GC 't Heilaar / Vaart",c:"BE",u:"https://www.google.com/search?q=GC+%27t+Heilaar+%2F+Vaart+Belgi%C3%AB"},
+  {n:"cc 't Schaliken",c:"BE",u:"https://www.google.com/search?q=cc+%27t+Schaliken+Belgi%C3%AB"},
+  {n:"30CC Leuven",c:"BE",u:"https://30cc.be"},
+  {n:"CC Achterolmen",c:"BE",u:"https://www.google.com/search?q=CC+Achterolmen+Belgi%C3%AB"},
+  {n:"Cultuurhuis Altena",c:"BE",u:"https://www.google.com/search?q=Cultuurhuis+Altena+Belgi%C3%AB"},
+  {n:"AMUZ (Festival van Vlaanderen Antwerpen)",c:"BE",u:"https://www.amuz.be"},
+  {n:"Arenberg",c:"BE",u:"https://www.arenbergschouwburg.be"},
+  {n:"Arenberg & OLT Rivierenhof",c:"BE",u:"https://www.google.com/search?q=Arenberg+%26+OLT+Rivierenhof+Belgi%C3%AB"},
+  {n:"CC Asse",c:"BE",u:"https://www.google.com/search?q=CC+Asse+Belgi%C3%AB"},
+  {n:"cultuurcentrum Baarle",c:"BE",u:"https://www.google.com/search?q=cultuurcentrum+Baarle+Belgi%C3%AB"},
+  {n:"CC Beringen",c:"BE",u:"https://www.google.com/search?q=CC+Beringen+Belgi%C3%AB"},
+  {n:"BICC 't Poorthuis",c:"BE",u:"https://www.google.com/search?q=BICC+%27t+Poorthuis+Belgi%C3%AB"},
+  {n:"Cultuurhuis Bilzen-Hoeselt",c:"BE",u:"https://www.google.com/search?q=Cultuurhuis+Bilzen-Hoeselt+Belgi%C3%AB"},
+  {n:"cc Binder",c:"BE",u:"https://www.google.com/search?q=cc+Binder+Belgi%C3%AB"},
+  {n:"Cultuurhuis Brasschaat",c:"BE",u:"https://www.google.com/search?q=Cultuurhuis+Brasschaat+Belgi%C3%AB"},
+  {n:"Cultuurcentrum Brugge",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Brugge+Belgi%C3%AB"},
+  {n:"Cultuurhuis Casino Houthalen-Helchteren",c:"BE",u:"https://www.google.com/search?q=Cultuurhuis+Casino+Houthalen-Helchteren+Belgi%C3%AB"},
+  {n:"CCHA/cultuurcentrum Hasselt",c:"BE",u:"https://www.google.com/search?q=CCHA%2Fcultuurcentrum+Hasselt+Belgi%C3%AB"},
+  {n:"(Franstalig) Chapelle Musicale Reine Elisabeth",c:"BE",u:"https://www.cmre.be"},
+  {n:"Cinema Plaza",c:"BE",u:"https://www.cinemaplaza.be"},
+  {n:"CC Coloma",c:"BE",u:"https://www.google.com/search?q=CC+Coloma+Belgi%C3%AB"},
+  {n:"Concertgebouw de Doelen",c:"NL",u:"https://www.dedoelen.nl"},
+  {n:"Cultuur Poperinge",c:"BE",u:"https://www.cultuurpoperinge.be"},
+  {n:"Cultuurcentrum De Adelberg",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+De+Adelberg+Belgi%C3%AB"},
+  {n:"GC De Beuk",c:"BE",u:"https://www.google.com/search?q=GC+De+Beuk+Belgi%C3%AB"},
+  {n:"CC De Biekorf",c:"BE",u:"https://www.google.com/search?q=CC+De+Biekorf+Belgi%C3%AB"},
+  {n:"cultuurcentrum de Bogaard",c:"BE",u:"https://www.google.com/search?q=cultuurcentrum+de+Bogaard+Belgi%C3%AB"},
+  {n:"CC De Borre",c:"BE",u:"https://www.google.com/search?q=CC+De+Borre+Belgi%C3%AB"},
+  {n:"de Brouckere",c:"BE",u:"https://www.google.com/search?q=de+Brouckere+Belgi%C3%AB"},
+  {n:"GC De Dorpen (Laarne)",c:"BE",u:"https://www.google.com/search?q=GC+De+Dorpen+%28Laarne%29+Belgi%C3%AB"},
+  {n:"CC De Fabriek",c:"BE",u:"https://www.google.com/search?q=CC+De+Fabriek+Belgi%C3%AB"},
+  {n:"CC De Factorij",c:"BE",u:"https://www.google.com/search?q=CC+De+Factorij+Belgi%C3%AB"},
+  {n:"De Grote Post",c:"BE",u:"https://www.degrotepost.be"},
+  {n:"CC De Herbakker",c:"BE",u:"https://www.google.com/search?q=CC+De+Herbakker+Belgi%C3%AB"},
+  {n:"CC de Kimpel",c:"BE",u:"https://www.google.com/search?q=CC+de+Kimpel+Belgi%C3%AB"},
+  {n:"GC De Kluize",c:"BE",u:"https://www.google.com/search?q=GC+De+Kluize+Belgi%C3%AB"},
+  {n:"GC De Kroon",c:"BE",u:"https://www.google.com/search?q=GC+De+Kroon+Belgi%C3%AB"},
+  {n:"CC de Kruisboog",c:"BE",u:"https://www.google.com/search?q=CC+de+Kruisboog+Belgi%C3%AB"},
+  {n:"GC De Mastbloem",c:"BE",u:"https://www.google.com/search?q=GC+De+Mastbloem+Belgi%C3%AB"},
+  {n:"CC de Meent",c:"BE",u:"https://www.google.com/search?q=CC+de+Meent+Belgi%C3%AB"},
+  {n:"GC De Munk (Zwalmparel)",c:"BE",u:"https://www.google.com/search?q=GC+De+Munk+%28Zwalmparel%29+Belgi%C3%AB"},
+  {n:"De Nobelaer",c:"NL",u:"https://www.nobelaer.nl"},
+  {n:"GC De Pit",c:"BE",u:"https://www.google.com/search?q=GC+De+Pit+Belgi%C3%AB"},
+  {n:"cc De Plomblom",c:"BE",u:"https://www.google.com/search?q=cc+De+Plomblom+Belgi%C3%AB"},
+  {n:"CC De Ploter - Impactonderzoek Corona",c:"BE",u:"https://www.google.com/search?q=CC+De+Ploter+-+Impactonderzoek+Corona+Belgi%C3%AB"},
+  {n:"CC De Spil - Impactonderzoek Corona",c:"BE",u:"https://www.despil.be"},
+  {n:"CC De Steiger Boom",c:"BE",u:"https://www.google.com/search?q=CC+De+Steiger+Boom+Belgi%C3%AB"},
+  {n:"CC De Ster",c:"BE",u:"https://www.google.com/search?q=CC+De+Ster+Belgi%C3%AB"},
+  {n:"De VELINX",c:"BE",u:"https://www.google.com/search?q=De+VELINX+Belgi%C3%AB"},
+  {n:"De Warande",c:"BE",u:"https://www.warande.be"},
+  {n:"CC De Warandepooort",c:"BE",u:"https://www.google.com/search?q=CC+De+Warandepooort+Belgi%C3%AB"},
+  {n:"De Warandepoort",c:"BE",u:"https://www.google.com/search?q=De+Warandepoort+Belgi%C3%AB"},
+  {n:"De Werf Aalst",c:"BE",u:"https://www.google.com/search?q=De+Werf+Aalst+Belgi%C3%AB"},
+  {n:"De Werf cultuurhuis",c:"BE",u:"https://www.dewerfaalst.be"},
+  {n:"GC De Wiek",c:"BE",u:"https://www.google.com/search?q=GC+De+Wiek+Belgi%C3%AB"},
+  {n:"GC De Wildeman / Hangar 3020 - Impactonderzoek Corona",c:"BE",u:"https://www.google.com/search?q=GC+De+Wildeman+%2F+Hangar+3020+-+Impactonderzoek+Corona+Belgi%C3%AB"},
+  {n:"CC De Wissel",c:"BE",u:"https://www.google.com/search?q=CC+De+Wissel+Belgi%C3%AB"},
+  {n:"GC Deerlijk",c:"BE",u:"https://www.google.com/search?q=GC+Deerlijk+Belgi%C3%AB"},
+  {n:"CC Den Blank",c:"BE",u:"https://www.google.com/search?q=CC+Den+Blank+Belgi%C3%AB"},
+  {n:"GC den egger (Scherpenheuvel-Zichem)",c:"BE",u:"https://www.google.com/search?q=GC+den+egger+%28Scherpenheuvel-Zichem%29+Belgi%C3%AB"},
+  {n:"Den Hoogen Pad",c:"BE",u:"https://www.google.com/search?q=Den+Hoogen+Pad+Belgi%C3%AB"},
+  {n:"den Ichter",c:"BE",u:"https://www.google.com/search?q=den+Ichter+Belgi%C3%AB"},
+  {n:"Cultuurcentrum Evergem",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Evergem+Belgi%C3%AB"},
+  {n:"GC Felix Sohie",c:"BE",u:"https://www.google.com/search?q=GC+Felix+Sohie+Belgi%C3%AB"},
+  {n:"CC Gildhof",c:"BE",u:"https://www.google.com/search?q=CC+Gildhof+Belgi%C3%AB"},
+  {n:"CC Gildhof Tielt",c:"BE",u:"https://www.google.com/search?q=CC+Gildhof+Tielt+Belgi%C3%AB"},
+  {n:"CC Hasselt",c:"BE",u:"https://www.google.com/search?q=CC+Hasselt+Belgi%C3%AB"},
+  {n:"Cultuurhuis Herbakker",c:"BE",u:"https://www.google.com/search?q=Cultuurhuis+Herbakker+Belgi%C3%AB"},
+  {n:"CC Het Gasthuis",c:"BE",u:"https://www.google.com/search?q=CC+Het+Gasthuis+Belgi%C3%AB"},
+  {n:"Het Perron",c:"BE",u:"https://www.hetperron.be"},
+  {n:"CC het SPOOR",c:"BE",u:"https://www.google.com/search?q=CC+het+SPOOR+Belgi%C3%AB"},
+  {n:"GC Hof ten Hemelrijk",c:"BE",u:"https://www.google.com/search?q=GC+Hof+ten+Hemelrijk+Belgi%C3%AB"},
+  {n:"GC Hoogstraten",c:"BE",u:"https://www.google.com/search?q=GC+Hoogstraten+Belgi%C3%AB"},
+  {n:"CC Jan Tervaert",c:"BE",u:"https://www.google.com/search?q=CC+Jan+Tervaert+Belgi%C3%AB"},
+  {n:"KAAP",c:"BE",u:"https://www.kaapbrugge.be"},
+  {n:"Cultuurcentrum Kapellen",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Kapellen+Belgi%C3%AB"},
+  {n:"CC Kruispunt",c:"BE",u:"https://www.google.com/search?q=CC+Kruispunt+Belgi%C3%AB"},
+  {n:"CC Lanaken",c:"BE",u:"https://www.google.com/search?q=CC+Lanaken+Belgi%C3%AB"},
+  {n:"CC Leietheater",c:"BE",u:"https://www.google.com/search?q=CC+Leietheater+Belgi%C3%AB"},
+  {n:"Liers Cultuurcentrum",c:"BE",u:"https://www.lierscultuurcentrum.be"},
+  {n:"Cultuurcentrum Lokeren",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Lokeren+Belgi%C3%AB"},
+  {n:"CC Maasmechelen",c:"BE",u:"https://www.google.com/search?q=CC+Maasmechelen+Belgi%C3%AB"},
+  {n:"Maaspoort",c:"NL",u:"https://www.maaspoort.nl"},
+  {n:"Cultuurcentrum Mechelen",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Mechelen+Belgi%C3%AB"},
+  {n:"Cultuurhuis Merelbeke",c:"BE",u:"https://www.google.com/search?q=Cultuurhuis+Merelbeke+Belgi%C3%AB"},
+  {n:"Cultuurcentrum Mol",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Mol+Belgi%C3%AB"},
+  {n:"Lokaal Bestuur Mortsel/dienst vrije tijd/cultuurcentrum Mortsel",c:"BE",u:"https://www.google.com/search?q=Lokaal+Bestuur+Mortsel%2Fdienst+vrije+tijd%2Fcultuurcentrum+Mortsel+Belgi%C3%AB"},
+  {n:"CC MUZE",c:"BE",u:"https://www.google.com/search?q=CC+MUZE+Belgi%C3%AB"},
+  {n:"CC Nazareth - Impactonderzoek Corona",c:"BE",u:"https://www.google.com/search?q=CC+Nazareth+-+Impactonderzoek+Corona+Belgi%C3%AB"},
+  {n:"Cultuurcentrum Nova",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Nova+Belgi%C3%AB"},
+  {n:"OC 't Waaigat",c:"BE",u:"https://www.google.com/search?q=OC+%27t+Waaigat+Belgi%C3%AB"},
+  {n:"OLT Rivierenhof",c:"BE",u:"https://www.google.com/search?q=OLT+Rivierenhof+Belgi%C3%AB"},
+  {n:"cc Palethe",c:"BE",u:"https://www.palethe.be"},
+  {n:"Parktheater Eindhoven",c:"NL",u:"https://www.parktheater.nl"},
+  {n:"Cultuurcentrum Scharpoord",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Scharpoord+Belgi%C3%AB"},
+  {n:"Cultuurcentrum Schoten",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Schoten+Belgi%C3%AB"},
+  {n:"Schouwburg Kortrijk",c:"BE",u:"https://www.schouwburgkortrijk.be"},
+  {n:"Schouwburg Kunstmin",c:"NL",u:"https://www.kunstmin.nl"},
+  {n:"CC Sint-Niklaas",c:"BE",u:"https://www.google.com/search?q=CC+Sint-Niklaas+Belgi%C3%AB"},
+  {n:"Stadstheater Zoetermeer",c:"NL",u:"https://www.stadstheater-zoetermeer.nl"},
+  {n:"Stichting Schouwburg Hengelo",c:"NL",u:"https://www.schouwburghengelo.nl"},
+  {n:"Cultuurcentrum Strombeek",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Strombeek+Belgi%C3%AB"},
+  {n:"CC Stroming - Impactonderzoek Corona",c:"BE",u:"https://www.google.com/search?q=CC+Stroming+-+Impactonderzoek+Corona+Belgi%C3%AB"},
+  {n:"'t Ankerpunt - Impactonderzoek Corona",c:"BE",u:"https://www.google.com/search?q=%27t+Ankerpunt+-+Impactonderzoek+Corona+Belgi%C3%AB"},
+  {n:"'t Gasthuis",c:"BE",u:"https://www.google.com/search?q=%27t+Gasthuis+Belgi%C3%AB"},
+  {n:"Cultuurcentrum Temse",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Temse+Belgi%C3%AB"},
+  {n:"CC Ter Dilft - Impactonderzoek Corona",c:"BE",u:"https://www.google.com/search?q=CC+Ter+Dilft+-+Impactonderzoek+Corona+Belgi%C3%AB"},
+  {n:"CC Ter Vesten",c:"BE",u:"https://www.google.com/search?q=CC+Ter+Vesten+Belgi%C3%AB"},
+  {n:"Theater aan het Vrijthof",c:"NL",u:"https://theateraanhetvrijthof.nl"},
+  {n:"Theater De Hofnar",c:"NL",u:"https://www.theaterdehofnar.nl"},
+  {n:"Theater de Koornbeurs",c:"NL",u:"https://www.dekoornbeurs.nl"},
+  {n:"Theater de Schalm",c:"NL",u:"https://www.theaterdeschalm.nl"},
+  {n:"Theater het Kruispunt",c:"NL",u:"https://www.theaterhetkruispunt.nl"},
+  {n:"Theater Ins Blau",c:"NL",u:"https://www.theaterinsblau.nl"},
+  {n:"Theater Vooruit",c:"BE",u:"https://www.viernulvier.gent"},
+  {n:"VZW De Roma",c:"BE",u:"https://www.google.com/search?q=VZW+De+Roma+Belgi%C3%AB"},
+  {n:"GC Werf 44",c:"BE",u:"https://www.google.com/search?q=GC+Werf+44+Belgi%C3%AB"},
+  {n:"Westrand",c:"BE",u:"https://www.westrand.be"},
+  {n:"Cultuurcentrum Wevelgem",c:"BE",u:"https://www.google.com/search?q=Cultuurcentrum+Wevelgem+Belgi%C3%AB"},
+  {n:"CC Zoetegem",c:"BE",u:"https://www.google.com/search?q=CC+Zoetegem+Belgi%C3%AB"},
+  {n:"CC Zwaneberg",c:"BE",u:"https://www.google.com/search?q=CC+Zwaneberg+Belgi%C3%AB"}
 ];
 function abtNorm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
 var abtActiveLetter='',abtQuery='';
@@ -493,25 +565,28 @@ var abtListEl=document.getElementById('abtMList');
 var abtAZEl=document.getElementById('abtAZ');
 var abtMetaEl=document.getElementById('abtMMeta');
 var abtSearchEl=document.getElementById('abtMSearch');
-var abtSorted=LIBRARIES.slice().sort(function(a,b){return a.name.localeCompare(b.name,undefined,{sensitivity:'base'});});
+var abtSorted=LIBRARIES.slice().sort(function(a,b){return a.n.localeCompare(b.n,undefined,{sensitivity:'base'});});
+var abtFlags={BE:'\uD83C\uDDE7\uD83C\uDDEA',NL:'\uD83C\uDDF3\uD83C\uDDF1',DE:'\uD83C\uDDE9\uD83C\uDDEA',FR:'\uD83C\uDDEB\uD83C\uDDF7',AT:'\uD83C\uDDE6\uD83C\uDDF9',IT:'\uD83C\uDDEE\uD83C\uDDF9',ES:'\uD83C\uDDEA\uD83C\uDDF8',CH:'\uD83C\uDDE8\uD83C\uDDED'};
 function abtRender(){
   if(!abtListEl)return;
   var q=abtNorm(abtQuery);
   var filtered=abtSorted.filter(function(m){
-    var first=(m.name.trim()[0]||'').toUpperCase();
-    return(abtActiveLetter?first===abtActiveLetter:true)&&(q?abtNorm(m.name).includes(q):true);
+    var first=(m.n.trim()[0]||'').toUpperCase();
+    return(abtActiveLetter?first===abtActiveLetter:true)&&(q?abtNorm(m.n).includes(q):true);
   });
   abtListEl.innerHTML='';
   filtered.forEach(function(m){
     var el;
-    if(m.url){el=document.createElement('a');el.href=m.url;el.target='_blank';el.rel='noopener';}
+    if(m.u){el=document.createElement('a');el.href=m.u;el.target='_blank';el.rel='noopener';}
     else{el=document.createElement('span');}
     el.className='abt-m-item';
     var dot=document.createElement('span');dot.className='abt-m-dot';
-    el.appendChild(dot);el.appendChild(document.createTextNode(m.name));
+    el.appendChild(dot);
+    el.appendChild(document.createTextNode(m.n));
+    if(m.c){var fl=document.createElement('span');fl.className='abt-m-flag';fl.textContent=' '+(abtFlags[m.c]||m.c);fl.style.marginLeft='auto';fl.style.fontSize='.78rem';fl.style.opacity='.7';el.appendChild(fl);}
     abtListEl.appendChild(el);
   });
-  if(abtMetaEl){abtMetaEl.style.display='';abtMetaEl.textContent="Une sélection de salles culturelles participantes";}
+  if(abtMetaEl){abtMetaEl.style.display='';abtMetaEl.textContent=filtered.length+' sur '+LIBRARIES.length+' salles culturelles participantes';}
 }
 function abtBuildAZ(){
   if(!abtAZEl)return;

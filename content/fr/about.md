@@ -17,11 +17,13 @@ stats:
   - value: "60 000+"
     label: "Réponses des visiteurs"
 
-history_title: "Histoire & origines"
+history_title: "Histoire & route d'expansion"
 history_body: |
-  SentoVox a démarré comme une idée pratique : permettre aux salles culturelles de collecter facilement des retours de visiteurs et de les traduire en informations claires. En étroite collaboration avec l'**Université d'Anvers** et le partenaire sectoriel **Cult**, un pilote a été lancé avec des salles culturelles en Belgique.
+  Le projet a démarré en **2024** en **Belgique** avec un pilote auprès de centres culturels du réseau Cult, en étroite collaboration avec l'**Université d'Anvers**. Ce pilote a confirmé la méthodologie et s'est transformé en un panel permanent de plus de 100 salles flamandes et bruxelloises.
 
-  Le pilote a confirmé la valeur d'une méthode accessible. SentoVox s'est ensuite étendu à la Belgique, aux Pays-Bas, à l'Allemagne, à la France, à l'Autriche, à l'Italie et à l'Espagne.
+  En **2025**, SentoVox s'est étendue aux **Pays-Bas** en coopération avec les théâtres VSCD, avec la participation de salles comme le Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven et Parktheater Eindhoven. En **2025-2026**, le programme s'est étendu à l'**Allemagne** (partenaires Bühnenverein) et à l'**Autriche**, avec des partenaires de recherche à la HAWK Hildesheim et à la FH Kufstein Tirol.
+
+  En **2026**, SentoVox se déploie en **France, Italie, Espagne et Suisse**, devenant un véritable instrument paneuropéen. Aujourd'hui, la plateforme est active en 6 langues, avec plus de 130 salles participantes et des universités partenaires dans 7 pays.
 
 report_kicker: "Benchmark européen"
 report_title: "Rapport européen de SentoVox"
@@ -34,13 +36,13 @@ testimonials_title: "Comment les salles culturelles évaluent SentoVox"
 testimonials:
   - quote: "L'étude a été très bien reçue. Nous avons obtenu des suggestions concrètes et le benchmark européen nous aide à optimiser la programmation."
     name: "Direction"
-    role: "Concertgebouw Brugge, Belgique"
+    role: "Cultuurcentrum Brugge, Belgique"
   - quote: "Nous obtenons des pistes claires. Le tableau de bord est immédiatement utilisable pour notre comité de pilotage."
     name: "Responsable étude"
-    role: "Stadsschouwburg Amsterdam, Pays-Bas"
+    role: "Concertgebouw de Doelen, Pays-Bas"
   - quote: "Le modèle Impact Compass a révélé des choses que nous avions manquées."
     name: "Communication"
-    role: "Theater Rotterdam, Pays-Bas"
+    role: "Parktheater Eindhoven, Pays-Bas"
   - quote: "Merci pour le rapport - une mine d'informations que nous mettrons rapidement en œuvre."
     name: "Direction"
     role: "Opéra de Lyon, France"

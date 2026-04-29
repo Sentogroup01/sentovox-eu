@@ -17,11 +17,13 @@ stats:
   - value: "60.000+"
     label: "Risposte dei visitatori"
 
-history_title: "Storia & origini"
+history_title: "Storia & percorso di espansione"
 history_body: |
-  SentoVox è nata come un'idea pratica: rendere semplice per le sedi culturali raccogliere feedback robusto dai visitatori e tradurlo in informazioni chiare. In stretta collaborazione con l'**Università di Anversa** e il partner di settore **Cult**, è stato avviato uno studio pilota con sedi culturali in Belgio.
+  Il progetto è nato nel **2024** in **Belgio** con un pilota presso centri culturali della rete Cult, in stretta collaborazione con l'**Università di Anversa**. Il pilota ha confermato la metodologia ed è diventato un panel permanente di oltre 100 sedi fiamminghe e bruxellesi.
 
-  Il pilota ha confermato il valore di un metodo accessibile. Poi SentoVox è cresciuta in uno studio europeo in Belgio, Paesi Bassi, Germania, Francia, Austria, Italia e Spagna.
+  Nel **2025** SentoVox si è estesa ai **Paesi Bassi** in cooperazione con i teatri VSCD, con la partecipazione di sedi come Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven e Parktheater Eindhoven. Nel **2025-2026** il programma è arrivato in **Germania** (partner Bühnenverein) e in **Austria**, con partner di ricerca a HAWK Hildesheim e FH Kufstein Tirol.
+
+  Nel **2026** SentoVox viene esteso a **Francia, Italia, Spagna e Svizzera**, diventando uno strumento veramente paneuropeo. Oggi la piattaforma è attiva in 6 lingue, con oltre 130 sedi partecipanti e università partner in 7 paesi.
 
 report_kicker: "Benchmark europeo"
 report_title: "Rapporto europeo di SentoVox"
@@ -34,13 +36,13 @@ testimonials_title: "Come le sedi culturali valutano SentoVox"
 testimonials:
   - quote: "Lo studio è stato accolto molto bene. Abbiamo ricevuto suggerimenti concreti e il benchmark europeo ci aiuta a ottimizzare la programmazione."
     name: "Direzione"
-    role: "Concertgebouw Brugge, Belgio"
+    role: "Cultuurcentrum Brugge, Belgio"
   - quote: "Otteniamo punti di partenza chiari. La dashboard è immediatamente utilizzabile per il nostro comitato di pilotaggio."
     name: "Responsabile pubblico"
-    role: "Stadsschouwburg Amsterdam, Paesi Bassi"
+    role: "Concertgebouw de Doelen, Paesi Bassi"
   - quote: "L'Impact Compass Model ha portato alla luce cose che ci erano sfuggite."
     name: "Comunicazione"
-    role: "Theater Rotterdam, Paesi Bassi"
+    role: "Parktheater Eindhoven, Paesi Bassi"
   - quote: "Grazie per il rapporto - una ricchezza di informazioni che metteremo subito al lavoro."
     name: "Direzione"
     role: "Opéra de Lyon, Francia"
