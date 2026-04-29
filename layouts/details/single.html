@@ -1,156 +1,555 @@
-{{/* SentoVox details page — rich layout driven by front-matter */}}
+{{/* build: 2026-04-01 */}}
+
+{{ define "before_main" }}
+<div class="det-nav" id="detNav">
+  <div class="det-nav-inner is-links">
+    <a href="#measure" class="det-link" data-sec="measure">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      What you measure
+    </a>
+    <a href="#how" class="det-link" data-sec="how">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 20V10m0 0l-3 3m3-3l3 3M6 4h12"/></svg>
+      How it works
+    </a>
+    <a href="#method" class="det-link" data-sec="method">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Methodology
+    </a>
+    <a href="#benchmark" class="det-link" data-sec="benchmark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Benchmarking
+    </a>
+    <a href="#why" class="det-link" data-sec="why">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      Why it matters
+    </a>
+    <a href="#plans" class="det-link" data-sec="plans">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 8v2"/></svg>
+      Plans &amp; pricing
+    </a>
+    <a href="#practical" class="det-link" data-sec="practical">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+      Practical info
+    </a>
+  </div>
+</div>
+{{ end }}
+
 {{ define "main" }}
+<h1 class="sr">How SentoVox works - cultural venue visitor research in detail</h1>
 
-<!-- HERO / INTRO -->
-<section class="sec is-off" style="padding:64px 0 24px;">
-  <div class="wrap" style="max-width:780px;text-align:center">
-    {{ with .Params.kicker }}<p class="kicker ks">{{ . }}</p>{{ end }}
-    <h1 style="font-family:var(--fontD);font-size:38px;font-weight:700;color:var(--teal);margin:0 0 12px;line-height:1.18">{{ .Title }}</h1>
-    {{ with .Description }}<p style="color:var(--inkSoft);font-size:17px;margin:0 0 12px">{{ . }}</p>{{ end }}
-    {{ with .Params.lead }}<p style="font-size:17px;line-height:1.65;color:var(--ink);margin:0 auto;max-width:680px">{{ . | markdownify }}</p>{{ end }}
+<!-- HERO -->
+<section style="background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);padding:4.5rem 0 3.5rem;text-align:center;">
+  <div class="wrap">
+    <h2 style="font-family:var(--fontD);font-size:2.4rem;font-weight:800;color:var(--white);margin:0 auto 1rem;line-height:1.2;max-width:720px;">How SentoVox works</h2>
+    <p style="font-size:1.1rem;color:rgba(255,255,255,0.88);max-width:600px;margin:0 auto 2rem;line-height:1.7;">A standardised audience study that enables cultural venues to understand their visitors, measure impact, and benchmark results nationally and internationally.</p>
+    <a href="#plans" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--white);color:var(--teal);padding:.7rem 1.8rem;border-radius:8px;font-weight:600;font-size:1rem;text-decoration:none;">View participation plans ↓</a>
   </div>
 </section>
 
-<!-- 9 MODULES / RESEARCH THEMES -->
-{{ if .Params.modules }}
-<section class="sec is-white" id="modules">
-  <div class="wrap">
-    <div style="text-align:center;margin-bottom:24px">
-      <p class="kicker ks">{{ .Params.modules_kicker | default "Research modules" }}</p>
-      <h2>{{ .Params.modules_title | default "What SentoVox measures" }}</h2>
-      {{ with .Params.modules_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
-    </div>
-    <div class="modulesGrid">
-      {{ range .Params.modules }}
-      <div class="moduleCard">
-        <div class="moduleIcon"><svg viewBox="0 0 24 24"><use href="#{{ .icon | default "i-survey" }}"/></svg></div>
-        <h3 class="moduleTitle">{{ .title }}</h3>
-        <p class="moduleDesc">{{ .desc }}</p>
-      </div>
-      {{ end }}
+<!-- VIDEO HIDDEN -->
+<section style="display:none;">
+  <div class="wrap" style="max-width:760px;text-align:center;">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.5rem;">Watch the walkthrough</p>
+    <h2 style="font-family:var(--fontD);font-size:1.5rem;margin-bottom:.5rem;">See how the study works in practice</h2>
+    <p style="font-size:.92rem;color:var(--inkSoft);margin-bottom:1.5rem;">A complete overview of the SentoVox study in 8 minutes - from registration to results.</p>
+    <div class="video-placeholder" style="display:none">
+      <svg viewBox="0 0 24 24" width="52" height="52" stroke="var(--teal)" fill="none" stroke-width="1.5" opacity=".4"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="var(--teal)" stroke="none" opacity=".3"/></svg>
+      <p>Video placeholder - embed YouTube or Vimeo link here</p>
     </div>
   </div>
 </section>
-{{ end }}
 
-<!-- IMPACT COMPASS MODEL -->
-{{ if .Params.compass }}
-<section class="sec is-off" id="compass">
+<!-- WHAT YOU MEASURE -->
+<section style="padding:4rem 0;background:var(--white);" id="measure">
   <div class="wrap">
-    <div style="text-align:center;margin-bottom:24px">
-      <p class="kicker ks">{{ .Params.compass_kicker | default "Impact Compass Model" }}</p>
-      <h2>{{ .Params.compass_title | default "Four dimensions of cultural impact" }}</h2>
-      {{ with .Params.compass_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
-    </div>
-    <div class="compassGrid">
-      {{ range .Params.compass }}
-      <div class="compassQuadrant" style="--cq:{{ .color | default "var(--teal)" }}">
-        <div class="cqLabel">{{ .label }}</div>
-        <h3 class="cqTitle">{{ .title }}</h3>
-        <p class="cqDesc">{{ .desc }}</p>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-
-<!-- SECURITY & PRIVACY -->
-{{ if .Params.security }}
-<section class="sec is-white" id="security">
-  <div class="wrap">
-    <div style="text-align:center;margin-bottom:24px">
-      <p class="kicker ks">{{ .Params.security_kicker | default "Security & privacy" }}</p>
-      <h2>{{ .Params.security_title | default "Built to protect respondents and venues" }}</h2>
-      {{ with .Params.security_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
-    </div>
-    <div class="secGrid">
-      {{ range .Params.security }}
-      <div class="secItem">
-        <div class="secIco"><svg viewBox="0 0 24 24"><use href="#{{ .icon | default "i-shield" }}"/></svg></div>
-        <div>
-          <h3 class="secTitle">{{ .title }}</h3>
-          <p class="secDesc">{{ .desc }}</p>
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">What you measure</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">In-depth insights across eight themes</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">The SentoVox questionnaire covers all relevant aspects of your cultural venue - from visitor profiles and satisfaction to societal impact. Each topic is designed so you can translate findings into concrete actions.</p>
+    <div style="background:linear-gradient(135deg,#e8f4f1 0%,#d4ece7 100%);border-radius:16px;padding:2.5rem;display:flex;align-items:flex-start;gap:2.5rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:var(--teal);color:var(--white);">Audience insights</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#c05370;color:var(--white);">Experience &amp; satisfaction</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#b8860b;color:var(--white);">Impact &amp; well-being</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#7b5ea7;color:var(--white);">Communication</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#5a8a6a;color:var(--white);">NPS</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#c4783e;color:var(--white);">Visit behaviour</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#6a8e9e;color:var(--white);">Motivations &amp; expectations</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#8b6e5a;color:var(--white);">Open feedback</span>
         </div>
+        <h3 style="font-family:var(--fontD);font-size:1.35rem;margin-bottom:.6rem;color:var(--tealDark);">Eight research themes, one comprehensive survey</h3>
+        <p style="font-size:.95rem;color:var(--ink);line-height:1.7;margin-bottom:1.2rem;">The questionnaire is fully personalised to your cultural venue's context. You can remove, add, or modify questions and answer options through the research platform.</p>
+        <a href="{{ "/details/" | relLangURL }}" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--teal);color:var(--white);padding:.65rem 1.4rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;">
+          Explore all eight themes in detail
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-
-<!-- TARGET VENUES -->
-{{ if .Params.venue_types }}
-<section class="sec is-off" id="venues">
-  <div class="wrap">
-    <div style="text-align:center;margin-bottom:24px">
-      <p class="kicker ks">{{ .Params.venues_kicker | default "For which venues" }}</p>
-      <h2>{{ .Params.venues_title | default "Designed for performing arts venues" }}</h2>
-      {{ with .Params.venues_intro }}<p style="max-width:70ch;margin:0 auto;color:var(--inkSoft)">{{ . }}</p>{{ end }}
-    </div>
-    <div class="venueGrid">
-      {{ range .Params.venue_types }}
-      <div class="venueCard">
-        <div class="venueIcon"><svg viewBox="0 0 24 24"><use href="#{{ .icon | default "i-pin" }}"/></svg></div>
-        <h3 class="venueTitle">{{ .title }}</h3>
-        <p class="venueDesc">{{ .desc }}</p>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-
-<!-- CTA + free-form markdown body -->
-<section class="sec is-white" style="padding:24px 0 64px">
-  <div class="wrap article-prose" style="max-width:780px">
-    {{ .Content }}
-    {{ if .Params.cta_label }}
-    <div style="text-align:center;margin-top:32px">
-      <a href="{{ .Params.cta_url | default "/participate/" | relLangURL }}" class="heroBtn heroBtn-p" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px">{{ .Params.cta_label }}
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <a href="{{ "/details/" | relLangURL }}" style="flex-shrink:0;width:160px;height:160px;background:var(--white);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-decoration:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5" style="width:48px;height:48px;margin-bottom:.5rem;"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+        <span style="font-size:.85rem;font-weight:600;color:var(--tealDark);text-align:center;">Content<br>overview</span>
       </a>
     </div>
-    {{ end }}
   </div>
 </section>
 
-<style>
-  .modulesGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:8px}
-  .moduleCard{background:var(--white);border:1px solid var(--tealBorder);border-radius:14px;padding:22px;transition:transform .15s,box-shadow .15s}
-  .moduleCard:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(229,115,115,.08)}
-  .moduleIcon{width:44px;height:44px;border-radius:10px;background:var(--tealPale);color:var(--teal);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-  .moduleIcon svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-  .moduleTitle{font-family:var(--fontD);font-size:17px;font-weight:700;color:var(--ink);margin:0 0 6px;line-height:1.3}
-  .moduleDesc{font-size:14.5px;color:var(--inkSoft);line-height:1.6;margin:0}
+<!-- HOW IT WORKS -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);" id="how">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.7);margin-bottom:.75rem;">How it works</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;color:var(--white);margin-bottom:1rem;">From registration to results in four steps</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;">SentoVox is designed to minimise the workload for your team.</p>
+    <div class="det-steps-grid">
+      <div class="det-step-card">
+        <div class="det-step-num">1</div>
+        <h3>Register</h3>
+        <p>Register your cultural venue to the SentoVox platform and get immediate access to the study.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">2</div>
+        <h3>Personalise</h3>
+        <p>Provide your cultural venue's characteristics so we can personalise your survey. Add local questions &amp; modify the standard questionnaire.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">3</div>
+        <h3>Collect responses</h3>
+        <p>Share your personal survey link and QR code using the ready-to-use communication materials.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">4</div>
+        <h3>Analyse &amp; act</h3>
+        <p>Explore results in your live dashboard. Network cultural venues receive a comprehensive report with benchmarks.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  .compassGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;max-width:840px;margin:0 auto}
-  .compassQuadrant{padding:24px 22px;border-radius:14px;border-left:4px solid var(--cq);background:var(--white);box-shadow:0 4px 18px rgba(26,26,26,0.06)}
-  .cqLabel{font-size:11px;font-weight:700;color:var(--cq);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:6px}
-  .cqTitle{font-family:var(--fontD);font-size:18px;font-weight:700;color:var(--ink);margin:0 0 6px;line-height:1.3}
-  .cqDesc{font-size:14.5px;color:var(--inkSoft);line-height:1.6;margin:0}
+<!-- METHODOLOGY -->
+<section style="padding:4rem 0;background:var(--white);" id="method">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Methodology &amp; reliability</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Scientifically grounded, practically designed</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">The study is built on a shared European standard, developed with academic partners and cultural venue professionals. Rigorous enough to be credible, accessible enough to be practical.</p>
+    <div class="det-method-grid">
+      <div class="det-method-points">
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+          <div>
+            <h4>9 researchers, 7 universities</h4>
+            <p>The questionnaire is developed and validated by an international academic team, ensuring scientific accuracy.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+          <div>
+            <h4>International standard, local adaptation</h4>
+            <p>A shared European questionnaire, adapted to national contexts and cultural specificities by local academic partners. Fully customised to each participating cultural venue.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div>
+            <h4>Dynamic &amp; intelligent survey logic</h4>
+            <p>The system identifies respondent profiles and shows only relevant questions - allowing visitors and non-visitors to be surveyed with the same questionnaire.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div>
+            <h4>Available in 6 languages</h4>
+            <p>German, English, French, Italian, Dutch, and Spanish. New languages are added regularly. Missing one? <a href="{{ "/contact/" | relLangURL }}">Let us know</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="det-method-callout">
+        <h3>Sector-endorsed</h3>
+        <p>The study is developed in close collaboration with national cultural venue associations and sector professionals across Europe, ensuring the questionnaire addresses what truly matters for cultural venues.</p>
+        <p style="margin-top:1rem;"><a href="{{ "/" | relLangURL }}#team">Meet the academic team →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  .secGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-  .secItem{display:flex;gap:14px;background:var(--offWhite);border:1px solid var(--tealBorder);border-radius:12px;padding:18px}
-  .secIco{flex:0 0 auto;width:44px;height:44px;background:var(--teal);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center}
-  .secIco svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-  .secTitle{font-family:var(--fontD);font-size:16px;font-weight:700;color:var(--ink);margin:0 0 4px;line-height:1.3}
-  .secDesc{font-size:14px;color:var(--inkSoft);line-height:1.55;margin:0}
+<!-- BENCHMARKING -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);text-align:center;" id="benchmark">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.7);margin-bottom:.75rem;">International benchmarking</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;color:var(--white);margin-bottom:1rem;">Compare your cultural venue with peers nationally and internationally</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);max-width:640px;margin:0 auto 2.5rem;line-height:1.7;">One shared methodology makes meaningful comparison possible. See how your cultural venue performs relative to similar institutions, national averages, and international results.*</p>
+    <div class="det-bench-grid">
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        <h4>Live dashboard</h4>
+        <p>Explore your results in real time with filters and cross-tabulations</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+        <h4>Research report</h4>
+        <p>Comprehensive analysis with actionable insights for Network cultural venues</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <h4>Peer comparison</h4>
+        <p>Anonymous benchmarking with clusters of comparable cultural venues</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <h4>Trend analysis</h4>
+        <p>Track changes over time for Premium and Network cultural venues</p>
+      </div>
+    </div>
+    <p style="margin-top:2rem;font-size:.88rem;opacity:.7;">Your dashboard and report are always confidential - only your cultural venue has access to its own results.</p>
+    <p style="margin-top:.5rem;font-size:.82rem;opacity:.80;">* Benchmarking with peer cultural venues is available for Network members.</p>
+    <p style="margin-top:1rem;"><a href="{{ "/details/" | relLangURL }}#participating-cultural venues" style="color:var(--white);text-decoration:underline;font-weight:500;">Discover the 130+ cultural venues that have already participated →</a></p>
+  </div>
+</section>
 
-  .venueGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:900px;margin:0 auto}
-  .venueCard{text-align:center;padding:30px 22px;border:1px solid var(--tealBorder);border-radius:14px;background:var(--white);transition:transform .15s,box-shadow .15s}
-  .venueCard:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(229,115,115,.10)}
-  .venueIcon{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--teal),var(--tealDark));color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
-  .venueIcon svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-  .venueTitle{font-family:var(--fontD);font-size:18px;font-weight:700;color:var(--ink);margin:0 0 6px;line-height:1.3}
-  .venueDesc{font-size:14.5px;color:var(--inkSoft);line-height:1.6;margin:0}
+<!-- WHY IT MATTERS -->
+<section style="padding:4rem 0;background:#f5f3ef;" id="why">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Why it matters</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">What SentoVox enables you to do</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">The study doesn't just measure - it gives your cultural venue the evidence to act, improve, and communicate your impact with confidence.</p>
+    <div class="det-outcomes">
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Make informed decisions</h4><p>Use visitor data to prioritise investments in programming, infrastructure, and communication.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/></svg></div>
+        <div><h4>Improve visitor experience</h4><p>Identify what visitors value most and where there is room for improvement, with concrete suggestions.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><h4>Strengthen funding arguments</h4><p>Demonstrate societal impact with credible, benchmarked data.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div><h4>Reach new audiences</h4><p>Understand why non-visitors don't come and former visitors stopped returning - and how to reach them.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  .article-prose h2{font-family:var(--fontD);font-size:24px;color:var(--teal);margin:36px 0 12px;line-height:1.25}
-  .article-prose h3{font-size:18px;font-weight:700;margin:24px 0 8px;color:var(--ink)}
-  .article-prose p{margin:0 0 14px;color:var(--ink);font-size:16px;line-height:1.7}
-  .article-prose ul, .article-prose ol{margin:8px 0 18px;padding-left:22px}
-  .article-prose li{margin:0 0 6px;line-height:1.6}
-  .article-prose strong{font-weight:700}
-  .article-prose a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
-</style>
+<!-- PLANS & PRICING -->
+<section style="padding:4rem 0;background:var(--white);" id="plans">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Plans &amp; pricing</p>
+    <div class="det-plans-header">
+      <div>
+        <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:.75rem;">Choose the plan that fits your venue</h2>
+        <p style="font-size:1.05rem;color:var(--inkSoft);line-height:1.75;">SentoVox is a paid annual subscription that funds the European audience research. Choose the plan that matches your venue size and reporting needs.</p>
+      </div>
+      <div class="curr-bar">
+        <span class="curr-label">Currency</span>
+        <select class="curr-select" id="currSelect">
+          <option value="EUR">EUR (€)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="USD">USD ($)</option>
+          <option value="CHF">CHF</option>
+          <option value="SEK">SEK (kr)</option>
+          <option value="DKK">DKK (kr)</option>
+          <option value="NOK">NOK (kr)</option>
+          <option value="PLN">PLN (zł)</option>
+          <option value="CZK">CZK (Kč)</option>
+          <option value="CAD">CAD (CA$)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="det-plan-cards">
+      <div class="det-plan-card">
+        <div class="det-plan-head">
+          <div class="badge badge-f">Single</div>
+          <h3>Standard</h3>
+          <div class="det-plan-price">from <span class="pr-cell" data-eur="625">€625</span><small>/yr</small></div>
+          <div class="det-plan-price-note">Standard reporting · 6 months</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Full personalised visitor survey</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Live dynamic dashboard</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Multilingual (up to 6 languages)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Communication materials</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> European benchmarking report</li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" id="detRegLink" class="det-reg-link">Choose Standard →</a></div>
+      </div>
+
+      <div class="det-plan-card">
+        <div class="det-plan-head">
+          
+          <h3>Premium</h3>
+          <div class="det-plan-price">from <span class="pr-cell" data-eur="1000">€1.000</span><small>/yr</small></div>
+          <div class="det-plan-price-note">Premium reporting · 12 months</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Everything in Standard, plus:</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Unlimited respondents</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Trend measurement over time</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Extra helpdesk support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Group participation &amp; reports</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Short thematic surveys <span class="badge-new">2026</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Temporary collection or event surveys <span class="badge-new">2026</span></li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" class="det-reg-link">Choose Premium →</a></div>
+      </div>
+
+      <div class="det-plan-card det-plan-card--featured">
+        <div class="det-plan-head">
+          <div class="badge badge-pr">Premium</div>
+          <h3>Network</h3>
+          <div class="det-plan-price">from <span class="pr-cell" data-eur="1400">€1.400</span><small>/yr</small></div>
+          <div class="det-plan-price-note">Multi-venue · 12 months</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Everything in Premium, plus:</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Individual research report</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Benchmarking with peer cultural venues</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Executive summary for board</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Raw visitor data access</li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" class="det-reg-link">Choose Network →</a></div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:flex-end;align-items:center;gap:.75rem;margin-top:2rem;margin-bottom:.5rem;"><span style="font-size:.8rem;font-weight:500;color:var(--inkSoft);">Currency</span><select id="currSelect2" style="padding:.4rem .8rem;border:1px solid var(--tealBorder);border-radius:6px;font-size:.88rem;background:var(--white);color:var(--ink);"><option value="EUR">EUR (&euro;)</option><option value="GBP">GBP (&pound;)</option><option value="USD">USD ($)</option><option value="CHF">CHF</option><option value="SEK">SEK (kr)</option><option value="DKK">DKK (kr)</option><option value="NOK">NOK (kr)</option><option value="PLN">PLN (z&lstrok;)</option><option value="CZK">CZK (K&ccaron;)</option><option value="CAD">CAD (CA$)</option></select></div><div class="price-wrap" style="margin-top:0;max-width:none;">
+      <div class="price-scroll">
+        <table class="price-table" id="priceTable">
+          <thead><tr>
+            <th>Annual visitors (× 1,000)</th>
+            <th>Standard <span style="font-size:10px;padding:2px 8px;border-radius:999px;font-weight:700;text-transform:uppercase;background:rgba(255,255,255,0.20);color:rgba(255,255,255,0.95);margin-left:4px">Single</span></th>
+            <th>Premium</th>
+            <th>Network <span style="font-size:10px;padding:2px 8px;border-radius:999px;font-weight:700;text-transform:uppercase;background:rgba(255,255,255,0.18);color:rgba(255,255,255,0.90);margin-left:4px">Multi-year</span></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>Less than 25</td><td class="pr-cell" data-eur="625"></td><td class="pr-cell" data-eur="1000"></td><td class="pr-cell" data-eur="1400"></td></tr>
+            <tr><td>25 to 75</td><td class="pr-cell" data-eur="750"></td><td class="pr-cell" data-eur="1250"></td><td class="pr-cell" data-eur="1500"></td></tr>
+            <tr><td>75 to 150</td><td class="pr-cell" data-eur="900"></td><td class="pr-cell" data-eur="1400"></td><td class="pr-cell" data-eur="1650"></td></tr>
+            <tr><td>More than 150</td><td class="pr-cell" data-eur="1000"></td><td class="pr-cell" data-eur="1500"></td><td class="pr-cell" data-eur="1750"></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="price-note">Pricing is based on the number of annual visitors of your venue. Prices excluding VAT. Network groups receive reduced fees.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL INFO -->
+<section style="padding:4rem 0;background:#f5f3ef;" id="practical">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Practical information</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Everything else you need to know</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">Details on target audience, timing, data privacy, security, support, and more.</p>
+    <div class="det-accordions">
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Target audience</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>The study is designed for surveying visitors of your cultural venue - people who have been to your cultural venue within the past 12 months.</p>
+          <p>It is also possible to include non-visitors (never been). The intelligent survey logic identifies each profile and presents only relevant questions.</p>
+          <p>Questionnaires are available in German, English, French, Italian, Dutch, and Spanish. You choose which languages to offer. New languages are added regularly - missing one? <a href="{{ "/contact/" | relLangURL }}">Let us know</a>.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4"/></svg>For which cultural venues?</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>SentoVox is designed for any type of cultural venue - small or large, rural or urban, regardless of collection or offer.</p>
+          <p><a href="{{ "/details/" | relLangURL }}#participating-cultural venues">Discover the 130+ cultural venues that have already participated →</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Timing &amp; availability</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>The data collection period can run year-round or within a timeframe you select. Standard plan venues can conduct the study during 6 months; Premium and Network cultural venues have 12 months.</p>
+          <p>For Network cultural venues, there are two fixed reporting points to choose from: June or December. All cultural venues have ongoing access to their interactive dashboard throughout the study period.</p>
+          <p>SentoVox does not automatically renew memberships. After each research period, you will be contacted to offer the possibility to continue or upgrade your participation.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>Reaching respondents</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Each cultural venue receives a <strong>personal survey link and QR code</strong>, plus personalised, ready-to-use <strong>communication materials</strong> for digital channels (newsletter, website, social media) and physical touchpoints (posters, flyers). The base package includes digital materials; printed materials are available as an option.</p>
+          <p>The survey is fully responsive (smartphone, tablet, laptop, desktop). Live interviews via cultural venue staff or volunteers are also possible. A simplified paper version is available.</p>
+          <p>For former visitors or non-visitors, dedicated materials are provided for distribution through the city, partner institutions, and social media channels.</p>
+          <p>To support cultural venues reaching enough respondents, <strong>incentives</strong> are provided by the SentoVox study. For each completed survey, 1m&sup2; of rain forest will be saved through the organisation World Land Trust. Next to that, participants have a chance of winning attractive prizes. The incentives are fully organized by the SentoVox research team and are included in the cost of the participation. All participating venues, regardless of plan, contribute to this environmental initiative — one square metre saved per completed survey.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Security &amp; data integrity</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>All systems are secured according to current standards:</p>
+          <ul style="margin:.5rem 0 1rem 1.25rem;line-height:1.8;">
+            <li>Secure servers with HTTPS / SSL encryption</li>
+            <li>Continuous server backups</li>
+            <li>Anti-BOT measures</li>
+          </ul>
+          <p>Quality control measures ensure data integrity: consistency checks through control questions, detection of 'speeders', and anonymised IP address checks.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Data privacy &amp; GDPR</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>The study is conducted in full compliance with the European General Data Protection Regulation (GDPR). The survey is completely anonymous - no personal data of respondents is collected or stored.</p>
+          <p>Prize winners are determined by a random code system. Selected winners see a unique code after submission and contact the research team voluntarily. Contact details are deleted immediately afterward.</p>
+          <p>Your research results are the private property of your cultural venue. They are shared only with your designated contact person(s). All benchmark analyses use anonymised data.</p>
+          <p><a href="{{ (site.GetPage "/privacy").RelPermalink }}">Read the full privacy policy &rarr;</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Assistance &amp; support</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>SentoVox is designed to be easy to implement. Step-by-step plans and short explanatory videos guide you through the complete study.</p>
+          <p>Premium and Network cultural venues have access to extra support via a professional helpdesk with ticket tracking.</p>
+          <p>Cultural venue visitors can also reach the helpdesk via the "Help" button in the survey.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>Groups of cultural venues</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Groups of cultural venues enjoy extra benefits including tailored pricing, group participation, group reports, group-level questions, and a shared structure on the platform.</p>
+          <p>Network groups additionally receive individual reports per location, benchmarking with group-wide results, and raw data at group level.</p>
+          <p><a href="{{ "/contact/" | relLangURL }}">Learn more about group participation →</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Independence &amp; confidentiality</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>The study is offered to cultural venues completely independently. There is no external funding, which means results and data are completely confidential and analysis is conducted without any external influence. You decide if and how you want to publish your local results.</p>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);text-align:center;">
+  <div class="wrap">
+    <h2 style="font-family:var(--fontD);font-size:2.2rem;color:var(--white);margin-bottom:1rem;">Ready to understand your audience?</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);max-width:560px;margin:0 auto 2rem;line-height:1.7;">Join 130+ cultural venues across Europe. Choose the plan that fits your venue size and reporting needs.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="" id="detRegLink2" class="det-btn-white">Register your cultural venue →</a>
+      <a href="{{ "/contact/" | relLangURL }}" class="det-btn-outline">Contact us</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+var LIVE=['en','nl','fr','de','it','es'];
+var T={
+  en:{cta:'Participate',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'content',nav:'Content'},about:{slug:'about',nav:'About'},participate:{slug:'participate',nav:'Participate'},groups:{slug:'groups',nav:'Groups'},contact:{slug:'contact',nav:'Contact'}}},
+  nl:{cta:'Deelnemen',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'inhoud',nav:'Inhoud'},about:{slug:'over',nav:'Over'},participate:{slug:'deelnemen',nav:'Deelnemen'},groups:{slug:'groepen',nav:'Groepen'},contact:{slug:'contact',nav:'Contact'}}},
+  fr:{cta:'Participer',pages:{home:{slug:'',nav:'Accueil'},details:{slug:'details',nav:'Détails'},content:{slug:'contenu',nav:'Contenu'},about:{slug:'a-propos',nav:'À propos'},participate:{slug:'participer',nav:'Participer'},groups:{slug:'groupes',nav:'Groupes'},contact:{slug:'contact',nav:'Contact'}}},
+  de:{cta:'Teilnehmen',pages:{home:{slug:'',nav:'Startseite'},details:{slug:'details',nav:'Details'},content:{slug:'inhalte',nav:'Inhalte'},about:{slug:'uber-uns',nav:'Über uns'},participate:{slug:'teilnehmen',nav:'Teilnehmen'},groups:{slug:'gruppen',nav:'Gruppen'},contact:{slug:'kontakt',nav:'Kontakt'}}},
+  it:{cta:'Partecipare',pages:{home:{slug:'',nav:'Home'},details:{slug:'dettagli',nav:'Dettagli'},content:{slug:'contenuti',nav:'Contenuti'},about:{slug:'chi-siamo',nav:'Chi siamo'},participate:{slug:'partecipare',nav:'Partecipare'},groups:{slug:'gruppi',nav:'Gruppi'},contact:{slug:'contatto',nav:'Contatto'}}},
+  es:{cta:'Participar',pages:{home:{slug:'',nav:'Inicio'},details:{slug:'detalles',nav:'Detalles'},content:{slug:'contenido',nav:'Contenido'},about:{slug:'acerca-de',nav:'Acerca de'},participate:{slug:'participar',nav:'Participar'},groups:{slug:'grupos',nav:'Grupos'},contact:{slug:'contacto',nav:'Contacto'}}}
+};
+function url(lang,page){var s=T[lang].pages[page].slug;return'/'+lang+(s?'/'+s:'/')}
+function setCookie(n,v,d){var e=new Date();e.setTime(e.getTime()+d*864e5);document.cookie=n+'='+v+';expires='+e.toUTCString()+';path=/;SameSite=Lax'}
+function detectLang(){var m=window.location.pathname.match(/^\/(en|nl|fr|de|it|es)(\/|$)/);if(m&&T[m[1]]){setCookie('sn_lang',m[1],365);return m[1];}return'en'}
+var lang=detectLang();
+var ORDER=['home','details','content','groups','contact'];
+function renderNav(){
+  var t=T[lang];
+  var snLogoLink=document.getElementById('snLogoLink');if(snLogoLink)snLogoLink.href='/'+lang+'/';
+  ORDER.forEach(function(k){['#snLinks','#snDrLinks'].forEach(function(sel){var a=document.querySelector(sel+' a[data-key="'+k+'"]');if(!a)return;a.href=url(lang,k);a.textContent=t.pages[k].nav;});});
+  var snCta=document.getElementById('snCta');if(snCta)snCta.href=url(lang,'participate');
+  var snCtaTxt=document.getElementById('snCtaTxt');if(snCtaTxt)snCtaTxt.textContent=t.cta;
+  document.querySelectorAll('[id^="detRegLink"],.det-reg-link').forEach(function(el){el.href=url(lang,'participate');});
+  
+  var _codes={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+  var snLangFlag=document.getElementById('snLangFlag');if(snLangFlag)snLangFlag.textContent=_flags[lang]||'🇬🇧';
+  var snLangCode=document.getElementById('snLangCode');if(snLangCode)snLangCode.textContent=_codes[lang]||'EN';
+  document.querySelectorAll('#snLangDrop a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'details');});
+  document.querySelectorAll('#snDrLangs a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'details');});
+  var snDrCta=document.getElementById('snDrCta');if(snDrCta){snDrCta.href=url(lang,'participate');snDrCta.textContent=t.cta+' →';}
+  document.documentElement.lang=lang;
+}
+renderNav();
+function switchLang(l){if(!LIVE.includes(l))return;setCookie('sn_lang',l,365);window.location.href=url(l,'details')}
+
+/* Jump nav */
+var snNav=document.getElementById('snNav');
+var detNav=document.getElementById('detNav');
+var jumpLinks=Array.prototype.slice.call(document.querySelectorAll('.det-link'));
+var sections=jumpLinks.map(function(a){return document.getElementById((a.getAttribute('href')||'').slice(1))}).filter(Boolean);
+function totalStickyH(){return(snNav?snNav.offsetHeight:64)+(detNav?detNav.offsetHeight:44)}
+function updateJumpNav(){var y=window.scrollY+totalStickyH()+24;var cur=null;for(var i=0;i<sections.length;i++){if(sections[i]&&sections[i].offsetTop<=y)cur=sections[i].id}jumpLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-sec')===cur)});}
+window.addEventListener('scroll',updateJumpNav,{passive:true});
+updateJumpNav();
+
+/* Accordions */
+document.querySelectorAll('.det-acc-trigger').forEach(function(btn){
+  btn.addEventListener('click',function(){var acc=btn.parentElement;var isOpen=acc.classList.contains('open');acc.classList.toggle('open',!isOpen);btn.setAttribute('aria-expanded',!isOpen);});
+});
+
+/* Footer */
+var snFc=document.getElementById('snFooterCopy');if(snFc)snFc.textContent='SentoVox © '+new Date().getFullYear();
+var ft={en:{terms:'Terms & Conditions',privacy:'Privacy Policy',ts:'terms',ps:'privacy'},nl:{terms:'Algemene voorwaarden',privacy:'Privacybeleid',ts:'voorwaarden',ps:'privacy'},fr:{terms:'Conditions générales',privacy:'Politique de confidentialité',ts:'terms',ps:'privacy'},de:{terms:'Allgemeine Geschäftsbedingungen',privacy:'Datenschutzerklärung',ts:'terms',ps:'privacy'},it:{terms:'Termini e condizioni',privacy:'Informativa sulla privacy',ts:'terms',ps:'privacy'},es:{terms:'Términos y condiciones',privacy:'Política de privacidad',ts:'terms',ps:'privacy'}};
+var flt=ft[lang]||ft.en;
+var snFt=document.getElementById('snFooterTerms');if(snFt){snFt.textContent=flt.terms;snFt.href='/'+lang+'/'+flt.ts;}
+var snFp=document.getElementById('snFooterPrivacy');if(snFp){snFp.textContent=flt.privacy;snFp.href='/'+lang+'/'+flt.ps;}
+
+/* Back to top */
+var topBtn=document.getElementById('topBtn');
+if(topBtn){window.addEventListener('scroll',function(){topBtn.classList.toggle('visible',scrollY>400);},{passive:true});topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+
+/* Currency */
+function initPrices(){
+  var rates={EUR:1,GBP:0.86,USD:1.09,CHF:0.98,SEK:11.3,DKK:7.46,NOK:11.8,PLN:4.3,CZK:25.2,CAD:1.48};
+  var symbols={EUR:'€',GBP:'£',USD:'$',CHF:'CHF ',SEK:'kr ',DKK:'kr ',NOK:'kr ',PLN:'zł ',CZK:'Kč ',CAD:'CA$ '};
+  var cs=document.getElementById('currSelect');var cs2=document.getElementById('currSelect2');
+  if(!cs)return;
+  function updatePrices(){var c=cs.value,r=rates[c],s=symbols[c];document.querySelectorAll('.pr-cell').forEach(function(td){var eur=parseFloat(td.getAttribute('data-eur'));td.textContent=c==='EUR'?'€'+eur:s+Math.ceil((eur+10)*r/5)*5;});}
+  cs.addEventListener('change',function(){if(cs2)cs2.value=cs.value;updatePrices();});if(cs2)cs2.addEventListener('change',function(){cs.value=cs2.value;updatePrices();});updatePrices();
+}
+initPrices();window.addEventListener('load',initPrices);
+
+})();
+</script>
 {{ end }}

@@ -1,0 +1,551 @@
+{{/* build: 2026-04-16 language-aware page links */}}
+
+{{ define "before_main" }}
+<div class="det-nav" id="detNav">
+  <div class="det-nav-inner is-links">
+    <a href="#measure" class="det-link" data-sec="measure">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      Ce que vous mesurez
+    </a>
+    <a href="#how" class="det-link" data-sec="how">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 20V10m0 0l-3 3m3-3l3 3M6 4h12"/></svg>
+      Comment ça fonctionne
+    </a>
+    <a href="#method" class="det-link" data-sec="method">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Méthodologie
+    </a>
+    <a href="#benchmark" class="det-link" data-sec="benchmark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Benchmarking
+    </a>
+    <a href="#why" class="det-link" data-sec="why">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      Pourquoi ça compte
+    </a>
+    <a href="#plans" class="det-link" data-sec="plans">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 8v2"/></svg>
+      Plans &amp; tarifs
+    </a>
+    <a href="#practical" class="det-link" data-sec="practical">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+      Pratique
+    </a>
+  </div>
+</div>
+{{ end }}
+
+{{ define "main" }}
+{{- $content := .Site.GetPage "/content" -}}
+{{- $about := .Site.GetPage "/about" -}}
+{{- $contact := .Site.GetPage "/contact" -}}
+{{- $groups := .Site.GetPage "/groups" -}}
+{{- $participate := .Site.GetPage "/participate" -}}
+<h1 class="sr">Comment fonctionne SentoVox - étude des publics de salle culturelle en détail</h1>
+
+<!-- HERO -->
+<section style="background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);padding:4.5rem 0 3.5rem;text-align:center;">
+  <div class="wrap">
+    <h2 style="font-family:var(--fontD);font-size:2.4rem;font-weight:800;color:var(--white);margin:0 auto 1rem;line-height:1.2;max-width:720px;">Comment fonctionne SentoVox</h2>
+    <p style="font-size:1.1rem;color:rgba(255,255,255,0.88);max-width:600px;margin:0 auto 2rem;line-height:1.7;">Une étude des publics standardisée qui permet aux salles culturelles de comprendre leurs visiteurs, mesurer leur impact et comparer leurs résultats au niveau national et international.</p>
+    <a href="#plans" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--white);color:var(--teal);padding:.7rem 1.8rem;border-radius:8px;font-weight:600;font-size:1rem;text-decoration:none;">Voir les plans de participation ↓</a>
+  </div>
+</section>
+
+<!-- VIDEO HIDDEN -->
+<section style="display:none;">
+  <div class="wrap" style="max-width:760px;text-align:center;">
+    <!-- VIDEO HIDDEN --> <div style="display:none"><p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.5rem;">Regardez la présentation</p>
+    <h2 style="font-family:var(--fontD);font-size:1.5rem;margin-bottom:.5rem;">Découvrez comment l'étude fonctionne en pratique</h2>
+    <p style="font-size:.92rem;color:var(--inkSoft);margin-bottom:1.5rem;">Un aperçu complet de l'étude SentoVox en 8 minutes - de l'inscription aux résultats.</p>
+    <div class="video-placeholder" style="display:none">
+      <svg viewBox="0 0 24 24" width="52" height="52" stroke="var(--teal)" fill="none" stroke-width="1.5" opacity=".4"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="var(--teal)" stroke="none" opacity=".3"/></svg>
+      <p>Emplacement vidéo - intégrez ici un lien YouTube ou Vimeo</p>
+    </div>
+  </div></div></div>
+</section>
+
+<!-- WHAT YOU MEASURE -->
+<section style="padding:4rem 0;background:var(--white);" id="measure">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Ce que vous mesurez</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Des analyses approfondies sur huit thèmes</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">Le questionnaire SentoVox couvre tous les aspects pertinents de votre salle culturelle - des profils et de la satisfaction des visiteurs à l'impact sociétal. Chaque thème est conçu pour vous permettre de traduire les résultats en actions concrètes.</p>
+    <div style="background:linear-gradient(135deg,#e8f4f1 0%,#d4ece7 100%);border-radius:16px;padding:2.5rem;display:flex;align-items:flex-start;gap:2.5rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:var(--teal);color:var(--white);">Profils des visiteurs</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#c05370;color:var(--white);">Expérience &amp; satisfaction</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#b8860b;color:var(--white);">Impact &amp; bien-être</span>
+          
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#7b5ea7;color:var(--white);">Communication</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#5a8a6a;color:var(--white);">NPS</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#c4783e;color:var(--white);">Comportement de visite</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#6a8e9e;color:var(--white);">Motivations &amp; attentes</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#8b6e5a;color:var(--white);">Feedback ouvert</span>
+        </div>
+        <h3 style="font-family:var(--fontD);font-size:1.35rem;margin-bottom:.6rem;color:var(--tealDark);">Huit thèmes de recherche, une enquête complète</h3>
+        <p style="font-size:.95rem;color:var(--ink);line-height:1.7;margin-bottom:1.2rem;">Le questionnaire est entièrement personnalisé au contexte de votre salle culturelle. Vous pouvez supprimer, ajouter ou modifier des questions et des options de réponse via la plateforme de recherche.</p>
+        <a href="{{ if $content }}{{ $content.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--teal);color:var(--white);padding:.65rem 1.4rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;">
+          Explorer les huit thèmes en détail
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <a href="{{ if $content }}{{ $content.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}" style="flex-shrink:0;width:160px;height:160px;background:var(--white);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-decoration:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5" style="width:48px;height:48px;margin-bottom:.5rem;"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+        <span style="font-size:.85rem;font-weight:600;color:var(--tealDark);text-align:center;">Aperçu du<br>contenu</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);" id="how">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.7);margin-bottom:.75rem;">Comment ça fonctionne</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;color:var(--white);margin-bottom:1rem;">De l'inscription aux résultats en quatre étapes</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;">SentoVox est conçu pour minimiser la charge de travail de votre équipe.</p>
+    <div class="det-steps-grid">
+      <div class="det-step-card">
+        <div class="det-step-num">1</div>
+        <h3>S'inscrire</h3>
+        <p>Inscrivez votre salle culturelle sur la plateforme SentoVox et obtenez un accès immédiat à l'étude.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">2</div>
+        <h3>Personnaliser</h3>
+        <p>Fournissez les caractéristiques de votre salle culturelle pour que nous puissions personnaliser votre enquête. Ajoutez des questions locales et modifiez le questionnaire standard.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">3</div>
+        <h3>Collecter les réponses</h3>
+        <p>Partagez votre lien d'enquête personnel et votre code QR grâce aux supports de communication prêts à l'emploi.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">4</div>
+        <h3>Analyser &amp; agir</h3>
+        <p>Explorez les résultats dans votre tableau de bord en direct. Les salles culturelles Réseau reçoivent un rapport complet avec des benchmarks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section style="padding:4rem 0;background:var(--white);" id="method">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Méthodologie &amp; fiabilité</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Fondé scientifiquement, conçu pratiquement</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">L'étude est construite sur un standard européen partagé, développé avec des partenaires académiques et des professionnels de salles culturelles. Suffisamment rigoureux pour être crédible, suffisamment accessible pour être pratique.</p>
+    <div class="det-method-grid">
+      <div class="det-method-points">
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+          <div>
+            <h4>9 chercheurs, 7 universités</h4>
+            <p>Le questionnaire est développé et validé par une équipe académique internationale, garantissant la rigueur scientifique.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+          <div>
+            <h4>Standard international, adaptation locale</h4>
+            <p>Un questionnaire européen partagé, adapté aux contextes nationaux et aux spécificités culturelles par des partenaires académiques locaux. Entièrement personnalisé pour chaque salle culturelle participante.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div>
+            <h4>Logique d'enquête dynamique &amp; intelligente</h4>
+            <p>Le système identifie les profils des répondants et n'affiche que les questions pertinentes - permettant aux visiteurs et non-visiteurs d'être interrogés avec le même questionnaire.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div>
+            <h4>Disponible en 6 langues</h4>
+            <p>Allemand, anglais, français, italien, néerlandais et espagnol. De nouvelles langues sont ajoutées régulièrement. Il en manque une ? <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">Contactez-nous</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="det-method-callout">
+        <h3>Approuvé par le secteur</h3>
+        <p>L'étude est développée en étroite collaboration avec les associations nationales de salles culturelles et les professionnels du secteur à travers l'Europe, garantissant que le questionnaire répond à ce qui compte vraiment pour les salles culturelles.</p>
+        <p style="margin-top:1rem;"><a href="{{ "/" | relLangURL }}#team">Rencontrer l'équipe académique →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENCHMARKING -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);text-align:center;" id="benchmark">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.7);margin-bottom:.75rem;">Benchmarking international</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;color:var(--white);margin-bottom:1rem;">Comparez votre salle culturelle avec ses pairs au niveau national et international</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);max-width:640px;margin:0 auto 2.5rem;line-height:1.7;">Une méthodologie partagée rend la comparaison significative possible. Voyez comment votre salle culturelle se comporte par rapport à des institutions similaires, aux moyennes nationales et aux résultats internationaux.*</p>
+    <div class="det-bench-grid">
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        <h4>Tableau de bord en direct</h4>
+        <p>Explorez vos résultats en temps réel avec des filtres et des tableaux croisés</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+        <h4>Rapport de recherche</h4>
+        <p>Analyse complète avec des recommandations concrètes pour les salles culturelles Réseau</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <h4>Comparaison avec des pairs</h4>
+        <p>Benchmarking anonyme avec des groupes de salles culturelles comparables</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <h4>Analyse des tendances</h4>
+        <p>Suivez l'évolution dans le temps pour les salles culturelles Premium et Réseau</p>
+      </div>
+    </div>
+    <p style="margin-top:2rem;font-size:.88rem;opacity:.7;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;">Votre tableau de bord et votre rapport sont toujours confidentiels - seul votre salle culturelle a accès à ses propres résultats.</p>
+    <p style="margin-top:.5rem;font-size:.82rem;opacity:.80;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;">* Le benchmarking avec des salles culturelles pairs est disponible pour les membres Réseau.</p>
+    <p style="margin-top:1rem;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;"><a href="{{ if $about }}{{ $about.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}#participating-libraries" style="color:var(--white);text-decoration:underline;font-weight:500;">Découvrez les 130+ salles culturelles qui ont déjà participé →</a></p>
+  </div>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section style="padding:4rem 0;background:#f5f3ef;" id="why">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Pourquoi c'est important</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Ce que SentoVox vous permet de faire</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">L'étude ne mesure pas seulement - elle donne à votre salle culturelle les preuves pour agir, s'améliorer et communiquer votre impact avec confiance.</p>
+    <div class="det-outcomes">
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Prendre des décisions éclairées</h4><p>Utilisez les données des visiteurs pour prioriser les investissements en programmation, infrastructure et communication.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/></svg></div>
+        <div><h4>Améliorer l'expérience des visiteurs</h4><p>Identifiez ce que les visiteurs valorisent le plus et où il y a place à l'amélioration, avec des suggestions concrètes.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><h4>Renforcer les arguments de financement</h4><p>Démontrez l'impact sociétal avec des données crédibles et benchmarkées.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div><h4>Atteindre de nouveaux publics</h4><p>Comprenez pourquoi les non-visiteurs ne viennent pas et pourquoi les anciens visiteurs ne reviennent plus - et comment les atteindre.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS & PRICING -->
+<section style="padding:4rem 0;background:var(--white);" id="plans">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Plans &amp; tarifs</p>
+    <div class="det-plans-header">
+      <div>
+        <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:.75rem;">Choisissez le plan adapté à votre salle culturelle</h2>
+        <p style="font-size:1.05rem;color:var(--inkSoft);line-height:1.75;">SentoVox est un abonnement annuel payant qui finance l'étude européenne. Choisissez le plan qui correspond à la taille de votre salle culturelle et à vos besoins de reporting.</p>
+      </div>
+      <div class="curr-bar">
+        <span class="curr-label">Devise</span>
+        <select class="curr-select" id="currSelect">
+          <option value="EUR">EUR (€)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="USD">USD ($)</option>
+          <option value="CHF">CHF</option>
+          <option value="SEK">SEK (kr)</option>
+          <option value="DKK">DKK (kr)</option>
+          <option value="NOK">NOK (kr)</option>
+          <option value="PLN">PLN (zł)</option>
+          <option value="CZK">CZK (Kč)</option>
+          <option value="CAD">CAD (CA$)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="det-plan-cards">
+      <div class="det-plan-card">
+        <div class="det-plan-head">
+          <div class="badge badge-f">Édition</div>
+          <h3>Standard</h3>
+          <div class="det-plan-price">à partir de <span class="pr-cell" data-eur="625">€625</span><small>/an</small></div>
+          <div class="det-plan-price-note">Rapport standard · 6 mois</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Enquête visiteurs entièrement personnalisée</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Tableau de bord dynamique en direct</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Multilingue (jusqu'à 6 langues)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Supports de communication</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Rapport de benchmarking européen</li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" id="detRegLink" class="det-reg-link">Choisir Standard →</a></div>
+      </div>
+
+      <div class="det-plan-card">
+        <div class="det-plan-head">
+          
+          <h3>Premium</h3>
+          <div class="det-plan-price">à partir de <span class="pr-cell" data-eur="1000">€1.000</span><small>/an</small></div>
+          <div class="det-plan-price-note">Rapport premium · 12 mois</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Tout dans Standard, plus :</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Répondants illimités</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Mesure des tendances dans le temps</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Assistance helpdesk supplémentaire</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Participation de groupe &amp; rapports</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Enquêtes thématiques courtes <span class="badge-new">2026</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Enquêtes pour activités temporaires ou événements <span class="badge-new">2026</span></li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" class="det-reg-link">Choisir Premium →</a></div>
+      </div>
+
+      <div class="det-plan-card det-plan-card--featured">
+        <div class="det-plan-head">
+          <div class="badge badge-pr">Premium</div>
+          <h3>Réseau</h3>
+          <div class="det-plan-price">à partir de <span class="pr-cell" data-eur="1400">€1.400</span><small>/an</small></div>
+          <div class="det-plan-price-note">Multi-sites · 12 mois</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Tout dans Premium, plus :</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Rapport de recherche individuel</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Benchmarking avec des salles culturelles pairs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Résumé exécutif pour le conseil</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Accès aux données brutes des visiteurs</li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" class="det-reg-link">Choisir Réseau →</a></div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:flex-end;align-items:center;gap:.75rem;margin-top:2rem;margin-bottom:.5rem;"><span style="font-size:.8rem;font-weight:500;color:var(--inkSoft);">Devise</span><select id="currSelect2" style="padding:.4rem .8rem;border:1px solid var(--tealBorder);border-radius:6px;font-size:.88rem;background:var(--white);color:var(--ink);"><option value="EUR">EUR (&euro;)</option><option value="GBP">GBP (&pound;)</option><option value="USD">USD ($)</option><option value="CHF">CHF</option><option value="SEK">SEK (kr)</option><option value="DKK">DKK (kr)</option><option value="NOK">NOK (kr)</option><option value="PLN">PLN (z&lstrok;)</option><option value="CZK">CZK (K&ccaron;)</option><option value="CAD">CAD (CA$)</option></select></div><div class="price-wrap" style="margin-top:0;max-width:none;">
+      <div class="price-scroll">
+        <table class="price-table" id="priceTable">
+          <thead><tr>
+            <th>Habitants (× 1 000)</th>
+            <th>Standard <span style="font-size:10px;padding:2px 8px;border-radius:999px;font-weight:700;text-transform:uppercase;background:rgba(255,255,255,0.20);color:rgba(255,255,255,0.95);margin-left:4px">Édition</span></th>
+            <th>Premium</th>
+            <th>Réseau <span style="font-size:10px;padding:2px 8px;border-radius:999px;font-weight:700;text-transform:uppercase;background:rgba(255,255,255,0.18);color:rgba(255,255,255,0.90);margin-left:4px">Pluriannuel</span></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>Moins de 25</td><td class="pr-cell" data-eur="625"></td><td class="pr-cell" data-eur="1000"></td><td class="pr-cell" data-eur="1400"></td></tr>
+            <tr><td>25 à 75</td><td class="pr-cell" data-eur="750"></td><td class="pr-cell" data-eur="1250"></td><td class="pr-cell" data-eur="1500"></td></tr>
+            <tr><td>75 à 150</td><td class="pr-cell" data-eur="900"></td><td class="pr-cell" data-eur="1400"></td><td class="pr-cell" data-eur="1650"></td></tr>
+            <tr><td>Plus de 150</td><td class="pr-cell" data-eur="1000"></td><td class="pr-cell" data-eur="1500"></td><td class="pr-cell" data-eur="1750"></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="price-note">Prix par an, hors TVA. Les groupes bénéficient de tarifs réduits. SentoVox ne renouvelle pas automatiquement les adhésions.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL INFO -->
+<section style="padding:4rem 0;background:#f5f3ef;" id="practical">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Infos pratiques</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Tout ce que vous devez savoir d'autre</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">Détails sur le public cible, le calendrier, la confidentialité des données, la sécurité, le support et plus encore.</p>
+    <div class="det-accordions">
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Public cible</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>L'étude est conçue pour interroger les visiteurs de votre salle culturelle - des personnes qui ont visité votre salle culturelle au cours des 12 derniers mois.</p>
+          <p>Il est également possible d'inclure d'anciens visiteurs (plus de 12 mois) ou des non-visiteurs (jamais visité). La logique intelligente d'enquête identifie chaque profil et ne présente que les questions pertinentes.</p>
+          <p>Les questionnaires sont disponibles en allemand, anglais, français, italien, néerlandais et espagnol. Vous choisissez les langues à proposer. De nouvelles langues sont ajoutées régulièrement - il en manque une ? <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">Contactez-nous</a>.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4"/></svg>Pour quelles salles culturelles ?</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>SentoVox est conçu pour tout type de salle culturelle - petite ou grande, rurale ou urbaine, quelle que soit la collection ou l'offre.</p>
+          <p><a href="{{ if $about }}{{ $about.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}#participating-libraries">Découvrez les 130+ salles culturelles qui ont déjà participé →</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Calendrier &amp; disponibilité</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>La période de collecte de données peut s'étendre toute l'année ou dans un délai que vous sélectionnez. Les membres peuvent mener l'étude pendant 6 mois ; les salles culturelles Premium et Réseau ont 12 mois.</p>
+          <p>Pour les salles culturelles Réseau, il y a deux points de rapport fixes au choix : juin ou décembre. Toutes les salles culturelles ont un accès continu à leur tableau de bord interactif tout au long de la période d'étude.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>Atteindre les répondants</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Chaque salle culturelle reçoit un <strong>lien d'enquête personnel et un code QR</strong>, ainsi que des <strong>supports de communication</strong> personnalisés et prêts à l'emploi pour les canaux numériques et les points de contact physiques.</p>
+          <p>L'enquête est entièrement responsive. Des entretiens en direct et une version papier simplifiée sont également possibles.</p>
+          <p>Des incitations sont incluses pour toutes les salles culturelles : 1m² de forêt tropicale préservé par enquête complétée via World Land Trust, plus des prix pour les participants. Entièrement organisé par l'équipe SentoVox - y compris pour les participants gratuits.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Sécurité &amp; intégrité des données</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Tous les systèmes sont sécurisés : chiffrement HTTPS/SSL, sauvegardes continues et mesures anti-BOT.</p>
+          <p>L'intégrité des données est assurée par des contrôles de cohérence, la détection des répondants trop rapides et des vérifications d'IP anonymisées.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Confidentialité des données &amp; RGPD</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>L'étude est menée en pleine conformité avec le RGPD. L'enquête est complètement anonyme - aucune donnée personnelle des répondants n'est collectée.</p>
+          <p>Vos résultats de recherche sont la propriété privée de votre salle culturelle, partagés uniquement avec votre/vos personne(s) de contact désignée(s).</p>
+          <p><a href="{{ (site.GetPage "/privacy").RelPermalink }}">Lire la politique de confidentialité complète →</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Aide &amp; support</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>SentoVox est conçu pour être facile à mettre en œuvre. Des plans étape par étape et de courtes vidéos vous guident tout au long de l'étude.</p>
+          <p>Les salles culturelles Premium et Réseau ont accès à un support supplémentaire via un helpdesk professionnel avec suivi des tickets.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>Groupes de salles culturelles</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Les groupes de salles culturelles bénéficient de tarifs personnalisés, de participation de groupe, de rapports de groupe et d'une structure partagée sur la plateforme.</p>
+          <p><a href="{{ if $groups }}{{ $groups.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">En savoir plus sur la participation de groupe →</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Indépendance &amp; confidentialité</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>L'étude est proposée de manière totalement indépendante. Il n'y a pas de financement externe - les résultats et les données sont entièrement confidentiels et l'analyse est menée sans aucune influence externe.</p>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);text-align:center;">
+  <div class="wrap">
+    <h2 style="font-family:var(--fontD);font-size:2.2rem;color:var(--white);margin-bottom:1rem;">Prêt à comprendre votre public ?</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);max-width:560px;margin:0 auto 2rem;line-height:1.7;">Rejoignez 130+ salles culturelles à travers l'Europe. Commencez avec une adhésion gratuite ou choisissez le plan qui correspond à vos besoins.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="" id="detRegLink2" class="det-btn-white">Inscrire votre salle culturelle →</a>
+      <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}" class="det-btn-outline">Contact</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+var LIVE=['en','nl','fr','de','it','es'];
+var T={
+  en:{cta:'Participate',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'content',nav:'Content'},about:{slug:'about',nav:'About'},participate:{slug:'participate',nav:'Participate'},groups:{slug:'groups',nav:'Groups'},contact:{slug:'contact',nav:'Contact'}}},
+  nl:{cta:'Deelnemen',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'inhoud',nav:'Inhoud'},about:{slug:'over',nav:'Over'},participate:{slug:'deelnemen',nav:'Deelnemen'},groups:{slug:'groepen',nav:'Groepen'},contact:{slug:'contact',nav:'Contact'}}},
+  fr:{cta:'Participer',pages:{home:{slug:'',nav:'Accueil'},details:{slug:'details',nav:'Détails'},content:{slug:'contenu',nav:'Contenu'},about:{slug:'a-propos',nav:'À propos'},participate:{slug:'participer',nav:'Participer'},groups:{slug:'groupes',nav:'Groupes'},contact:{slug:'contact',nav:'Contact'}}},
+  de:{cta:'Teilnehmen',pages:{home:{slug:'',nav:'Startseite'},details:{slug:'details',nav:'Details'},content:{slug:'inhalte',nav:'Inhalte'},about:{slug:'uber-uns',nav:'Über uns'},participate:{slug:'teilnehmen',nav:'Teilnehmen'},groups:{slug:'gruppen',nav:'Gruppen'},contact:{slug:'kontakt',nav:'Kontakt'}}},
+  it:{cta:'Partecipare',pages:{home:{slug:'',nav:'Home'},details:{slug:'dettagli',nav:'Dettagli'},content:{slug:'contenuti',nav:'Contenuti'},about:{slug:'chi-siamo',nav:'Chi siamo'},participate:{slug:'partecipare',nav:'Partecipare'},groups:{slug:'gruppi',nav:'Gruppi'},contact:{slug:'contatto',nav:'Contatto'}}},
+  es:{cta:'Participar',pages:{home:{slug:'',nav:'Inicio'},details:{slug:'detalles',nav:'Detalles'},content:{slug:'contenido',nav:'Contenido'},about:{slug:'acerca-de',nav:'Acerca de'},participate:{slug:'participar',nav:'Participar'},groups:{slug:'grupos',nav:'Grupos'},contact:{slug:'contacto',nav:'Contacto'}}}
+};
+function url(lang,page){var s=T[lang].pages[page].slug;return'/'+lang+(s?'/'+s:'/')}
+function setCookie(n,v,d){var e=new Date();e.setTime(e.getTime()+d*864e5);document.cookie=n+'='+v+';expires='+e.toUTCString()+';path=/;SameSite=Lax'}
+function detectLang(){var m=window.location.pathname.match(/^\/(en|nl|fr|de|it|es)(\/|$)/);if(m&&T[m[1]]){setCookie('sn_lang',m[1],365);return m[1];}return'en'}
+var lang=detectLang();
+var ORDER=['home','details','content','groups','contact'];
+function renderNav(){
+  var t=T[lang];
+  var snLogoLink=document.getElementById('snLogoLink');if(snLogoLink)snLogoLink.href='/'+lang+'/';
+  ORDER.forEach(function(k){['#snLinks','#snDrLinks'].forEach(function(sel){var a=document.querySelector(sel+' a[data-key="'+k+'"]');if(!a)return;a.href=url(lang,k);a.textContent=t.pages[k].nav;});});
+  var snCta=document.getElementById('snCta');if(snCta)snCta.href=url(lang,'participate');
+  var snCtaTxt=document.getElementById('snCtaTxt');if(snCtaTxt)snCtaTxt.textContent=t.cta;
+  document.querySelectorAll('[id^="detRegLink"],.det-reg-link').forEach(function(el){el.href=url(lang,'participate');});
+  
+  var _codes={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+  var snLangFlag=document.getElementById('snLangFlag');if(snLangFlag)snLangFlag.textContent=_flags[lang]||'🇬🇧';
+  var snLangCode=document.getElementById('snLangCode');if(snLangCode)snLangCode.textContent=_codes[lang]||'EN';
+  document.querySelectorAll('#snLangDrop a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'details');});
+  document.querySelectorAll('#snDrLangs a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'details');});
+  var snDrCta=document.getElementById('snDrCta');if(snDrCta){snDrCta.href=url(lang,'participate');snDrCta.textContent=t.cta+' →';}
+  document.documentElement.lang=lang;
+}
+renderNav();
+function switchLang(l){if(!LIVE.includes(l))return;setCookie('sn_lang',l,365);window.location.href=url(l,'details')}
+
+/* Jump nav */
+var snNav=document.getElementById('snNav');
+var detNav=document.getElementById('detNav');
+var jumpLinks=Array.prototype.slice.call(document.querySelectorAll('.det-link'));
+var sections=jumpLinks.map(function(a){return document.getElementById((a.getAttribute('href')||'').slice(1))}).filter(Boolean);
+function totalStickyH(){return(snNav?snNav.offsetHeight:64)+(detNav?detNav.offsetHeight:44)}
+function updateJumpNav(){var y=window.scrollY+totalStickyH()+24;var cur=null;for(var i=0;i<sections.length;i++){if(sections[i]&&sections[i].offsetTop<=y)cur=sections[i].id}jumpLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-sec')===cur)});}
+window.addEventListener('scroll',updateJumpNav,{passive:true});
+updateJumpNav();
+
+/* Accordions */
+document.querySelectorAll('.det-acc-trigger').forEach(function(btn){
+  btn.addEventListener('click',function(){var acc=btn.parentElement;var isOpen=acc.classList.contains('open');acc.classList.toggle('open',!isOpen);btn.setAttribute('aria-expanded',!isOpen);});
+});
+
+/* Footer */
+var snFc=document.getElementById('snFooterCopy');if(snFc)snFc.textContent='SentoVox © '+new Date().getFullYear();
+var ft={en:{terms:'Terms & Conditions',privacy:'Privacy Policy',ts:'terms',ps:'privacy'},nl:{terms:'Algemene voorwaarden',privacy:'Privacybeleid',ts:'voorwaarden',ps:'privacy'},fr:{terms:'Conditions générales',privacy:'Politique de confidentialité',ts:'terms',ps:'privacy'},de:{terms:'Allgemeine Geschäftsbedingungen',privacy:'Datenschutzerklärung',ts:'terms',ps:'privacy'},it:{terms:'Termini e condizioni',privacy:'Informativa sulla privacy',ts:'terms',ps:'privacy'},es:{terms:'Términos y condiciones',privacy:'Política de privacidad',ts:'terms',ps:'privacy'}};
+var flt=ft[lang]||ft.en;
+var snFt=document.getElementById('snFooterTerms');if(snFt){snFt.textContent=flt.terms;snFt.href='/'+lang+'/'+flt.ts;}
+var snFp=document.getElementById('snFooterPrivacy');if(snFp){snFp.textContent=flt.privacy;snFp.href='/'+lang+'/'+flt.ps;}
+
+/* Back to top */
+var topBtn=document.getElementById('topBtn');
+if(topBtn){window.addEventListener('scroll',function(){topBtn.classList.toggle('visible',scrollY>400);},{passive:true});topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+
+/* Currency */
+function initPrices(){
+  var rates={EUR:1,GBP:0.86,USD:1.09,CHF:0.98,SEK:11.3,DKK:7.46,NOK:11.8,PLN:4.3,CZK:25.2,CAD:1.48};
+  var symbols={EUR:'€',GBP:'£',USD:'$',CHF:'CHF ',SEK:'kr ',DKK:'kr ',NOK:'kr ',PLN:'zł ',CZK:'Kč ',CAD:'CA$ '};
+  var cs=document.getElementById('currSelect');var cs2=document.getElementById('currSelect2');
+  if(!cs)return;
+  function updatePrices(){var c=cs.value,r=rates[c],s=symbols[c];document.querySelectorAll('.pr-cell').forEach(function(td){var eur=parseFloat(td.getAttribute('data-eur'));td.textContent=c==='EUR'?'€'+eur:s+Math.ceil((eur+10)*r/5)*5;});}
+  cs.addEventListener('change',function(){if(cs2)cs2.value=cs.value;updatePrices();});if(cs2)cs2.addEventListener('change',function(){cs.value=cs2.value;updatePrices();});updatePrices();
+}
+initPrices();window.addEventListener('load',initPrices);
+
+})();
+</script>
+{{ end }}

@@ -1,0 +1,560 @@
+{{/* build: 2026-04-16 language-aware page links */}}
+
+{{ define "before_main" }}
+<div class="det-nav" id="detNav">
+  <div class="det-nav-inner is-links">
+    <a href="#measure" class="det-link" data-sec="measure">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      Wat u meet
+    </a>
+    <a href="#how" class="det-link" data-sec="how">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 20V10m0 0l-3 3m3-3l3 3M6 4h12"/></svg>
+      Hoe het werkt
+    </a>
+    <a href="#method" class="det-link" data-sec="method">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Methodologie
+    </a>
+    <a href="#benchmark" class="det-link" data-sec="benchmark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Benchmarking
+    </a>
+    <a href="#why" class="det-link" data-sec="why">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      Waarom SentoVox
+    </a>
+    <a href="#plans" class="det-link" data-sec="plans">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 8v2"/></svg>
+      Plannen &amp; prijzen
+    </a>
+    <a href="#practical" class="det-link" data-sec="practical">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+      Praktisch
+    </a>
+  </div>
+</div>
+{{ end }}
+
+{{ define "main" }}
+{{- $content := .Site.GetPage "/content" -}}
+{{- $about := .Site.GetPage "/about" -}}
+{{- $contact := .Site.GetPage "/contact" -}}
+{{- $groups := .Site.GetPage "/groups" -}}
+{{- $participate := .Site.GetPage "/participate" -}}
+<h1 class="sr">Hoe SentoVox werkt - cultuurpublieksonderzoek in detail</h1>
+
+<!-- HERO -->
+<section style="background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);padding:4.5rem 0 3.5rem;text-align:center;">
+  <div class="wrap">
+    <h2 style="font-family:var(--fontD);font-size:2.4rem;font-weight:800;color:var(--white);margin:0 auto 1rem;line-height:1.2;max-width:720px;">Hoe SentoVox werkt</h2>
+    <p style="font-size:1.1rem;color:rgba(255,255,255,0.88);max-width:600px;margin:0 auto 2rem;line-height:1.7;">Een gestandaardiseerde publieksstudie waarmee cultuurhuizen hun bezoekers begrijpen, impact meten en resultaten nationaal en internationaal vergelijken.</p>
+    <a href="#plans" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--white);color:var(--teal);padding:.7rem 1.8rem;border-radius:8px;font-weight:600;font-size:1rem;text-decoration:none;">Bekijk deelnameopties ↓</a>
+  </div>
+</section>
+
+<!-- VIDEO HIDDEN -->
+<section style="display:none;">
+  <div class="wrap" style="max-width:760px;text-align:center;">
+    <!-- VIDEO HIDDEN --> <div style="display:none"><p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.5rem;">Bekijk de walkthrough</p>
+    <h2 style="font-family:var(--fontD);font-size:1.5rem;margin-bottom:.5rem;">Zie hoe de studie in de praktijk werkt</h2>
+    <p style="font-size:.92rem;color:var(--inkSoft);margin-bottom:1.5rem;">Een volledig overzicht van de SentoVox-studie in 8 minuten - van registratie tot resultaten.</p>
+    <div class="video-placeholder" style="display:none">
+      <svg viewBox="0 0 24 24" width="52" height="52" stroke="var(--teal)" fill="none" stroke-width="1.5" opacity=".4"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="var(--teal)" stroke="none" opacity=".3"/></svg>
+      <p>Video placeholder - voeg hier YouTube of Vimeo link in</p>
+    </div>
+  </div></div></div>
+</section>
+
+<!-- WHAT YOU MEASURE -->
+<section style="padding:4rem 0;background:var(--white);" id="measure">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Wat u meet</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Diepgaande inzichten over acht thema's</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">De SentoVox-vragenlijst dekt alle relevante aspecten van uw cultuurhuis - van bezoekersprofielen en tevredenheid tot maatschappelijke impact. Elk thema is ontworpen zodat u bevindingen kunt omzetten in concrete acties.</p>
+    <div style="background:linear-gradient(135deg,#e8f4f1 0%,#d4ece7 100%);border-radius:16px;padding:2.5rem;display:flex;align-items:flex-start;gap:2.5rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:var(--teal);color:var(--white);">Bezoekersprofiel</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#c05370;color:var(--white);">Beleving &amp; tevredenheid</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#b8860b;color:var(--white);">Impact &amp; welzijn</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#7b5ea7;color:var(--white);">Communicatie</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#5a8a6a;color:var(--white);">NPS</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#c4783e;color:var(--white);">Bezoekgedrag</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#6a8e9e;color:var(--white);">Motivaties &amp; verwachtingen</span>
+          <span style="display:inline-block;padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#8b6e5a;color:var(--white);">Open feedback</span>
+        </div>
+        <h3 style="font-family:var(--fontD);font-size:1.35rem;margin-bottom:.6rem;color:var(--tealDark);">Acht onderzoeksthema's, één uitgebreide bevraging</h3>
+        <p style="font-size:.95rem;color:var(--ink);line-height:1.7;margin-bottom:1.2rem;">De vragenlijst is volledig gepersonaliseerd voor uw cultuurhuis. U kunt vragen en antwoordopties toevoegen, verwijderen of aanpassen via het onderzoeksplatform.</p>
+        <a href="{{ if $content }}{{ $content.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--teal);color:var(--white);padding:.65rem 1.4rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;">
+          Bekijk alle acht thema's in detail
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <a href="{{ if $content }}{{ $content.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}" style="flex-shrink:0;width:160px;height:160px;background:var(--white);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-decoration:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5" style="width:48px;height:48px;margin-bottom:.5rem;"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+        <span style="font-size:.85rem;font-weight:600;color:var(--tealDark);text-align:center;">Inhoud<br>overzicht</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);" id="how">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.7);margin-bottom:.75rem;">Hoe het werkt</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;color:var(--white);margin-bottom:1rem;">Van registratie tot resultaten in vier stappen</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;">SentoVox is ontworpen om de werklast voor uw team te minimaliseren.</p>
+    <div class="det-steps-grid">
+      <div class="det-step-card">
+        <div class="det-step-num">1</div>
+        <h3>Registreren</h3>
+        <p>Registreer uw cultuurhuis op het SentoVox-platform en krijg onmiddellijk toegang tot de studie.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">2</div>
+        <h3>Personaliseren</h3>
+        <p>Geef de kenmerken van uw cultuurhuis op zodat we uw bevraging kunnen personaliseren. Voeg lokale vragen toe &amp; pas de standaardvragenlijst aan.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">3</div>
+        <h3>Verzamel reacties</h3>
+        <p>Deel uw persoonlijke enquêtelink en QR-code via de kant-en-klare communicatiematerialen.</p>
+      </div>
+      <div class="det-step-card">
+        <div class="det-step-num">4</div>
+        <h3>Analyseer &amp; onderneem actie</h3>
+        <p>Verken resultaten in uw live dashboard. Netwerk-cultuurhuizen ontvangen een uitgebreid rapport met benchmarks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section style="padding:4rem 0;background:var(--white);" id="method">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Methodologie &amp; betrouwbaarheid</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Wetenschappelijk onderbouwd, praktisch ontworpen</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">De studie is gebaseerd op een gedeelde Europese standaard, ontwikkeld met academische partners en cultuurhuisprofessionals. Rigoureus genoeg om geloofwaardig te zijn, toegankelijk genoeg om praktisch te zijn.</p>
+    <div class="det-method-grid">
+      <div class="det-method-points">
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+          <div>
+            <h4>9 onderzoekers, 7 universiteiten</h4>
+            <p>De vragenlijst is ontwikkeld en gevalideerd door een internationaal academisch team, wat wetenschappelijke correctheid garandeert.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+          <div>
+            <h4>Internationale standaard, lokale aanpassing</h4>
+            <p>Een gedeelde Europese vragenlijst, aangepast aan nationale contexten en culturele specificiteiten door lokale academische partners. Volledig op maat van elke deelnemende cultuurhuis.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div>
+            <h4>Dynamische &amp; intelligente enquêtelogica</h4>
+            <p>Het systeem herkent het profiel van de respondent en toont alleen relevante vragen - bezoekers en niet-bezoekers kunnen zo met dezelfde vragenlijst bevraagd worden.</p>
+          </div>
+        </div>
+        <div class="det-method-point">
+          <div class="det-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div>
+            <h4>Beschikbaar in 6 talen</h4>
+            <p>Duits, Engels, Frans, Italiaans, Nederlands en Spaans. Regelmatig worden nieuwe talen toegevoegd. Ontbreekt er één? <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">Laat het ons weten</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="det-method-callout">
+        <h3>Sectorgedragen</h3>
+        <p>De studie wordt ontwikkeld in nauwe samenwerking met nationale culturele-sectorverenigingen en sectorprofessionals in heel Europa, zodat de vragenlijst ingaat op wat echt belangrijk is voor cultuurhuizen.</p>
+        <p style="margin-top:1rem;"><a href="{{ "/" | relLangURL }}#team">Ontmoet het academische team →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENCHMARKING -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);color:var(--white);text-align:center;" id="benchmark">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.7);margin-bottom:.75rem;">Internationale benchmarking</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;color:var(--white);margin-bottom:1rem;">Vergelijk uw cultuurhuis met gelijkaardige instellingen nationaal en internationaal</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);max-width:640px;margin:0 auto 2.5rem;line-height:1.7;">Één gedeelde methodologie maakt zinvolle vergelijking mogelijk. Zie hoe uw cultuurhuis presteert ten opzichte van gelijkaardige instellingen, nationale gemiddelden en internationale resultaten.*</p>
+    <div class="det-bench-grid">
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        <h4>Live dashboard</h4>
+        <p>Verken uw resultaten in real time met filters en kruistabellen</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+        <h4>Onderzoeksrapport</h4>
+        <p>Uitgebreide analyse met bruikbare inzichten voor Netwerk-cultuurhuizen</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <h4>Vergelijking met gelijkaardige cultuurhuizen</h4>
+        <p>Anonieme benchmarking met clusters van vergelijkbare cultuurhuizen</p>
+      </div>
+      <div class="det-bench-feat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px;margin-bottom:.8rem;color:#c8a951;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <h4>Trendanalyse</h4>
+        <p>Volg veranderingen over tijd voor Premium- en Netwerk-cultuurhuizen</p>
+      </div>
+    </div>
+    <p style="margin-top:2rem;font-size:.88rem;opacity:.7;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;">Uw dashboard en rapport zijn altijd vertrouwelijk - alleen uw cultuurhuis heeft toegang tot haar eigen resultaten.</p>
+    <p style="margin-top:.5rem;font-size:.82rem;opacity:.80;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;">* Benchmarking met gelijkaardige cultuurhuizen is beschikbaar voor Netwerk-leden.</p>
+    <p style="margin-top:1rem;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;"><a href="{{ if $about }}{{ $about.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}#participating-libraries" style="color:var(--white);text-decoration:underline;font-weight:500;">Ontdek de 130+ cultuurhuizen die al hebben deelgenomen →</a></p>
+  </div>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section style="padding:4rem 0;background:#f5f3ef;" id="why">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Waarom SentoVox</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Wat SentoVox u mogelijk maakt</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">De studie meet niet alleen - ze geeft uw cultuurhuis het bewijs om te handelen, te verbeteren en uw impact met vertrouwen te communiceren.</p>
+    <div class="det-outcomes">
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Neem gefundeerde beslissingen</h4><p>Gebruik bezoekersgegevens om te prioriteren in programmering, infrastructuur en communicatie.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/></svg></div>
+        <div><h4>Verbeter de bezoekersbeleving</h4><p>Identificeer wat bezoekers het meest waarderen en waar verbetering mogelijk is, met concrete suggesties.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><h4>Versterk uw financieringsargumenten</h4><p>Toon maatschappelijke impact aan met geloofwaardige, gebenchmarkte gegevens.</p></div>
+      </div>
+      <div class="det-outcome">
+        <div class="det-outcome-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div><h4>Bereik nieuwe doelgroepen</h4><p>Begrijp waarom niet-bezoekers niet komen en afhakers niet meer terugkomen - en hoe u hen kunt bereiken.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS & PRICING -->
+<section style="padding:4rem 0;background:var(--white);" id="plans">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Plannen &amp; tarieven</p>
+    <div class="det-plans-header">
+      <div>
+        <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:.75rem;">Kies het plan dat bij uw cultuurhuis past</h2>
+        <p style="font-size:1.05rem;color:var(--inkSoft);line-height:1.75;">SentoVox is een betaald jaarabonnement dat het Europese publieksonderzoek financiert. Kies het plan dat past bij uw cultuurhuis en rapportagebehoefte.</p>
+      </div>
+      <div class="curr-bar">
+        <span class="curr-label">Valuta</span>
+        <select class="curr-select" id="currSelect">
+          <option value="EUR">EUR (€)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="USD">USD ($)</option>
+          <option value="CHF">CHF</option>
+          <option value="SEK">SEK (kr)</option>
+          <option value="DKK">DKK (kr)</option>
+          <option value="NOK">NOK (kr)</option>
+          <option value="PLN">PLN (zł)</option>
+          <option value="CZK">CZK (Kč)</option>
+          <option value="CAD">CAD (CA$)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="det-plan-cards">
+      <div class="det-plan-card">
+        <div class="det-plan-head">
+          <div class="badge badge-f">Single</div>
+          <h3>Standaard</h3>
+          <div class="det-plan-price">vanaf <span class="pr-cell" data-eur="625">€625</span><small>/jr</small></div>
+          <div class="det-plan-price-note">Standaardrapportage · 6 maanden</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Volledig gepersonaliseerde bezoekersenquête</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Live dynamisch dashboard</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Meertalig (tot 6 talen)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Communicatiematerialen</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Europees benchmarkrapport</li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" id="detRegLink" class="det-reg-link">Kies Standaard →</a></div>
+      </div>
+
+      <div class="det-plan-card">
+        <div class="det-plan-head">
+          
+          <h3>Premium</h3>
+          <div class="det-plan-price">vanaf <span class="pr-cell" data-eur="1000">€1.000</span><small>/jr</small></div>
+          <div class="det-plan-price-note">Premium-rapportage · 12 maanden</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Alles in Standaard, plus:</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Onbeperkt respondenten</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Trendmeting over tijd</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Extra helpdesk-ondersteuning</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Groepsdeelname &amp; rapporten</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Korte thematische bevragingen <span class="badge-new">2026</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Bevragingen voor tijdelijke activiteiten of evenementen <span class="badge-new">2026</span></li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" class="det-reg-link">Kies Premium →</a></div>
+      </div>
+
+      <div class="det-plan-card det-plan-card--featured">
+        <div class="det-plan-head">
+          <div class="badge badge-pr">Premium</div>
+          <h3>Netwerk</h3>
+          <div class="det-plan-price">vanaf <span class="pr-cell" data-eur="1400">€1.400</span><small>/jr</small></div>
+          <div class="det-plan-price-note">Multi-locatie · 12 maanden</div>
+        </div>
+        <div class="det-plan-body">
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Alles in Premium, plus:</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Individueel onderzoeksrapport</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Benchmarking met gelijkaardige cultuurhuizen</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Managementsamenvatting voor bestuur</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="det-check"><polyline points="20 6 9 17 4 12"/></svg> Toegang tot ruwe bezoekerdata</li>
+          </ul>
+        </div>
+        <div class="det-plan-cta"><a href="" class="det-reg-link">Kies Netwerk →</a></div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:flex-end;align-items:center;gap:.75rem;margin-top:2rem;margin-bottom:.5rem;"><span style="font-size:.8rem;font-weight:500;color:var(--inkSoft);">Valuta</span><select id="currSelect2" style="padding:.4rem .8rem;border:1px solid var(--tealBorder);border-radius:6px;font-size:.88rem;background:var(--white);color:var(--ink);"><option value="EUR">EUR (&euro;)</option><option value="GBP">GBP (&pound;)</option><option value="USD">USD ($)</option><option value="CHF">CHF</option><option value="SEK">SEK (kr)</option><option value="DKK">DKK (kr)</option><option value="NOK">NOK (kr)</option><option value="PLN">PLN (z&lstrok;)</option><option value="CZK">CZK (K&ccaron;)</option><option value="CAD">CAD (CA$)</option></select></div><div class="price-wrap" style="margin-top:0;max-width:none;">
+      <div class="price-scroll">
+        <table class="price-table" id="priceTable">
+          <thead><tr>
+            <th>Jaarbezoekers (× 1.000)</th>
+            <th>Standaard <span style="font-size:10px;padding:2px 8px;border-radius:999px;font-weight:700;text-transform:uppercase;background:rgba(255,255,255,0.20);color:rgba(255,255,255,0.95);margin-left:4px">Single</span></th>
+            <th>Premium</th>
+            <th>Netwerk <span style="font-size:10px;padding:2px 8px;border-radius:999px;font-weight:700;text-transform:uppercase;background:rgba(255,255,255,0.18);color:rgba(255,255,255,0.90);margin-left:4px">Meerjarig</span></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>Minder dan 25</td><td class="pr-cell" data-eur="625"></td><td class="pr-cell" data-eur="1000"></td><td class="pr-cell" data-eur="1400"></td></tr>
+            <tr><td>25 tot 75</td><td class="pr-cell" data-eur="750"></td><td class="pr-cell" data-eur="1250"></td><td class="pr-cell" data-eur="1500"></td></tr>
+            <tr><td>75 tot 150</td><td class="pr-cell" data-eur="900"></td><td class="pr-cell" data-eur="1400"></td><td class="pr-cell" data-eur="1650"></td></tr>
+            <tr><td>Meer dan 150</td><td class="pr-cell" data-eur="1000"></td><td class="pr-cell" data-eur="1500"></td><td class="pr-cell" data-eur="1750"></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="price-note">De prijs is gebaseerd op het aantal inwoners van uw stad of gemeente (× 1.000). Prijzen exclusief btw. Groepen ontvangen kortingstarieven.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL INFO -->
+<section style="padding:4rem 0;background:#f5f3ef;" id="practical">
+  <div class="wrap">
+    <p style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:.75rem;">Praktische informatie</p>
+    <h2 style="font-family:var(--fontD);font-size:2rem;margin-bottom:1rem;">Alles wat u verder moet weten</h2>
+    <p style="font-size:1.05rem;color:var(--inkSoft);max-width:860px;margin-bottom:2.5rem;line-height:1.75;">Details over doelgroep, timing, gegevensprivacy, beveiliging, ondersteuning en meer.</p>
+    <div class="det-accordions">
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Doelgroep</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>De studie is ontworpen voor het bevragen van bezoekers van uw cultuurhuis - mensen die de afgelopen 12 maanden uw cultuurhuis hebben bezocht.</p>
+          <p>Het is ook mogelijk om niet-bezoekers (nog nooit geweest) op te nemen. De intelligente enquêtelogica identificeert elk profiel en toont alleen relevante vragen.</p>
+          <p>Vragenlijsten zijn beschikbaar in het Duits, Engels, Frans, Italiaans, Nederlands en Spaans. U kiest welke talen u aanbiedt. Regelmatig worden nieuwe talen toegevoegd - ontbreekt er één? <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">Laat het ons weten</a>.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4"/></svg>Voor welke cultuurhuizen?</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>SentoVox is ontworpen voor elk type cultuurhuis - klein of groot, landelijk of stedelijk, ongeacht collectie of aanbod.</p>
+          <p><a href="{{ if $about }}{{ $about.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}#participating-libraries">Ontdek de 130+ cultuurhuizen die al hebben deelgenomen →</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Timing &amp; beschikbaarheid</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>De gegevensverzamelingsperiode kan het hele jaar lopen of binnen een door u gekozen tijdsbestek. Leden kunnen de studie 6 maanden uitvoeren; Premium- en Netwerk-cultuurhuizen hebben 12 maanden.</p>
+          <p>Voor Netwerk-cultuurhuizen zijn er twee vaste rapportagemomenten om uit te kiezen: juni of december. Alle cultuurhuizen hebben gedurende de studieperiode doorlopend toegang tot hun interactief dashboard.</p>
+          <p>SentoVox verlengt lidmaatschappen niet automatisch. Na elke onderzoeksperiode wordt u gecontacteerd om de mogelijkheid te bieden uw deelname voort te zetten of te upgraden.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>Respondenten bereiken</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Elke cultuurhuis ontvangt een <strong>persoonlijke enquêtelink en QR-code</strong>, plus gepersonaliseerde, kant-en-klare <strong>communicatiematerialen</strong> voor digitale kanalen (nieuwsbrief, website, sociale media) en fysieke contactpunten (posters, flyers). Het basispakket bevat digitale materialen; gedrukte materialen zijn als optie beschikbaar.</p>
+          <p>De enquête is volledig responsief (smartphone, tablet, laptop, desktop). Live-interviews via cultuurhuispersoneel of vrijwilligers zijn ook mogelijk. Een vereenvoudigde papieren versie is beschikbaar.</p>
+          <p>Voor afhakers of niet-bezoekers worden specifieke materialen voorzien voor verspreiding via de stad, partnerinstellingen en sociale mediakanalen.</p>
+          <p>Ter ondersteuning van cultuurhuizen die voldoende respondenten bereiken, <strong>incentives</strong> worden door de SentoVox-studie voorzien. Voor elke voltooide enquête wordt 1m² regenwoud gered via de organisatie World Land Trust. Bovendien maken deelnemers kans op aantrekkelijke prijzen. De incentives worden volledig georganiseerd door het SentoVox-onderzoeksteam en zijn inbegrepen in de deelnamekosten. Ook voor cultuurhuizen die gratis deelnemen, wordt per voltooide enquête een vierkante meter gered en hebben hun respondenten dezelfde kans om de prijzen te winnen.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Beveiliging &amp; gegevensintegriteit</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Alle systemen zijn beveiligd volgens de huidige normen:</p>
+          <ul style="margin:.5rem 0 1rem 1.25rem;line-height:1.8;">
+            <li>Beveiligde servers met HTTPS / SSL-versleuteling</li>
+            <li>Continue serverback-ups</li>
+            <li>Anti-BOT-maatregelen</li>
+          </ul>
+          <p>Kwaliteitscontrolemaatregelen garanderen de gegevensintegriteit: consistentiecontroles via controlevragen, detectie van 'speeders' en geanonimiseerde IP-adrescontroles.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Gegevensprivacy &amp; AVG</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>De studie wordt uitgevoerd in volledige overeenstemming met de Europese Algemene Verordening Gegevensbescherming (AVG). De enquête is volledig anoniem - er worden geen persoonsgegevens van respondenten verzameld of opgeslagen.</p>
+          <p>Prijswinnaars worden bepaald via een willekeurig codesysteem. Geselecteerde winnaars zien een unieke code na indiening en nemen vrijwillig contact op met het onderzoeksteam. Contactgegevens worden onmiddellijk daarna verwijderd.</p>
+          <p>Uw onderzoeksresultaten zijn het privébezit van uw cultuurhuis. Ze worden alleen gedeeld met uw aangewezen contactpersoon/personen. Alle benchmarkanalyses gebruiken geanonimiseerde gegevens.</p>
+          <p><a href="{{ (site.GetPage "/privacy").RelPermalink }}">Lees het volledige privacybeleid &rarr;</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Hulp &amp; ondersteuning</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>SentoVox is ontworpen om eenvoudig te implementeren. Stapsgewijze plannen en korte uitlegvideo's begeleiden u door de volledige studie.</p>
+          <p>Premium- en Netwerk-cultuurhuizen hebben toegang tot extra ondersteuning via een professionele helpdesk met ticketopvolging.</p>
+          <p>Cultuurhuisbezoekers kunnen de helpdesk ook bereiken via de knop "Help" in de enquête.</p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>Groepen van cultuurhuizen</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>Cultuurhuisnetwerken profiteren van extra voordelen, waaronder aangepaste prijzen, groepsdeelname, groepsrapporten, vragen op groepsniveau en een gedeelde structuur op het platform.</p>
+          <p>Netwerk-groepen ontvangen bovendien individuele rapporten per locatie, benchmarking met groepsbrede resultaten en ruwe gegevens op groepsniveau.</p>
+          <p><a href="{{ if $groups }}{{ $groups.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}">Meer informatie over groepsdeelname →</a></p>
+        </div></div>
+      </div>
+
+      <div class="det-accordion">
+        <button class="det-acc-trigger" type="button" aria-expanded="false">
+          <span class="det-acc-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Onafhankelijkheid &amp; vertrouwelijkheid</span>
+          <svg class="det-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="det-acc-content"><div class="det-acc-inner">
+          <p>De studie wordt aan cultuurhuizen aangeboden in volledige onafhankelijkheid. Er is geen externe financiering, wat betekent dat resultaten en gegevens volledig vertrouwelijk zijn en de analyse wordt uitgevoerd zonder enige externe invloed. U beslist zelf of en hoe u uw lokale resultaten wilt publiceren.</p>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="padding:4rem 0;background:linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%);text-align:center;">
+  <div class="wrap">
+    <h2 style="font-family:var(--fontD);font-size:2.2rem;color:var(--white);margin-bottom:1rem;">Klaar om uw publiek te begrijpen?</h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,0.85);max-width:560px;margin:0 auto 2rem;line-height:1.7;">Sluit u aan bij 130+ cultuurhuizen in heel Europa. Begin met een gratis lidmaatschap of kies het plan dat bij uw behoeften past.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="" id="detRegLink2" class="det-btn-white">Registreer uw cultuurhuis →</a>
+      <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}" class="det-btn-outline">Neem contact op</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+var LIVE=['en','nl','fr','de','it','es'];
+var T={
+  en:{cta:'Participate',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'content',nav:'Content'},about:{slug:'about',nav:'About'},participate:{slug:'participate',nav:'Participate'},groups:{slug:'groups',nav:'Groups'},contact:{slug:'contact',nav:'Contact'}}},
+  nl:{cta:'Deelnemen',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'inhoud',nav:'Inhoud'},about:{slug:'over',nav:'Over'},participate:{slug:'deelnemen',nav:'Deelnemen'},groups:{slug:'groepen',nav:'Groepen'},contact:{slug:'contact',nav:'Contact'}}},
+  fr:{cta:'Participer',pages:{home:{slug:'',nav:'Accueil'},details:{slug:'details',nav:'Détails'},content:{slug:'contenu',nav:'Contenu'},about:{slug:'a-propos',nav:'À propos'},participate:{slug:'participer',nav:'Participer'},groups:{slug:'groupes',nav:'Groupes'},contact:{slug:'contact',nav:'Contact'}}},
+  de:{cta:'Teilnehmen',pages:{home:{slug:'',nav:'Startseite'},details:{slug:'details',nav:'Details'},content:{slug:'inhalte',nav:'Inhalte'},about:{slug:'uber-uns',nav:'Über uns'},participate:{slug:'teilnehmen',nav:'Teilnehmen'},groups:{slug:'gruppen',nav:'Gruppen'},contact:{slug:'kontakt',nav:'Kontakt'}}},
+  it:{cta:'Partecipare',pages:{home:{slug:'',nav:'Home'},details:{slug:'dettagli',nav:'Dettagli'},content:{slug:'contenuti',nav:'Contenuti'},about:{slug:'chi-siamo',nav:'Chi siamo'},participate:{slug:'partecipare',nav:'Partecipare'},groups:{slug:'gruppi',nav:'Gruppi'},contact:{slug:'contatto',nav:'Contatto'}}},
+  es:{cta:'Participar',pages:{home:{slug:'',nav:'Inicio'},details:{slug:'detalles',nav:'Detalles'},content:{slug:'contenido',nav:'Contenido'},about:{slug:'acerca-de',nav:'Acerca de'},participate:{slug:'participar',nav:'Participar'},groups:{slug:'grupos',nav:'Grupos'},contact:{slug:'contacto',nav:'Contacto'}}}
+};
+function url(lang,page){var s=T[lang].pages[page].slug;return'/'+lang+(s?'/'+s:'/')}
+function setCookie(n,v,d){var e=new Date();e.setTime(e.getTime()+d*864e5);document.cookie=n+'='+v+';expires='+e.toUTCString()+';path=/;SameSite=Lax'}
+function detectLang(){var m=window.location.pathname.match(/^\/(en|nl|fr|de|it|es)(\/|$)/);if(m&&T[m[1]]){setCookie('sn_lang',m[1],365);return m[1];}return'en'}
+var lang=detectLang();
+var ORDER=['home','details','content','groups','contact'];
+function renderNav(){
+  var t=T[lang];
+  var snLogoLink=document.getElementById('snLogoLink');if(snLogoLink)snLogoLink.href='/'+lang+'/';
+  ORDER.forEach(function(k){['#snLinks','#snDrLinks'].forEach(function(sel){var a=document.querySelector(sel+' a[data-key="'+k+'"]');if(!a)return;a.href=url(lang,k);a.textContent=t.pages[k].nav;});});
+  var snCta=document.getElementById('snCta');if(snCta)snCta.href=url(lang,'participate');
+  var snCtaTxt=document.getElementById('snCtaTxt');if(snCtaTxt)snCtaTxt.textContent=t.cta;
+  document.querySelectorAll('[id^="detRegLink"],.det-reg-link').forEach(function(el){el.href=url(lang,'participate');});
+  
+  var _codes={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+  var snLangFlag=document.getElementById('snLangFlag');if(snLangFlag)snLangFlag.textContent=_flags[lang]||'🇬🇧';
+  var snLangCode=document.getElementById('snLangCode');if(snLangCode)snLangCode.textContent=_codes[lang]||'EN';
+  document.querySelectorAll('#snLangDrop a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'details');});
+  document.querySelectorAll('#snDrLangs a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'details');});
+  var snDrCta=document.getElementById('snDrCta');if(snDrCta){snDrCta.href=url(lang,'participate');snDrCta.textContent=t.cta+' →';}
+  document.documentElement.lang=lang;
+}
+renderNav();
+function switchLang(l){if(!LIVE.includes(l))return;setCookie('sn_lang',l,365);window.location.href=url(l,'details')}
+
+/* Jump nav */
+var snNav=document.getElementById('snNav');
+var detNav=document.getElementById('detNav');
+var jumpLinks=Array.prototype.slice.call(document.querySelectorAll('.det-link'));
+var sections=jumpLinks.map(function(a){return document.getElementById((a.getAttribute('href')||'').slice(1))}).filter(Boolean);
+function totalStickyH(){return(snNav?snNav.offsetHeight:64)+(detNav?detNav.offsetHeight:44)}
+function updateJumpNav(){var y=window.scrollY+totalStickyH()+24;var cur=null;for(var i=0;i<sections.length;i++){if(sections[i]&&sections[i].offsetTop<=y)cur=sections[i].id}jumpLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-sec')===cur)});}
+window.addEventListener('scroll',updateJumpNav,{passive:true});
+updateJumpNav();
+
+/* Accordions */
+document.querySelectorAll('.det-acc-trigger').forEach(function(btn){
+  btn.addEventListener('click',function(){var acc=btn.parentElement;var isOpen=acc.classList.contains('open');acc.classList.toggle('open',!isOpen);btn.setAttribute('aria-expanded',!isOpen);});
+});
+
+/* Footer */
+var snFc=document.getElementById('snFooterCopy');if(snFc)snFc.textContent='SentoVox © '+new Date().getFullYear();
+var ft={en:{terms:'Terms & Conditions',privacy:'Privacy Policy',ts:'terms',ps:'privacy'},nl:{terms:'Algemene voorwaarden',privacy:'Privacybeleid',ts:'voorwaarden',ps:'privacy'},fr:{terms:'Conditions générales',privacy:'Politique de confidentialité',ts:'terms',ps:'privacy'},de:{terms:'Allgemeine Geschäftsbedingungen',privacy:'Datenschutzerklärung',ts:'terms',ps:'privacy'},it:{terms:'Termini e condizioni',privacy:'Informativa sulla privacy',ts:'terms',ps:'privacy'},es:{terms:'Términos y condiciones',privacy:'Política de privacidad',ts:'terms',ps:'privacy'}};
+var flt=ft[lang]||ft.en;
+var snFt=document.getElementById('snFooterTerms');if(snFt){snFt.textContent=flt.terms;snFt.href='/'+lang+'/'+flt.ts;}
+var snFp=document.getElementById('snFooterPrivacy');if(snFp){snFp.textContent=flt.privacy;snFp.href='/'+lang+'/'+flt.ps;}
+
+/* Back to top */
+var topBtn=document.getElementById('topBtn');
+if(topBtn){window.addEventListener('scroll',function(){topBtn.classList.toggle('visible',scrollY>400);},{passive:true});topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+
+/* Currency */
+function initPrices(){
+  var rates={EUR:1,GBP:0.86,USD:1.09,CHF:0.98,SEK:11.3,DKK:7.46,NOK:11.8,PLN:4.3,CZK:25.2,CAD:1.48};
+  var symbols={EUR:'€',GBP:'£',USD:'$',CHF:'CHF ',SEK:'kr ',DKK:'kr ',NOK:'kr ',PLN:'zł ',CZK:'Kč ',CAD:'CA$ '};
+  var cs=document.getElementById('currSelect');var cs2=document.getElementById('currSelect2');
+  if(!cs)return;
+  function updatePrices(){var c=cs.value,r=rates[c],s=symbols[c];document.querySelectorAll('.pr-cell').forEach(function(td){var eur=parseFloat(td.getAttribute('data-eur'));td.textContent=c==='EUR'?'€'+eur:s+Math.ceil((eur+10)*r/5)*5;});}
+  cs.addEventListener('change',function(){if(cs2)cs2.value=cs.value;updatePrices();});if(cs2)cs2.addEventListener('change',function(){cs.value=cs2.value;updatePrices();});updatePrices();
+}
+initPrices();window.addEventListener('load',initPrices);
+
+})();
+</script>
+{{ end }}

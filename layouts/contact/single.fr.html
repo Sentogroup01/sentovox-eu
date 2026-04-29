@@ -1,0 +1,208 @@
+{{/* build: 2026-03-17 08:31:56 */}}
+
+{{ define "main" }}
+<div class="pageBody">
+<div class="pageInner">
+
+  <!-- CONTACT INFO CARD -->
+  <div class="card">
+    <div class="iconCircle">
+      <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </div>
+    <p class="kicker">Prenez contact</p>
+    <h1>Contact</h1>
+    <p style="margin-bottom:20px">Des questions sur l'étude, le processus d'inscription, les tarifs ou la couverture presse ? Nous sommes là pour vous aider.</p>
+
+    <h3 style="font-family:var(--fontD);font-size:16px;color:var(--teal);margin-bottom:14px">Nos coordonnées</h3>
+    <div class="contactGrid">
+      <div class="contactCard">
+        <span class="contactLabel">E-mail</span>
+        <span class="contactVal"><a href="mailto:contact@sentovox.eu">contact@sentovox.eu</a></span>
+      </div>
+      
+      <div class="contactCard">
+        <span class="contactLabel">LinkedIn</span>
+        <span class="contactVal"><a href="https://www.linkedin.com/company/sentovox/" target="_blank" rel="noopener">SentoVox sur LinkedIn</a></span>
+      </div>
+      <div class="contactCard">
+        <span class="contactLabel">Facebook</span>
+        <span class="contactVal"><a href="https://www.facebook.com/p/SentoVox-61553316279679/" target="_blank" rel="noopener">SentoVox sur Facebook</a></span>
+      </div>
+      <div class="contactCard">
+        <span class="contactLabel">Groupes</span>
+        <span class="contactVal"><a href="{{ "/contact/" | relLangURL }}">Demander un devis de groupe</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM CARD -->
+  <div class="card">
+    <p class="kicker">Envoyer un message</p>
+    <h2>Formulaire de contact</h2>
+
+    <div id="contactForm" style="margin-top:18px">
+      <div class="formGrid">
+        <div class="formRow">
+          <div class="formGroup">
+            <label for="c_name">Votre nom<span class="required">*</span></label>
+            <input type="text" id="c_name" name="name" placeholder="Marie Dupont" required autocomplete="name">
+          </div>
+          <div class="formGroup">
+            <label for="c_org">Organisation (optionnel)</label>
+            <input type="text" id="c_org" name="organisation" placeholder="Nom de la salle culturelle" autocomplete="organization">
+          </div>
+        </div>
+        <div class="formRow">
+          <div class="formGroup">
+            <label for="c_email">Adresse e-mail<span class="required">*</span></label>
+            <input type="email" id="c_email" name="email" placeholder="marie@salle-culturelle.eu" required autocomplete="email">
+          </div>
+          <div class="formGroup">
+            <label for="c_subject">Objet</label>
+            <select id="c_subject" name="subject">
+              <option value="">Question générale</option>
+              <option value="registration">Inscription / participation</option>
+              <option value="pricing">Tarifs</option>
+              <option value="groups">Groupes</option>
+              <option value="press">Presse / médias</option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+        </div>
+        <div class="formGroup">
+          <label for="c_msg">Votre message<span class="required">*</span></label>
+          <textarea id="c_msg" name="message" placeholder="Comment pouvons-nous vous aider ?" required style="min-height:120px"></textarea>
+        </div>
+        <p class="fieldNote">Vos données sont traitées uniquement pour répondre à votre message, conformément à notre politique de confidentialité.</p>
+        <button type="button" class="submitBtn" id="cSubmitBtn">
+          Envoyer le message
+          <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="successMsg" id="cSuccess">✓ Message envoyé ! Nous vous répondrons dans les plus brefs délais.</div>
+  </div>
+
+</div>
+</div>
+
+
+
+
+<div class="reg-overlay" id="regOverlay" role="dialog" aria-modal="true"><div class="reg-modal"><button class="reg-close" id="regClose" aria-label="{{ i18n "close" }}"><svg width="16" height="16" viewBox="0 0 24 24" stroke="#e57373" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><h2 class="reg-title">Choisissez votre région</h2><p class="reg-sub">Sélectionnez la région de votre salle culturelle.</p><a class="reg-btn" href="/fr/contact/" ><span class="reg-btn-flag">🌍</span><span><span class="reg-btn-name">Autres pays : contactez-nous</span><span class="reg-btn-url"></span></span></a></div></div>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+'use strict';
+var lang='fr';
+
+var LANG_COOKIE='sn_lang';
+var LIVE=['en','nl','fr','de','it','es'];
+var LANG_LABELS={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+
+var T={
+  en:{cta:'Participate',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'content',nav:'Content'},about:{slug:'about',nav:'About'},participate:{slug:'participate',nav:'Participate'},groups:{slug:'groups',nav:'Groups'},contact:{slug:'contact',nav:'Contact'}}},
+  nl:{cta:'Deelnemen',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'inhoud',nav:'Inhoud'},about:{slug:'over',nav:'Over'},participate:{slug:'deelnemen',nav:'Deelnemen'},groups:{slug:'groepen',nav:'Groepen'},contact:{slug:'contact',nav:'Contact'}}},
+  fr:{cta:'Participer',pages:{home:{slug:'',nav:'Accueil'},details:{slug:'details',nav:'Détails'},content:{slug:'contenu',nav:'Contenu'},about:{slug:'a-propos',nav:'À propos'},participate:{slug:'participer',nav:'Participer'},groups:{slug:'groupes',nav:'Groupes'},contact:{slug:'contact',nav:'Contact'}}},
+  de:{cta:'Teilnehmen',pages:{home:{slug:'',nav:'Startseite'},details:{slug:'details',nav:'Details'},content:{slug:'inhalte',nav:'Inhalte'},about:{slug:'uber-uns',nav:'Über uns'},participate:{slug:'teilnehmen',nav:'Teilnehmen'},groups:{slug:'gruppen',nav:'Gruppen'},contact:{slug:'kontakt',nav:'Kontakt'}}},
+  it:{cta:'Partecipare',pages:{home:{slug:'',nav:'Home'},details:{slug:'dettagli',nav:'Dettagli'},content:{slug:'contenuti',nav:'Contenuti'},about:{slug:'chi-siamo',nav:'Chi siamo'},participate:{slug:'partecipare',nav:'Partecipare'},groups:{slug:'gruppi',nav:'Gruppi'},contact:{slug:'contatto',nav:'Contatto'}}},
+  es:{cta:'Participar',pages:{home:{slug:'',nav:'Inicio'},details:{slug:'detalles',nav:'Detalles'},content:{slug:'contenido',nav:'Contenido'},about:{slug:'acerca-de',nav:'Acerca de'},participate:{slug:'participar',nav:'Participar'},groups:{slug:'grupos',nav:'Grupos'},contact:{slug:'contacto',nav:'Contacto'}}}
+};
+
+function getCookie(n){var v=document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)');return v?v.pop():'';}
+function setCookie(n,v){document.cookie=n+'='+v+';path=/;max-age='+365*24*3600+';SameSite=Lax';}
+function langUrl(tl,currentPage){
+  if(tl===lang)return null;
+  var tc=T[tl];if(!tc)return null;
+  var slug=tc.pages[currentPage]?tc.pages[currentPage].slug:'';
+  return'/'+tl+'/'+(slug?slug+'/':'');
+}
+
+function renderNav(currentPage){
+  var conf=T[lang]||T.en;
+  var inner=document.getElementById('snInner');if(!inner)return;
+  var logoHTML='<a class="sn-logo" href="/'+lang+'/" aria-label="SentoVox home"><div class="sn-logo-icon"><svg viewBox="0 0 32 26" fill="none"><rect x="2" y="0" width="28" height="20" rx="6" fill="#e57373"/><path d="M11 20 L9 26 L18 20" fill="#e57373"/><text x="16" y="15" text-anchor="middle" font-family="Georgia,serif" font-weight="800" font-size="13" fill="white">M</text></svg></div><span class="sn-logo-text">SentoVox</span></a>';
+  var linksHTML='<div class="sn-links">';
+  ['home','details','content','about','groups','contact'].forEach(function(key){
+    var pg=conf.pages[key];if(!pg)return;
+    var href='/'+lang+'/'+(pg.slug?pg.slug+'/':'');
+    var active=key===currentPage?' active':'';
+    linksHTML+='<a class="sn-link'+active+'" href="'+href+'">'+pg.nav+'</a>';
+  });
+  linksHTML+='</div>';
+  var langHTML='<div class="sn-lang" id="snLang"><button class="sn-lang-btn" id="snLangBtn" aria-expanded="false">'+LANG_LABELS[lang]+'<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="sn-lang-drop" id="snLangDrop">';
+  LIVE.forEach(function(lc){
+    var isCurrent=lc===lang;var url=langUrl(lc,currentPage)||'#';
+    langHTML+='<a class="sn-lang-item'+(isCurrent?' current':'')+'" href="'+url+'" data-lang="'+lc+'">'+LANG_LABELS[lc]+(isCurrent?' ✓':'')+'</a>';
+  });
+  langHTML+='</div></div>';
+  var ctaHTML='<a class="sn-cta" href="#" data-reg="1" data-register="1">'+conf.cta+'</a>';
+  var burgerHTML='<button class="sn-burger" id="snBurger" aria-label="{{ i18n "menu" }}" aria-expanded="false"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>';
+  inner.innerHTML=logoHTML+linksHTML+'<div class="sn-right">'+langHTML+ctaHTML+burgerHTML+'</div>';
+
+  var drawerHTML='<div class="sn-drawer" id="snDrawer"><div class="sn-drawer-bg" id="snDrawerBg"></div><div class="sn-drawer-panel">';
+  drawerHTML+='<button class="sn-drawer-close" id="snDrawerClose" aria-label="{{ i18n "close" }}"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>';
+  ['home','details','content','about','groups','contact'].forEach(function(key){
+    var pg=conf.pages[key];if(!pg)return;
+    var href='/'+lang+'/'+(pg.slug?pg.slug+'/':'');
+    var active=key===currentPage?' active':'';
+    drawerHTML+='<a class="sn-drawer-link'+active+'" href="'+href+'">'+pg.nav+'</a>';
+  });
+  drawerHTML+='<div class="sn-drawer-divider"></div><div class="sn-drawer-lang-title">Langue</div>';
+  LIVE.forEach(function(lc){
+    var isCurrent=lc===lang;var url=langUrl(lc,currentPage)||'#';
+    drawerHTML+='<a class="sn-drawer-link'+(isCurrent?' active':'')+'" href="'+url+'" data-lang="'+lc+'">'+LANG_LABELS[lc]+(isCurrent?' ✓':'')+'</a>';
+  });
+  drawerHTML+='<div class="sn-drawer-divider"></div><a class="sn-drawer-cta" href="/'+lang+'/'+(conf.pages.participate?conf.pages.participate.slug+'/':'participate/')+'">'+conf.cta+'</a></div></div>';
+  document.body.insertAdjacentHTML('beforeend',drawerHTML);
+
+  /* Dropdown handled by baseof.html */
+  document.querySelectorAll('[data-lang]').forEach(function(el){el.addEventListener('click',function(){setCookie(LANG_COOKIE,el.dataset.lang);});});
+  var burger=document.getElementById('snBurger'),drawer=document.getElementById('snDrawer'),bg=document.getElementById('snDrawerBg'),dc=document.getElementById('snDrawerClose');
+  function od(){if(drawer){drawer.classList.add('open');if(burger)burger.setAttribute('aria-expanded','true');}}
+  function cd(){if(drawer){drawer.classList.remove('open');if(burger)burger.setAttribute('aria-expanded','false');}}
+  if(burger)burger.addEventListener('click',od);if(bg)bg.addEventListener('click',cd);if(dc)dc.addEventListener('click',cd);
+}
+
+function onReady(fn){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fn);else fn();}
+onReady(function(){renderNav('contact');});
+
+/* Form submit - Formspree */
+var btn=document.getElementById('cSubmitBtn');
+if(btn)btn.addEventListener('click',function(){
+  var name=document.getElementById('c_name').value.trim();
+  var email=document.getElementById('c_email').value.trim();
+  var msg=document.getElementById('c_msg').value.trim();
+  if(!name||!email||!msg)return;
+  var data={name:name,organisation:document.getElementById('c_org').value,
+    email:email,subject:document.getElementById('c_subject').value,
+    message:msg,lang:'fr'};
+  btn.disabled=true;btn.style.opacity='0.7';
+  fetch('https://formspree.io/f/xvzdaewq',{
+    method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify(data)
+  }).then(function(r){
+    document.getElementById('contactForm').style.display='none';
+    document.getElementById('cSuccess').classList.add('show');
+  }).catch(function(){
+    btn.disabled=false;btn.style.opacity='1';
+  });
+});
+})();
+</script>
+<script>
+(function(){
+  var ov=document.getElementById('regOverlay');
+  if(!ov)return;
+  function openM(e){e.preventDefault();ov.classList.add('open');document.body.style.overflow='hidden';}
+  function closeM(){ov.classList.remove('open');document.body.style.overflow='';}
+  var cb=document.getElementById('regClose');
+  if(cb)cb.addEventListener('click',closeM);
+  ov.addEventListener('click',function(e){if(e.target===ov)closeM();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeM();});
+  document.querySelectorAll('[data-reg]').forEach(function(el){el.addEventListener('click',openM);});
+})();
+</script>
+{{ end }}
