@@ -1,0 +1,539 @@
+{{/* build: 2026-04-16 language-aware page links */}}
+
+{{ define "before_main" }}
+<div class="det-nav" id="detNav">
+  <div class="det-nav-inner is-links">
+    <a href="#overview" class="det-link" data-sec="overview">Aperçu</a>
+    <a href="#experience" class="det-link" data-sec="experience">Expérience</a>
+    <a href="#impact" class="det-link" data-sec="impact">Impact sur les visiteurs</a>
+    <a href="#evaluation" class="det-link" data-sec="evaluation">Évaluation</a>
+    <a href="#nps" class="det-link" data-sec="nps">Satisfaction &amp; NPS</a>
+    <a href="#communication" class="det-link" data-sec="communication">Communication</a>
+    <a href="#profile" class="det-link" data-sec="profile">Profil du public</a>
+    <a href="#nonvisitors" class="det-link" data-sec="nonvisitors">Non-visiteurs</a>    <a href="#feedback" class="det-link" data-sec="feedback">Retours ouverts</a>
+    <a href="#new2026" class="det-link" data-sec="new2026">Nouveau en 2026</a>
+  </div>
+</div>
+{{ end }}
+
+{{ define "main" }}
+{{- $details := .Site.GetPage "/details" -}}
+{{- $participate := .Site.GetPage "/participate" -}}
+{{- $contact := .Site.GetPage "/contact" -}}
+<h1 class="sr">Ce que couvre le questionnaire SentoVox - 8 thèmes de recherche</h1>
+
+<style>
+.cnt-page {
+  --cnt-teal:#e57373;--cnt-teal-dark:#bf5959;--cnt-teal-bg:#e57373;--cnt-teal-light:#e8f4f1;
+  --cnt-rose:#c45b6e;--cnt-rose-light:#fdf0f2;
+  --cnt-amber:#b8943e;--cnt-amber-light:#fdf8ec;
+  --cnt-blue:#3b7ab5;--cnt-blue-light:#eef5fb;
+  --cnt-purple:#7b5ea7;--cnt-purple-light:#f4f0fa;
+  --cnt-green:#4a9a6e;--cnt-green-light:#eef7f1;
+  --cnt-text:#2c2c2c;--cnt-text-soft:#5a5a5a;
+  --cnt-bg-off:#f5f3ef;--cnt-border:#e2e0db;--cnt-white:#ffffff;
+}
+.cnt-hero{background:linear-gradient(135deg,var(--cnt-teal-bg) 0%,#a04040 100%);color:var(--cnt-white);padding:4rem 0 3.5rem;text-align:center;}
+.cnt-hero h2{font-family:var(--fontD);font-size:2.4rem;font-weight:800;color:var(--cnt-white);margin:0 auto 1rem;line-height:1.2;max-width:720px;}
+.cnt-hero p{font-size:1.05rem;color:rgba(255,255,255,0.88);max-width:600px;margin:0 auto 1.5rem;line-height:1.7;}
+.cnt-hero-note{font-size:.85rem;color:rgba(255,255,255,0.6);}
+.cnt-hero-note a{color:var(--cnt-white);text-decoration:underline;}
+.cnt-theme-nav{background:var(--offWhite);border-bottom:1px solid var(--cnt-border);padding:.75rem 2rem;overflow-x:auto;position:sticky;top:64px;z-index:90;}
+.cnt-theme-nav-inner{max-width:1140px;margin:0 auto;display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;}
+.cnt-pill{padding:.35rem .8rem;border-radius:20px;font-size:.78rem;font-weight:500;color:var(--cnt-text-soft);background:var(--cnt-white);border:1px solid var(--cnt-border);transition:all .2s;white-space:nowrap;text-decoration:none;}
+.cnt-pill:hover,.cnt-pill.active{border-color:var(--cnt-teal);color:var(--cnt-teal);background:var(--cnt-teal-light);}
+.cnt-wrap{max-width:1140px;margin:0 auto;padding:0 2rem;}
+.cnt-sec{padding:4.5rem 0;background:var(--cnt-white);}
+.cnt-sec-alt{padding:4.5rem 0;background:var(--cnt-bg-off);}
+.cnt-sec-dark{padding:4.5rem 0;background:linear-gradient(135deg,var(--cnt-teal-bg) 0%,#a04040 100%);color:var(--cnt-white);}
+.cnt-two-col{display:grid;grid-template-columns:1.4fr .9fr;gap:3rem;align-items:start;}
+.cnt-two-col-eq{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.cnt-label{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--cnt-teal);margin-bottom:.6rem;}
+.cnt-sec-dark .cnt-label{color:rgba(255,255,255,0.6);}
+.cnt-title{font-family:var(--fontD);font-size:1.85rem;font-weight:800;margin-bottom:.4rem;line-height:1.2;}
+.cnt-sec-dark .cnt-title{color:var(--cnt-white);}
+.cnt-subtitle{font-size:1rem;color:var(--cnt-text-soft);margin-bottom:1.75rem;max-width:640px;line-height:1.7;}
+.cnt-sec-dark .cnt-subtitle{color:rgba(255,255,255,0.8);}
+.cnt-body{font-size:.93rem;color:var(--cnt-text-soft);line-height:1.75;max-width:680px;}
+.cnt-body p{margin-bottom:1rem;}
+.cnt-sec-dark .cnt-body p{color:rgba(255,255,255,0.82);}
+.cnt-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.5rem;}
+.cnt-tag{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:.3rem .7rem;border-radius:5px;border:1px solid;}
+.cnt-tag-teal{border-color:#c1ddd8;color:var(--cnt-teal);background:var(--cnt-teal-light);}
+.cnt-tag-rose{border-color:#e8c5cc;color:var(--cnt-rose);background:var(--cnt-rose-light);}
+.cnt-tag-amber{border-color:#e4d5a8;color:var(--cnt-amber);background:var(--cnt-amber-light);}
+.cnt-tag-blue{border-color:#b8d2e8;color:var(--cnt-blue);background:var(--cnt-blue-light);}
+.cnt-tag-green{border-color:#b8dac5;color:var(--cnt-green);background:var(--cnt-green-light);}
+.cnt-side{background:var(--cnt-bg-off);border-radius:12px;padding:1.8rem;border-left:4px solid var(--cnt-teal);}
+.cnt-sec-alt .cnt-side{background:var(--cnt-white);}
+.cnt-side h4{font-family:var(--fontB);font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--cnt-text);}
+.cnt-side p{font-size:.85rem;color:var(--cnt-text-soft);line-height:1.6;}
+.cnt-overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem;}
+.cnt-card{padding:1.5rem;border-radius:12px;border:1px solid var(--cnt-border);background:var(--cnt-white);transition:all .25s;display:flex;flex-direction:column;gap:.5rem;text-decoration:none;color:inherit;}
+.cnt-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.06);border-color:var(--cnt-teal);transform:translateY(-2px);}
+.cnt-card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.cnt-card-icon svg{width:18px;height:18px;}
+.cnt-card h3{font-family:var(--fontB);font-size:.95rem;font-weight:600;color:var(--cnt-text);}
+.cnt-card p{font-size:.82rem;color:var(--cnt-text-soft);line-height:1.5;margin:0;}
+.cnt-c-teal .cnt-card-icon{background:var(--cnt-teal-light);color:var(--cnt-teal);}
+.cnt-c-rose .cnt-card-icon{background:var(--cnt-rose-light);color:var(--cnt-rose);}
+.cnt-c-amber .cnt-card-icon{background:var(--cnt-amber-light);color:var(--cnt-amber);}
+.cnt-c-blue .cnt-card-icon{background:var(--cnt-blue-light);color:var(--cnt-blue);}
+.cnt-c-purple .cnt-card-icon{background:var(--cnt-purple-light);color:var(--cnt-purple);}
+.cnt-c-green .cnt-card-icon{background:var(--cnt-green-light);color:var(--cnt-green);}
+.cnt-compass-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+.cnt-compass-card{padding:1.3rem;border-radius:10px;color:var(--cnt-white);}
+.cnt-compass-card h4{font-family:var(--fontB);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;opacity:.8;margin-bottom:.3rem;}
+.cnt-compass-card h3{font-family:var(--fontD);font-size:1.1rem;margin-bottom:.6rem;color:var(--cnt-white);}
+.cnt-compass-card ul{list-style:none;padding:0;margin:0;}
+.cnt-compass-card li{font-size:.82rem;opacity:1;color:rgba(255,255,255,0.95);padding:.15rem 0 .15rem .9rem;position:relative;}
+.cnt-compass-card li::before{content:'';position:absolute;left:0;top:.5rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,0.6);}
+.cnt-cc-emotional{background:linear-gradient(135deg,#5b8fa8,#4a7a93);}
+.cnt-cc-intellectual{background:linear-gradient(135deg,#c45b6e,#a84d5e);}
+.cnt-cc-social{background:linear-gradient(135deg,#5ba88f,#4a936e);}
+.cnt-cc-creative{background:linear-gradient(135deg,#c4a35b,#a8894d);}
+.cnt-nps{padding:2rem;background:var(--cnt-white);border-radius:12px;border:1px solid var(--cnt-border);}
+.cnt-nps-scale{display:flex;gap:.3rem;justify-content:center;margin-bottom:1rem;flex-wrap:wrap;}
+.cnt-nps-num{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:var(--cnt-white);}
+.cnt-nps-d{background:#e07070;}.cnt-nps-p{background:#e8c44a;}.cnt-nps-pr{background:#5bab7b;}
+.cnt-nps-bar{display:flex;border-radius:8px;overflow:hidden;height:36px;margin-bottom:.75rem;}
+.cnt-nps-bar-d{background:#e07070;flex:15;display:flex;align-items:center;justify-content:center;color:var(--cnt-white);font-size:.78rem;font-weight:600;}
+.cnt-nps-bar-p{background:#e8c44a;flex:30;display:flex;align-items:center;justify-content:center;color:var(--cnt-white);font-size:.78rem;font-weight:600;}
+.cnt-nps-bar-pr{background:#5bab7b;flex:55;display:flex;align-items:center;justify-content:center;color:var(--cnt-white);font-size:.78rem;font-weight:600;}
+.cnt-nps-legend{display:flex;gap:1.5rem;justify-content:center;font-size:.78rem;color:var(--cnt-text-soft);flex-wrap:wrap;}
+.cnt-nps-legend span{display:flex;align-items:center;gap:.3rem;}
+.cnt-nps-dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
+.cnt-nps-formula{margin-top:1rem;text-align:center;padding:.8rem;background:var(--cnt-bg-off);border-radius:8px;font-size:.85rem;color:var(--cnt-text);}
+.cnt-nps-formula small{display:block;font-size:.75rem;color:var(--cnt-text-soft);margin-top:.2rem;}
+.cnt-new-banner{border:2px solid var(--cnt-teal);border-radius:14px;padding:2rem;background:var(--cnt-teal-light);position:relative;overflow:hidden;}
+.cnt-new-badge{position:absolute;top:1rem;right:1rem;background:var(--cnt-teal);color:var(--cnt-white);font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:.25rem .7rem;border-radius:4px;}
+.cnt-new-banner h3{font-family:var(--fontB);font-size:1.05rem;font-weight:700;color:var(--cnt-teal-dark);margin-bottom:.5rem;}
+.cnt-new-banner p{font-size:.9rem;color:var(--cnt-text);line-height:1.7;}
+.cnt-mid-cta{text-align:center;padding:2.5rem 2rem;background:var(--cnt-white);border:1px solid var(--cnt-border);border-radius:14px;margin:0 auto;max-width:640px;box-shadow:0 2px 12px rgba(0,0,0,0.05);}
+.cnt-mid-cta p{font-size:.92rem;color:var(--cnt-text-soft);margin-bottom:1rem;}
+.cnt-mid-cta a{display:inline-flex;align-items:center;gap:.4rem;background:var(--cnt-teal);color:var(--cnt-white);padding:.6rem 1.4rem;border-radius:8px;font-weight:600;font-size:.9rem;transition:background .2s;text-decoration:none;}
+.cnt-mid-cta a:hover{background:var(--cnt-teal-dark);color:var(--cnt-white);}
+.cnt-cta{background:linear-gradient(135deg,var(--cnt-teal-bg) 0%,#a04040 100%);color:var(--cnt-white);text-align:center;padding:5rem 0;}
+.cnt-cta h2{font-family:var(--fontD);font-size:2.2rem;font-weight:800;color:var(--cnt-white);margin-bottom:1rem;}
+.cnt-cta p{font-size:1.05rem;color:rgba(255,255,255,0.85);max-width:520px;margin:0 auto 2rem;line-height:1.7;}
+.cnt-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.cnt-btn-white{background:var(--cnt-white);color:var(--cnt-teal-dark);padding:.7rem 1.8rem;border-radius:8px;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;}
+.cnt-btn-white:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,0.15);color:var(--cnt-teal-dark);}
+.cnt-btn-outline{background:transparent;color:var(--cnt-white);padding:.65rem 1.8rem;border-radius:8px;font-weight:600;font-size:1rem;border:2px solid rgba(255,255,255,0.4);transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;}
+.cnt-btn-outline:hover{border-color:var(--cnt-white);background:rgba(255,255,255,0.08);color:var(--cnt-white);}
+@media(max-width:900px){.cnt-overview-grid{grid-template-columns:1fr 1fr;}.cnt-two-col,.cnt-two-col-eq{grid-template-columns:1fr;}.cnt-compass-grid{grid-template-columns:1fr;}.cnt-hero h2{font-size:1.9rem;}}
+@media(max-width:600px){.cnt-overview-grid{grid-template-columns:1fr;}}
+</style>
+
+<div class="cnt-page">
+
+<!-- HERO -->
+<section class="cnt-hero">
+  <div class="cnt-wrap">
+    <h2>Ce que couvre le questionnaire</h2>
+    <p>Explorez chaque thème de recherche en détail - de l'expérience des visiteurs et des profils d'audience à l'impact sociétal.</p>
+    <span class="cnt-hero-note">Vous cherchez les tarifs, la méthodologie ou comment participer ? <a href="{{ if $details }}{{ $details.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}">Voir la page Détails &rarr;</a></span>
+  </div>
+</section>
+
+<!-- THEME OVERVIEW -->
+<section id="overview" class="cnt-sec">
+  <div class="cnt-wrap">
+    <div class="cnt-label">Thèmes de recherche</div>
+    <h2 class="cnt-title">8 thèmes, une étude intégrée</h2>
+    <p class="cnt-subtitle">Le questionnaire SentoVox est construit autour de huit thèmes de recherche. Ensemble, ils vous donnent une image complète du public, des performances et de l'impact de votre salle culturelle. Les thèmes, les questions et les options de réponse peuvent être adaptés à vos besoins.</p>
+    <div class="cnt-overview-grid">
+      <a href="#experience" class="cnt-card cnt-c-teal">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg></div>
+        <h3>Expérience des visiteurs</h3>
+        <p>Comment les visiteurs vivent la salle culturelle selon plusieurs dimensions</p>
+      </a>
+      <a href="#impact" class="cnt-card cnt-c-purple">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <h3>Impact sur les visiteurs</h3>
+        <p>Valeur sociétale, bien-être &amp; développement des visiteurs</p>
+      </a>
+      <a href="#evaluation" class="cnt-card cnt-c-blue">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div>
+        <h3>Évaluation</h3>
+        <p>Offre, infrastructure, accessibilité &amp; conditions</p>
+      </a>
+      <a href="#nps" class="cnt-card cnt-c-rose">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/></svg></div>
+        <h3>Satisfaction &amp; NPS</h3>
+        <p>Score de recommandation et indicateur de fidélité</p>
+      </a>
+      <a href="#communication" class="cnt-card cnt-c-green">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3>Communication</h3>
+        <p>Efficacité des canaux et portée des visiteurs</p>
+      </a>
+      <a href="#profile" class="cnt-card cnt-c-amber">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <h3>Profil du public</h3>
+        <p>Démographie, motivations, préférences &amp; comportement de visite</p>
+      </a>
+      <a href="#nonvisitors" class="cnt-card cnt-c-rose">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg></div>
+        <h3>Anciens &amp; Non-visiteurs</h3>
+        <p>Barrières, opportunités &amp; développement du public</p>
+      </a>      <a href="#feedback" class="cnt-card cnt-c-teal">
+        <div class="cnt-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></div>
+        <h3>Retours ouverts</h3>
+        <p>Suggestions concrètes dans les mots des visiteurs</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NEW IN 2026 -->
+<section id="new2026" style="padding:2rem 0 3rem;background:var(--cnt-white);">
+  <div class="cnt-wrap">
+    <div class="cnt-new-banner">
+      <span class="cnt-new-badge">Nouveau en 2026</span>
+      <div class="cnt-label" style="margin-top:.5rem;">Bientôt disponible</div>
+      <h2 class="cnt-title" style="font-size:1.6rem;">Enquêtes thématiques &amp; interviews vocaux</h2>
+      <p style="font-size:.85rem;color:var(--cnt-text-soft);margin-top:.5rem;margin-bottom:1.5rem;">Ces fonctionnalités sont disponibles en tant qu'extensions pour les membres Pro et Ambassador.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+        <div>
+          <h3 style="font-size:.95rem;font-weight:600;margin-bottom:.5rem;color:var(--cnt-teal-dark);">Études thématiques courtes</h3>
+          <p style="font-size:.9rem;color:var(--cnt-text);line-height:1.7;">Menez de courtes études thématiques sur des sujets comme l'impact, l'écologie, l'accessibilité, la salle culturelle du futur, la conservation de l'art et plus encore - en allant plus loin là où c'est le plus important pour votre salle culturelle.</p>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem;font-weight:600;margin-bottom:.5rem;color:var(--cnt-teal-dark);">Interviews audio dynamiques</h3>
+          <p style="font-size:.9rem;color:var(--cnt-text);line-height:1.7;">Un nouvel outil permettant aux salles culturelles de mener des entretiens vocaux interactifs approfondis via les smartphones des visiteurs - idéal pour surveiller des sections spécifiques, des programmes ou des événements. Un tableau de bord en direct donne un accès continu au sentiment des visiteurs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1. VISITOR EXPERIENCE -->
+<section id="experience" class="cnt-sec-alt">
+  <div class="cnt-wrap">
+    <div class="cnt-two-col">
+      <div>
+        <div class="cnt-label">Thème 1</div>
+        <h2 class="cnt-title">Expérience des visiteurs</h2>
+        <p class="cnt-subtitle">Comment les visiteurs vivent la salle culturelle</p>
+        <div class="cnt-body">
+          <p>SentoVox capture comment les visiteurs vivent votre salle culturelle selon plusieurs dimensions : la collection et les services, les espaces et l'atmosphère, la réponse émotionnelle, le niveau d'engagement et le parcours global de l'arrivée au départ.</p>
+          <p>Cela donne une image détaillée de ce qui fonctionne bien et où il y a de la place pour l'amélioration. Les données d'expérience peuvent être filtrées par type de visiteur, langue, fréquence de visite et plus encore - afin de comprendre comment différents publics perçoivent la même visite.</p>
+        </div>
+        <div class="cnt-tags">
+          <span class="cnt-tag cnt-tag-teal">Expérience en salle culturelle</span>
+          <span class="cnt-tag cnt-tag-teal">Réponse émotionnelle</span>
+          <span class="cnt-tag cnt-tag-teal">Atmosphère</span>
+          <span class="cnt-tag cnt-tag-teal">Engagement</span>
+          <span class="cnt-tag cnt-tag-teal">Parcours visiteur</span>
+        </div>
+      </div>
+      <div class="cnt-side">
+        <h4>Pourquoi c'est important</h4>
+        <p>Comprendre l'expérience des visiteurs vous permet d'aller au-delà de l'intuition. Vous obtenez des preuves de ce qui crée des visites mémorables - et ce qui échoue - dans différents segments de public.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. IMPACT ON VISITORS -->
+<section id="impact" class="cnt-sec-dark">
+  <div class="cnt-wrap">
+    <div class="cnt-label">Thème 2</div>
+    <h2 class="cnt-title">Impact sur les visiteurs</h2>
+    <p class="cnt-subtitle">Mesurer la valeur sociétale d'une salle culturelle et sa contribution au bien-être des visiteurs - selon quatre dimensions d'impact.</p>
+    <div class="cnt-two-col-eq" style="margin-bottom:2rem;">
+      <div class="cnt-body">
+        <p>Les salles culturelles font plus que satisfaire les visiteurs - elles contribuent au développement personnel, au bien-être et à la communauté. Chaque salle culturelle reçoit ses propres scores Impact Compass selon quatre dimensions, fournissant des preuves de valeur sociétale qui vont au-delà des chiffres de fréquentation.</p>
+        <p style="font-size:.9rem;color:rgba(255,255,255,0.78);line-height:1.7;">Le modèle est basé sur <em>The Cultural Value Project</em> ("Understanding the value of arts &amp; culture"), une vaste étude britannique initiée par l'Arts and Humanities Research Council en 2019. Cette étude a exploré comment la culture se traduit en impact et en valeur, et comment l'impact et la valeur concrets des institutions culturelles peuvent être mesurés par des méthodes empiriques et analytiques. Le modèle a été affiné à Roskilde, Danemark, pour le secteur des salles culturelles.</p>
+        <p style="margin-top:.75rem;"><span style="font-weight:600;color:#fff;">En savoir plus sur le modèle Impact Compass</span> <a href="https://drive.google.com/file/d/1qBVuEzKlq4y2l0LLNqnIHzoOxx20WAV0/view" target="_blank" rel="noopener" style="font-weight:600;color:#fff;text-decoration:underline;text-underline-offset:3px;">ici</a> et sur son fondement, le Cultural Value Project, <a href="https://drive.google.com/file/d/1pLFwPwuqsRDpGnvKcf0K9lBRlhrDUpVD/view" target="_blank" rel="noopener" style="font-weight:600;color:#fff;text-decoration:underline;text-underline-offset:3px;">ici</a>.</p>
+      </div>
+      <div>
+        <div class="cnt-compass-grid">
+          <div class="cnt-compass-card cnt-cc-emotional">
+            <h4>Impact émotionnel</h4><h3>Refuge</h3>
+            <ul><li>Enthousiasme</li><li>Concentration &amp; immersion</li><li>Bien-être</li><li>Être ému</li></ul>
+          </div>
+          <div class="cnt-compass-card cnt-cc-intellectual">
+            <h4>Impact intellectuel</h4><h3>Perspective</h3>
+            <ul><li>Apprentissage</li><li>Réflexion</li><li>Pensée critique</li><li>Cultivation de l'intérêt</li></ul>
+          </div>
+          <div class="cnt-compass-card cnt-cc-social">
+            <h4>Impact social</h4><h3>Communauté</h3>
+            <ul><li>Insights &amp; empathie</li><li>Relations</li><li>Participation démocratique</li><li>Citoyenneté</li></ul>
+          </div>
+          <div class="cnt-compass-card cnt-cc-creative">
+            <h4>Impact créatif</h4><h3>Créativité</h3>
+            <ul><li>Motivation &amp; nouvelles idées</li><li>Développement des compétences</li><li>Imagination</li><li>Expression de soi</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. EVALUATION -->
+<section id="evaluation" class="cnt-sec">
+  <div class="cnt-wrap">
+    <div class="cnt-two-col">
+      <div>
+        <div class="cnt-label">Thème 3</div>
+        <h2 class="cnt-title">Évaluation</h2>
+        <p class="cnt-subtitle">Offre, infrastructure &amp; conditions générales</p>
+        <div class="cnt-body">
+          <p>Au-delà de l'expérience elle-même, les visiteurs évaluent les aspects pratiques de votre salle culturelle : la qualité et la diversité de l'offre, l'infrastructure, la signalétique, l'accessibilité, les équipements, l'amabilité du personnel et les conditions telles que les tarifs et les horaires d'ouverture.</p>
+          <p>Ce retour structuré vous aide à identifier les points forts opérationnels et les axes d'amélioration, fondés sur des preuves. Le questionnaire étant standardisé, ces évaluations peuvent être comparées à des salles culturelles comparables.</p>
+        </div>
+        <div class="cnt-tags">
+          <span class="cnt-tag cnt-tag-blue">Offre &amp; collection</span>
+          <span class="cnt-tag cnt-tag-blue">Infrastructure</span>
+          <span class="cnt-tag cnt-tag-blue">Signalétique</span>
+          <span class="cnt-tag cnt-tag-blue">Accessibilité</span>
+          <span class="cnt-tag cnt-tag-blue">Personnel &amp; hospitalité</span>
+          <span class="cnt-tag cnt-tag-blue">Tarifs &amp; horaires</span>
+        </div>
+      </div>
+      <div class="cnt-side" style="border-left-color:var(--cnt-blue);">
+        <h4>Enseignements exploitables</h4>
+        <p>Les scores d'évaluation par catégorie vous aident à vous concentrer sur ce qui compte. Le questionnaire étant standardisé, vos scores peuvent être comparés à ceux de salles culturelles similaires.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. NPS -->
+<section id="nps" class="cnt-sec-alt">
+  <div class="cnt-wrap">
+    <div class="cnt-two-col-eq">
+      <div>
+        <div class="cnt-label">Thème 4</div>
+        <h2 class="cnt-title">Net Promoter Score (NPS)</h2>
+        <p class="cnt-subtitle">Indicateur de recommandation et de fidélité</p>
+        <div class="cnt-body">
+          <p>Les visiteurs sont invités à indiquer s'ils recommanderaient la salle culturelle à leur famille, amis ou collègues, sur une échelle de 0 à 10. Cette métrique largement utilisée calcule le Net Promoter Score - un indicateur unique de fidélité des visiteurs.</p>
+          <p>En fonction de leur score, les répondants sont classés comme <strong>promoteurs</strong> (9-10), <strong>passifs</strong> (7-8) ou <strong>détracteurs</strong> (0-6). Le NPS est le pourcentage de promoteurs moins le pourcentage de détracteurs.</p>
+        </div>
+      </div>
+      <div class="cnt-nps">
+        <div class="cnt-nps-scale">
+          <div class="cnt-nps-num cnt-nps-d">0</div><div class="cnt-nps-num cnt-nps-d">1</div>
+          <div class="cnt-nps-num cnt-nps-d">2</div><div class="cnt-nps-num cnt-nps-d">3</div>
+          <div class="cnt-nps-num cnt-nps-d">4</div><div class="cnt-nps-num cnt-nps-d">5</div>
+          <div class="cnt-nps-num cnt-nps-d">6</div>
+          <div class="cnt-nps-num cnt-nps-p">7</div><div class="cnt-nps-num cnt-nps-p">8</div>
+          <div class="cnt-nps-num cnt-nps-pr">9</div><div class="cnt-nps-num cnt-nps-pr">10</div>
+        </div>
+        <div class="cnt-nps-bar">
+          <div class="cnt-nps-bar-d">15%</div>
+          <div class="cnt-nps-bar-p">30%</div>
+          <div class="cnt-nps-bar-pr">55%</div>
+        </div>
+        <div class="cnt-nps-legend">
+          <span><span class="cnt-nps-dot" style="background:#e07070;"></span> Détracteurs (0-6) 15%</span>
+          <span><span class="cnt-nps-dot" style="background:#e8c44a;"></span> Passifs (7-8) 30%</span>
+          <span><span class="cnt-nps-dot" style="background:#5bab7b;"></span> Promoteurs (9-10) 55%</span>
+        </div>
+        <div class="cnt-nps-formula">
+          <strong>NPS = % Promoteurs &minus; % Détracteurs</strong>
+          <small>Score: &minus;100 to +100</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. COMMUNICATION -->
+<section id="communication" class="cnt-sec">
+  <div class="cnt-wrap">
+    <div class="cnt-two-col">
+      <div>
+        <div class="cnt-label">Thème 5</div>
+        <h2 class="cnt-title">Communication</h2>
+        <p class="cnt-subtitle">Atteignez-vous les bonnes personnes par les bons canaux ?</p>
+        <div class="cnt-body">
+          <p>SentoVox mesure comment les visiteurs ont entendu parler de la salle culturelle et comment ils évaluent votre communication : le site web, la présence sur les réseaux sociaux, la signalétique et autres points de contact.</p>
+          <p>Comprendre quels canaux sont les plus efficaces pour différents segments de visiteurs vous aide à allouer les ressources plus efficacement et à améliorer les stratégies de sensibilisation.</p>
+        </div>
+        <div class="cnt-tags">
+          <span class="cnt-tag cnt-tag-green">Canaux d'information</span>
+          <span class="cnt-tag cnt-tag-green">Évaluation du site web</span>
+          <span class="cnt-tag cnt-tag-green">Réseaux sociaux</span>
+          <span class="cnt-tag cnt-tag-green">Signalétique</span>
+          <span class="cnt-tag cnt-tag-green">Efficacité des canaux</span>
+        </div>
+      </div>
+      <div class="cnt-side" style="border-left-color:var(--cnt-green);">
+        <h4>Allocation des ressources</h4>
+        <p>Évaluez comment vous atteignez différents segments de public et adaptez votre stratégie de communication en conséquence - en ciblant les bons canaux pour les bons visiteurs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. AUDIENCE PROFILE -->
+<section id="profile" class="cnt-sec-alt">
+  <div class="cnt-wrap">
+    <div class="cnt-two-col">
+      <div>
+        <div class="cnt-label">Thème 6</div>
+        <h2 class="cnt-title">Profil du public</h2>
+        <p class="cnt-subtitle">Qui visite votre salle culturelle - et pourquoi ?</p>
+        <div class="cnt-body">
+          <p>SentoVox fournit un profil détaillé de votre public : âge, sexe, niveau d'éducation, origine géographique, composition du groupe, fréquence de visite et comment ils ont entendu parler de la salle culturelle. Cela vous aide à comprendre qui vous atteignez - et qui vous n'atteignez pas.</p>
+          <p>L'étude explore également les motivations de visite : pourquoi les visiteurs ont-ils décidé de venir ? Comprendre les schémas de motivation est essentiel pour façonner les stratégies de programmation, de communication et de développement du public.</p>
+          <p>Toutes les données de profil peuvent être croisées avec les scores d'expérience et de satisfaction, révélant quels segments de visiteurs sont les plus satisfaits et pourquoi.</p>
+        </div>
+        <div class="cnt-tags">
+          <span class="cnt-tag cnt-tag-amber">Démographie</span>
+          <span class="cnt-tag cnt-tag-amber">Fréquence de visite</span>
+          <span class="cnt-tag cnt-tag-amber">Composition du groupe</span>
+          <span class="cnt-tag cnt-tag-amber">Motivations</span>
+          <span class="cnt-tag cnt-tag-amber">Sources d'information</span>
+          <span class="cnt-tag cnt-tag-amber">Origine géographique</span>
+        </div>
+      </div>
+      <div class="cnt-side" style="border-left-color:var(--cnt-amber);">
+        <h4>Croisement des données</h4>
+        <p>Combinez les données de profil avec les scores de satisfaction et d'expérience. Les primo-visiteurs sont-ils plus satisfaits que les visiteurs réguliers ? Les visiteurs internationaux vivent-ils l'expérience différemment ?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. NON-VISITORS -->
+<section id="nonvisitors" class="cnt-sec">
+  <div class="cnt-wrap">
+    <div class="cnt-two-col">
+      <div>
+        <div class="cnt-label">Thème 7</div>
+        <h2 class="cnt-title">Anciens &amp; Non-visiteurs</h2>
+        <p class="cnt-subtitle">Pourquoi les gens ne (re)visitent-ils pas votre salle culturelle ?</p>
+        <div class="cnt-body">
+          <p>L'enquête comprend des questions dédiées aux anciens visiteurs - des personnes qui n'ont pas visité depuis plus de 12 mois - et aux non-visiteurs qui ne sont jamais venus. Le questionnaire intelligent identifie automatiquement ces profils et ne présente que les questions pertinentes.</p>
+          <p>Cette recherche révèle les obstacles à la visite : manque de notoriété, impression d'irrelevance, obstacles pratiques ou expériences passées négatives. Elle explore également ce qui pourrait motiver ces groupes à visiter ou à revenir.</p>
+          <p>Les résultats fournissent des enseignements qualitatifs directement exploitables pour le développement du public, la programmation et la sensibilisation.</p>
+        </div>
+        <div class="cnt-tags">
+          <span class="cnt-tag cnt-tag-rose">Anciens visiteurs</span>
+          <span class="cnt-tag cnt-tag-rose">Non-visiteurs</span>
+          <span class="cnt-tag cnt-tag-rose">Obstacles à la visite</span>
+          <span class="cnt-tag cnt-tag-rose">Développement du public</span>
+          <span class="cnt-tag cnt-tag-rose">Réengagement</span>
+        </div>
+      </div>
+      <div class="cnt-side" style="border-left-color:var(--cnt-rose);">
+        <h4>Développer votre public</h4>
+        <p>Comprendre pourquoi les gens ne viennent pas est tout aussi précieux que de comprendre pourquoi ils viennent. Ces données vous aident à identifier quels obstacles sont sous votre contrôle - et quels publics sont à portée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. OPEN FEEDBACK -->
+<section id="feedback" class="cnt-sec">
+  <div class="cnt-wrap">
+    <div class="cnt-two-col">
+      <div>
+        <div class="cnt-label">Thème 8</div>
+        <h2 class="cnt-title">Retours ouverts</h2>
+        <p class="cnt-subtitle">Que veulent vous dire les visiteurs dans leurs propres mots ?</p>
+        <div class="cnt-body">
+          <p>Tout au long du questionnaire, des champs de texte libre offrent suffisamment d'espace aux visiteurs pour partager leurs pensées, suggestions et commentaires dans leurs propres mots. Ces données qualitatives complètent les scores structurés avec des insights riches, concrets et souvent surprenants.</p>
+          <p>Les visiteurs partagent fréquemment des suggestions spécifiques sur les services, les équipements, la programmation et la communication - des retours immédiatement exploitables. Les retours ouverts sont disponibles dans le tableau de bord en direct et peut être filtré par langue, type de visiteur et autres critères.</p>
+        </div>
+        <div class="cnt-tags">
+          <span class="cnt-tag cnt-tag-teal">Réponses en texte libre</span>
+          <span class="cnt-tag cnt-tag-teal">Suggestions</span>
+          <span class="cnt-tag cnt-tag-teal">Insights qualitatifs</span>
+        </div>
+      </div>
+      <div class="cnt-side">
+        <h4>Ce que les visiteurs disent vraiment</h4>
+        <p>Les retours ouverts captent ce que les questions fermées ne voient pas : le banc cassé, le panneau confus, l'explication qui n'était pas tout à fait juste. Ces remarques concrètes mènent directement à des améliorations que les visiteurs ressentent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID CTA -->
+<section class="cnt-sec-alt" style="display:flex;align-items:center;justify-content:center;">
+  <div class="cnt-wrap" style="width:100%">
+    <div class="cnt-mid-cta">
+      <p>Vous voulez savoir comment l'étude fonctionne, ce qu'elle coûte ou comment démarrer ?</p>
+      <a href="{{ if $details }}{{ $details.RelPermalink }}{{ else }}{{ "/details/" | relLangURL }}{{ end }}">Voir la page Détails complète &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cnt-cta">
+  <div class="cnt-wrap">
+    <h2>Prêt à vous connecter avec votre public ?</h2>
+    <p>Rejoignez 130+ salles culturelles à travers l'Europe. Commencez avec une adhésion gratuite ou choisissez le plan qui correspond à vos besoins.</p>
+    <div class="cnt-cta-btns">
+      <a href="{{ if $participate }}{{ $participate.RelPermalink }}{{ else }}{{ "/participate/" | relLangURL }}{{ end }}" id="detRegLink3" class="cnt-btn-white">Inscrire votre salle culturelle &rarr;</a>
+      <a href="{{ if $contact }}{{ $contact.RelPermalink }}{{ else }}{{ "/contact/" | relLangURL }}{{ end }}" class="cnt-btn-outline">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+</div><!-- .cnt-page -->
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+var LIVE=['en','nl','fr','de','it','es'];
+var T={
+  en:{cta:'Participate',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'content',nav:'Content'},about:{slug:'about',nav:'About'},participate:{slug:'participate',nav:'Participate'},groups:{slug:'groups',nav:'Groups'},contact:{slug:'contact',nav:'Contact'}}},
+  nl:{cta:'Deelnemen',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'inhoud',nav:'Inhoud'},about:{slug:'over',nav:'Over'},participate:{slug:'deelnemen',nav:'Deelnemen'},groups:{slug:'groepen',nav:'Groepen'},contact:{slug:'contact',nav:'Contact'}}},
+  fr:{cta:'Participer',pages:{home:{slug:'',nav:'Accueil'},details:{slug:'details',nav:'Détails'},content:{slug:'contenu',nav:'Contenu'},about:{slug:'a-propos',nav:'À propos'},participate:{slug:'participer',nav:'Participer'},groups:{slug:'groupes',nav:'Groupes'},contact:{slug:'contact',nav:'Contact'}}},
+  de:{cta:'Teilnehmen',pages:{home:{slug:'',nav:'Startseite'},details:{slug:'details',nav:'Details'},content:{slug:'inhalte',nav:'Inhalte'},about:{slug:'uber-uns',nav:'Über uns'},participate:{slug:'teilnehmen',nav:'Teilnehmen'},groups:{slug:'gruppen',nav:'Gruppen'},contact:{slug:'kontakt',nav:'Kontakt'}}},
+  it:{cta:'Partecipare',pages:{home:{slug:'',nav:'Home'},details:{slug:'dettagli',nav:'Dettagli'},content:{slug:'contenuti',nav:'Contenuti'},about:{slug:'chi-siamo',nav:'Chi siamo'},participate:{slug:'partecipare',nav:'Partecipare'},groups:{slug:'gruppi',nav:'Gruppi'},contact:{slug:'contatto',nav:'Contatto'}}},
+  es:{cta:'Participar',pages:{home:{slug:'',nav:'Inicio'},details:{slug:'detalles',nav:'Detalles'},content:{slug:'contenido',nav:'Contenido'},about:{slug:'acerca-de',nav:'Acerca de'},participate:{slug:'participar',nav:'Participar'},groups:{slug:'grupos',nav:'Grupos'},contact:{slug:'contacto',nav:'Contacto'}}}
+};
+function url(lang,page){var s=T[lang].pages[page].slug;return'/'+lang+(s?'/'+s:'/')}
+function setCookie(n,v,d){var e=new Date();e.setTime(e.getTime()+d*864e5);document.cookie=n+'='+v+';expires='+e.toUTCString()+';path=/;SameSite=Lax'}
+function detectLang(){var m=window.location.pathname.match(/^\/(en|nl|fr|de|it|es)(\/|$)/);if(m&&T[m[1]]){setCookie('sn_lang',m[1],365);return m[1];}return'en'}
+var lang=detectLang();
+var ORDER=['home','details','content','groups','contact'];
+function renderNav(){
+  var t=T[lang];
+  var snLogoLink=document.getElementById('snLogoLink');if(snLogoLink)snLogoLink.href='/'+lang+'/';
+  ORDER.forEach(function(k){['#snLinks','#snDrLinks'].forEach(function(sel){var a=document.querySelector(sel+' a[data-key="'+k+'"]');if(!a)return;a.href=url(lang,k);a.textContent=t.pages[k].nav;});});
+  var snCta=document.getElementById('snCta');if(snCta)snCta.href=url(lang,'participate');
+  var snCtaTxt=document.getElementById('snCtaTxt');if(snCtaTxt)snCtaTxt.textContent=t.cta;
+  document.querySelectorAll('[id^="detRegLink"]').forEach(function(el){el.href=url(lang,'participate');});
+  
+  var _codes={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+  var snLangFlag=document.getElementById('snLangFlag');if(snLangFlag)snLangFlag.textContent=_flags[lang]||'🇬🇧';
+  var snLangCode=document.getElementById('snLangCode');if(snLangCode)snLangCode.textContent=_codes[lang]||'EN';
+  document.querySelectorAll('#snLangDrop a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'content');});
+  document.querySelectorAll('#snDrLangs a[data-lang]').forEach(function(a){a.classList.toggle('cur',a.dataset.lang===lang);a.href=url(a.dataset.lang,'content');});
+  var snDrCta=document.getElementById('snDrCta');if(snDrCta){snDrCta.href=url(lang,'participate');snDrCta.textContent=t.cta+' →';}
+  document.documentElement.lang=lang;
+}
+renderNav();
+function switchLang(l){if(!LIVE.includes(l))return;setCookie('sn_lang',l,365);window.location.href=url(l,'content')}
+var snNav=document.getElementById('snNav');
+var detNav=document.getElementById('detNav');
+var jumpLinks=Array.prototype.slice.call(document.querySelectorAll('.det-link'));
+var sections=jumpLinks.map(function(a){return document.getElementById((a.getAttribute('href')||'').slice(1))}).filter(Boolean);
+function totalStickyH(){return(snNav?snNav.offsetHeight:64)+(detNav?detNav.offsetHeight:44)}
+function updateJumpNav(){
+  var y=window.scrollY+totalStickyH()+24;var cur=null;
+  for(var i=0;i<sections.length;i++){if(sections[i]&&sections[i].offsetTop<=y)cur=sections[i].id}
+  jumpLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-sec')===cur)});
+}
+window.addEventListener('scroll',updateJumpNav,{passive:true});
+updateJumpNav();
+var snFc=document.getElementById('snFooterCopy');if(snFc)snFc.textContent='SentoVox © '+new Date().getFullYear();
+var ft={en:{terms:'Terms & Conditions',privacy:'Privacy Policy',ts:'terms',ps:'privacy'},nl:{terms:'Algemene voorwaarden',privacy:'Privacybeleid',ts:'voorwaarden',ps:'privacy'},fr:{terms:'Conditions générales',privacy:'Politique de confidentialité',ts:'terms',ps:'privacy'},de:{terms:'Allgemeine Geschäftsbedingungen',privacy:'Datenschutzerklärung',ts:'terms',ps:'privacy'},it:{terms:'Termini e condizioni',privacy:'Informativa sulla privacy',ts:'terms',ps:'privacy'},es:{terms:'Términos y condiciones',privacy:'Política de privacidad',ts:'terms',ps:'privacy'}};
+var flt=ft[lang]||ft.en;
+var snFt=document.getElementById('snFooterTerms');if(snFt){snFt.textContent=flt.terms;snFt.href='/'+lang+'/'+flt.ts;}
+var snFp=document.getElementById('snFooterPrivacy');if(snFp){snFp.textContent=flt.privacy;snFp.href='/'+lang+'/'+flt.ps;}
+var topBtn=document.getElementById('topBtn');
+if(topBtn){window.addEventListener('scroll',function(){topBtn.classList.toggle('visible',scrollY>400);},{passive:true});topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+})();
+</script>
+{{ end }}

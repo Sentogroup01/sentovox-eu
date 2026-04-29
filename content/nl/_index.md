@@ -12,7 +12,7 @@ btn_secondary: "Ontdek hoe het werkt"
 trust_items:
   - value: "130+"
     label: "Cultuurhuizen"
-    icon: "i-bibliotheek"
+    icon: "i-library"
   - value: "60.000+"
     label: "Bezoekers"
     icon: "i-survey"

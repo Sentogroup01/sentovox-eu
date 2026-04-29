@@ -12,7 +12,7 @@ btn_secondary: "Funktionsweise entdecken"
 trust_items:
   - value: "130+"
     label: "Kulturhäuser"
-    icon: "i-bibliotheek"
+    icon: "i-library"
   - value: "60.000+"
     label: "Besucher:innen"
     icon: "i-survey"

@@ -1,0 +1,41 @@
+{{/* build: 2026-04-18 */}}
+{{ define "main" }}
+<style>
+.resp-wrap{max-width:760px;margin:0 auto;padding:40px 24px 60px}
+.resp-head{text-align:center;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--tealBorder)}
+.resp-head h1{font-family:var(--fontD);font-size:26px;font-weight:700;color:var(--teal);margin:0 0 6px;line-height:1.2}
+.resp-head .pmeta{font-size:12px;color:var(--inkSoft);letter-spacing:0.03em}
+.resp-wrap h2{font-family:var(--fontD);font-size:17px;font-weight:700;color:var(--teal);margin:28px 0 6px;line-height:1.2;padding-top:18px;border-top:1px solid var(--tealBorder)}
+.resp-wrap h2:first-of-type{border-top:none;padding-top:0}
+.resp-wrap h3{font-size:14px;font-weight:700;color:var(--teal);margin:14px 0 4px}
+.resp-wrap p{margin:6px 0;font-size:14px;line-height:1.65;color:var(--inkSoft)}
+.resp-wrap p strong{color:var(--inkMuted);font-weight:600}
+.resp-wrap a{color:var(--teal);text-decoration:underline;text-underline-offset:2px;text-decoration-color:rgba(229,115,115,0.30)}
+.resp-wrap a:hover{text-decoration-color:var(--teal)}
+.resp-wrap ul{margin:6px 0 12px 0;padding-left:18px;list-style:disc}
+.resp-wrap ul li{margin:3px 0;font-size:13.5px;line-height:1.5;color:var(--inkSoft)}
+.resp-wrap ul li strong{color:var(--inkMuted)}
+.resp-wrap em{font-style:italic;color:var(--inkSoft)}
+.resp-toplink{display:inline-block;margin-top:4px;font-size:11px;color:var(--inkSoft);text-decoration:none;opacity:0.5}
+.resp-toplink:hover{opacity:1;color:var(--teal)}
+@media(max-width:640px){.resp-wrap{padding:24px 16px 40px}}
+</style>
+
+<div class="pageBody pageBody--wide">
+<div class="pageInner pageInner--wide">
+<div class="card">
+<div class="resp-wrap" id="top">
+
+<div class="resp-head">
+  <h1>{{ .Title }}</h1>
+  <p class="pmeta">{{ .Params.date_label | default "Updated" }} {{ .Params.effective_date }} - &#169; {{ now.Year }} Sento Group BV</p>
+</div>
+
+{{ .Content }}
+
+</div>
+</div>
+</div>
+</div>
+
+{{ end }}

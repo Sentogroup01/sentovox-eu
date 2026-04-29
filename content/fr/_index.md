@@ -12,7 +12,7 @@ btn_secondary: "Découvrir le fonctionnement"
 trust_items:
   - value: "130+"
     label: "Lieux culturels"
-    icon: "i-bibliotheek"
+    icon: "i-library"
   - value: "60 000+"
     label: "Visiteurs"
     icon: "i-survey"

@@ -12,7 +12,7 @@ btn_secondary: "Discover how it works"
 trust_items:
   - value: "130+"
     label: "Venues"
-    icon: "i-bibliotheek"
+    icon: "i-library"
   - value: "60,000+"
     label: "Visitors"
     icon: "i-survey"

@@ -1,0 +1,235 @@
+{{/* build: 2026-03-17 08:31:56 */}}
+
+{{ define "main" }}
+<div class="pageBody">
+<div class="pageInner">
+
+  <!-- INFO CARD -->
+  <div class="card">
+    <div class="iconCircle">
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    </div>
+    <p class="kicker">Cultural venue groups</p>
+    <h1>Groups</h1>
+    <p>Do you represent multiple cultural venues, or is your cultural venue part of a larger group or structure? Then you can participate in the SentoVox study as a group.</p>
+
+    <ul class="benefitList">
+      <li class="benefitItem"><span class="bDot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><p class="bText">Add additional questions to the survey for all participating cultural venues in your group.</p></li>
+      <li class="benefitItem"><span class="bDot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><p class="bText">Benchmark individual cultural venues against group results, clusters and national outcomes.</p></li>
+      <li class="benefitItem"><span class="bDot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><p class="bText">Optional group coordinator access with insights across all participating cultural venues.</p></li>
+      <li class="benefitItem"><span class="bDot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><p class="bText">Reduced participation fee for cultural venue groups.</p></li>
+    </ul>
+
+    <div style="display:none">
+    <p style="font-size:13.5px;color:var(--inkSoft);margin:0 0 8px">Watch the short introduction video below to learn more about group participation.</p>
+    <div class="videoWrap" style="display:none">
+      <!-- TODO: Replace VIDEO_ID with actual YouTube video ID -->
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="SentoVox groups" loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <div class="noteBar">Groups receive reduced participation fees. A coordinator receives cross-cultural venue access. One registration covers all participating cultural venues.</div>
+  </div>
+
+  <!-- FORM CARD -->
+  <div class="card">
+    <p class="kicker">Request & contact</p>
+    <h2>Request more information</h2>
+    <p style="margin-bottom:20px">Fill in the form below and we will get back to you with a tailored proposal.</p>
+
+    <div id="groupForm">
+      <div class="formGrid">
+        <div class="formRow">
+          <div class="formGroup">
+            <label for="g_name">Your name<span class="required">*</span></label>
+            <input type="text" id="g_name" name="name" placeholder="Jane Smith" required autocomplete="name">
+          </div>
+          <div class="formGroup">
+            <label for="g_org">Organisation<span class="required">*</span></label>
+            <input type="text" id="g_org" name="organisation" placeholder="Cultural venue Group" required autocomplete="organization">
+          </div>
+        </div>
+        <div class="formRow">
+          <div class="formGroup">
+            <label for="g_role">Role / function</label>
+            <input type="text" id="g_role" name="role" placeholder="Director" autocomplete="organization-title">
+          </div>
+          <div class="formGroup">
+            <label for="g_email">Email address<span class="required">*</span></label>
+            <input type="email" id="g_email" name="email" placeholder="jane@venuegroup.eu" required autocomplete="email">
+          </div>
+        </div>
+        <div class="formRow">
+          <div class="formGroup">
+            <label for="g_venues">Number of cultural venues in your group</label>
+            <input type="number" id="g_venues" name="num_venues" placeholder="e.g. 5" min="2">
+          </div>
+        </div>
+        <div class="formGroup">
+          <label for="g_countries">Country / countries</label>
+          <input type="text" id="g_countries" name="countries" placeholder="e.g. Belgium, Netherlands">
+        </div>
+        <div class="formGroup">
+          <label for="g_msg">Message or question</label>
+          <textarea id="g_msg" name="message" placeholder="Tell us about your group and what you are looking for..."></textarea>
+        </div>
+        <p class="fieldNote">Your data is processed solely to respond to your request, in accordance with our privacy policy.</p>
+        <button type="button" class="submitBtn" id="gSubmitBtn">
+          Send request
+          <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="successMsg" id="gSuccess">✓ Thank you! We will be in touch as soon as possible.</div>
+  </div>
+
+</div>
+</div>
+
+
+
+
+<div class="reg-overlay" id="regOverlay" role="dialog" aria-modal="true"><div class="reg-modal"><button class="reg-close" id="regClose" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" stroke="#e57373" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><h2 class="reg-title">Choose your region</h2><p class="reg-sub">Select the platform for your cultural venue's country or region.</p><a class="reg-btn" href="/contact/" ><span class="reg-btn-flag">🌍</span><span><span class="reg-btn-name">Other_countries: contact us</span><span class="reg-btn-url"></span></span></a></div></div>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+'use strict';
+var lang='en';
+
+var LANG_COOKIE='sn_lang';
+var LIVE=['en','nl','fr','de','it','es'];
+var LANG_LABELS={en:'EN',nl:'NL',fr:'FR',de:'DE',it:'IT',es:'ES'};
+
+var T={
+  en:{cta:'Participate',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'content',nav:'Content'},about:{slug:'about',nav:'About'},participate:{slug:'participate',nav:'Participate'},groups:{slug:'groups',nav:'Groups'},contact:{slug:'contact',nav:'Contact'}}},
+  nl:{cta:'Deelnemen',pages:{home:{slug:'',nav:'Home'},details:{slug:'details',nav:'Details'},content:{slug:'inhoud',nav:'Inhoud'},about:{slug:'over',nav:'Over'},participate:{slug:'deelnemen',nav:'Deelnemen'},groups:{slug:'groepen',nav:'Groepen'},contact:{slug:'contact',nav:'Contact'}}},
+  fr:{cta:'Participer',pages:{home:{slug:'',nav:'Accueil'},details:{slug:'details',nav:'Détails'},content:{slug:'contenu',nav:'Contenu'},about:{slug:'a-propos',nav:'À propos'},participate:{slug:'participer',nav:'Participer'},groups:{slug:'groupes',nav:'Groupes'},contact:{slug:'contact',nav:'Contact'}}},
+  de:{cta:'Teilnehmen',pages:{home:{slug:'',nav:'Startseite'},details:{slug:'details',nav:'Details'},content:{slug:'inhalte',nav:'Inhalte'},about:{slug:'uber-uns',nav:'Über uns'},participate:{slug:'teilnehmen',nav:'Teilnehmen'},groups:{slug:'gruppen',nav:'Gruppen'},contact:{slug:'kontakt',nav:'Kontakt'}}},
+  it:{cta:'Partecipare',pages:{home:{slug:'',nav:'Home'},details:{slug:'dettagli',nav:'Dettagli'},content:{slug:'contenuti',nav:'Contenuti'},about:{slug:'chi-siamo',nav:'Chi siamo'},participate:{slug:'partecipare',nav:'Partecipare'},groups:{slug:'gruppi',nav:'Gruppi'},contact:{slug:'contatto',nav:'Contatto'}}},
+  es:{cta:'Participar',pages:{home:{slug:'',nav:'Inicio'},details:{slug:'detalles',nav:'Detalles'},content:{slug:'contenido',nav:'Contenido'},about:{slug:'acerca-de',nav:'Acerca de'},participate:{slug:'participar',nav:'Participar'},groups:{slug:'grupos',nav:'Grupos'},contact:{slug:'contacto',nav:'Contacto'}}}
+};
+
+function getCookie(n){var v=document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)');return v?v.pop():'';}
+function setCookie(n,v){document.cookie=n+'='+v+';path=/;max-age='+365*24*3600+';SameSite=Lax';}
+function langUrl(tl,currentPage){
+  if(tl===lang)return null;
+  var tc=T[tl];if(!tc)return null;
+  var slug=tc.pages[currentPage]?tc.pages[currentPage].slug:'';
+  return'/'+tl+'/'+(slug?slug+'/':'');
+}
+
+function renderNav(currentPage){
+  var conf=T[lang]||T.en;
+  var inner=document.getElementById('snInner');if(!inner)return;
+  var logoHTML='<a class="sn-logo" href="/'+lang+'/" aria-label="SentoVox home"><div class="sn-logo-icon"><svg viewBox="0 0 32 26" fill="none"><rect x="2" y="0" width="28" height="20" rx="6" fill="#e57373"/><path d="M11 20 L9 26 L18 20" fill="#e57373"/><text x="16" y="15" text-anchor="middle" font-family="Georgia,serif" font-weight="800" font-size="13" fill="white">M</text></svg></div><span class="sn-logo-text">SentoVox</span></a>';
+  var linksHTML='<div class="sn-links">';
+  ['home','details','content','about','groups','contact'].forEach(function(key){
+    var pg=conf.pages[key];if(!pg)return;
+    var href='/'+lang+'/'+(pg.slug?pg.slug+'/':'');
+    var active=key===currentPage?' active':'';
+    linksHTML+='<a class="sn-link'+active+'" href="'+href+'">'+pg.nav+'</a>';
+  });
+  linksHTML+='</div>';
+  var langHTML='<div class="sn-lang" id="snLang"><button class="sn-lang-btn" id="snLangBtn" aria-expanded="false">'+LANG_LABELS[lang]+'<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="sn-lang-drop" id="snLangDrop">';
+  LIVE.forEach(function(lc){
+    var isCurrent=lc===lang;var url=langUrl(lc,currentPage)||'#';
+    langHTML+='<a class="sn-lang-item'+(isCurrent?' current':'')+'" href="'+url+'" data-lang="'+lc+'">'+LANG_LABELS[lc]+(isCurrent?' ✓':'')+'</a>';
+  });
+  langHTML+='</div></div>';
+  var ctaHTML='<a class="sn-cta" href="#" data-reg="1" data-register="1">'+conf.cta+'</a>';
+  var burgerHTML='<button class="sn-burger" id="snBurger" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>';
+  inner.innerHTML=logoHTML+linksHTML+'<div class="sn-right">'+langHTML+ctaHTML+burgerHTML+'</div>';
+
+  var drawerHTML='<div class="sn-drawer" id="snDrawer"><div class="sn-drawer-bg" id="snDrawerBg"></div><div class="sn-drawer-panel">';
+  drawerHTML+='<button class="sn-drawer-close" id="snDrawerClose" aria-label="Close"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>';
+  ['home','details','content','about','groups','contact'].forEach(function(key){
+    var pg=conf.pages[key];if(!pg)return;
+    var href='/'+lang+'/'+(pg.slug?pg.slug+'/':'');
+    var active=key===currentPage?' active':'';
+    drawerHTML+='<a class="sn-drawer-link'+active+'" href="'+href+'">'+pg.nav+'</a>';
+  });
+  drawerHTML+='<div class="sn-drawer-divider"></div><div class="sn-drawer-lang-title">Language</div>';
+  LIVE.forEach(function(lc){
+    var isCurrent=lc===lang;var url=langUrl(lc,currentPage)||'#';
+    drawerHTML+='<a class="sn-drawer-link'+(isCurrent?' active':'')+'" href="'+url+'" data-lang="'+lc+'">'+LANG_LABELS[lc]+(isCurrent?' ✓':'')+'</a>';
+  });
+  drawerHTML+='<div class="sn-drawer-divider"></div><a class="sn-drawer-cta" href="/'+lang+'/'+(conf.pages.participate?conf.pages.participate.slug+'/':'participate/')+'">'+conf.cta+'</a></div></div>';
+  document.body.insertAdjacentHTML('beforeend',drawerHTML);
+
+  /* Dropdown handled by baseof.html */
+  document.querySelectorAll('[data-lang]').forEach(function(el){el.addEventListener('click',function(){setCookie(LANG_COOKIE,el.dataset.lang);});});
+  var burger=document.getElementById('snBurger'),drawer=document.getElementById('snDrawer'),bg=document.getElementById('snDrawerBg'),dc=document.getElementById('snDrawerClose');
+  function od(){if(drawer){drawer.classList.add('open');if(burger)burger.setAttribute('aria-expanded','true');}}
+  function cd(){if(drawer){drawer.classList.remove('open');if(burger)burger.setAttribute('aria-expanded','false');}}
+  if(burger)burger.addEventListener('click',od);if(bg)bg.addEventListener('click',cd);if(dc)dc.addEventListener('click',cd);
+}
+
+function onReady(fn){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fn);else fn();}
+onReady(function(){renderNav('groups');});
+
+/* Form submit - Formspree */
+var btn=document.getElementById('gSubmitBtn');
+if(btn)btn.addEventListener('click',function(){
+  var form=document.getElementById('groupForm');
+  var name=document.getElementById('g_name').value.trim();
+  var org=document.getElementById('g_org').value.trim();
+  var email=document.getElementById('g_email').value.trim();
+  if(!name||!org||!email){
+    document.getElementById('g_name').reportValidity&&document.getElementById('g_name').reportValidity();
+    return;
+  }
+  var data={name:name,organisation:org,role:document.getElementById('g_role').value,
+    email:email,
+    num_venues:document.getElementById('g_venues').value,
+    countries:document.getElementById('g_countries').value,
+    message:document.getElementById('g_msg').value};
+  btn.disabled=true;btn.textContent='...';
+  fetch('https://formspree.io/f/myklwrog',{
+    method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify(data)
+  }).then(function(r){
+    form.style.display='none';
+    document.getElementById('gSuccess').classList.add('show');
+  }).catch(function(){
+    btn.disabled=false;btn.textContent='Send request';
+  });
+});
+})();
+
+/* ── Register modal ── */
+(function(){
+  var overlay=document.getElementById('regOverlay');
+  if(!overlay)return;
+  function openReg(e){e.preventDefault();overlay.classList.add('open');document.body.style.overflow='hidden'}
+  function closeReg(){overlay.classList.remove('open');document.body.style.overflow=''}
+  // Close button
+  var closeBtn=document.getElementById('regClose');
+  if(closeBtn)closeBtn.addEventListener('click',closeReg);
+  // Click outside
+  overlay.addEventListener('click',function(e){if(e.target===overlay)closeReg()});
+  // Escape key
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('open'))closeReg()});
+  // Attach to all register trigger elements
+  document.querySelectorAll('[data-register]').forEach(function(el){
+    el.addEventListener('click',openReg);
+  });
+})();
+</script>
+<script>
+/* ── Register modal ── */
+(function(){
+  var ov=document.getElementById('regOverlay');
+  if(!ov)return;
+  function open(e){e.preventDefault();ov.classList.add('open');document.body.style.overflow='hidden'}
+  function close(){ov.classList.remove('open');document.body.style.overflow=''}
+  var cb=document.getElementById('regClose');
+  if(cb)cb.addEventListener('click',close);
+  ov.addEventListener('click',function(e){if(e.target===ov)close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  document.querySelectorAll('[data-reg]').forEach(function(el){el.addEventListener('click',open)});
+})();
+</script>
+{{ end }}

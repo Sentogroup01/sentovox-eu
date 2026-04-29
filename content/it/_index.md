@@ -12,7 +12,7 @@ btn_secondary: "Scopri come funziona"
 trust_items:
   - value: "130+"
     label: "Centri culturali"
-    icon: "i-bibliotheek"
+    icon: "i-library"
   - value: "60.000+"
     label: "Visitatori"
     icon: "i-survey"
