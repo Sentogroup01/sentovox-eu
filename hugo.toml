@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
 [params]
-  red = "#cc2936"
+  red = "#1f6f6e"
   formspree_contact = "xaqpbyqy"
   formspree_groups = "myknpyke"
   description = "European visitor research for performing arts venues. Trusted by 130+ theatres, concert halls and cultural centres, supported by 4 universities. Benchmark with peer institutions across Europe."

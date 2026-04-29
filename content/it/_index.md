@@ -31,8 +31,10 @@ universities:
     logo: "antwerpen"
     country: "Belgio"
   - name: "FH Kufstein Tirol"
+    logo: "kufstein"
     country: "Austria"
   - name: "HAWK Hildesheim"
+    logo: "hildesheim"
     country: "Germania"
 
 intro_lead: "SentoVox aiuta centri culturali, teatri e sale da concerto a comprendere meglio il proprio pubblico. In un'epoca di risorse limitate, dati solidi su visitatori e impatto sono indispensabili."

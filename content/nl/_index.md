@@ -29,10 +29,13 @@ universities:
     logo: "groningen"
     country: "Nederland"
   - name: "Universiteit Antwerpen"
+    logo: "antwerpen"
     country: "België"
   - name: "FH Kufstein Tirol"
+    logo: "kufstein"
     country: "Oostenrijk"
   - name: "HAWK Hildesheim"
+    logo: "hildesheim"
     country: "Duitsland"
 
 intro_lead: "SentoVox helpt cultuurhuizen, theaters, schouwburgen en concertzalen hun publiek beter te begrijpen. In een tijd van schaarse middelen is bewijs over uw bezoekers en impact onmisbaar."
