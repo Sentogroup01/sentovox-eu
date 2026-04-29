@@ -292,8 +292,6 @@
     {{ range .Params.wlt_texts }}<p class="wltText">{{ . }}</p>{{ end }}
     <p class="wltNote">{{ .Params.wlt_note }}</p>
   </div>
-  <div class="wltCard wltCounterCard">
-    <div class="wltCounterLabel">{{ .Params.wlt_counter_label | default "Rainforest preserved" }}</div>
     <div class="wltCounterRow"><span class="wltCounterVal">85,000</span><span class="wltCounterUnit">m<sup>2</sup></span></div>
     <div class="wltCounterNote">{{ .Params.wlt_counter_note | default "and counting" }}</div>
   </div>
