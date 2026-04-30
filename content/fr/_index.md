@@ -52,6 +52,9 @@ why_blocks:
   - title: "Atteindre de nouveaux publics"
     text: "Comprenez pourquoi certains ne viennent pas et comment les toucher."
     icon: '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>'
+  - title: "Démontrez la contribution économique"
+    text: "Montrez aux décideurs et financeurs comment votre salle contribue à l'économie locale — dépenses des visiteurs en restauration, transport, hébergement et activités annexes."
+    icon: '<path d="M3 21h18M3 11h18M5 11V7l7-3 7 3v4M9 21V11M15 21V11"/>'
 
 intro_title: "Rejoignez 130+ lieux culturels participant à l'étude européenne des publics du spectacle vivant."
 intro_body: |

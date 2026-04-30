@@ -7,7 +7,7 @@ kicker: "In detail"
 lead: "SentoVox is gebouwd rond gestandaardiseerde kernvragen, ontwikkeld door een consortium van zeven Europese universiteiten, met optionele lokale vragen per cultuurhuis. Het resultaat: rijke, vergelijkbare data met weinig werk aan jouw kant."
 
 modules_kicker: "Onderzoeksmodules"
-modules_title: "Negen thema's in de bevraging"
+modules_title: "Tien thema's in de bevraging"
 modules_intro: "Elke module levert op zich bruikbare inzichten — samen schetsen ze een volledig beeld van wie je publiek is en hoe het je cultuurhuis beleeft."
 modules:
   - title: "Bezoekerservaring"
@@ -37,6 +37,9 @@ modules:
   - title: "Lokale vragen"
     desc: "Voeg eigen vragen toe voor cultuurhuis-specifiek onderzoek."
     icon: "i-clip"
+  - title: "Economische impact"
+    desc: "Bezoekersuitgaven aan horeca, vervoer, overnachting en randprogramma — concrete bewijslast van economische bijdrage aan de lokale gemeenschap."
+    icon: "i-coins"
 
 compass_kicker: "Impact Compass Model"
 compass_title: "Vier dimensies van culturele impact"

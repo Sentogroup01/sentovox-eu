@@ -7,7 +7,7 @@ kicker: "En detalle"
 lead: "SentoVox se construye sobre preguntas centrales estandarizadas, desarrolladas por un consorcio de cuatro universidades europeas, con preguntas locales opcionales por sala. Resultado: datos ricos y comparables, con esfuerzo mínimo por su parte."
 
 modules_kicker: "Módulos de investigación"
-modules_title: "Nueve temas cubiertos por la encuesta"
+modules_title: "Diez temas cubiertos por la encuesta"
 modules_intro: "Cada módulo produce hallazgos accionables por sí mismo — juntos dan una imagen completa de su público."
 modules:
   - title: "Experiencia del visitante"
@@ -37,6 +37,9 @@ modules:
   - title: "Preguntas locales"
     desc: "Añada sus propias preguntas para necesidades específicas."
     icon: "i-clip"
+  - title: "Impacto económico"
+    desc: "Gasto de visitantes en restauración, transporte, alojamiento y categorías relacionadas — prueba concreta de la contribución económica a la comunidad local."
+    icon: "i-coins"
 
 compass_kicker: "Modelo Impact Compass"
 compass_title: "Cuatro dimensiones del impacto cultural"

@@ -7,7 +7,7 @@ kicker: "In detail"
 lead: "SentoVox is built around standardised core questions developed by a consortium of seven European universities, with optional local questions per venue. The result is rich, comparable data with low effort on the venue side."
 
 modules_kicker: "Research modules"
-modules_title: "Nine themes covered by the survey"
+modules_title: "Ten themes covered by the survey"
 modules_intro: "Each module produces actionable findings on its own — together they paint a complete picture of who your visitors are and how they experience your venue."
 modules:
   - title: "Visitor experience"
@@ -37,6 +37,9 @@ modules:
   - title: "Local questions"
     desc: "Add your own questions for venue-specific research needs."
     icon: "i-clip"
+  - title: "Economic impact"
+    desc: "Visitor spending on dining, transport, accommodation and surrounding categories — concrete evidence of economic contribution to the local community."
+    icon: "i-coins"
 
 compass_kicker: "Impact Compass Model"
 compass_title: "Four dimensions of cultural impact"

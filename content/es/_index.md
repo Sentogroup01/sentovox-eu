@@ -52,6 +52,9 @@ why_blocks:
   - title: "Llega a nuevos públicos"
     text: "Comprende por qué algunas personas no acuden y cómo conectar con ellas."
     icon: '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>'
+  - title: "Demostrar la contribución económica"
+    text: "Mostrar a responsables políticos y financiadores cómo su sala impulsa la economía local — gasto de visitantes en restauración, transporte, alojamiento y categorías relacionadas."
+    icon: '<path d="M3 21h18M3 11h18M5 11V7l7-3 7 3v4M9 21V11M15 21V11"/>'
 
 intro_title: "Únete a 130+ centros culturales que participan en el estudio europeo de públicos de las artes escénicas."
 intro_body: |

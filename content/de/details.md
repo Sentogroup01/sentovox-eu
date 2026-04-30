@@ -7,7 +7,7 @@ kicker: "Im Detail"
 lead: "SentoVox basiert auf standardisierten Kernfragen, entwickelt von einem Konsortium aus sieben europäischen Universitäten, mit optionalen lokalen Fragen pro Haus. Das Ergebnis: reichhaltige, vergleichbare Daten bei geringem Aufwand für Sie."
 
 modules_kicker: "Forschungsmodule"
-modules_title: "Neun Themen in der Befragung"
+modules_title: "Zehn Themen in der Befragung"
 modules_intro: "Jedes Modul liefert für sich umsetzbare Erkenntnisse — zusammen ergeben sie ein vollständiges Bild Ihres Publikums."
 modules:
   - title: "Besuchererfahrung"
@@ -37,6 +37,9 @@ modules:
   - title: "Lokale Fragen"
     desc: "Eigene Fragen für hausspezifische Forschungsanliegen."
     icon: "i-clip"
+  - title: "Wirtschaftliche Wirkung"
+    desc: "Besucherausgaben für Gastronomie, Verkehr, Übernachtung und Rahmenkategorien — konkreter Beleg des wirtschaftlichen Beitrags zur lokalen Gemeinschaft."
+    icon: "i-coins"
 
 compass_kicker: "Impact Compass Modell"
 compass_title: "Vier Dimensionen kultureller Wirkung"

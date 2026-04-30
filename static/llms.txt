@@ -4,7 +4,7 @@
 SentoVox is a European study that helps performing arts venues understand their audiences. It is developed by Sento Group BV (Belgium) and supported by a consortium of researchers at seven European universities, together with sector partners such as ENCC, VSCD and Cult.
 
 ## What does SentoVox do?
-SentoVox provides theatres, concert halls and cultural centres with a standardised, scientifically grounded visitor survey covering visitor experience, programming evaluation, the Impact Compass Model, infrastructure, communication, audience profile, NPS and non-visitor research. Standard questions can be supplemented with optional local questions per venue.
+SentoVox provides theatres, concert halls and cultural centres with a standardised, scientifically grounded visitor survey covering visitor experience, programming evaluation, the Impact Compass Model, infrastructure, communication, audience profile, NPS, non-visitor research and economic impact. Standard questions can be supplemented with optional local questions per venue.
 
 ## Who uses SentoVox?
 130+ cultural venues across Europe, with 60,000+ visitors having taken part in the survey. The study is run as a single coordinated edition with academic oversight.

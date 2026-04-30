@@ -52,6 +52,9 @@ why_blocks:
   - title: "Bereik nieuwe doelgroepen"
     text: "Begrijp waarom niet-bezoekers wegblijven en hoe u hen kunt aanspreken."
     icon: '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>'
+  - title: "Toon de economische bijdrage"
+    text: "Laat stakeholders, beleidsmakers en financiers zien hoe uw cultuurhuis de lokale economie aandrijft — bezoekersuitgaven aan horeca, vervoer, overnachting en randprogramma."
+    icon: '<path d="M3 21h18M3 11h18M5 11V7l7-3 7 3v4M9 21V11M15 21V11"/>'
 
 intro_title: "Sluit aan bij 130+ cultuurhuizen, theaters en schouwburgen die deelnemen aan Europa's publieksonderzoek voor podiumkunsten."
 intro_body: |
