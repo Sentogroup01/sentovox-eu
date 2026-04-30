@@ -66,17 +66,9 @@ defaultContentLanguageInSubdir = true
     url = "/en/details/"
     weight = 2
   [[languages.en.menus.main]]
-    identifier = "content"
-    url = "/en/content/"
-    weight = 3
-  [[languages.en.menus.main]]
     identifier = "about"
     url = "/en/about/"
     weight = 4
-  [[languages.en.menus.main]]
-    identifier = "groups"
-    url = "/en/groups/"
-    weight = 5
   [[languages.en.menus.main]]
     identifier = "participate"
     url = "/en/participate/"
@@ -96,17 +88,9 @@ defaultContentLanguageInSubdir = true
     url = "/nl/details/"
     weight = 2
   [[languages.nl.menus.main]]
-    identifier = "content"
-    url = "/nl/inhoud/"
-    weight = 3
-  [[languages.nl.menus.main]]
     identifier = "about"
     url = "/nl/over/"
     weight = 4
-  [[languages.nl.menus.main]]
-    identifier = "groups"
-    url = "/nl/groepen/"
-    weight = 5
   [[languages.nl.menus.main]]
     identifier = "participate"
     url = "/nl/participate/"
@@ -126,17 +110,9 @@ defaultContentLanguageInSubdir = true
     url = "/fr/details/"
     weight = 2
   [[languages.fr.menus.main]]
-    identifier = "content"
-    url = "/fr/contenu/"
-    weight = 3
-  [[languages.fr.menus.main]]
     identifier = "about"
     url = "/fr/a-propos/"
     weight = 4
-  [[languages.fr.menus.main]]
-    identifier = "groups"
-    url = "/fr/groupes/"
-    weight = 5
   [[languages.fr.menus.main]]
     identifier = "participate"
     url = "/fr/participate/"
@@ -156,17 +132,9 @@ defaultContentLanguageInSubdir = true
     url = "/de/details/"
     weight = 2
   [[languages.de.menus.main]]
-    identifier = "content"
-    url = "/de/inhalte/"
-    weight = 3
-  [[languages.de.menus.main]]
     identifier = "about"
     url = "/de/ueber-uns/"
     weight = 4
-  [[languages.de.menus.main]]
-    identifier = "groups"
-    url = "/de/gruppen/"
-    weight = 5
   [[languages.de.menus.main]]
     identifier = "participate"
     url = "/de/participate/"
@@ -186,17 +154,9 @@ defaultContentLanguageInSubdir = true
     url = "/it/dettagli/"
     weight = 2
   [[languages.it.menus.main]]
-    identifier = "content"
-    url = "/it/contenuti/"
-    weight = 3
-  [[languages.it.menus.main]]
     identifier = "about"
     url = "/it/chi-siamo/"
     weight = 4
-  [[languages.it.menus.main]]
-    identifier = "groups"
-    url = "/it/gruppi/"
-    weight = 5
   [[languages.it.menus.main]]
     identifier = "participate"
     url = "/it/participate/"
@@ -216,17 +176,9 @@ defaultContentLanguageInSubdir = true
     url = "/es/detalles/"
     weight = 2
   [[languages.es.menus.main]]
-    identifier = "content"
-    url = "/es/contenido/"
-    weight = 3
-  [[languages.es.menus.main]]
     identifier = "about"
     url = "/es/sobre-nosotros/"
     weight = 4
-  [[languages.es.menus.main]]
-    identifier = "groups"
-    url = "/es/grupos/"
-    weight = 5
   [[languages.es.menus.main]]
     identifier = "participate"
     url = "/es/participate/"
