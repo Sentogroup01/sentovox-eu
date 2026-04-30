@@ -2101,3 +2101,59 @@ table.price-table tbody tr td:first-child{
 .tArrow:hover{background:var(--tealPale)}
 .tDots span,.tDot{background:var(--tealBorder) !important}
 .tDots span.cur,.tDot.cur,.tDots .active{background:var(--teal) !important}
+
+
+/* SentoVox: trust bar BOLD (bordeaux block + white text — leesbaar accent) */
+.trustBar{
+  background:var(--teal) !important;          /* bordeaux/wijnrood */
+  border:1px solid var(--tealDark) !important;
+  color:#fff !important;
+  box-shadow:0 4px 22px rgba(139,26,43,0.18) !important;
+}
+.trustBar .trustItem,
+.trustBar .trustItem span{
+  color:#fff !important;
+  font-weight:600;
+}
+.trustBar .trustItem .ico{
+  color:#fff !important;
+  stroke:#fff !important;
+}
+.trustBar .trustSep{
+  background:rgba(255,255,255,0.32) !important;
+  width:1px;height:18px;
+}
+
+/* Sectorpartners: secundair logo-strook onder Academic Partners */
+.partnerSection{
+  text-align:center;
+  margin-top:28px;
+  padding-top:24px;
+  border-top:1px solid var(--tealBorder);
+}
+.partnerSection .partnerLabel{
+  text-transform:uppercase;letter-spacing:.14em;font-size:11px;
+  color:var(--inkSoft);font-weight:700;margin-bottom:14px;
+}
+.partnerLogos{
+  display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:center;
+  max-width:760px;margin:0 auto;
+}
+.partnerLogos a{
+  display:inline-block;
+  flex:0 0 auto;
+  opacity:0.85;
+  transition:opacity .2s,transform .2s;
+}
+.partnerLogos a:hover{opacity:1;transform:scale(1.04)}
+.partnerLogos img{
+  max-width:140px;
+  max-height:60px;
+  width:auto;
+  height:auto;
+  display:block;
+}
+
+/* Logo nav: PNG instead of inline SVG (real SentoVox logo) */
+.sn-logo-mark{width:32px;height:32px;flex-shrink:0;border-radius:6px;}
+img.sn-logo-mark{object-fit:contain}
