@@ -26,6 +26,7 @@ trust_items:
 uni_label: "Socios académicos"
 universities:
   - name: "Universidad de Groninga"
+    logo: "groningen"
     country: "Países Bajos"
   - name: "Universidad de Amberes"
     logo: "antwerpen"

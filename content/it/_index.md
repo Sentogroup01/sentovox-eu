@@ -26,6 +26,7 @@ trust_items:
 uni_label: "Partner accademici"
 universities:
   - name: "Università di Groninga"
+    logo: "groningen"
     country: "Paesi Bassi"
   - name: "Università di Anversa"
     logo: "antwerpen"
