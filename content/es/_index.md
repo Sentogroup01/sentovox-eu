@@ -173,20 +173,19 @@ detail_toggle_close: "Ocultar los detalles"
 currency_label: "Moneda"
 pricing_title: "Tarifas de participación"
 fte_col: "Visitantes anuales"
-free_label: "incl."
+free_label: "Gratuito"
 rate_note: "Los tipos de cambio son aproximados y se actualizan periódicamente."
 
 plan_cols:
-  - name: "Standard"
-    badge: ""
+  - name: "Member"
+    badge: "Gratuito"
     badge_type: "f"
-  - name: "Premium"
+  - name: "Pro"
     badge: ""
     badge_type: "a"
-  - name: "Network"
+  - name: "Ambassador"
     badge: "Premium"
     badge_type: "pr"
-
 feature_rows:
   - feature: "Encuesta personalizada completa"
     values: ["yes", "yes", "yes"]
@@ -213,20 +212,20 @@ feature_rows:
 
 pricing_rows:
   - fte: "Hasta 25.000"
-    std: 625
-    pro: 1000
+    std: 0
+    pro: 315
+    amb: 625
+  - fte: "De 25.000 a 75.000"
+    std: 0
+    pro: 500
+    amb: 1000
+  - fte: "De 75.000 a 150.000"
+    std: 0
+    pro: 700
     amb: 1400
-  - fte: "25.000 a 75.000"
-    std: 750
-    pro: 1250
-    amb: 1500
-  - fte: "75.000 a 150.000"
-    std: 900
-    pro: 1400
-    amb: 1650
   - fte: "150.000 o más"
-    std: 1000
-    pro: 1500
+    std: 0
+    pro: 875
     amb: 1750
 pricing_note: "Tarifas basadas en los visitantes anuales, IVA no incluido si procede."
 

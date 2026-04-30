@@ -173,20 +173,19 @@ detail_toggle_close: "Hide plan details"
 currency_label: "Currency"
 pricing_title: "Participation fees"
 fte_col: "Annual visitors"
-free_label: "incl."
+free_label: "Free"
 rate_note: "Exchange rates are approximate and updated periodically."
 
 plan_cols:
-  - name: "Standard"
-    badge: ""
+  - name: "Member"
+    badge: "Free"
     badge_type: "f"
-  - name: "Premium"
+  - name: "Pro"
     badge: ""
     badge_type: "a"
-  - name: "Network"
+  - name: "Ambassador"
     badge: "Premium"
     badge_type: "pr"
-
 feature_rows:
   - feature: "Full personalised visitor survey"
     values: ["yes", "yes", "yes"]
@@ -213,20 +212,20 @@ feature_rows:
 
 pricing_rows:
   - fte: "Up to 25,000"
-    std: 625
-    pro: 1000
-    amb: 1400
+    std: 0
+    pro: 315
+    amb: 625
   - fte: "25,000 to 75,000"
-    std: 750
-    pro: 1250
-    amb: 1500
+    std: 0
+    pro: 500
+    amb: 1000
   - fte: "75,000 to 150,000"
-    std: 900
-    pro: 1400
-    amb: 1650
+    std: 0
+    pro: 700
+    amb: 1400
   - fte: "150,000 or more"
-    std: 1000
-    pro: 1500
+    std: 0
+    pro: 875
     amb: 1750
 pricing_note: "Prices based on annual visitor numbers, exclusive VAT if applicable. Network plan starts at €1,400 per year."
 

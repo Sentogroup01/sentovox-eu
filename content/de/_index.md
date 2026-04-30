@@ -173,20 +173,19 @@ detail_toggle_close: "Details ausblenden"
 currency_label: "Währung"
 pricing_title: "Teilnahmegebühren"
 fte_col: "Besucher pro Jahr"
-free_label: "inkl."
+free_label: "Kostenlos"
 rate_note: "Wechselkurse sind annähernd und werden regelmäßig aktualisiert."
 
 plan_cols:
-  - name: "Standard"
-    badge: ""
+  - name: "Member"
+    badge: "Kostenlos"
     badge_type: "f"
-  - name: "Premium"
+  - name: "Pro"
     badge: ""
     badge_type: "a"
-  - name: "Network"
+  - name: "Ambassador"
     badge: "Premium"
     badge_type: "pr"
-
 feature_rows:
   - feature: "Vollständig personalisierte Besucherbefragung"
     values: ["yes", "yes", "yes"]
@@ -213,20 +212,20 @@ feature_rows:
 
 pricing_rows:
   - fte: "Bis 25.000"
-    std: 625
-    pro: 1000
-    amb: 1400
+    std: 0
+    pro: 315
+    amb: 625
   - fte: "25.000 bis 75.000"
-    std: 750
-    pro: 1250
-    amb: 1500
+    std: 0
+    pro: 500
+    amb: 1000
   - fte: "75.000 bis 150.000"
-    std: 900
-    pro: 1400
-    amb: 1650
+    std: 0
+    pro: 700
+    amb: 1400
   - fte: "150.000 oder mehr"
-    std: 1000
-    pro: 1500
+    std: 0
+    pro: 875
     amb: 1750
 pricing_note: "Preise basieren auf der jährlichen Besucherzahl, ohne MwSt., wenn zutreffend."
 

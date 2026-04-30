@@ -206,7 +206,7 @@
   </tr></thead>
   <tbody>
     {{ range .Params.pricing_rows }}
-    <tr><td class="rl">{{ .fte }}</td><td class="prCell" data-eur="{{ .std }}">€{{ .std }}</td><td class="prCell" data-eur="{{ .pro }}">€{{ .pro }}</td><td class="prCell" data-eur="{{ .amb }}">€{{ .amb }}</td></tr>
+    <tr><td class="rl">{{ .fte }}</td><td class="prCell" data-eur="{{ .std }}">{{ if eq (int .std) 0 }}{{ $.Params.free_label | default "Free" }}{{ else }}€{{ .std }}{{ end }}</td><td class="prCell" data-eur="{{ .pro }}">€{{ .pro }}</td><td class="prCell" data-eur="{{ .amb }}">€{{ .amb }}</td></tr>
     {{ end }}
   </tbody>
   </table>
@@ -457,7 +457,7 @@ if(ptgl&&pp)ptgl.addEventListener('click',function(){var o=pp.classList.toggle('
 var rates={EUR:1,GBP:0.86,USD:1.09,CHF:0.98,SEK:11.3,DKK:7.46,NOK:11.8,PLN:4.3,CZK:25.2,CAD:1.48};
 var symbols={EUR:'€',GBP:'£',USD:'$',CHF:'CHF ',SEK:'kr ',DKK:'kr ',NOK:'kr ',PLN:'zł ',CZK:'Kč ',CAD:'CA$ '};
 var cs=document.getElementById('currSelect'),rn=document.getElementById('rateNote');
-function updatePrices(){var c=cs.value,r=rates[c],s=symbols[c];document.querySelectorAll('.prCell').forEach(function(td){var eur=parseFloat(td.getAttribute('data-eur'));if(c==='EUR'){td.textContent='€'+eur}else{var conv=Math.ceil((eur+10)*r/5)*5;td.textContent=s+conv}});rn.style.display=c==='EUR'?'none':'block'}
+function updatePrices(){var c=cs.value,r=rates[c],s=symbols[c];var freeLabel=(window.SV_FREE_LABEL||'Free');document.querySelectorAll('.prCell').forEach(function(td){var eur=parseFloat(td.getAttribute('data-eur'));if(eur===0){td.textContent=freeLabel;return}if(c==='EUR'){td.textContent='€'+eur}else{var conv=Math.ceil((eur+10)*r/5)*5;td.textContent=s+conv}});rn.style.display=c==='EUR'?'none':'block'}
 if(cs){cs.addEventListener('change',updatePrices);if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',updatePrices)}else{updatePrices()}}
 
 /* FAQ accordion */

@@ -173,20 +173,19 @@ detail_toggle_close: "Masquer les détails"
 currency_label: "Devise"
 pricing_title: "Frais de participation"
 fte_col: "Visiteurs annuels"
-free_label: "incl."
+free_label: "Gratuit"
 rate_note: "Les taux de change sont approximatifs et mis à jour périodiquement."
 
 plan_cols:
-  - name: "Standard"
-    badge: ""
+  - name: "Member"
+    badge: "Gratuit"
     badge_type: "f"
-  - name: "Premium"
+  - name: "Pro"
     badge: ""
     badge_type: "a"
-  - name: "Network"
+  - name: "Ambassador"
     badge: "Premium"
     badge_type: "pr"
-
 feature_rows:
   - feature: "Enquête personnalisée complète"
     values: ["yes", "yes", "yes"]
@@ -213,20 +212,20 @@ feature_rows:
 
 pricing_rows:
   - fte: "Jusqu'à 25 000"
-    std: 625
-    pro: 1000
-    amb: 1400
+    std: 0
+    pro: 315
+    amb: 625
   - fte: "25 000 à 75 000"
-    std: 750
-    pro: 1250
-    amb: 1500
+    std: 0
+    pro: 500
+    amb: 1000
   - fte: "75 000 à 150 000"
-    std: 900
-    pro: 1400
-    amb: 1650
+    std: 0
+    pro: 700
+    amb: 1400
   - fte: "150 000 ou plus"
-    std: 1000
-    pro: 1500
+    std: 0
+    pro: 875
     amb: 1750
 pricing_note: "Tarifs basés sur le nombre de visiteurs annuels, hors TVA si applicable."
 
