@@ -23,6 +23,14 @@
   <div class="trustSep" aria-hidden="true"></div>
   {{ end }}
 </div>
+<div class="partnerSection">
+  <p class="partnerLabel">{{ .Params.partner_label | default "Sector partners" }}</p>
+  <div class="partnerLogos">
+    <a href="https://encc.eu/" target="_blank" rel="noopener" aria-label="ENCC"><img src="/img/partners/encc.png" alt="ENCC - European Network of Cultural Centres" loading="lazy"></a>
+    <a href="https://vscd.nl/" target="_blank" rel="noopener" aria-label="VSCD"><img src="/img/partners/vscd.png" alt="VSCD - Vereniging Schouwburg- en Concertgebouwdirecties" loading="lazy"></a>
+    <a href="https://cultnet.be/" target="_blank" rel="noopener" aria-label="Cult"><img src="/img/partners/cult.png" alt="Cult - Belgisch netwerk podiumkunsten" loading="lazy"></a>
+  </div>
+</div>
 <div class="uniSection">
 <p class="uniLabel">{{ .Params.uni_label | default "Academic partners" }}</p>
 <div class="logoGrid" role="list" aria-label="Partner universities">
