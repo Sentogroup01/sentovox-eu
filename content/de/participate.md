@@ -1,10 +1,10 @@
 ---
-title: "So nehmen Sie teil"
-description: "Zeitplan, Preise und Ablauf — alles auf einen Blick."
+title: "SentoVox beitreten — Kostenlose Publikumsforschung für alle Häuser"
+description: "Schließen Sie sich 130+ europäischen Häusern an. Die kostenlose Mitgliedschaft umfasst eine vollständige Befragung, ein Live-Dashboard, einen mehrsprachigen Fragebogen und einen Benchmark-Bericht."
 type: "participate"
 layout: "single"
 kicker: "Teilnehmen"
-lead: "SentoVox läuft als eine koordinierte Edition pro Zyklus. Anmeldung ist möglich bis **30. Juni 2026**, und der Forschungszeitraum läuft bis **31. Oktober 2026**. Unten: Preise, Zeitplan und was wir von Ihnen brauchen."
+lead: "SentoVox ist **kostenlos für alle Kulturhäuser, Theater und Konzerthäuser**. Optionale Bezahlpläne bieten mehr Befragte, längere Feldzeit und tiefere Berichte."
 
 steps_kicker: "Drei Schritte"
 steps_title: "Von der Anmeldung zu den Ergebnissen"

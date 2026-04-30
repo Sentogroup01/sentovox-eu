@@ -1,10 +1,10 @@
 ---
-title: "Cómo participar"
-description: "Calendario, precios y proceso — todo lo que necesita saber."
+title: "Únete a SentoVox — Estudio de público gratuito para todas las salas"
+description: "Únete a 130+ salas europeas. La membresía gratuita incluye una encuesta completa, panel en vivo, cuestionario multilingüe e informe de benchmark."
 type: "participate"
 layout: "single"
 kicker: "Participar"
-lead: "SentoVox funciona como una edición coordinada por ciclo. La inscripción está abierta hasta el **30 de junio de 2026**, y el período de investigación corre hasta el **31 de octubre de 2026**. Abajo: precios, calendario y lo que necesitamos de ustedes."
+lead: "SentoVox es **gratuito para todas las salas culturales, teatros y salas de conciertos**. Los planes de pago opcionales añaden más encuestados, mayor duración y informes más detallados."
 
 steps_kicker: "Tres pasos"
 steps_title: "Del registro a los resultados"

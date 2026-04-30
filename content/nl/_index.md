@@ -1,12 +1,12 @@
 ---
-title: "SentoVox | Europees publieksonderzoek voor podiumkunsten"
-description: "Wetenschappelijk publieksonderzoek voor theaters, concertzalen en cultuurhuizen. 130+ deelnemende cultuurhuizen, 60.000+ respondenten, ondersteund door 7 Europese universiteiten."
+title: "SentoVox | Gratis Europees publieksonderzoek voor podiumkunsten"
+description: "Gratis voor alle cultuurhuizen. 130+ deelnemers, 60.000+ bezoekers, ondersteund door 4 universiteiten. Optionele betaalde plannen voor diepere rapportage."
 keywords: "publieksonderzoek cultuurhuis, theaterbezoekers, concertzaal onderzoek, podiumkunsten publiek, NPS cultuurhuis, Europa"
 
 hero_title: "Verbind met uw publiek.<br>Versterk uw cultuurhuis of schouwburg."
 hero_sub: "Een Europese studie van 130+ cultuurhuizen, theaters en schouwburgen, met 60.000+ bezoekers, ontwikkeld met 4 universiteiten."
 btn_primary: "Deelnemen"
-hero_note: "Wetenschappelijk onderbouwd, GDPR-conform en volledig anoniem voor respondenten."
+hero_note: "SentoVox is gratis voor alle cultuurhuizen. Optionele betaalde plannen geven meer respondenten, langere veldwerk en diepere rapportage."
 btn_secondary: "Ontdek hoe het werkt"
 
 trust_items:

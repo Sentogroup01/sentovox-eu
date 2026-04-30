@@ -1,12 +1,12 @@
 ---
-title: "SentoVox | Europäische Publikumsforschung für die darstellenden Künste"
-description: "Wissenschaftliche Publikumsforschung für Theater, Konzerthäuser und Kulturzentren. 130+ teilnehmende Häuser, 60.000+ Befragte, unterstützt von 7 europäischen Universitäten."
+title: "SentoVox | Kostenlose europäische Publikumsforschung für die darstellenden Künste"
+description: "Kostenlos für alle Häuser. 130+ Teilnehmer, 60.000+ Besucher, gestützt von 4 Universitäten. Optionale Bezahlpläne für tiefere Berichte."
 keywords: "Publikumsforschung darstellende Künste, Theaterbesucher, Konzerthaus Studie, Kulturzentrum Publikum, NPS Theater, Europa"
 
 hero_title: "Verbinden Sie sich mit Ihrem Publikum.<br>Stärken Sie Ihr Haus."
 hero_sub: "Eine europäische Studie mit 130+ Kulturhäusern und 60.000+ Besucher:innen, entwickelt mit 4 Universitäten."
 btn_primary: "Teilnehmen"
-hero_note: "Wissenschaftlich fundiert, DSGVO-konform und vollständig anonym für Befragte."
+hero_note: "SentoVox ist kostenlos für alle Häuser. Optionale Bezahlpläne bieten mehr Befragte, längere Feldzeit und tiefere Berichte."
 btn_secondary: "Funktionsweise entdecken"
 
 trust_items:

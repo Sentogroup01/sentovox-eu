@@ -1,12 +1,12 @@
 ---
-title: "SentoVox | Estudio europeo de públicos de las artes escénicas"
-description: "Investigación científica de públicos para teatros, salas de conciertos y centros culturales. 130+ recintos participantes, 60.000+ encuestados, respaldado por 4 universidades europeas."
+title: "SentoVox | Estudio europeo gratuito de públicos de artes escénicas"
+description: "Gratuito para todas las salas. 130+ participantes, 60.000+ visitantes, respaldado por 4 universidades. Planes de pago opcionales para informes detallados."
 keywords: "investigación públicos artes escénicas, encuesta teatro, estudio sala de conciertos, centro cultural públicos, NPS artes escénicas, Europa"
 
 hero_title: "Conecta con tu público.<br>Refuerza tu centro cultural."
 hero_sub: "Un estudio europeo con 130+ centros culturales y 60.000+ visitantes, desarrollado con 4 universidades."
 btn_primary: "Participar"
-hero_note: "Científicamente fundamentado, conforme al RGPD y totalmente anónimo para los participantes."
+hero_note: "SentoVox es gratuito para todas las salas. Los planes de pago opcionales añaden más encuestados, mayor duración y informes más detallados."
 btn_secondary: "Descubre cómo funciona"
 
 trust_items:

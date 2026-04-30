@@ -1,12 +1,12 @@
 ---
-title: "SentoVox | European audience research for performing arts venues"
-description: "Scientific audience research for theatres, concert halls and cultural venues. 130+ participating venues, 60,000+ respondents, supported by 7 European universities."
+title: "SentoVox | Free European visitor research for performing arts venues"
+description: "Free for all venues. 130+ cultural venues, 60,000+ visitors, backed by 4 universities. Optional paid plans for deeper reporting."
 keywords: "performing arts audience research, theatre visitor survey, concert hall research, cultural venue benchmark, NPS performing arts, Europe"
 
 hero_title: "Connect with your visitors.<br>Strengthen your venue."
 hero_sub: "A European study of 130+ cultural venues and 60,000+ visitors, developed with 4 universities."
 btn_primary: "Participate"
-hero_note: "Scientifically grounded, GDPR-compliant and fully anonymous for respondents."
+hero_note: "SentoVox is free for all venues. Optional paid plans add more respondents, longer fieldwork and deeper reporting."
 btn_secondary: "Discover how it works"
 
 trust_items:

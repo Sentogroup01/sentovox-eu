@@ -1,10 +1,10 @@
 ---
-title: "Hoe deelnemen"
-description: "Timing, prijzen en proces — alles wat je moet weten."
+title: "Doe mee met SentoVox — Gratis publieksonderzoek voor alle cultuurhuizen"
+description: "Sluit aan bij 130+ Europese cultuurhuizen. Gratis lidmaatschap omvat een volledig publieksonderzoek, live dashboard, meertalige vragenlijst en benchmarkrapport."
 type: "participate"
 layout: "single"
 kicker: "Deelnemen"
-lead: "SentoVox loopt als één gecoördineerde editie per cyclus. Registratie staat open tot **30 juni 2026**, en de onderzoeksperiode loopt tot **31 oktober 2026**. Hieronder: prijzen, tijdslijn en wat we van jou vragen."
+lead: "SentoVox is **gratis voor alle cultuurhuizen, theaters en schouwburgen**. Optionele betaalde plannen geven meer respondenten, langere veldwerk en diepere rapportage."
 
 steps_kicker: "Drie stappen"
 steps_title: "Van registratie naar resultaten"

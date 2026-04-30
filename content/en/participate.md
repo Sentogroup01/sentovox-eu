@@ -1,10 +1,10 @@
 ---
-title: "How to participate"
-description: "Timing, pricing and process — everything you need to know."
+title: "Join SentoVox — Free visitor research for all venues"
+description: "Join 130+ European venues. Free membership includes a full visitor survey, live dashboard, multilingual questionnaire and benchmarking report."
 type: "participate"
 layout: "single"
 kicker: "Participate"
-lead: "SentoVox runs as one coordinated edition per cycle. Registration is open until **30 June 2026**, and the research period runs until **31 October 2026**. Below: pricing, timeline and what we'll ask from you."
+lead: "SentoVox is **free for all performing arts venues**. Optional paid plans add more respondents, longer fieldwork and deeper reporting."
 
 steps_kicker: "Three steps"
 steps_title: "From registration to results"

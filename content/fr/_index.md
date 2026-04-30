@@ -1,12 +1,12 @@
 ---
-title: "SentoVox | Étude européenne des publics du spectacle vivant"
-description: "Étude scientifique des publics pour théâtres, salles de concert et centres culturels. 130+ lieux participants, 60 000+ répondants, soutenue par 4 universités européennes."
+title: "SentoVox | Étude européenne gratuite des publics du spectacle vivant"
+description: "Gratuit pour toutes les salles. 130+ participants, 60 000+ visiteurs, soutenu par 4 universités. Plans payants optionnels pour des rapports approfondis."
 keywords: "étude des publics spectacle vivant, enquête théâtre, recherche salle de concert, centre culturel publics, NPS spectacle vivant, Europe"
 
 hero_title: "Connectez-vous à votre public.<br>Renforcez votre lieu culturel."
 hero_sub: "Une étude européenne portant sur 130+ lieux culturels et 60 000+ visiteurs, conçue avec 4 universités."
 btn_primary: "Participer"
-hero_note: "Scientifiquement fondée, conforme au RGPD et entièrement anonyme pour les répondants."
+hero_note: "SentoVox est gratuit pour toutes les salles. Les plans payants optionnels offrent plus de répondants, une période plus longue et des rapports plus approfondis."
 btn_secondary: "Découvrir le fonctionnement"
 
 trust_items:

@@ -1,12 +1,12 @@
 ---
-title: "SentoVox | Ricerca europea sul pubblico dello spettacolo dal vivo"
-description: "Ricerca scientifica sul pubblico per teatri, sale da concerto e centri culturali. 130+ luoghi partecipanti, 60.000+ rispondenti, sostenuta da 4 università europee."
+title: "SentoVox | Ricerca europea gratuita sul pubblico dello spettacolo dal vivo"
+description: "Gratuito per tutte le sedi. 130+ partecipanti, 60.000+ visitatori, sostenuto da 4 università. Piani a pagamento opzionali per rapporti approfonditi."
 keywords: "ricerca pubblico spettacolo dal vivo, indagine teatro, ricerca sala da concerto, centro culturale pubblico, NPS spettacolo dal vivo, Europa"
 
 hero_title: "Connettiti con il tuo pubblico.<br>Rafforza il tuo centro culturale."
 hero_sub: "Uno studio europeo su 130+ centri culturali e 60.000+ visitatori, sviluppato con 4 università."
 btn_primary: "Partecipa"
-hero_note: "Scientificamente fondato, conforme al GDPR e completamente anonimo per i rispondenti."
+hero_note: "SentoVox è gratuito per tutte le sedi. I piani a pagamento opzionali offrono più rispondenti, un periodo di campo più lungo e rapporti più approfonditi."
 btn_secondary: "Scopri come funziona"
 
 trust_items:
