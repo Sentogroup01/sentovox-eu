@@ -2066,3 +2066,38 @@ table.price-table tbody tr td:first-child{
 
 /* Brass-gold accent voor speciale getallen (sparingly) */
 .brand-accent{color:#a87c2c}
+
+
+/* SentoVox testimonials readability fix:
+   Old Sentobib design used white/cream text on dark teal background.
+   Editorial redesign made backgrounds cream, but testimonial text was still
+   inherited as white -> unreadable. Force ink colors on testimonials. */
+.sec.is-teal .tQuote,
+.tQuote{
+  color:var(--ink) !important;
+  font-style:italic;
+}
+.sec.is-teal .tName,
+.tName{
+  color:var(--teal) !important;
+  font-weight:700 !important;
+}
+.sec.is-teal .tRole,
+.tRole{
+  color:var(--inkSoft) !important;
+}
+.tSlide{
+  background:#fff !important;
+  border:1px solid var(--tealBorder) !important;
+  border-radius:14px;
+  padding:32px 28px !important;
+  box-shadow:0 2px 14px rgba(15,20,23,0.04);
+}
+.tArrow{
+  color:var(--teal) !important;
+  border:1px solid var(--tealBorder);
+  background:#fff;
+}
+.tArrow:hover{background:var(--tealPale)}
+.tDots span,.tDot{background:var(--tealBorder) !important}
+.tDots span.cur,.tDot.cur,.tDots .active{background:var(--teal) !important}
