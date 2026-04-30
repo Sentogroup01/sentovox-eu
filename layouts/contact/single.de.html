@@ -89,7 +89,7 @@
 
 
 
-<div class="reg-overlay" id="regOverlay" role="dialog" aria-modal="true"><div class="reg-modal"><button class="reg-close" id="regClose" aria-label="{{ i18n "close" }}"><svg width="16" height="16" viewBox="0 0 24 24" stroke="#1f6f6e" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><h2 class="reg-title">Wählen Sie Ihre Region</h2><p class="reg-sub">Wählen Sie die Region Ihrer Kulturhaus.</p><a class="reg-btn" href="/de/kontakt/" ><span class="reg-btn-flag">🌍</span><span><span class="reg-btn-name">Andere Länder: kontaktieren Sie uns</span><span class="reg-btn-url"></span></span></a></div></div>
+<div class="reg-overlay" id="regOverlay" role="dialog" aria-modal="true"><div class="reg-modal"><button class="reg-close" id="regClose" aria-label="{{ i18n "close" }}"><svg width="16" height="16" viewBox="0 0 24 24" stroke="#8b1a2b" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><h2 class="reg-title">Wählen Sie Ihre Region</h2><p class="reg-sub">Wählen Sie die Region Ihrer Kulturhaus.</p><a class="reg-btn" href="/de/kontakt/" ><span class="reg-btn-flag">🌍</span><span><span class="reg-btn-name">Andere Länder: kontaktieren Sie uns</span><span class="reg-btn-url"></span></span></a></div></div>
 {{ end }}
 
 {{ define "scripts" }}
@@ -123,7 +123,7 @@ function langUrl(tl,currentPage){
 function renderNav(currentPage){
   var conf=T[lang]||T.en;
   var inner=document.getElementById('snInner');if(!inner)return;
-  var logoHTML='<a class="sn-logo" href="/'+lang+'/" aria-label="SentoVox home"><div class="sn-logo-icon"><svg viewBox="0 0 32 26" fill="none"><rect x="2" y="0" width="28" height="20" rx="6" fill="#1f6f6e"/><path d="M11 20 L9 26 L18 20" fill="#1f6f6e"/><text x="16" y="15" text-anchor="middle" font-family="Georgia,serif" font-weight="800" font-size="13" fill="white">M</text></svg></div><span class="sn-logo-text">SentoVox</span></a>';
+  var logoHTML='<a class="sn-logo" href="/'+lang+'/" aria-label="SentoVox home"><div class="sn-logo-icon"><svg viewBox="0 0 32 26" fill="none"><rect x="2" y="0" width="28" height="20" rx="6" fill="#8b1a2b"/><path d="M11 20 L9 26 L18 20" fill="#8b1a2b"/><text x="16" y="15" text-anchor="middle" font-family="Georgia,serif" font-weight="800" font-size="13" fill="white">M</text></svg></div><span class="sn-logo-text">SentoVox</span></a>';
   var linksHTML='<div class="sn-links">';
   ['home','details','content','about','groups','contact'].forEach(function(key){
     var pg=conf.pages[key];if(!pg)return;
