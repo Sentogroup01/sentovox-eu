@@ -161,7 +161,7 @@ ratings:
 plans_kicker: "Abbonamenti"
 plans_title: "Piani di ricerca"
 plans_sub: "SentoVox è un abbonamento annuale per sedi culturali. Scegli il piano in linea con la dimensione e le esigenze di rendicontazione della tua sede."
-plans_intro: "Standard, Premium e Network offrono livelli crescenti di scala, reporting e benchmarking."
+plans_intro: "Member, Pro e Ambassador offrono livelli crescenti di scala, reporting e benchmarking."
 plans_note: "Il cambio di piano è possibile in qualunque momento."
 plans_scroll_hint: "Suggerimento: scorri orizzontalmente per confrontare tutti i piani →"
 feature_col: "Caratteristica"
@@ -230,7 +230,7 @@ pricing_rows:
 pricing_note: "Tariffe basate sui visitatori annuali, IVA esclusa se applicabile."
 
 plan_details:
-  - name: "SentoVox Standard"
+  - name: "SentoVox Member (Gratuito)"
     tagline: "Abbonamento annuale con lo studio SentoVox completo"
     sections:
       - title: "Tempi"
@@ -241,8 +241,8 @@ plan_details:
         items: ["Dashboard live", "Filtri, grafici e tabelle incrociate", "Risultati riservati alla sede"]
       - title: "Reporting"
         items: ["Report europeo", "Webinar"]
-    footer: "Piano base. Premium e Network aggiungono servizi."
-  - name: "SentoVox Premium"
+    footer: "Gratuito basisplan. Pro e Network aggiungono servizi."
+  - name: "SentoVox Pro"
     tagline: "<strong>Tutto Standard, più:</strong>"
     sections:
       - title: "Tempi"
@@ -252,7 +252,7 @@ plan_details:
       - title: "Risultati"
         items: ["Misurazione delle tendenze"]
     footer: "Adatto alle sedi che vogliono analisi più ricche."
-  - name: "SentoVox Network"
+  - name: "SentoVox Ambassador"
     tagline: "<strong>Tutto Premium, più:</strong>"
     sections:
       - title: "Tempi"

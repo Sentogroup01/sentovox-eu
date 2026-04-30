@@ -161,7 +161,7 @@ ratings:
 plans_kicker: "Planes de membresía"
 plans_title: "Planes de investigación"
 plans_sub: "SentoVox es una suscripción anual para salas culturales. Elija el plan adecuado al tamaño y las necesidades de informe de su sala."
-plans_intro: "Standard, Premium y Network ofrecen niveles crecientes de escala, informes y benchmarking."
+plans_intro: "Member, Pro y Ambassador ofrecen niveles crecientes de escala, informes y benchmarking."
 plans_note: "Es posible cambiar de plan en cualquier momento."
 plans_scroll_hint: "Consejo: desplaza horizontalmente para comparar todos los planes →"
 feature_col: "Característica"
@@ -230,7 +230,7 @@ pricing_rows:
 pricing_note: "Tarifas basadas en los visitantes anuales, IVA no incluido si procede."
 
 plan_details:
-  - name: "SentoVox Standard"
+  - name: "SentoVox Member (Gratuito)"
     tagline: "Suscripción anual con el estudio SentoVox completo"
     sections:
       - title: "Plazos"
@@ -241,8 +241,8 @@ plan_details:
         items: ["Panel en vivo", "Filtros, gráficos y tablas cruzadas", "Resultados confidenciales para la sala"]
       - title: "Informes"
         items: ["Informe europeo", "Webinar"]
-    footer: "Plan base. Premium y Network añaden servicios."
-  - name: "SentoVox Premium"
+    footer: "Plan base. Pro y Ambassador añaden servicios."
+  - name: "SentoVox Pro"
     tagline: "<strong>Todo Standard, más:</strong>"
     sections:
       - title: "Plazos"
@@ -252,7 +252,7 @@ plan_details:
       - title: "Resultados"
         items: ["Medición de tendencias"]
     footer: "Adecuado para salas que quieren análisis más ricos."
-  - name: "SentoVox Network"
+  - name: "SentoVox Ambassador"
     tagline: "<strong>Todo Premium, más:</strong>"
     sections:
       - title: "Plazos"

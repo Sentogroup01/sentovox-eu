@@ -161,7 +161,7 @@ ratings:
 plans_kicker: "Membership plans"
 plans_title: "Research plans"
 plans_sub: "SentoVox is a paid annual subscription for cultural venues. Pick the plan that matches your venue size and reporting needs."
-plans_intro: "Standard, Premium and Network plans give increasing levels of scale, reporting and benchmarking."
+plans_intro: "Member, Pro and Ambassador plans give increasing levels of scale, reporting and benchmarking."
 plans_note: "Switching between plans during your study is possible at any time."
 plans_scroll_hint: "Tip: scroll horizontally to compare all plans →"
 feature_col: "Feature"
@@ -230,7 +230,7 @@ pricing_rows:
 pricing_note: "Prices based on annual visitor numbers, exclusive VAT if applicable. Network plan starts at €1,400 per year."
 
 plan_details:
-  - name: "SentoVox Standard"
+  - name: "SentoVox Member (Free)"
     tagline: "Annual subscription with the full SentoVox visitor study"
     sections:
       - title: "Timeline"
@@ -241,8 +241,8 @@ plan_details:
         items: ["Live dashboard", "Filters, flexible charts and crosstabs", "Results confidential to the venue"]
       - title: "Reporting"
         items: ["European benchmarking report", "Webinar"]
-    footer: "Foundation plan. Premium and Network add services on top."
-  - name: "SentoVox Premium"
+    footer: "Foundation plan. Pro and Ambassador add services on top."
+  - name: "SentoVox Pro"
     tagline: "<strong>Everything in Standard, plus:</strong>"
     sections:
       - title: "Timeline"
@@ -252,7 +252,7 @@ plan_details:
       - title: "Results"
         items: ["Trend measurement over time"]
     footer: "Suitable for venues that want richer insights and longer measurement windows."
-  - name: "SentoVox Network"
+  - name: "SentoVox Ambassador"
     tagline: "<strong>Everything in Premium, plus:</strong>"
     sections:
       - title: "Timeline"

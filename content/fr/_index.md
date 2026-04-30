@@ -161,7 +161,7 @@ ratings:
 plans_kicker: "Plans d'abonnement"
 plans_title: "Plans de recherche"
 plans_sub: "SentoVox est un abonnement annuel pour les salles culturelles. Choisissez le plan adapté à la taille et aux besoins de reporting de votre salle."
-plans_intro: "Standard, Premium et Network offrent des niveaux croissants d'échelle, de reporting et de benchmarking."
+plans_intro: "Member, Pro et Ambassador offrent des niveaux croissants d'échelle, de reporting et de benchmarking."
 plans_note: "Le changement de plan est possible à tout moment."
 plans_scroll_hint: "Astuce : faites défiler horizontalement pour comparer tous les plans →"
 feature_col: "Caractéristique"
@@ -230,7 +230,7 @@ pricing_rows:
 pricing_note: "Tarifs basés sur le nombre de visiteurs annuels, hors TVA si applicable."
 
 plan_details:
-  - name: "SentoVox Standard"
+  - name: "SentoVox Member (Gratuit)"
     tagline: "Abonnement annuel avec l'étude SentoVox complète"
     sections:
       - title: "Calendrier"
@@ -241,8 +241,8 @@ plan_details:
         items: ["Tableau de bord en direct", "Filtres, graphiques et tableaux croisés", "Résultats confidentiels pour la salle"]
       - title: "Reporting"
         items: ["Rapport européen", "Webinaire"]
-    footer: "Plan de base. Premium et Network ajoutent des services."
-  - name: "SentoVox Premium"
+    footer: "Gratuit basisplan. Pro et Network ajoutent des services."
+  - name: "SentoVox Pro"
     tagline: "<strong>Tout ce qui est inclus en Standard, plus :</strong>"
     sections:
       - title: "Calendrier"
@@ -252,7 +252,7 @@ plan_details:
       - title: "Résultats"
         items: ["Mesure des tendances"]
     footer: "Adapté aux salles qui veulent des analyses plus riches."
-  - name: "SentoVox Network"
+  - name: "SentoVox Ambassador"
     tagline: "<strong>Tout ce qui est inclus en Premium, plus :</strong>"
     sections:
       - title: "Calendrier"

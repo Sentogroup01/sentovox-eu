@@ -161,7 +161,7 @@ ratings:
 plans_kicker: "Lidmaatschappen"
 plans_title: "Onderzoeksplannen"
 plans_sub: "SentoVox is een betaald jaarabonnement voor cultuurhuizen. Kies het plan dat past bij de grootte en rapportagebehoefte van je zaal."
-plans_intro: "Standard, Premium en Network bieden oplopende niveaus van schaal, rapportage en benchmarking."
+plans_intro: "Member, Pro en Ambassador bieden oplopende niveaus van schaal, rapportage en benchmarking."
 plans_note: "Tussentijds wisselen van plan is altijd mogelijk."
 plans_scroll_hint: "Tip: scroll horizontaal om alle plannen te vergelijken →"
 feature_col: "Onderdeel"
@@ -230,7 +230,7 @@ pricing_rows:
 pricing_note: "Tarieven op basis van het aantal bezoekers per jaar, exclusief btw indien van toepassing."
 
 plan_details:
-  - name: "SentoVox Standard"
+  - name: "SentoVox Member (Gratis)"
     tagline: "Jaarabonnement met het volledige SentoVox bezoekersonderzoek"
     sections:
       - title: "Looptijd"
@@ -241,9 +241,9 @@ plan_details:
         items: ["Live dashboard", "Filters, grafieken en kruistabellen", "Resultaten vertrouwelijk voor de zaal"]
       - title: "Rapportage"
         items: ["Europees benchmarkrapport", "Webinar"]
-    footer: "Basisplan. Premium en Network voegen extra diensten toe."
-  - name: "SentoVox Premium"
-    tagline: "<strong>Alles uit Standard, plus:</strong>"
+    footer: "Gratis basisplan. Pro en Network voegen extra diensten toe."
+  - name: "SentoVox Pro"
+    tagline: "<strong>Alles uit Member, plus:</strong>"
     sections:
       - title: "Looptijd"
         items: ["Duur: 12 maanden"]
@@ -252,8 +252,8 @@ plan_details:
       - title: "Resultaten"
         items: ["Trendmeting in de tijd"]
     footer: "Geschikt voor zalen die rijkere inzichten en langere meetperiodes willen."
-  - name: "SentoVox Network"
-    tagline: "<strong>Alles uit Premium, plus:</strong>"
+  - name: "SentoVox Ambassador"
+    tagline: "<strong>Alles uit Pro, plus:</strong>"
     sections:
       - title: "Looptijd"
         items: ["Duur: 12 maanden", "Rapport in juni of december"]

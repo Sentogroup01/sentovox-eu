@@ -161,7 +161,7 @@ ratings:
 plans_kicker: "Mitgliedschaften"
 plans_title: "Forschungspläne"
 plans_sub: "SentoVox ist ein bezahltes Jahresabonnement für Kulturhäuser. Wählen Sie den Plan, der zu Ihrer Hausgröße und Ihrem Berichtsbedarf passt."
-plans_intro: "Standard, Premium und Network bieten zunehmende Stufen an Reichweite, Berichten und Benchmarking."
+plans_intro: "Member, Pro und Ambassador bieten zunehmende Stufen an Reichweite, Berichten und Benchmarking."
 plans_note: "Ein Plan-Wechsel während der Studie ist jederzeit möglich."
 plans_scroll_hint: "Tipp: Horizontal scrollen, um alle Pläne zu vergleichen →"
 feature_col: "Funktion"
@@ -230,7 +230,7 @@ pricing_rows:
 pricing_note: "Preise basieren auf der jährlichen Besucherzahl, ohne MwSt., wenn zutreffend."
 
 plan_details:
-  - name: "SentoVox Standard"
+  - name: "SentoVox Member (Kostenlos)"
     tagline: "Jahresabonnement mit der vollständigen SentoVox-Studie"
     sections:
       - title: "Zeitrahmen"
@@ -241,9 +241,9 @@ plan_details:
         items: ["Live-Dashboard", "Filter, Diagramme und Kreuztabellen", "Ergebnisse vertraulich für das Haus"]
       - title: "Reporting"
         items: ["Europäischer Bericht", "Webinar"]
-    footer: "Basisplan. Premium und Network erweitern um zusätzliche Leistungen."
-  - name: "SentoVox Premium"
-    tagline: "<strong>Alles aus Standard, plus:</strong>"
+    footer: "Kostenlos basisplan. Pro und Network erweitern um zusätzliche Leistungen."
+  - name: "SentoVox Pro"
+    tagline: "<strong>Alles aus Member, plus:</strong>"
     sections:
       - title: "Zeitrahmen"
         items: ["Dauer: 12 Monate"]
@@ -252,8 +252,8 @@ plan_details:
       - title: "Ergebnisse"
         items: ["Trendmessung"]
     footer: "Passend für Häuser mit umfassenderem Bedarf."
-  - name: "SentoVox Network"
-    tagline: "<strong>Alles aus Premium, plus:</strong>"
+  - name: "SentoVox Ambassador"
+    tagline: "<strong>Alles aus Pro, plus:</strong>"
     sections:
       - title: "Zeitrahmen"
         items: ["Dauer: 12 Monate", "Bericht im Juni oder Dezember"]
