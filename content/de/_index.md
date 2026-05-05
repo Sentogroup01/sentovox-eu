@@ -109,7 +109,8 @@ team:
     role: "Kulturmanagement & -politik"
     org: "Universität Antwerpen"
     initials: "AS"
-    photo: "schramme.jpg"  - name: "Johan Kolsteeg"
+    photo: "schramme.jpg"
+  - name: "Johan Kolsteeg"
     role: "Kunst & Gesellschaft"
     org: "Reichsuniversität Groningen"
     initials: "JK"
@@ -201,19 +202,23 @@ feature_rows:
     values: ["no", "no", "yes"]
 
 pricing_rows:
-  - fte: "Bis 25.000"
+  - fte: "Weniger als 10.000"
     std: 0
     pro: 315
     amb: 625
-  - fte: "25.000 bis 75.000"
+  - fte: "10.000 bis 50.000"
     std: 0
-    pro: 500
-    amb: 1000
-  - fte: "75.000 bis 150.000"
+    pro: 425
+    amb: 850
+  - fte: "50.001 bis 100.000"
     std: 0
-    pro: 700
-    amb: 1400
-  - fte: "150.000 oder mehr"
+    pro: 490
+    amb: 975
+  - fte: "100.001 bis 150.000"
+    std: 0
+    pro: 590
+    amb: 1175
+  - fte: "Mehr als 150.000"
     std: 0
     pro: 875
     amb: 1750

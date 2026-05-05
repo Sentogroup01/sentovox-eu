@@ -109,7 +109,8 @@ team:
     role: "Management & politique culturels"
     org: "Université d'Anvers"
     initials: "AS"
-    photo: "schramme.jpg"  - name: "Johan Kolsteeg"
+    photo: "schramme.jpg"
+  - name: "Johan Kolsteeg"
     role: "Arts & société"
     org: "Université de Groningue"
     initials: "JK"
@@ -201,19 +202,23 @@ feature_rows:
     values: ["no", "no", "yes"]
 
 pricing_rows:
-  - fte: "Jusqu'à 25 000"
+  - fte: "Moins de 10 000"
     std: 0
     pro: 315
     amb: 625
-  - fte: "25 000 à 75 000"
+  - fte: "10 000 à 50 000"
     std: 0
-    pro: 500
-    amb: 1000
-  - fte: "75 000 à 150 000"
+    pro: 425
+    amb: 850
+  - fte: "50 001 à 100 000"
     std: 0
-    pro: 700
-    amb: 1400
-  - fte: "150 000 ou plus"
+    pro: 490
+    amb: 975
+  - fte: "100 001 à 150 000"
+    std: 0
+    pro: 590
+    amb: 1175
+  - fte: "Plus de 150 000"
     std: 0
     pro: 875
     amb: 1750

@@ -109,7 +109,8 @@ team:
     role: "Gestión & política cultural"
     org: "Universidad de Amberes"
     initials: "AS"
-    photo: "schramme.jpg"  - name: "Johan Kolsteeg"
+    photo: "schramme.jpg"
+  - name: "Johan Kolsteeg"
     role: "Arte & sociedad"
     org: "Universidad de Groninga"
     initials: "JK"
@@ -201,19 +202,23 @@ feature_rows:
     values: ["no", "no", "yes"]
 
 pricing_rows:
-  - fte: "Hasta 25.000"
+  - fte: "Menos de 10.000"
     std: 0
     pro: 315
     amb: 625
-  - fte: "De 25.000 a 75.000"
+  - fte: "De 10.000 a 50.000"
     std: 0
-    pro: 500
-    amb: 1000
-  - fte: "De 75.000 a 150.000"
+    pro: 425
+    amb: 850
+  - fte: "De 50.001 a 100.000"
     std: 0
-    pro: 700
-    amb: 1400
-  - fte: "150.000 o más"
+    pro: 490
+    amb: 975
+  - fte: "De 100.001 a 150.000"
+    std: 0
+    pro: 590
+    amb: 1175
+  - fte: "Más de 150.000"
     std: 0
     pro: 875
     amb: 1750
