@@ -157,7 +157,7 @@ ratings:
   - label: "Preis-Leistungs-Verhältnis"
     pct: 90
     score: "4.5"
-plans_kicker: "Mitgliedschaften"
+plans_kicker: ""
 plans_title: "Forschungspläne"
 plans_sub: "SentoVox ist ein bezahltes Jahresabonnement für Kulturhäuser. Wählen Sie den Plan, der zu Ihrer Hausgröße und Ihrem Berichtsbedarf passt."
 plans_intro: "Member, Pro und Ambassador bieten zunehmende Stufen an Reichweite, Berichten und Benchmarking."

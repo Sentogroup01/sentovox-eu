@@ -157,7 +157,7 @@ ratings:
   - label: "Prijs-kwaliteit verhouding"
     pct: 90
     score: "4.5"
-plans_kicker: "Lidmaatschappen"
+plans_kicker: ""
 plans_title: "Onderzoeksplannen"
 plans_sub: "SentoVox is een betaald jaarabonnement voor cultuurhuizen. Kies het plan dat past bij de grootte en rapportagebehoefte van je zaal."
 plans_intro: "Member, Pro en Ambassador bieden oplopende niveaus van schaal, rapportage en benchmarking."

@@ -157,7 +157,7 @@ ratings:
   - label: "Value for investment"
     pct: 90
     score: "4.5"
-plans_kicker: "Membership plans"
+plans_kicker: ""
 plans_title: "Research plans"
 plans_sub: "SentoVox is a paid annual subscription for cultural venues. Pick the plan that matches your venue size and reporting needs."
 plans_intro: "Member, Pro and Ambassador plans give increasing levels of scale, reporting and benchmarking."

@@ -157,7 +157,7 @@ ratings:
   - label: "Relación calidad-precio"
     pct: 90
     score: "4.5"
-plans_kicker: "Planes de membresía"
+plans_kicker: ""
 plans_title: "Planes de investigación"
 plans_sub: "SentoVox es una suscripción anual para salas culturales. Elija el plan adecuado al tamaño y las necesidades de informe de su sala."
 plans_intro: "Member, Pro y Ambassador ofrecen niveles crecientes de escala, informes y benchmarking."
