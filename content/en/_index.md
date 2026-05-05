@@ -136,7 +136,7 @@ team:
 
 ratings_title: "How cultural venues rate SentoVox"
 ratings_overall: "overall"
-ratings_note: "Based on 87 verified ratings from participating cultural venues"
+ratings_note: "Based on 47 verified ratings from participating cultural venues"
 overall_score: "4.4"
 ratings:
   - label: "Quality of the questionnaire"

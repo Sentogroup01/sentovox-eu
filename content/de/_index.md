@@ -136,7 +136,7 @@ team:
 
 ratings_title: "Wie Kulturhäuser SentoVox bewerten"
 ratings_overall: "gesamt"
-ratings_note: "Basierend auf 87 verifizierten Bewertungen teilnehmender Kulturhäuser"
+ratings_note: "Basierend auf 47 verifizierten Bewertungen teilnehmender Kulturhäuser"
 overall_score: "4.4"
 ratings:
   - label: "Qualität des Fragebogens"

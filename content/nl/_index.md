@@ -136,7 +136,7 @@ team:
 
 ratings_title: "Hoe cultuurhuizen SentoVox waarderen"
 ratings_overall: "totaal"
-ratings_note: "Op basis van 87 geverifieerde ratings van deelnemende cultuurhuizen"
+ratings_note: "Op basis van 47 geverifieerde ratings van deelnemende cultuurhuizen"
 overall_score: "4.4"
 ratings:
   - label: "Kwaliteit van de vragenlijst"

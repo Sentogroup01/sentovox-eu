@@ -136,7 +136,7 @@ team:
 
 ratings_title: "Come i centri culturali valutano SentoVox"
 ratings_overall: "totale"
-ratings_note: "Sulla base di 87 valutazioni verificate di centri culturali partecipanti"
+ratings_note: "Sulla base di 47 valutazioni verificate di centri culturali partecipanti"
 overall_score: "4.4"
 ratings:
   - label: "Qualità del questionario"
