@@ -2391,3 +2391,41 @@ section#measure > .wrap > div[style*="background:linear-gradient"]{
 .sn-link.active::after, .sn-links a.active::after{background:var(--teal) !important}
 
 /* SentoVox-mark in nav blijft real logo (geen solid bg). Logo svg use real PNG */
+
+
+/* SAFETY NET: alle nakomelingen van eerder donkere sections krijgen ink-text 
+   (overschrijft inline color:rgba(255,255,255) etc waar mogelijk). */
+.sec.is-teal *,
+section[style*="var(--teal)"] *,
+section[style*="background:linear-gradient(135deg,var(--teal)"] *,
+section[style*="background:linear-gradient(135deg, var(--teal)"] *{
+  /* Force dark text op alle tekst-elementen */
+  color:var(--ink);
+}
+.sec.is-teal h1,.sec.is-teal h2,.sec.is-teal h3,.sec.is-teal h4,
+section[style*="var(--teal)"] h1,
+section[style*="var(--teal)"] h2,
+section[style*="var(--teal)"] h3,
+section[style*="var(--teal)"] h4{
+  color:var(--ink) !important;
+}
+.sec.is-teal p,
+.sec.is-teal li,
+section[style*="var(--teal)"] p,
+section[style*="var(--teal)"] li{
+  color:var(--inkSoft) !important;
+}
+.sec.is-teal a,
+section[style*="var(--teal)"] a{
+  color:var(--teal) !important;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+/* Behoud witte tekst alleen in echte solid navy elementen (buttons, cirkels) */
+.sec.is-teal .btn-primary,
+.sec.is-teal .heroBtn-p,
+.sec.is-teal .stepNum,
+.sec.is-teal .step-num,
+.sec.is-teal .det-step-num{
+  color:#fff !important;
+}
