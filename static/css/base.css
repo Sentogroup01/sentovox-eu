@@ -2429,3 +2429,46 @@ section[style*="var(--teal)"] a{
 .sec.is-teal .det-step-num{
   color:#fff !important;
 }
+
+
+/* SentoVox sectorpartner-logos: forceer juiste size + row layout (override eerdere rules) */
+.partnerSection{
+  text-align:center !important;
+  margin-top:20px !important;
+  padding-top:20px !important;
+  border-top:1px solid rgba(29,53,87,0.14) !important;
+}
+.partnerSection .partnerLabel{
+  text-transform:uppercase !important;letter-spacing:.14em !important;
+  font-size:11px !important;color:var(--inkSoft) !important;
+  font-weight:700 !important;margin-bottom:14px !important;
+}
+.partnerLogos{
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap !important;
+  gap:32px !important;
+  justify-content:center !important;
+  align-items:center !important;
+  max-width:760px !important;
+  margin:0 auto !important;
+  padding:0 !important;
+}
+.partnerLogos a{
+  display:inline-flex !important;
+  flex:0 0 auto !important;
+  align-items:center;
+  justify-content:center;
+  height:64px !important;
+  opacity:0.85;
+  transition:opacity .2s,transform .2s;
+}
+.partnerLogos a:hover{opacity:1;transform:scale(1.04)}
+.partnerLogos img{
+  display:block !important;
+  width:auto !important;
+  height:auto !important;
+  max-width:130px !important;
+  max-height:60px !important;
+  object-fit:contain !important;
+}
