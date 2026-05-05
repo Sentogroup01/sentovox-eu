@@ -163,7 +163,7 @@ detail_toggle: "Show full plan details"
 detail_toggle_close: "Hide plan details"
 currency_label: "Currency"
 pricing_title: "Participation fees"
-fte_col: "Annual visitors"
+fte_col: "Visitors per year"
 free_label: "Free"
 rate_note: "Exchange rates are approximate and updated periodically."
 
@@ -222,7 +222,7 @@ pricing_rows:
     std: 0
     pro: 875
     amb: 1750
-pricing_note: "Prices based on annual visitor numbers, exclusive VAT if applicable. Network plan starts at €1,400 per year."
+pricing_note: "Pricing is based on annual visitors at your venue. Excludes VAT. Groups receive discounted rates."
 
 plan_details:
   - name: "SentoVox Member (Free)"

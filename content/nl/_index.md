@@ -222,7 +222,7 @@ pricing_rows:
     std: 0
     pro: 875
     amb: 1750
-pricing_note: "Tarieven op basis van het aantal bezoekers per jaar, exclusief btw indien van toepassing."
+pricing_note: "De prijs is gebaseerd op het aantal bezoekers dat u per jaar ontvangt. Prijzen exclusief btw. Groepen ontvangen kortingstarieven."
 
 plan_details:
   - name: "SentoVox Member (Gratis)"

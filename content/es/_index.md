@@ -163,7 +163,7 @@ detail_toggle: "Mostrar todos los detalles"
 detail_toggle_close: "Ocultar los detalles"
 currency_label: "Moneda"
 pricing_title: "Tarifas de participación"
-fte_col: "Visitantes anuales"
+fte_col: "Visitantes por año"
 free_label: "Gratuito"
 rate_note: "Los tipos de cambio son aproximados y se actualizan periódicamente."
 
@@ -222,7 +222,7 @@ pricing_rows:
     std: 0
     pro: 875
     amb: 1750
-pricing_note: "Tarifas basadas en los visitantes anuales, IVA no incluido si procede."
+pricing_note: "El precio se basa en el número de visitantes anuales de su sala. IVA no incluido. Los grupos reciben tarifas con descuento."
 
 plan_details:
   - name: "SentoVox Member (Gratuito)"

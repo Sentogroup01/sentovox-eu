@@ -222,7 +222,7 @@ pricing_rows:
     std: 0
     pro: 875
     amb: 1750
-pricing_note: "Preise basieren auf der jährlichen Besucherzahl, ohne MwSt., wenn zutreffend."
+pricing_note: "Der Preis basiert auf den jährlichen Besucherzahlen Ihres Hauses. Zzgl. MwSt. Gruppen erhalten Ermäßigungen."
 
 plan_details:
   - name: "SentoVox Member (Kostenlos)"

@@ -66,6 +66,10 @@ defaultContentLanguageInSubdir = true
     url = "/en/details/"
     weight = 2
   [[languages.en.menus.main]]
+    identifier = "content"
+    url = "/en/content/"
+    weight = 3
+  [[languages.en.menus.main]]
     identifier = "about"
     url = "/en/about/"
     weight = 4
@@ -87,6 +91,10 @@ defaultContentLanguageInSubdir = true
     identifier = "details"
     url = "/nl/details/"
     weight = 2
+  [[languages.nl.menus.main]]
+    identifier = "content"
+    url = "/nl/inhoud/"
+    weight = 3
   [[languages.nl.menus.main]]
     identifier = "about"
     url = "/nl/over/"
@@ -110,6 +118,10 @@ defaultContentLanguageInSubdir = true
     url = "/fr/details/"
     weight = 2
   [[languages.fr.menus.main]]
+    identifier = "content"
+    url = "/fr/contenu/"
+    weight = 3
+  [[languages.fr.menus.main]]
     identifier = "about"
     url = "/fr/a-propos/"
     weight = 4
@@ -131,6 +143,10 @@ defaultContentLanguageInSubdir = true
     identifier = "details"
     url = "/de/details/"
     weight = 2
+  [[languages.de.menus.main]]
+    identifier = "content"
+    url = "/de/inhalte/"
+    weight = 3
   [[languages.de.menus.main]]
     identifier = "about"
     url = "/de/ueber-uns/"
@@ -154,6 +170,10 @@ defaultContentLanguageInSubdir = true
     url = "/it/dettagli/"
     weight = 2
   [[languages.it.menus.main]]
+    identifier = "content"
+    url = "/it/contenuti/"
+    weight = 3
+  [[languages.it.menus.main]]
     identifier = "about"
     url = "/it/chi-siamo/"
     weight = 4
@@ -175,6 +195,10 @@ defaultContentLanguageInSubdir = true
     identifier = "details"
     url = "/es/detalles/"
     weight = 2
+  [[languages.es.menus.main]]
+    identifier = "content"
+    url = "/es/contenido/"
+    weight = 3
   [[languages.es.menus.main]]
     identifier = "about"
     url = "/es/sobre-nosotros/"
