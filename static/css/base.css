@@ -2277,3 +2277,117 @@ img.sn-logo-mark{object-fit:contain}
 .det-outcome:nth-child(3){--ot-color:#3a7a5e;--ot-bg:rgba(58,122,94,0.12)}   /* forest green */
 .det-outcome:nth-child(4){--ot-color:#7b5ea7;--ot-bg:rgba(123,94,167,0.12)}  /* plum */
 .det-outcome:nth-child(5){--ot-color:#b8860b;--ot-bg:rgba(184,134,11,0.12)}  /* gold/brass — economic */
+
+
+/* ============================================================
+   SentoVox: SOFTEN ALL color blocks
+   User feedback: solid navy blocks (trust bar, pricing headers,
+   is-teal sections, hero gradients) zijn te 'hard'. Vervang door
+   pale tinted backgrounds + dark text. Volle kleur alleen voor
+   kleine accenten (icon fills, borders, button fills).
+   ============================================================ */
+
+/* Trust bar — was: solid navy + white text. Nu: zacht tinted bg + dark text */
+.trustBar{
+  background:linear-gradient(135deg, rgba(29,53,87,0.08) 0%, rgba(29,53,87,0.04) 100%) !important;
+  border:1px solid rgba(29,53,87,0.18) !important;
+  color:var(--ink) !important;
+  box-shadow:0 2px 14px rgba(15,20,23,0.05) !important;
+}
+.trustBar .trustItem,
+.trustBar .trustItem span{
+  color:var(--ink) !important;
+  font-weight:600;
+}
+.trustBar .trustItem .ico{
+  color:var(--teal) !important;        /* icon blijft navy als klein accent */
+  stroke:var(--teal) !important;
+}
+.trustBar .trustSep{
+  background:rgba(29,53,87,0.20) !important;
+}
+
+/* Pricing table headers — was: solid navy. Nu: pale tint */
+.compareTable thead th,
+.priceTable thead th,
+.price-table thead th{
+  background:rgba(29,53,87,0.06) !important;
+  color:var(--ink) !important;
+  border-bottom:2px solid rgba(29,53,87,0.20) !important;
+}
+.priceTable th{color:var(--teal) !important;font-weight:700}
+
+/* Hero gradients in details/participate/etc (rich Sentobib layouts):
+   was: linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%) met witte tekst.
+   Nu: hele zachte tint met behoud van display-typo */
+section[style*="linear-gradient(135deg,var(--teal)"],
+section[style*="linear-gradient(135deg, var(--teal)"]{
+  background:linear-gradient(135deg, rgba(29,53,87,0.08) 0%, rgba(29,53,87,0.03) 100%) !important;
+  color:var(--ink) !important;
+}
+section[style*="linear-gradient(135deg,var(--teal)"] h2,
+section[style*="linear-gradient(135deg,var(--teal)"] h3,
+section[style*="linear-gradient(135deg,var(--teal)"] h4,
+section[style*="linear-gradient(135deg, var(--teal)"] h2,
+section[style*="linear-gradient(135deg, var(--teal)"] h3,
+section[style*="linear-gradient(135deg, var(--teal)"] h4{
+  color:var(--ink) !important;
+}
+section[style*="linear-gradient(135deg,var(--teal)"] p,
+section[style*="linear-gradient(135deg, var(--teal)"] p{
+  color:var(--inkSoft) !important;
+}
+section[style*="linear-gradient(135deg,var(--teal)"] a,
+section[style*="linear-gradient(135deg, var(--teal)"] a{
+  color:var(--teal) !important;
+}
+
+/* Step-cards in 'how it works': was rgba(255,255,255,0.08) op donker, nu witte cards op tinted parent */
+.det-steps-grid .det-step-card,
+.det-steps .det-step{
+  background:#fff !important;
+  border:1px solid rgba(29,53,87,0.12) !important;
+  color:var(--ink) !important;
+  box-shadow:0 2px 10px rgba(15,20,23,0.04);
+}
+.det-steps-grid .det-step-num,
+.det-steps .det-step-num{
+  background:var(--teal) !important;     /* circle blijft solid navy als visueel accent */
+  color:#fff !important;
+}
+.det-steps-grid .det-step-card h3,
+.det-steps .det-step h3{color:var(--ink) !important}
+.det-steps-grid .det-step-card p,
+.det-steps .det-step p{color:var(--inkSoft) !important}
+
+/* Testimonials .is-teal section was al gefixt — bevestig + zacht tint */
+.sec.is-teal{
+  background:linear-gradient(160deg, rgba(29,53,87,0.06) 0%, rgba(29,53,87,0.02) 100%) !important;
+  border-top:1px solid rgba(29,53,87,0.14) !important;
+  border-bottom:1px solid rgba(29,53,87,0.14) !important;
+}
+
+/* Method-grid backgrounds in details (Sentobib) — was zacht teal, nu zacht navy */
+.det-method-grid,
+.det-method-points{background:transparent !important}
+.det-method-icon{background:rgba(29,53,87,0.08) !important;color:var(--teal) !important}
+.det-method-icon svg{color:var(--teal)}
+
+/* 'Wat u meet' content-page accent box — was hard teal gradient */
+section#measure > .wrap > div[style*="background:linear-gradient"]{
+  background:linear-gradient(135deg, rgba(29,53,87,0.05) 0%, rgba(29,53,87,0.02) 100%) !important;
+}
+
+/* Buttons blijven solid navy (klein accent + sterk visueel teken) */
+.btn.btn-primary,
+.heroBtn-p{
+  background:var(--teal) !important;
+  color:#fff !important;
+}
+.btn.btn-primary:hover,
+.heroBtn-p:hover{background:var(--tealDark) !important;}
+
+/* Active nav-link onderlijn blijft solid navy */
+.sn-link.active::after, .sn-links a.active::after{background:var(--teal) !important}
+
+/* SentoVox-mark in nav blijft real logo (geen solid bg). Logo svg use real PNG */
