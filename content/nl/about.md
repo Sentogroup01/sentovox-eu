@@ -2,15 +2,15 @@
 type: "about"
 slug: "over"
 title: "Over SentoVox - Europees bezoekersonderzoek voor podiumkunsten sinds 2024"
-description: "Over SentoVox - Europees publieksonderzoeksprogramma voor theaters, concertzalen en cultuurhuizen. 130+ zalen, 4 universiteiten, wetenschappelijk onderbouwd."
+description: "Over SentoVox - Europees publieksonderzoeksprogramma voor theaters, concertzalen en cultuurhuizen. 130+ zalen, 3 universiteiten, wetenschappelijk onderbouwd."
 keywords: "over SentoVox, podiumkunsten onderzoek, Europese theaterstudie, publieksonderzoek geschiedenis"
 kicker: "De Europese publieksstudie voor podiumkunsten"
-intro: "SentoVox is een wetenschappelijk onderbouwd bezoekersonderzoeksprogramma voor theaters, concertzalen en cultuurhuizen in heel Europa. Gebouwd met 4 universiteiten en sector-partners."
+intro: "SentoVox is een wetenschappelijk onderbouwd bezoekersonderzoeksprogramma voor theaters, concertzalen en cultuurhuizen in heel Europa. Gebouwd met 3 universiteiten en sector-partners."
 
 stats:
   - value: "130+"
     label: "Cultuurhuizen in Europa"
-  - value: "4"
+  - value: "3"
     label: "Universitaire partners"
   - value: "6"
     label: "Talen"

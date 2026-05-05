@@ -1,10 +1,10 @@
 ---
 title: "SentoVox | Free European visitor research for performing arts venues"
-description: "Free for all venues. 130+ cultural venues, 60,000+ visitors, backed by 4 universities. Optional paid plans for deeper reporting."
+description: "Free for all venues. 130+ cultural venues, 60,000+ visitors, backed by 3 universities. Optional paid plans for deeper reporting."
 keywords: "performing arts audience research, theatre visitor survey, concert hall research, cultural venue benchmark, NPS performing arts, Europe"
 
 hero_title: "Connect with your visitors.<br>Strengthen your venue."
-hero_sub: "A European study of 130+ cultural venues and 60,000+ visitors, developed with 4 universities."
+hero_sub: "A European study of 130+ cultural venues and 60,000+ visitors, developed with 3 universities."
 btn_primary: "Participate"
 hero_note: "SentoVox is free for all venues. Optional paid plans add more respondents, longer fieldwork and deeper reporting."
 btn_secondary: "Discover how it works"
@@ -16,7 +16,7 @@ trust_items:
   - value: "60,000+"
     label: "Visitors"
     icon: "i-survey"
-  - value: "4"
+  - value: "3"
     label: "Universities"
     icon: "i-grad"
   - value: "6"
@@ -31,9 +31,6 @@ universities:
   - name: "University of Antwerp"
     logo: "antwerpen"
     country: "Belgium"
-  - name: "FH Kufstein Tirol"
-    logo: "kufstein"
-    country: "Austria"
   - name: "HAWK Hildesheim"
     logo: "hildesheim"
     country: "Germany"
@@ -62,7 +59,7 @@ intro_body: |
   - Comparison with other European venues
 
   **Why SentoVox:**
-  - Scientifically developed with 4 universities
+  - Scientifically developed with 3 universities
   - Independent, anonymous survey
   - Standard questions plus optional local questions
   - Helpdesk and analysis by an academic team
@@ -72,7 +69,7 @@ intro_body: |
 faq_title: "Frequently asked questions"
 faqs:
   - q: "What is SentoVox?"
-    a: "SentoVox is an independent European audience research study for theatres, concert halls and cultural venues. It is built on a standardised, scientifically grounded method and supported by 4 universities and sector partners such as ENCC, VSCD and Cult."
+    a: "SentoVox is an independent European audience research study for theatres, concert halls and cultural venues. It is built on a standardised, scientifically grounded method and supported by 3 universities and sector partners such as ENCC, VSCD and Cult."
   - q: "Who can participate?"
     a: "Any venue programming the performing arts: theatres, concert halls, multidisciplinary cultural centres and similar organisations across Europe."
   - q: "What does it cost?"
@@ -112,13 +109,7 @@ team:
     role: "Cultural management & policy"
     org: "University of Antwerp"
     initials: "AS"
-    photo: "schramme.jpg"
-  - name: "Verena Teissl"
-    role: "Cultural studies"
-    org: "FH Kufstein Tirol"
-    initials: "VT"
-    photo: "teissl.jpg"
-  - name: "Johan Kolsteeg"
+    photo: "schramme.jpg"  - name: "Johan Kolsteeg"
     role: "Arts & society"
     org: "University of Groningen"
     initials: "JK"
