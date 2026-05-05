@@ -30,7 +30,7 @@
 }
 
 /* HERO */
-.abt-hero{background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#1f6060 100%);color:var(--abt-white);padding:4.5rem 0 3.5rem;}
+.abt-hero{background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#0d1f33 100%);color:var(--abt-white);padding:4.5rem 0 3.5rem;}
 .abt-hero-inner{max-width:1140px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1.3fr .7fr;gap:3rem;align-items:center;}
 .abt-hero h2{font-family:var(--fontD);font-size:2.5rem;font-weight:800;color:var(--abt-white);margin-bottom:1rem;line-height:1.2;}
 .abt-hero p{font-size:1.05rem;color:rgba(255,255,255,0.88);line-height:1.75;margin-bottom:1.5rem;max-width:560px;}
@@ -45,7 +45,7 @@
 .abt-wrap{max-width:1140px;margin:0 auto;padding:0 2rem;}
 .abt-sec{padding:4.5rem 0;background:var(--abt-white);}
 .abt-sec-alt{padding:4.5rem 0;background:var(--abt-bg-off);}
-.abt-sec-dark{padding:4.5rem 0;background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#1f6060 100%);color:var(--abt-white);}
+.abt-sec-dark{padding:4.5rem 0;background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#0d1f33 100%);color:var(--abt-white);}
 
 /* LABELS & TITLES */
 .abt-label{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--abt-teal);margin-bottom:.6rem;}
@@ -135,7 +135,7 @@
 .abt-expand-btn:hover{background:var(--abt-teal);color:var(--abt-white);}
 
 /* CTA */
-.abt-cta{background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#1f6060 100%);color:var(--abt-white);text-align:center;padding:5rem 0;}
+.abt-cta{background:linear-gradient(135deg,var(--abt-teal-bg) 0%,#0d1f33 100%);color:var(--abt-white);text-align:center;padding:5rem 0;}
 .abt-cta h2{font-family:var(--fontD);font-size:2rem;font-weight:800;color:var(--abt-white);margin-bottom:.75rem;}
 .abt-cta p{font-size:1rem;color:rgba(255,255,255,0.85);max-width:520px;margin:0 auto 2rem;}
 .abt-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
@@ -234,14 +234,34 @@
     <div class="abt-label">Academic team</div>
     <h2 class="abt-title">Backed by leading European universities</h2>
     <p class="abt-intro">SentoVox is supported by an academic team of cultural-sector researchers across Europe.</p>
+    
     <div class="abt-team-grid">
-      <div class="abt-team-card"><div class="abt-team-avatar">AS</div><div class="abt-team-name">Annick Schramme</div><div class="abt-team-role">Cultural management & policy</div><div class="abt-team-org">University of Antwerp</div></div>
-      <div class="abt-team-card"><div class="abt-team-avatar">VT</div><div class="abt-team-name">Verena Teissl</div><div class="abt-team-role">Cultural studies</div><div class="abt-team-org">FH Kufstein Tirol</div></div>
-      <div class="abt-team-card"><div class="abt-team-avatar">JK</div><div class="abt-team-name">Johan Kolsteeg</div><div class="abt-team-role">Arts & society</div><div class="abt-team-org">University of Groningen</div></div>
-      <div class="abt-team-card"><div class="abt-team-avatar">BM</div><div class="abt-team-name">Birgit Mandel</div><div class="abt-team-role">Cultural mediation</div><div class="abt-team-org">HAWK Hildesheim</div></div>
+      <div class="abt-team-card">
+        <div class="abt-team-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+        <h3 class="abt-team-name">Prof. Dr. Annick Schramme</h3>
+        <p class="abt-team-role">Lead of the academic consortium</p>
+        <p class="abt-team-org">University of Antwerp</p>
+      </div>
+      <div class="abt-team-card">
+        <div class="abt-team-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12s4.5 10 10 10 10-4.5 10-10z"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+        <h3 class="abt-team-name">8 researchers</h3>
+        <p class="abt-team-role">Across 3 universities</p>
+        <p class="abt-team-org">&nbsp;</p>
+      </div>
+      <div class="abt-team-card">
+        <div class="abt-team-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="3"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a3 3 0 010 5.74"/></svg></div>
+        <h3 class="abt-team-name">Sector partners</h3>
+        <p class="abt-team-role">European cultural-sector networks</p>
+        <p class="abt-team-org">ENCC · VSCD · Cult · +more</p>
+      </div>
+      <div class="abt-team-card">
+        <div class="abt-team-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div>
+        <h3 class="abt-team-name">Team Sento</h3>
+        <p class="abt-team-role">Operated by Sento Group</p>
+        <p class="abt-team-org">Experienced partner in international research</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- EUROPEAN REPORT -->
 <section id="report" class="abt-sec">
