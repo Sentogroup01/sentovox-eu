@@ -134,29 +134,29 @@ team:
 
 
 
-ratings_title: "Wie Häuser SentoVox bewerten"
+ratings_title: "Wie Kulturhäuser SentoVox bewerten"
 ratings_overall: "gesamt"
-ratings_note: "Basierend auf verifizierten Bewertungen teilnehmender Kulturhäuser"
+ratings_note: "Basierend auf 87 verifizierten Bewertungen teilnehmender Kulturhäuser"
+overall_score: "4.4"
 ratings:
   - label: "Qualität des Fragebogens"
-    pct: 92
-    score: "4.6"
-  - label: "Benutzerfreundlichkeit"
-    pct: 90
-    score: "4.5"
-  - label: "Dashboard & Analysen"
-    pct: 90
-    score: "4.5"
-  - label: "Begleitung & Support"
-    pct: 88
+    pct: 89
     score: "4.4"
-  - label: "Implementierungsaufwand"
-    pct: 86
+  - label: "Benutzerfreundlichkeit"
+    pct: 87
     score: "4.3"
+  - label: "Dashboard & Analysen"
+    pct: 91
+    score: "4.5"
+  - label: "Unterstützung & Begleitung"
+    pct: 91
+    score: "4.5"
+  - label: "Implementierungsaufwand"
+    pct: 84
+    score: "4.2"
   - label: "Preis-Leistungs-Verhältnis"
-    pct: 92
-    score: "4.6"
-
+    pct: 90
+    score: "4.5"
 plans_kicker: "Mitgliedschaften"
 plans_title: "Forschungspläne"
 plans_sub: "SentoVox ist ein bezahltes Jahresabonnement für Kulturhäuser. Wählen Sie den Plan, der zu Ihrer Hausgröße und Ihrem Berichtsbedarf passt."

@@ -134,29 +134,29 @@ team:
 
 
 
-ratings_title: "Come le sedi valutano SentoVox"
+ratings_title: "Come i centri culturali valutano SentoVox"
 ratings_overall: "totale"
-ratings_note: "Sulla base di valutazioni verificate di sedi culturali partecipanti"
+ratings_note: "Sulla base di 87 valutazioni verificate di centri culturali partecipanti"
+overall_score: "4.4"
 ratings:
   - label: "Qualità del questionario"
-    pct: 92
-    score: "4.6"
-  - label: "Facilità d'uso"
-    pct: 90
-    score: "4.5"
-  - label: "Dashboard & analisi"
-    pct: 90
-    score: "4.5"
-  - label: "Supporto e assistenza"
-    pct: 88
+    pct: 89
     score: "4.4"
-  - label: "Sforzo di implementazione"
-    pct: 86
+  - label: "Facilità d'uso"
+    pct: 87
     score: "4.3"
+  - label: "Dashboard & analisi"
+    pct: 91
+    score: "4.5"
+  - label: "Supporto & accompagnamento"
+    pct: 91
+    score: "4.5"
+  - label: "Sforzo d'implementazione"
+    pct: 84
+    score: "4.2"
   - label: "Rapporto qualità-prezzo"
-    pct: 92
-    score: "4.6"
-
+    pct: 90
+    score: "4.5"
 plans_kicker: "Abbonamenti"
 plans_title: "Piani di ricerca"
 plans_sub: "SentoVox è un abbonamento annuale per sedi culturali. Scegli il piano in linea con la dimensione e le esigenze di rendicontazione della tua sede."

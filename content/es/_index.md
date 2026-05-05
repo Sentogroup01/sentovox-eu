@@ -134,29 +134,29 @@ team:
 
 
 
-ratings_title: "Cómo valoran las salas SentoVox"
+ratings_title: "Cómo valoran los centros culturales SentoVox"
 ratings_overall: "total"
-ratings_note: "Basado en valoraciones verificadas de salas culturales participantes"
+ratings_note: "Basado en 87 valoraciones verificadas de centros culturales participantes"
+overall_score: "4.4"
 ratings:
   - label: "Calidad del cuestionario"
-    pct: 92
-    score: "4.6"
-  - label: "Facilidad de uso"
-    pct: 90
-    score: "4.5"
-  - label: "Panel & análisis"
-    pct: 90
-    score: "4.5"
-  - label: "Acompañamiento"
-    pct: 88
+    pct: 89
     score: "4.4"
-  - label: "Esfuerzo de implementación"
-    pct: 86
+  - label: "Facilidad de uso"
+    pct: 87
     score: "4.3"
+  - label: "Panel & análisis"
+    pct: 91
+    score: "4.5"
+  - label: "Soporte & acompañamiento"
+    pct: 91
+    score: "4.5"
+  - label: "Esfuerzo de implementación"
+    pct: 84
+    score: "4.2"
   - label: "Relación calidad-precio"
-    pct: 92
-    score: "4.6"
-
+    pct: 90
+    score: "4.5"
 plans_kicker: "Planes de membresía"
 plans_title: "Planes de investigación"
 plans_sub: "SentoVox es una suscripción anual para salas culturales. Elija el plan adecuado al tamaño y las necesidades de informe de su sala."

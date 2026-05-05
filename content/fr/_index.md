@@ -134,29 +134,29 @@ team:
 
 
 
-ratings_title: "Comment les salles évaluent SentoVox"
+ratings_title: "Comment les centres culturels évaluent SentoVox"
 ratings_overall: "global"
-ratings_note: "Sur la base d'évaluations vérifiées de salles culturelles participantes"
+ratings_note: "Basé sur 87 évaluations vérifiées de centres culturels participants"
+overall_score: "4.4"
 ratings:
   - label: "Qualité du questionnaire"
-    pct: 92
-    score: "4.6"
-  - label: "Facilité d'utilisation"
-    pct: 90
-    score: "4.5"
-  - label: "Tableau de bord & analyses"
-    pct: 90
-    score: "4.5"
-  - label: "Accompagnement"
-    pct: 88
+    pct: 89
     score: "4.4"
-  - label: "Effort de mise en place"
-    pct: 86
+  - label: "Facilité d'utilisation"
+    pct: 87
     score: "4.3"
+  - label: "Tableau de bord & analyses"
+    pct: 91
+    score: "4.5"
+  - label: "Support & accompagnement"
+    pct: 91
+    score: "4.5"
+  - label: "Effort d'implémentation"
+    pct: 84
+    score: "4.2"
   - label: "Rapport qualité-prix"
-    pct: 92
-    score: "4.6"
-
+    pct: 90
+    score: "4.5"
 plans_kicker: "Plans d'abonnement"
 plans_title: "Plans de recherche"
 plans_sub: "SentoVox est un abonnement annuel pour les salles culturelles. Choisissez le plan adapté à la taille et aux besoins de reporting de votre salle."

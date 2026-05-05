@@ -105,7 +105,7 @@
 <div class="ratingInner">
   <div class="ratingHead">
     <span class="ratingTitle">{{ .Params.ratings_title | default "How venues rate SentoVox" }}</span>
-    <div class="ratingOverall"><span class="ratingNum">4.5</span><span class="ratingMax">/ 5</span><span class="ratingLabel">{{ .Params.ratings_overall | default "overall" }}</span></div>
+    <div class="ratingOverall"><span class="ratingNum">{{ .Params.overall_score | default "4.4" }}</span><span class="ratingMax">/ 5</span><span class="ratingLabel">{{ .Params.ratings_overall | default "overall" }}</span></div>
   </div>
   <div class="ratingRows">
     {{ range .Params.ratings }}

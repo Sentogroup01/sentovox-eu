@@ -134,29 +134,29 @@ team:
 
 
 
-ratings_title: "How venues rate SentoVox"
+ratings_title: "How cultural venues rate SentoVox"
 ratings_overall: "overall"
-ratings_note: "Based on verified ratings from participating cultural venues"
+ratings_note: "Based on 87 verified ratings from participating cultural venues"
+overall_score: "4.4"
 ratings:
   - label: "Quality of the questionnaire"
-    pct: 92
-    score: "4.6"
+    pct: 89
+    score: "4.4"
   - label: "Ease of use"
-    pct: 90
-    score: "4.5"
+    pct: 87
+    score: "4.3"
   - label: "Dashboard & insights"
-    pct: 90
+    pct: 91
     score: "4.5"
   - label: "Support & guidance"
-    pct: 88
-    score: "4.4"
+    pct: 91
+    score: "4.5"
   - label: "Implementation effort"
-    pct: 86
-    score: "4.3"
+    pct: 84
+    score: "4.2"
   - label: "Value for investment"
-    pct: 92
-    score: "4.6"
-
+    pct: 90
+    score: "4.5"
 plans_kicker: "Membership plans"
 plans_title: "Research plans"
 plans_sub: "SentoVox is a paid annual subscription for cultural venues. Pick the plan that matches your venue size and reporting needs."

@@ -134,29 +134,29 @@ team:
 
 
 
-ratings_title: "Hoe zalen SentoVox waarderen"
+ratings_title: "Hoe cultuurhuizen SentoVox waarderen"
 ratings_overall: "totaal"
-ratings_note: "Op basis van geverifieerde ratings van deelnemende cultuurhuizen"
+ratings_note: "Op basis van 87 geverifieerde ratings van deelnemende cultuurhuizen"
+overall_score: "4.4"
 ratings:
   - label: "Kwaliteit van de vragenlijst"
-    pct: 92
-    score: "4.6"
-  - label: "Gebruiksgemak"
-    pct: 90
-    score: "4.5"
-  - label: "Dashboard & inzichten"
-    pct: 90
-    score: "4.5"
-  - label: "Begeleiding & ondersteuning"
-    pct: 88
+    pct: 89
     score: "4.4"
-  - label: "Implementatie-inspanning"
-    pct: 86
+  - label: "Gebruiksgemak"
+    pct: 87
     score: "4.3"
-  - label: "Prijs-kwaliteitverhouding"
-    pct: 92
-    score: "4.6"
-
+  - label: "Dashboard & inzichten"
+    pct: 91
+    score: "4.5"
+  - label: "Ondersteuning & begeleiding"
+    pct: 91
+    score: "4.5"
+  - label: "Implementatie-inspanning"
+    pct: 84
+    score: "4.2"
+  - label: "Prijs-kwaliteit verhouding"
+    pct: 90
+    score: "4.5"
 plans_kicker: "Lidmaatschappen"
 plans_title: "Onderzoeksplannen"
 plans_sub: "SentoVox is een betaald jaarabonnement voor cultuurhuizen. Kies het plan dat past bij de grootte en rapportagebehoefte van je zaal."
