@@ -73,7 +73,7 @@ faqs:
   - q: "¿Quién puede participar?"
     a: "Cualquier centro que programe artes escénicas: teatros, salas de conciertos, centros culturales multidisciplinares y organizaciones similares en Europa."
   - q: "¿Cuánto cuesta?"
-    a: "El coste de participación oscila entre 625 € y 1.750 €, según el número de visitantes. Los grupos reciben un descuento."
+    a: "Los Members participan gratuitamente — esta es nuestra oferta principal. Los planes Pro opcionales comienzan en 315 € (anuales) y los planes Ambassador en 625 €, hasta 1.750 € para centros culturales con más de 150.000 visitantes. Descuentos de grupo disponibles."
   - q: "¿Cuánto dura?"
     a: "Las inscripciones están abiertas hasta el 30 de junio de 2026. El periodo de estudio se extiende hasta el 31 de octubre de 2026."
   - q: "¿Cómo se garantiza la privacidad?"

@@ -73,7 +73,7 @@ faqs:
   - q: "Who can participate?"
     a: "Any venue programming the performing arts: theatres, concert halls, multidisciplinary cultural centres and similar organisations across Europe."
   - q: "What does it cost?"
-    a: "Participation costs between EUR 625 and EUR 1,750, depending on visitor numbers. Groups receive a discount."
+    a: "Members participate for free — that's our main offer. Optional Pro plans start at €315 (annual) and Ambassador plans at €625, scaling up to €1,750 for venues with more than 150,000 visitors. Group discounts apply."
   - q: "How long does it take?"
     a: "Registration is open until 30 June 2026. The research period runs until 31 October 2026."
   - q: "How is privacy protected?"

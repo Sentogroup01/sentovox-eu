@@ -73,7 +73,7 @@ faqs:
   - q: "Chi può partecipare?"
     a: "Qualsiasi luogo che programma spettacolo dal vivo: teatri, sale da concerto, centri culturali multidisciplinari e organizzazioni simili in Europa."
   - q: "Quanto costa?"
-    a: "Il costo di partecipazione varia tra 625 € e 1.750 €, in base al numero di visitatori. I gruppi ricevono uno sconto."
+    a: "I Member partecipano gratuitamente — è la nostra offerta principale. I piani Pro opzionali partono da 315 € (annuali) e i piani Ambassador da 625 €, fino a 1.750 € per centri culturali con oltre 150.000 visitatori. Sconti di gruppo disponibili."
   - q: "Quanto dura?"
     a: "Le iscrizioni sono aperte fino al 30 giugno 2026. Il periodo di indagine è fino al 31 ottobre 2026."
   - q: "Come è tutelata la privacy?"
