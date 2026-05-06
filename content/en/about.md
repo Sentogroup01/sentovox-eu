@@ -22,7 +22,7 @@ history_body: |
 
   In **2025** SentoVox expanded to the **Netherlands** in cooperation with VSCD theatres, with participation from venues such as Theater aan het Vrijthof, Parktheater Eindhoven, Concertgebouw de Doelen, Schouwburg Hengelo and Stadstheater Zoetermeer. In **2025-2026** the programme extended into **Germany** (Bühnenverein partners) and **Austria**, with research partners at HAWK Hildesheim and FH Kufstein Tirol.
 
-  In **2026** SentoVox rolls out to **France, Italy, Spain and Switzerland**, becoming a truly pan-European instrument. Today the platform is active in 6 languages, with 130+ participating venues and partner universities in 7 countries.
+  In **2026** SentoVox rolls out to **France, Italy, Spain and Switzerland**, becoming a truly pan-European instrument. Today the platform is active in 6 languages, with 130+ participating venues and partner universities in 3 countries (BE, NL, DE).
 
 report_kicker: "European benchmark"
 report_title: "European report of SentoVox"
@@ -50,11 +50,7 @@ universities_kicker: "Academic partners"
 universities_title: "Scientific foundation"
 universities:
   - name: "University of Antwerp"
-  - name: "Université de Bordeaux"
-  - name: "Universitat de València"
-  - name: "Universität Hildesheim"
+  - name: "HAWK Hildesheim"
   - name: "University of Groningen"
-  - name: "Ca' Foscari University of Venice"
-  - name: "FH Kufstein Tirol"
 # build: 2026-04-29
 ---

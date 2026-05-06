@@ -15,11 +15,11 @@ Il presente regolamento del concorso è redatto in inglese e, per comodità dei 
 
 ## Art. 1 Scopo
 
-"SentoVox" è un progetto di ricerca per le sedi culturali europee e comprende un sondaggio online presso il pubblico delle sedi culturali partecipanti. Questo sondaggio online è associato a un concorso per i rispondenti partecipanti.
+"SentoVox" è un progetto di ricerca per le centri culturali europee e comprende un sondaggio online presso il pubblico delle centri culturali partecipanti. Questo sondaggio online è associato a un concorso per i rispondenti partecipanti.
 
 Il concorso è organizzato da Sento Group BV (vedi art. 7), che facilita la ricerca. Il presente regolamento stabilisce le condizioni di partecipazione al sondaggio e al concorso. La partecipazione al sondaggio e al concorso implica l'accettazione del presente regolamento.
 
-"Il rispondente" o "i rispondenti" sono le persone che compilano un sondaggio per una delle sedi culturali partecipanti.
+"Il rispondente" o "i rispondenti" sono le persone che compilano un sondaggio per una delle centri culturali partecipanti.
 
 - La partecipazione al sondaggio è interamente volontaria e avviene per libera iniziativa del rispondente.
 - La partecipazione allo studio e al concorso è consentita a partire dai 18 anni.
@@ -66,32 +66,32 @@ Il concorso si svolge durante l'intero periodo dello studio presso il pubblico.
 **Vantaggio aggiuntivo:**
 
 - Ogni rispondente valido salva 1 m2 di foresta pluviale minacciata o riserva naturale.
-- Max. 1 m2 per rispondente, fino a 1000 m2 per questionario (per sede culturale).
+- Max. 1 m2 per rispondente, fino a 1000 m2 per questionario (per centro culturale).
 
-Al termine dello studio, verrà effettuata una donazione all'organizzazione World Land Trust, che rilascia un certificato ufficiale. Questo certificato sarà condiviso con tutte le sedi culturali partecipanti e pubblicato online.
+Al termine dello studio, verrà effettuata una donazione all'organizzazione World Land Trust, che rilascia un certificato ufficiale. Questo certificato sarà condiviso con tutte le centri culturali partecipanti e pubblicato online.
 
 ## Art. 4 Determinazione dei vincitori
 
 I premi vengono assegnati tramite sorteggio.
 
-- Prima dell'inizio dello studio, www.randomizer.org seleziona casualmente 3 sedi culturali (+3 sedi culturali di riserva) tra tutte le sedi culturali partecipanti.
-- Nel questionario di queste sedi culturali, un premio viene sorteggiato tra i partecipanti.
+- Prima dell'inizio dello studio, www.randomizer.org seleziona casualmente 3 centri culturali (+3 centri culturali di riserva) tra tutte le centri culturali partecipanti.
+- Nel questionario di queste centri culturali, un premio viene sorteggiato tra i partecipanti.
 
 **Procedura:**
 
-- Per ogni sede culturale selezionata, www.randomizer.org sceglie un numero tra 1 e 10.
-- Nelle sedi culturali vincitrici, un generatore casuale nella piattaforma di studio assegna a ciascun rispondente un numero tra 1 e 10 in background (in modo invisibile).
+- Per ogni centro culturale selezionata, www.randomizer.org sceglie un numero tra 1 e 10.
+- Nelle centri culturali vincitrici, un generatore casuale nella piattaforma di studio assegna a ciascun rispondente un numero tra 1 e 10 in background (in modo invisibile).
 - Il primo rispondente a cui viene assegnato il numero vincente vedrà un messaggio alla fine del questionario che indica che ha vinto, con un codice univoco e un indirizzo e-mail.
 - Il vincitore contatta questo indirizzo; la gestione successiva avviene direttamente tra vincitore e organizzatore.
 
 Se il vincitore non contatta l'organizzatore entro 1 settimana, il premio può essere assegnato al rispondente successivo con il numero vincente. Questo processo si ripete fino a quando non viene trovato un vincitore per ogni premio.
 
-Se una sede culturale selezionata rischia di non raggiungere un numero sufficiente di rispondenti, il team del progetto può sostituirla con una sede culturale di riserva. Se necessario, possono essere aggiunte anche nuove sedi culturali.
+Se una centro culturale selezionata rischia di non raggiungere un numero sufficiente di rispondenti, il team del progetto può sostituirla con una centro culturale di riserva. Se necessario, possono essere aggiunte anche nuove centri culturali.
 
 Se il team del progetto decide:
 
-- Di assegnare premi aggiuntivi: vengono scelte sedi culturali e numeri aggiuntivi.
-- Di ridurre il numero di premi: il generatore casuale determina per quali sedi culturali non verrà effettuato alcun sorteggio.
+- Di assegnare premi aggiuntivi: vengono scelte centri culturali e numeri aggiuntivi.
+- Di ridurre il numero di premi: il generatore casuale determina per quali centri culturali non verrà effettuato alcun sorteggio.
 
 Tutti i sorteggi vengono registrati in video. Le modifiche successive all'inizio (più o meno premi) vengono registrate allo stesso modo.
 

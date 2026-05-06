@@ -3,9 +3,9 @@ type: "content"
 slug: "contenuti"
 title: "Cosa misura SentoVox - Esperienza, NPS, Impatto & altro"
 description: "SentoVox copre esperienza visitatori, NPS, impatto sociale (Impact Compass Model), profilo del pubblico e ricerca sui non-visitatori."
-keywords: "esperienza visitatori spettacolo dal vivo, Impact Compass Model, NPS sede culturale, non-visitatori ricerca"
+keywords: "esperienza visitatori spettacolo dal vivo, Impact Compass Model, NPS centro culturale, non-visitatori ricerca"
 kicker: "Temi di ricerca"
-intro: "Lo studio SentoVox copre tutti gli aspetti rilevanti dell'esperienza dei visitatori nelle sedi culturali. Un questionario ben equilibrato fornisce informazioni sull'esperienza dei visitatori, la soddisfazione, i profili del pubblico e l'impatto sociale."
+intro: "Lo studio SentoVox copre tutti gli aspetti rilevanti dell'esperienza dei visitatori nelle centri culturali. Un questionario ben equilibrato fornisce informazioni sull'esperienza dei visitatori, la soddisfazione, i profili del pubblico e l'impatto sociale."
 
 themes_kicker: "Cliccate su un tema per esplorarlo"
 themes:
@@ -45,7 +45,7 @@ theme_sections:
     body: |
       SentoVox va oltre la domanda «vi è piaciuto?» - cattura come i visitatori vivono la vostra sede su più dimensioni: lo spettacolo stesso, l'atmosfera, la risposta emotiva, il livello di coinvolgimento e il percorso complessivo.
 
-      I visitatori sono invitati a valutare aspetti specifici della loro visita, dal momento in cui arrivano fino alla partenza. Questo fornisce alle sedi culturali un quadro dettagliato di ciò che funziona bene e dove c'è margine di miglioramento.
+      I visitatori sono invitati a valutare aspetti specifici della loro visita, dal momento in cui arrivano fino alla partenza. Questo fornisce alle centri culturali un quadro dettagliato di ciò che funziona bene e dove c'è margine di miglioramento.
 
       I dati possono essere filtrati per tipo di visitatore, lingua, frequenza di visita e altro.
     items:
@@ -59,7 +59,7 @@ theme_sections:
     title: "Offerta, infrastruttura e condizioni generali"
     teal: true
     body: |
-      I visitatori valutano gli aspetti pratici della sede culturale: la qualità e la diversità dell'offerta, l'infrastruttura, l'orientamento, l'accessibilità, le strutture, la cordialità del personale e le condizioni generali.
+      I visitatori valutano gli aspetti pratici della centro culturale: la qualità e la diversità dell'offerta, l'infrastruttura, l'orientamento, l'accessibilità, le strutture, la cordialità del personale e le condizioni generali.
     items:
       - "Qualità & diversità della programmazione"
       - "Orientamento e segnaletica"
@@ -73,7 +73,7 @@ theme_sections:
     title: "Demografica, preferenze e motivazioni"
     teal: false
     body: |
-      SentoVox fornisce un profilo dettagliato del pubblico della sede culturale: età, genere, livello di istruzione, origine geografica, composizione del gruppo, frequenza di visita e come hanno saputo della sede culturale.
+      SentoVox fornisce un profilo dettagliato del pubblico della centro culturale: età, genere, livello di istruzione, origine geografica, composizione del gruppo, frequenza di visita e come hanno saputo della centro culturale.
       
       Lo studio esplora anche le **motivazioni di visita**: perché i visitatori hanno deciso di venire?
 
@@ -82,10 +82,10 @@ theme_sections:
 
   - id: "communication"
     kicker: "Marketing"
-    title: "Come i visitatori valutano la comunicazione della sede culturale"
+    title: "Come i visitatori valutano la comunicazione della centro culturale"
     teal: true
     body: |
-      SentoVox misura come i visitatori hanno saputo della sede culturale e come valutano la sua comunicazione. Capire quali canali sono più efficaci aiuta le sedi culturali ad allocare le risorse in modo più efficiente.
+      SentoVox misura come i visitatori hanno saputo della centro culturale e come valutano la sua comunicazione. Capire quali canali sono più efficaci aiuta le centri culturali ad allocare le risorse in modo più efficiente.
     items:
       - "Efficacia dei canali"
       - "Valutazione del sito web"
@@ -97,7 +97,7 @@ theme_sections:
     title: "Valore sociale e sviluppo dei visitatori"
     teal: false
     body: |
-      La sede culturale ha un ruolo sociale: supporta lo sviluppo e il benessere dei suoi visitatori. SentoVox utilizza l'**Impact Compass Model** - un framework per misurare l'impatto delle istituzioni culturali.
+      La centro culturale ha un ruolo sociale: supporta lo sviluppo e il benessere dei suoi visitatori. SentoVox utilizza l'**Impact Compass Model** - un framework per misurare l'impatto delle istituzioni culturali.
     items:
       - "Concentrazione e immersione"
       - "Senso critico e risoluzione dei problemi"
@@ -125,7 +125,7 @@ theme_sections:
 nps_kicker: "Indicatore di fedeltà"
 nps_title: "Net Promoter Score (NPS)"
 nps_body: |
-  Chiediamo ai visitatori della sede culturale se raccomanderebbero la sede culturale a familiari, amici o colleghi. Danno un punteggio da **1** (non raccomanderebbe affatto) a **10** (raccomanderebbe molto).
+  Chiediamo ai visitatori della centro culturale se raccomanderebbero la centro culturale a familiari, amici o colleghi. Danno un punteggio da **1** (non raccomanderebbe affatto) a **10** (raccomanderebbe molto).
   
   In base alle loro risposte, i partecipanti vengono classificati come **Promotori** (punteggio 9-10) o **Detrattori** (punteggio 1-6).
   
@@ -133,7 +133,7 @@ nps_body: |
 new_kicker: "Prossimamente"
 new_title: "Studi tematici & interviste vocali"
 new_body: |
-  I **membri Pro** avranno la possibilità di condurre brevi **studi tematici** - approfondendo argomenti come impatto, ecologia, accessibilità, sede culturale del futuro e altro ancora.
+  I **membri Pro** avranno la possibilità di condurre brevi **studi tematici** - approfondendo argomenti come impatto, ecologia, accessibilità, centro culturale del futuro e altro ancora.
   
   Un nuovo strumento innovativo permetterà di condurre **interviste vocali interattive** tramite questionari audio, utilizzando gli smartphone dei visitatori.
   

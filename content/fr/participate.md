@@ -4,7 +4,7 @@ description: "Rejoignez 130+ salles européennes. L'adhésion gratuite comprend 
 type: "participate"
 layout: "single"
 kicker: "Participer"
-lead: "SentoVox est **gratuit pour toutes les salles culturelles, théâtres et salles de concert**. Les plans payants optionnels ajoutent plus de répondants, une période plus longue et des rapports plus approfondis."
+lead: "SentoVox est **gratuit pour toutes les centres culturels, théâtres et salles de concert**. Les plans payants optionnels ajoutent plus de répondants, une période plus longue et des rapports plus approfondis."
 
 steps_kicker: "Trois étapes"
 steps_title: "De l'inscription aux résultats"

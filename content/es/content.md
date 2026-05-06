@@ -3,9 +3,9 @@ type: "content"
 slug: "contenido"
 title: "Qué mide SentoVox - Experiencia, NPS, Impacto & más"
 description: "SentoVox mide la experiencia del visitante, NPS, impacto social (Impact Compass Model) y perfil del público. Todo en un estudio."
-keywords: "experiencia visitantes artes escénicas, Impact Compass Model, NPS sala cultural, no-visitantes investigación"
+keywords: "experiencia visitantes artes escénicas, Impact Compass Model, NPS centro cultural, no-visitantes investigación"
 kicker: "Temas de investigación"
-intro: "El estudio SentoVox cubre todos los aspectos relevantes de la experiencia del visitante en las salas culturales. Un cuestionario bien equilibrado proporciona información sobre la experiencia del visitante, satisfacción, perfiles de audiencia e impacto social."
+intro: "El estudio SentoVox cubre todos los aspectos relevantes de la experiencia del visitante en las centros culturales. Un cuestionario bien equilibrado proporciona información sobre la experiencia del visitante, satisfacción, perfiles de audiencia e impacto social."
 
 themes_kicker: "Haga clic en un tema para explorar"
 themes:
@@ -42,7 +42,7 @@ theme_sections:
     body: |
       SentoVox va más allá de preguntar «¿le gustó?» - captura cómo los visitantes viven su sala en múltiples dimensiones: el espectáculo en sí, la atmósfera, la respuesta emocional, el nivel de compromiso y el recorrido general.
 
-      Se pide a los visitantes que evalúen aspectos específicos de su visita, desde el momento en que llegan hasta que se van. Esto proporciona a las salas culturales una imagen detallada de lo que funciona bien y dónde hay margen de mejora.
+      Se pide a los visitantes que evalúen aspectos específicos de su visita, desde el momento en que llegan hasta que se van. Esto proporciona a las centros culturales una imagen detallada de lo que funciona bien y dónde hay margen de mejora.
 
       Los datos pueden filtrarse por tipo de visitante, idioma, frecuencia de visita y más.
     items:
@@ -56,7 +56,7 @@ theme_sections:
     title: "Oferta, infraestructura y condiciones generales"
     teal: true
     body: |
-      Los visitantes evalúan los aspectos prácticos de la sala cultural: la calidad y diversidad de la oferta, la infraestructura, la señalización, accesibilidad, instalaciones, amabilidad del personal y condiciones generales.
+      Los visitantes evalúan los aspectos prácticos de la centro cultural: la calidad y diversidad de la oferta, la infraestructura, la señalización, accesibilidad, instalaciones, amabilidad del personal y condiciones generales.
     items:
       - "Calidad & diversidad de la programación"
       - "Señalización y orientación"
@@ -70,7 +70,7 @@ theme_sections:
     title: "Demografía, preferencias y motivaciones"
     teal: false
     body: |
-      SentoVox proporciona un perfil detallado del público de la sala cultural: edad, género, nivel educativo, origen geográfico, composición del grupo, frecuencia de visita y cómo conocieron la sala cultural.
+      SentoVox proporciona un perfil detallado del público de la centro cultural: edad, género, nivel educativo, origen geográfico, composición del grupo, frecuencia de visita y cómo conocieron la centro cultural.
       
       El estudio también explora las **motivaciones de visita**: ¿por qué los visitantes decidieron venir?
 
@@ -79,10 +79,10 @@ theme_sections:
 
   - id: "communication"
     kicker: "Marketing"
-    title: "Cómo los visitantes evalúan la comunicación de la sala cultural"
+    title: "Cómo los visitantes evalúan la comunicación de la centro cultural"
     teal: true
     body: |
-      SentoVox mide cómo los visitantes conocieron la sala cultural y cómo evalúan su comunicación. Entender qué canales son más efectivos ayuda a las salas culturales a asignar recursos de manera más eficiente.
+      SentoVox mide cómo los visitantes conocieron la centro cultural y cómo evalúan su comunicación. Entender qué canales son más efectivos ayuda a las centros culturales a asignar recursos de manera más eficiente.
     items:
       - "Efectividad de los canales"
       - "Evaluación del sitio web"
@@ -94,7 +94,7 @@ theme_sections:
     title: "Valor social y desarrollo de visitantes"
     teal: false
     body: |
-      La sala cultural tiene un papel social: apoya el desarrollo y el bienestar de sus visitantes. SentoVox utiliza el **Impact Compass Model** - un marco para medir el impacto de las instituciones culturales.
+      La centro cultural tiene un papel social: apoya el desarrollo y el bienestar de sus visitantes. SentoVox utiliza el **Impact Compass Model** - un marco para medir el impacto de las instituciones culturales.
     items:
       - "Concentración e inmersión"
       - "Sentido crítico y resolución de problemas"
@@ -122,7 +122,7 @@ theme_sections:
 nps_kicker: "Indicador de lealtad"
 nps_title: "Net Promoter Score (NPS)"
 nps_body: |
-  Preguntamos a los visitantes de la sala cultural si recomendarían la sala cultural a familiares, amigos o colegas. Dan una puntuación de **1** (no recomendaría en absoluto) a **10** (recomendaría muy positivamente).
+  Preguntamos a los visitantes de la centro cultural si recomendarían la centro cultural a familiares, amigos o colegas. Dan una puntuación de **1** (no recomendaría en absoluto) a **10** (recomendaría muy positivamente).
   
   Según sus respuestas, los participantes se clasifican como **Promotores** (puntuación 9-10) o **Detractores** (puntuación 1-6).
   
@@ -130,7 +130,7 @@ nps_body: |
 new_kicker: "Próximamente"
 new_title: "Estudios temáticos & entrevistas de voz"
 new_body: |
-  Los **miembros Pro** tendrán la posibilidad de realizar **estudios temáticos** cortos - profundizando en temas como impacto, ecología, accesibilidad, sala cultural del futuro y más.
+  Los **miembros Pro** tendrán la posibilidad de realizar **estudios temáticos** cortos - profundizando en temas como impacto, ecología, accesibilidad, centro cultural del futuro y más.
   
   Una nueva herramienta innovadora permitirá realizar **entrevistas de voz interactivas** a través de cuestionarios de audio, usando los smartphones de los visitantes.
   

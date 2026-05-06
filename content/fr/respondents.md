@@ -15,11 +15,11 @@ Le présent règlement du concours est rédigé en anglais et, pour le confort d
 
 ## Art. 1 Objet
 
-« SentoVox » est un projet de recherche destiné aux salles culturelles européennes et comprend un questionnaire en ligne auprès du public des salles culturelles participantes. Ce questionnaire en ligne est associé à un concours pour les répondants participants.
+« SentoVox » est un projet de recherche destiné aux centres culturels européennes et comprend un questionnaire en ligne auprès du public des centres culturels participantes. Ce questionnaire en ligne est associé à un concours pour les répondants participants.
 
 Le concours est organisé par Sento Group BV (voir art. 7), qui assure la facilitation de la recherche. Le présent règlement définit les conditions de participation à l'étude et au concours. La participation à l'étude et au concours implique l'acceptation du présent règlement.
 
-« Le répondant » ou « les répondants » sont les personnes qui remplissent un questionnaire pour l'une des salles culturelles participantes.
+« Le répondant » ou « les répondants » sont les personnes qui remplissent un questionnaire pour l'une des centres culturels participantes.
 
 - La participation à l'étude est entièrement volontaire et se fait de la propre initiative du répondant.
 - La participation à l'étude et au concours est autorisée à partir de 18 ans.
@@ -66,32 +66,32 @@ Le concours se déroule pendant toute la durée de l'étude auprès du public.
 **Avantage supplémentaire :**
 
 - Chaque répondant valide sauve 1 m2 de forêt tropicale menacée ou de réserve naturelle.
-- Max. 1 m2 par répondant, jusqu'à 1000 m2 par questionnaire (par salle culturelle).
+- Max. 1 m2 par répondant, jusqu'à 1000 m2 par questionnaire (par centre culturel).
 
-À la fin de l'étude, un don sera effectué à l'organisation World Land Trust, qui délivre un certificat officiel. Ce certificat sera partagé avec toutes les salles culturelles participantes et publié en ligne.
+À la fin de l'étude, un don sera effectué à l'organisation World Land Trust, qui délivre un certificat officiel. Ce certificat sera partagé avec toutes les centres culturels participantes et publié en ligne.
 
 ## Art. 4 Détermination des gagnants
 
 Les prix sont attribués par tirage au sort.
 
-- Avant le début de l'étude, www.randomizer.org sélectionne aléatoirement 3 salles culturelles (+3 salles culturelles de réserve) parmi toutes les salles culturelles participantes.
-- Dans le questionnaire de ces salles culturelles, un prix est tiré au sort parmi les participants.
+- Avant le début de l'étude, www.randomizer.org sélectionne aléatoirement 3 centres culturels (+3 centres culturels de réserve) parmi toutes les centres culturels participantes.
+- Dans le questionnaire de ces centres culturels, un prix est tiré au sort parmi les participants.
 
 **Processus :**
 
-- Pour chaque salle culturelle sélectionnée, www.randomizer.org choisit un nombre entre 1 et 10.
-- Dans les salles culturelles gagnantes, un générateur aléatoire du système attribue à chaque répondant un nombre entre 1 et 10 en arrière-plan (de manière invisible).
+- Pour chaque centre culturel sélectionnée, www.randomizer.org choisit un nombre entre 1 et 10.
+- Dans les centres culturels gagnantes, un générateur aléatoire du système attribue à chaque répondant un nombre entre 1 et 10 en arrière-plan (de manière invisible).
 - Le premier répondant qui se voit attribuer le numéro gagnant verra un message à la fin du questionnaire indiquant qu'il/elle a gagné, avec un code unique et une adresse e-mail.
 - Le gagnant contacte cette adresse ; le traitement ultérieur se fait directement entre le gagnant et l'organisateur.
 
 Si le gagnant ne contacte pas l'organisateur dans un délai d'une semaine, le prix peut être attribué au prochain répondant ayant le numéro gagnant. Ce processus se répète jusqu'à ce qu'un gagnant soit trouvé pour chaque prix.
 
-Si une salle culturelle sélectionnée risque de ne pas atteindre suffisamment de répondants, l'équipe du projet peut la remplacer par une salle culturelle de réserve. Si nécessaire, de nouvelles salles culturelles peuvent également être ajoutées.
+Si une centre culturel sélectionnée risque de ne pas atteindre suffisamment de répondants, l'équipe du projet peut la remplacer par une centre culturel de réserve. Si nécessaire, de nouvelles centres culturels peuvent également être ajoutées.
 
 Si l'équipe du projet décide :
 
-- D'attribuer des prix supplémentaires : des salles culturelles et des numéros supplémentaires sont choisis.
-- De réduire le nombre de prix : le générateur aléatoire détermine pour quelles salles culturelles aucun prix ne sera tiré.
+- D'attribuer des prix supplémentaires : des centres culturels et des numéros supplémentaires sont choisis.
+- De réduire le nombre de prix : le générateur aléatoire détermine pour quelles centres culturels aucun prix ne sera tiré.
 
 Tous les tirages sont enregistrés en vidéo. Les modifications après le début (plus ou moins de prix) sont enregistrées de la même manière.
 

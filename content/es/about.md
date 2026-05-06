@@ -5,11 +5,11 @@ title: "Acerca de SentoVox - Investigación europea de visitantes en artes escé
 description: "Acerca de SentoVox - Programa europeo de investigación de visitantes para teatros, salas de conciertos y centros culturales. 130+ salas, 3 universidades."
 keywords: "acerca de SentoVox, investigación artes escénicas, estudio teatral europeo, benchmark público"
 kicker: "El estudio europeo del público de las artes escénicas"
-intro: "SentoVox es un programa de investigación científica de visitantes para teatros, salas de conciertos y salas culturales en toda Europa. Construido con 3 universidades y socios del sector."
+intro: "SentoVox es un programa de investigación científica de visitantes para teatros, salas de conciertos y centros culturales en toda Europa. Construido con 3 universidades y socios del sector."
 
 stats:
   - value: "130+"
-    label: "Salas culturales en Europa"
+    label: "Centros culturales en Europa"
   - value: "3"
     label: "Socios universitarios"
   - value: "6"
@@ -23,16 +23,16 @@ history_body: |
 
   En **2025**, SentoVox se extendió a los **Países Bajos** en cooperación con los teatros VSCD, con la participación de salas como Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven y Concertgebouw de Doelen. En **2025-2026** el programa se amplió a **Alemania** (socios Bühnenverein) y **Austria**, con socios de investigación en HAWK Hildesheim y FH Kufstein Tirol.
 
-  En **2026**, SentoVox se despliega en **Francia, Italia, España y Suiza**, convirtiéndose en un instrumento verdaderamente paneuropeo. Hoy la plataforma está activa en 6 idiomas, con más de 130 salas participantes y universidades asociadas en 7 países.
+  En **2026**, SentoVox se despliega en **Francia, Italia, España y Suiza**, convirtiéndose en un instrumento verdaderamente paneuropeo. Hoy la plataforma está activa en 6 idiomas, con más de 130 salas participantes y universidades asociadas en 3 países (BE, NL, DE).
 
 report_kicker: "Benchmark europeo"
 report_title: "Informe europeo de SentoVox"
-report_body: "Descubra cómo las salas culturales usan SentoVox para entender visitantes, calidad de la programación e impacto social."
+report_body: "Descubra cómo las centros culturales usan SentoVox para entender visitantes, calidad de la programación e impacto social."
 report_btn: "Abrir el último informe (PDF)"
 report_url: "#"
 
 testimonials_kicker: "Qué dicen las salas"
-testimonials_title: "Cómo valoran las salas culturales SentoVox"
+testimonials_title: "Cómo valoran las centros culturales SentoVox"
 testimonials:
   - quote: "El estudio fue muy bien recibido. Recibimos sugerencias concretas y el benchmark europeo nos ayuda a optimizar la programación."
     name: "Dirección"
@@ -51,11 +51,7 @@ universities_kicker: "Socios académicos"
 universities_title: "Fundamento científico"
 universities:
   - name: "Universidad de Amberes"
-  - name: "Université de Bordeaux"
-  - name: "Universitat de València"
-  - name: "Universität Hildesheim"
+  - name: "HAWK Hildesheim"
   - name: "University of Groningen"
-  - name: "Ca' Foscari University of Venice"
-  - name: "FH Kufstein Tirol"
 # build: 2026-04-29
 ---

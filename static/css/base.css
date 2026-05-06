@@ -2069,7 +2069,7 @@ table.price-table tbody tr td:first-child{
 
 
 /* SentoVox testimonials readability fix:
-   Old Sentobib design used white/cream text on dark teal background.
+   Original design used white/cream text on dark teal background.
    Editorial redesign made backgrounds cream, but testimonial text was still
    inherited as white -> unreadable. Force ink colors on testimonials. */
 .sec.is-teal .tQuote,
@@ -2317,7 +2317,7 @@ img.sn-logo-mark{object-fit:contain}
 }
 .priceTable th{color:var(--teal) !important;font-weight:700}
 
-/* Hero gradients in details/participate/etc (rich Sentobib layouts):
+/* Hero gradients in details/participate/etc (rich layouts):
    was: linear-gradient(135deg,var(--teal) 0%,var(--tealDark) 100%) met witte tekst.
    Nu: hele zachte tint met behoud van display-typo */
 section[style*="linear-gradient(135deg,var(--teal)"],

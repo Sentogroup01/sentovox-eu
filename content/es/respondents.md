@@ -15,11 +15,11 @@ El presente reglamento del concurso está redactado en inglés y, para comodidad
 
 ## Art. 1 Objeto
 
-"SentoVox" es un proyecto de investigación para salas culturales europeas que incluye un cuestionario en línea al público de las salas culturales participantes. Este cuestionario en línea está vinculado a un concurso para los encuestados participantes.
+"SentoVox" es un proyecto de investigación para centros culturales europeas que incluye un cuestionario en línea al público de las centros culturales participantes. Este cuestionario en línea está vinculado a un concurso para los encuestados participantes.
 
 El concurso está organizado por Sento Group BV (véase art. 7), que facilita la investigación. El presente reglamento establece las condiciones de participación en el estudio y en el concurso. La participación en el estudio y en el concurso implica la aceptación de este reglamento.
 
-"El encuestado" o "los encuestados" son las personas que completan un cuestionario para una de las salas culturales participantes.
+"El encuestado" o "los encuestados" son las personas que completan un cuestionario para una de las centros culturales participantes.
 
 - La participación en el cuestionario es totalmente voluntaria y se realiza por iniciativa propia del encuestado.
 - La participación en el estudio y el concurso está permitida a partir de los 18 años.
@@ -66,32 +66,32 @@ El concurso se desarrolla durante todo el período del estudio de públicos.
 **Beneficio adicional:**
 
 - Cada encuestado válido salva 1 m2 de selva tropical amenazada o reserva natural.
-- Máx. 1 m2 por encuestado, hasta 1000 m2 por cuestionario (por sala cultural).
+- Máx. 1 m2 por encuestado, hasta 1000 m2 por cuestionario (por centro cultural).
 
-Al final del estudio, se realizará una donación a la organización World Land Trust, que emite un certificado oficial. Este certificado se compartirá con todas las salas culturales participantes y se publicará en línea.
+Al final del estudio, se realizará una donación a la organización World Land Trust, que emite un certificado oficial. Este certificado se compartirá con todas las centros culturales participantes y se publicará en línea.
 
 ## Art. 4 Determinación de los ganadores
 
 Los premios se asignan por sorteo.
 
-- Antes del inicio del estudio, www.randomizer.org selecciona aleatoriamente 3 salas culturales (+3 salas culturales de reserva) de entre todas las salas culturales participantes.
-- En el cuestionario de estas salas culturales, se sortea un premio entre los participantes.
+- Antes del inicio del estudio, www.randomizer.org selecciona aleatoriamente 3 centros culturales (+3 centros culturales de reserva) de entre todas las centros culturales participantes.
+- En el cuestionario de estas centros culturales, se sortea un premio entre los participantes.
 
 **Proceso:**
 
-- Para cada sala cultural seleccionada, www.randomizer.org elige un número entre 1 y 10.
-- En las salas culturales ganadoras, un generador aleatorio en la plataforma de estudio asigna a cada encuestado un número entre 1 y 10 en segundo plano (de forma invisible).
+- Para cada centro cultural seleccionada, www.randomizer.org elige un número entre 1 y 10.
+- En las centros culturales ganadoras, un generador aleatorio en la plataforma de estudio asigna a cada encuestado un número entre 1 y 10 en segundo plano (de forma invisible).
 - El primer encuestado al que se le asigne el número ganador verá un mensaje al final del cuestionario indicando que ha ganado, con un código único y una dirección de correo electrónico.
 - El ganador contacta a esta dirección; la gestión posterior se realiza directamente entre el ganador y el organizador.
 
 Si el ganador no contacta al organizador en el plazo de 1 semana, el premio podrá ser otorgado al siguiente encuestado con el número ganador. Este proceso se repite hasta que se encuentre un ganador para cada premio.
 
-Si una sala cultural seleccionada corre el riesgo de no alcanzar suficientes encuestados, el equipo del proyecto puede reemplazarla por una sala cultural de reserva. Si es necesario, también se pueden añadir nuevas salas culturales.
+Si una centro cultural seleccionada corre el riesgo de no alcanzar suficientes encuestados, el equipo del proyecto puede reemplazarla por una centro cultural de reserva. Si es necesario, también se pueden añadir nuevas centros culturales.
 
 Si el equipo del proyecto decide:
 
-- Otorgar premios adicionales: se eligen salas culturales y números adicionales.
-- Reducir el número de premios: el generador aleatorio determina para qué salas culturales no se sorteará ningún premio.
+- Otorgar premios adicionales: se eligen centros culturales y números adicionales.
+- Reducir el número de premios: el generador aleatorio determina para qué centros culturales no se sorteará ningún premio.
 
 Todos los sorteos se graban en vídeo. Los cambios posteriores al inicio (más o menos premios) se registran de la misma manera.
 

@@ -151,7 +151,7 @@ ratings:
     score: "4.5"
 plans_kicker: ""
 plans_title: "Plans de recherche"
-plans_sub: "SentoVox est un abonnement annuel pour les salles culturelles. Choisissez le plan adapté à la taille et aux besoins de reporting de votre salle."
+plans_sub: "SentoVox est un abonnement annuel pour les centres culturels. Choisissez le plan adapté à la taille et aux besoins de reporting de votre salle."
 plans_intro: "Member, Pro et Ambassador offrent des niveaux croissants d'échelle, de reporting et de benchmarking."
 plans_note: "Le changement de plan est possible à tout moment."
 plans_scroll_hint: "Astuce : faites défiler horizontalement pour comparer tous les plans →"

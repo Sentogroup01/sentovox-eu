@@ -73,7 +73,7 @@ faqs:
   - q: "Wer kann teilnehmen?"
     a: "Jedes Haus, das darstellende Künste programmiert: Theater, Konzerthäuser, multidisziplinäre Kulturzentren und vergleichbare Einrichtungen in Europa."
   - q: "Was kostet die Teilnahme?"
-    a: "Die Teilnahme kostet zwischen 625 € und 1.750 €, abhängig von der Besucherzahl. Gruppen erhalten einen Rabatt."
+    a: "Members nehmen kostenlos teil — das ist unser Kernangebot. Optionale Pro-Pläne starten bei 315 € (jährlich) und Ambassador-Pläne bei 625 €, bis zu 1.750 € für Kulturhäuser mit mehr als 150.000 Besuchern. Gruppenrabatte verfügbar."
   - q: "Wie lange dauert es?"
     a: "Die Anmeldung ist bis zum 30. Juni 2026 möglich. Die Erhebungsphase läuft bis zum 31. Oktober 2026."
   - q: "Wie wird der Datenschutz gewährleistet?"

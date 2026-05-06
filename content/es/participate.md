@@ -4,7 +4,7 @@ description: "Únete a 130+ salas europeas. La membresía gratuita incluye una e
 type: "participate"
 layout: "single"
 kicker: "Participar"
-lead: "SentoVox es **gratuito para todas las salas culturales, teatros y salas de conciertos**. Los planes de pago opcionales añaden más encuestados, mayor duración y informes más detallados."
+lead: "SentoVox es **gratuito para todas las centros culturales, teatros y salas de conciertos**. Los planes de pago opcionales añaden más encuestados, mayor duración y informes más detallados."
 
 steps_kicker: "Tres pasos"
 steps_title: "Del registro a los resultados"

@@ -9,7 +9,7 @@ intro: "SentoVox est un programme d'étude scientifique des visiteurs pour les t
 
 stats:
   - value: "130+"
-    label: "Salles culturelles en Europe"
+    label: "Centres culturels en Europe"
   - value: "3"
     label: "Partenaires universitaires"
   - value: "6"
@@ -23,16 +23,16 @@ history_body: |
 
   En **2025**, SentoVox s'est étendue aux **Pays-Bas** en coopération avec les théâtres VSCD, avec la participation de salles comme le Theater aan het Vrijthof, Schouwburg Hengelo, Parktheater Eindhoven et Concertgebouw de Doelen. En **2025-2026**, le programme s'est étendu à l'**Allemagne** (partenaires Bühnenverein) et à l'**Autriche**, avec des partenaires de recherche à la HAWK Hildesheim et à la FH Kufstein Tirol.
 
-  En **2026**, SentoVox se déploie en **France, Italie, Espagne et Suisse**, devenant un véritable instrument paneuropéen. Aujourd'hui, la plateforme est active en 6 langues, avec plus de 130 salles participantes et des universités partenaires dans 7 pays.
+  En **2026**, SentoVox se déploie en **France, Italie, Espagne et Suisse**, devenant un véritable instrument paneuropéen. Aujourd'hui, la plateforme est active en 6 langues, avec plus de 130 salles participantes et des universités partenaires dans 3 pays (BE, NL, DE).
 
 report_kicker: "Benchmark européen"
 report_title: "Rapport européen de SentoVox"
-report_body: "Découvrez comment les salles culturelles utilisent SentoVox pour comprendre leur public, la qualité de la programmation et l'impact sociétal."
+report_body: "Découvrez comment les centres culturels utilisent SentoVox pour comprendre leur public, la qualité de la programmation et l'impact sociétal."
 report_btn: "Ouvrir le dernier rapport (PDF)"
 report_url: "#"
 
 testimonials_kicker: "Ce que disent les salles"
-testimonials_title: "Comment les salles culturelles évaluent SentoVox"
+testimonials_title: "Comment les centres culturels évaluent SentoVox"
 testimonials:
   - quote: "L'étude a été très bien reçue. Nous avons obtenu des suggestions concrètes et le benchmark européen nous aide à optimiser la programmation."
     name: "Direction"
@@ -51,11 +51,7 @@ universities_kicker: "Partenaires académiques"
 universities_title: "Fondement scientifique"
 universities:
   - name: "Université d'Anvers"
-  - name: "Université de Bordeaux"
-  - name: "Universitat de València"
-  - name: "Universität Hildesheim"
+  - name: "HAWK Hildesheim"
   - name: "University of Groningen"
-  - name: "Ca' Foscari University of Venice"
-  - name: "FH Kufstein Tirol"
 # build: 2026-04-29
 ---

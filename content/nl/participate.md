@@ -4,7 +4,7 @@ description: "Sluit aan bij 130+ Europese cultuurhuizen. Gratis lidmaatschap omv
 type: "participate"
 layout: "single"
 kicker: "Deelnemen"
-lead: "SentoVox is **gratis voor alle cultuurhuizen, theaters en schouwburgen**. Optionele betaalde plannen geven meer respondenten, langere veldwerk en diepere rapportage."
+lead: "SentoVox is **gratis voor alle cultuurhuizen, theaters en schouwburgen**. Optionele betaalde plannen geven meer respondenten, langer veldwerk en diepere rapportage."
 
 steps_kicker: "Drie stappen"
 steps_title: "Van registratie naar resultaten"

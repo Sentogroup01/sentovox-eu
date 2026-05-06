@@ -8,7 +8,7 @@
     <a href="#report" class="det-link" data-sec="report">Rapport européen</a>
     <a href="#spotlight" class="det-link" data-sec="spotlight">Présentations &amp; médias</a>
     <a href="#testimonials" class="det-link" data-sec="testimonials">Témoignages</a>
-    <a href="#participating-venues" class="det-link" data-sec="participating-venues">Salles culturelles participantes</a>
+    <a href="#participating-venues" class="det-link" data-sec="participating-venues">Centres culturels participantes</a>
   </div>
 </div>
 {{ end }}
@@ -167,13 +167,13 @@
   <div class="abt-hero-inner">
     <div>
       <h2>L'histoire de l'étude</h2>
-      <p>SentoVox est née d'un besoin concret dans les arts de la scène. Les salles culturelles en Belgique cherchaient une étude commune leur permettant de comparer leurs résultats - au service du plaidoyer culturel local et des demandes de financement. Avec l'ENCC, en collaboration avec l'Université d'Anvers et Sento, l'initiative a pris forme. Aujourd'hui, plus de 130 salles culturelles, théâtres et salles de concert à travers l'Europe utilisent SentoVox.</p>
+      <p>SentoVox est née d'un besoin concret dans les arts de la scène. Les centres culturels en Belgique cherchaient une étude commune leur permettant de comparer leurs résultats - au service du plaidoyer culturel local et des demandes de financement. Avec l'ENCC, en collaboration avec l'Université d'Anvers et Sento, l'initiative a pris forme. Aujourd'hui, plus de 130 centres culturels, théâtres et salles de concert à travers l'Europe utilisent SentoVox.</p>
       <a href="{{ "/details/" | relLangURL }}" class="abt-hero-link">Vous cherchez comment cela fonctionne ? Voir la page Détails &rarr;</a>
     </div>
     <div class="abt-stats-grid">
       <div class="abt-stat">
         <div class="abt-stat-num">130+</div>
-        <div class="abt-stat-label">Salles culturelles en Europe</div>
+        <div class="abt-stat-label">Centres culturels en Europe</div>
       </div>
       <div class="abt-stat">
         <div class="abt-stat-num">7</div>
@@ -311,9 +311,9 @@
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="abt-sec-dark">
   <div class="abt-wrap">
-    <div class="abt-label">Les salles culturelles à propos de SentoVox</div>
+    <div class="abt-label">Les centres culturels à propos de SentoVox</div>
     <h2 class="abt-title">Ce que disent les participants</h2>
-    <p class="abt-intro">Retours des salles culturelles ayant participé à SentoVox.</p>
+    <p class="abt-intro">Retours des centres culturels ayant participé à SentoVox.</p>
     <div class="abt-testi-grid">
       <div class="abt-testi">
         <p class="abt-tq">L'étude a été bien accueillie et nous est très utile. Nous avons reçu des suggestions concrètes et le benchmark avec d'autres salles nous aide à optimiser la programmation.</p>
@@ -353,7 +353,7 @@
 <section id="participating-venues" class="abt-sec">
   <div class="abt-wrap">
     <div class="abt-label">Salles participantes</div>
-    <h2 class="abt-title">Salles culturelles déjà participantes</h2>
+    <h2 class="abt-title">Centres culturels déjà participantes</h2>
     <p style="font-size:.85rem;color:var(--abt-text-soft);margin-bottom:1.25rem;">Une sélection parmi plus de 130 salles participantes à travers l'Europe.</p>
     <style>
     .abt-m-controls{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1rem;}
@@ -385,7 +385,7 @@
 <!-- CTA -->
 <section class="abt-cta">
   <div class="abt-wrap">
-    <h2>Vous souhaitez rejoindre ces salles culturelles ?</h2>
+    <h2>Vous souhaitez rejoindre ces centres culturels ?</h2>
     <p>Inscrivez votre salle et obtenez des informations approfondies sur votre public, son expérience et votre impact.</p>
     <div class="abt-cta-btns">
       <a href="{{ "/participate/" | relLangURL }}" id="detRegLink4" class="abt-btn-white">Inscrire votre salle &rarr;</a>
@@ -606,7 +606,7 @@ function abtRender(){
     if(m.c){var fl=document.createElement('span');fl.className='abt-m-flag';fl.textContent=' '+(abtFlags[m.c]||m.c);fl.style.marginLeft='auto';fl.style.fontSize='.78rem';fl.style.opacity='.7';el.appendChild(fl);}
     abtListEl.appendChild(el);
   });
-  if(abtMetaEl){abtMetaEl.style.display='';abtMetaEl.textContent=filtered.length+' sur '+LIBRARIES.length+' salles culturelles participantes';}
+  if(abtMetaEl){abtMetaEl.style.display='';abtMetaEl.textContent=filtered.length+' sur '+LIBRARIES.length+' centres culturels participantes';}
 }
 function abtBuildAZ(){
   if(!abtAZEl)return;

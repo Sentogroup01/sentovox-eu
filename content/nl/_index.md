@@ -6,7 +6,7 @@ keywords: "publieksonderzoek cultuurhuis, theaterbezoekers, concertzaal onderzoe
 hero_title: "Verbind met uw publiek.<br>Versterk uw cultuurhuis of schouwburg."
 hero_sub: "Een Europese studie van 130+ cultuurhuizen, theaters en schouwburgen, met 60.000+ bezoekers, ontwikkeld met 3 universiteiten."
 btn_primary: "Deelnemen"
-hero_note: "SentoVox is gratis voor alle cultuurhuizen. Optionele betaalde plannen geven meer respondenten, langere veldwerk en diepere rapportage."
+hero_note: "SentoVox is gratis voor alle cultuurhuizen. Optionele betaalde plannen geven meer respondenten, langer veldwerk en diepere rapportage."
 btn_secondary: "Ontdek hoe het werkt"
 
 trust_items:
@@ -73,7 +73,7 @@ faqs:
   - q: "Wie kan deelnemen?"
     a: "Elk cultuurhuis, theater, schouwburg of concertzaal dat podiumkunsten programmeert. Multidisciplinaire huizen en gelijkaardige cultuurorganisaties in Europa zijn welkom."
   - q: "Wat kost deelname?"
-    a: "Deelname kost tussen €625 en €1.750, afhankelijk van het bezoekersaantal. Groepen krijgen korting."
+    a: "Members nemen gratis deel — dat is ons kernaanbod. Optionele Pro-plannen starten vanaf €315 (jaarlijks) en Ambassador-plannen vanaf €625, oplopend tot €1.750 voor cultuurhuizen met meer dan 150.000 bezoekers. Groepskorting van toepassing."
   - q: "Hoe lang duurt het?"
     a: "Registratie is mogelijk tot 30 juni 2026. De onderzoeksperiode loopt tot 31 oktober 2026."
   - q: "Hoe wordt privacy gewaarborgd?"

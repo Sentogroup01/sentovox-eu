@@ -79,7 +79,7 @@ De prijzen worden verloot via een loterijsysteem.
 
 **Proces:**
 
-- Voor elke geselecteerde cultuurhuis kiest www.randomizer.org een getal tussen 1 en 10.
+- Voor elk geselecteerd cultuurhuis kiest www.randomizer.org een getal tussen 1 en 10.
 - In de winnende cultuurhuizen wijst een randomizer in het enquêtesysteem elk van de respondenten in de achtergrond (onzichtbaar) een getal tussen 1 en 10 toe.
 - De eerste respondent die het winnende nummer toegewezen krijgt, ziet aan het einde van de enquête een bericht dat hij/zij gewonnen heeft, met een unieke code en een e-mailadres.
 - De winnaar neemt contact op via dit adres; verdere afhandeling verloopt rechtstreeks tussen winnaar en organisator.

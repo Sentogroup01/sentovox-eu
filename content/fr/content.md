@@ -3,7 +3,7 @@ type: "content"
 slug: "contenu"
 title: "Ce que mesure SentoVox - Expérience, NPS, Impact & Plus"
 description: "SentoVox mesure l'expérience visiteurs, NPS, l'impact sociétal (Impact Compass Model) et le profil du public - en une seule étude."
-keywords: "expérience visiteurs spectacle vivant, Impact Compass Model, NPS salle culturelle, non-visiteurs recherche"
+keywords: "expérience visiteurs spectacle vivant, Impact Compass Model, NPS centre culturel, non-visiteurs recherche"
 kicker: "Thèmes de recherche"
 intro: "L'étude SentoVox couvre tous les aspects pertinents de l'expérience visiteur dans les lieux culturels. Un questionnaire bien équilibré fournit des informations sur l'expérience des visiteurs, la satisfaction, les profils du public, l'impact sociétal et bien plus encore."
 
@@ -45,7 +45,7 @@ theme_sections:
     body: |
       SentoVox va au-delà de la question « avez-vous aimé ? » : il saisit comment les visiteurs vivent votre lieu sur plusieurs dimensions : le spectacle lui-même, l'atmosphère, la réponse émotionnelle, le niveau d'engagement et le parcours global.
 
-      Les visiteurs sont invités à évaluer des aspects spécifiques de leur visite, du moment où ils arrivent jusqu'à leur départ. Cela fournit aux salles culturelles un tableau détaillé de ce qui fonctionne bien et des axes d'amélioration possibles.
+      Les visiteurs sont invités à évaluer des aspects spécifiques de leur visite, du moment où ils arrivent jusqu'à leur départ. Cela fournit aux centres culturels un tableau détaillé de ce qui fonctionne bien et des axes d'amélioration possibles.
 
       Les données peuvent être filtrées par type de visiteur, langue, fréquence de visite, et plus encore.
     items:
@@ -73,7 +73,7 @@ theme_sections:
     title: "Démographie, préférences et motivations"
     teal: false
     body: |
-      SentoVox fournit un profil détaillé du public : âge, genre, niveau d'éducation, origine géographique, composition du groupe, fréquence de visite et comment ils ont entendu parler de la salle culturelle.
+      SentoVox fournit un profil détaillé du public : âge, genre, niveau d'éducation, origine géographique, composition du groupe, fréquence de visite et comment ils ont entendu parler de la centre culturel.
       
       L'étude explore également les **motivations de visite** : pourquoi les visiteurs ont-ils décidé de venir ?
 
@@ -82,10 +82,10 @@ theme_sections:
 
   - id: "communication"
     kicker: "Marketing"
-    title: "Comment les visiteurs évaluent la communication de la salle culturelle"
+    title: "Comment les visiteurs évaluent la communication de la centre culturel"
     teal: true
     body: |
-      SentoVox mesure comment les visiteurs ont entendu parler de la salle culturelle et comment ils évaluent sa communication. Comprendre quels canaux sont les plus efficaces aide les salles culturelles à allouer leurs ressources plus efficacement.
+      SentoVox mesure comment les visiteurs ont entendu parler de la centre culturel et comment ils évaluent sa communication. Comprendre quels canaux sont les plus efficaces aide les centres culturels à allouer leurs ressources plus efficacement.
     items:
       - "Efficacité des canaux"
       - "Évaluation du site web"
@@ -97,7 +97,7 @@ theme_sections:
     title: "Valeur sociétale et développement des visiteurs"
     teal: false
     body: |
-      La salle culturelle a un rôle sociétal : elle soutient le développement et le bien-être de ses visiteurs. SentoVox utilise l'**Impact Compass Model** - un cadre mesurant l'impact des institutions culturelles sur leurs publics.
+      La centre culturel a un rôle sociétal : elle soutient le développement et le bien-être de ses visiteurs. SentoVox utilise l'**Impact Compass Model** - un cadre mesurant l'impact des institutions culturelles sur leurs publics.
     items:
       - "Concentration et immersion"
       - "Sens critique et résolution de problèmes"
@@ -125,7 +125,7 @@ theme_sections:
 nps_kicker: "Indicateur de fidélité"
 nps_title: "Net Promoter Score (NPS)"
 nps_body: |
-  Nous demandons aux visiteurs de la salle culturelle s'ils recommanderaient la salle culturelle à leur famille, amis ou collègues. Ils donnent un score de **1** (ne recommanderait pas du tout) à **10** (recommanderait vivement).
+  Nous demandons aux visiteurs de la centre culturel s'ils recommanderaient la centre culturel à leur famille, amis ou collègues. Ils donnent un score de **1** (ne recommanderait pas du tout) à **10** (recommanderait vivement).
   
   Selon leurs réponses, les participants sont classés comme **Promoteurs** (score 9-10) ou **Détracteurs** (score 1-6).
   
@@ -133,7 +133,7 @@ nps_body: |
 new_kicker: "Prochainement"
 new_title: "Études thématiques & interviews vocales"
 new_body: |
-  Les **membres Pro** auront la possibilité de mener de courtes **études thématiques** - approfondissant des sujets tels que l'impact, l'écologie, l'accessibilité, la salle culturelle du futur, et plus encore.
+  Les **membres Pro** auront la possibilité de mener de courtes **études thématiques** - approfondissant des sujets tels que l'impact, l'écologie, l'accessibilité, la centre culturel du futur, et plus encore.
   
   Un nouvel outil innovant permettra également de conduire des **interviews vocales interactives** via des sondages audio, utilisant les smartphones des visiteurs.
   

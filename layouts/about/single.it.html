@@ -8,7 +8,7 @@
     <a href="#report" class="det-link" data-sec="report">Rapporto europeo</a>
     <a href="#spotlight" class="det-link" data-sec="spotlight">Presentazioni &amp; media</a>
     <a href="#testimonials" class="det-link" data-sec="testimonials">Testimonianze</a>
-    <a href="#participating-venues" class="det-link" data-sec="participating-venues">Sedi culturali partecipanti</a>
+    <a href="#participating-venues" class="det-link" data-sec="participating-venues">Centri culturali partecipanti</a>
   </div>
 </div>
 {{ end }}
@@ -167,13 +167,13 @@
   <div class="abt-hero-inner">
     <div>
       <h2>La storia dietro lo studio</h2>
-      <p>SentoVox è nata da un'esigenza concreta nelle arti dello spettacolo. Le sedi culturali in Belgio cercavano uno studio condiviso per confrontare i propri risultati. Tramite l'ENCC, in collaborazione con l'Università di Anversa e Sento, l'iniziativa ha preso forma. Oggi oltre 130 sedi culturali, teatri e sale da concerto in tutta Europa utilizzano SentoVox.</p>
+      <p>SentoVox è nata da un'esigenza concreta nelle arti dello spettacolo. Le centri culturali in Belgio cercavano uno studio condiviso per confrontare i propri risultati. Tramite l'ENCC, in collaborazione con l'Università di Anversa e Sento, l'iniziativa ha preso forma. Oggi oltre 130 centri culturali, teatri e sale da concerto in tutta Europa utilizzano SentoVox.</p>
       <a href="{{ "/details/" | relLangURL }}" class="abt-hero-link">Cerchi come funziona? Visita la pagina Dettagli &rarr;</a>
     </div>
     <div class="abt-stats-grid">
       <div class="abt-stat">
         <div class="abt-stat-num">130+</div>
-        <div class="abt-stat-label">Sedi culturali in Europa</div>
+        <div class="abt-stat-label">Centri culturali in Europa</div>
       </div>
       <div class="abt-stat">
         <div class="abt-stat-num">7</div>
@@ -214,7 +214,7 @@
         <div class="abt-tl-dot"></div>
         <div class="abt-tl-year">2025-2026 - Estensione a Germania &amp; Austria</div>
         <h3>Partner Bühnenverein e adozione DACH</h3>
-        <p>SentoVox si estende al settore culturale di lingua tedesca tramite collaborazioni con ricercatori di HAWK Hildesheim e FH Kufstein Tirol, e un dialogo con il Deutscher Bühnenverein. Sedi pilota a Berlino, Amburgo, Vienna e Innsbruck si uniscono al panel europeo.</p>
+        <p>SentoVox si estende al settore culturale di lingua tedesca tramite collaborazioni con ricercatori di HAWK Hildesheim e FH Kufstein Tirol, e un dialogo con il Deutscher Bühnenverein. si uniscono al panel europeo.</p>
       </div>
       <div class="abt-tl-item">
         <div class="abt-tl-dot"></div>
@@ -311,9 +311,9 @@
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="abt-sec-dark">
   <div class="abt-wrap">
-    <div class="abt-label">Sedi culturali su SentoVox</div>
+    <div class="abt-label">Centri culturali su SentoVox</div>
     <h2 class="abt-title">Cosa dicono i partecipanti</h2>
-    <p class="abt-intro">Feedback dalle sedi culturali che hanno partecipato a SentoVox.</p>
+    <p class="abt-intro">Feedback dalle centri culturali che hanno partecipato a SentoVox.</p>
     <div class="abt-testi-grid">
       <div class="abt-testi">
         <p class="abt-tq">Lo studio è stato accolto molto bene e per noi è preziosissimo. Abbiamo ricevuto suggerimenti concreti e il benchmark con altre sedi ci aiuta a ottimizzare la programmazione.</p>
@@ -353,7 +353,7 @@
 <section id="participating-venues" class="abt-sec">
   <div class="abt-wrap">
     <div class="abt-label">Sedi partecipanti</div>
-    <h2 class="abt-title">Sedi culturali già partecipanti</h2>
+    <h2 class="abt-title">Centri culturali già partecipanti</h2>
     <p style="font-size:.85rem;color:var(--abt-text-soft);margin-bottom:1.25rem;">Una selezione tra oltre 130 sedi partecipanti in tutta Europa.</p>
     <style>
     .abt-m-controls{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1rem;}
@@ -385,7 +385,7 @@
 <!-- CTA -->
 <section class="abt-cta">
   <div class="abt-wrap">
-    <h2>Vuoi unirti a queste sedi culturali?</h2>
+    <h2>Vuoi unirti a queste centri culturali?</h2>
     <p>Iscrivi la tua sede e ottieni approfondimenti su pubblico, esperienza e impatto.</p>
     <div class="abt-cta-btns">
       <a href="{{ "/participate/" | relLangURL }}" id="detRegLink4" class="abt-btn-white">Iscrivi la tua sede &rarr;</a>
@@ -606,7 +606,7 @@ function abtRender(){
     if(m.c){var fl=document.createElement('span');fl.className='abt-m-flag';fl.textContent=' '+(abtFlags[m.c]||m.c);fl.style.marginLeft='auto';fl.style.fontSize='.78rem';fl.style.opacity='.7';el.appendChild(fl);}
     abtListEl.appendChild(el);
   });
-  if(abtMetaEl){abtMetaEl.style.display='';abtMetaEl.textContent=filtered.length+' di '+LIBRARIES.length+' sedi culturali partecipanti';}
+  if(abtMetaEl){abtMetaEl.style.display='';abtMetaEl.textContent=filtered.length+' di '+LIBRARIES.length+' centri culturali partecipanti';}
 }
 function abtBuildAZ(){
   if(!abtAZEl)return;
