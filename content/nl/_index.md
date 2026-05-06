@@ -226,7 +226,7 @@ pricing_note: "De prijs is gebaseerd op het aantal bezoekers dat u per jaar ontv
 
 plan_details:
   - name: "SentoVox Member (Gratis)"
-    tagline: "Jaarabonnement met het volledige SentoVox bezoekersonderzoek"
+    tagline: "Gratis basisplan met de volledige SentoVox-bevraging"
     sections:
       - title: "Looptijd"
         items: ["Duur: 6 maanden", "Jaarlijks verlengbaar"]

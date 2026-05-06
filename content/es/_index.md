@@ -226,7 +226,7 @@ pricing_note: "El precio se basa en el número de visitantes anuales de su sala.
 
 plan_details:
   - name: "SentoVox Member (Gratuito)"
-    tagline: "Suscripción anual con el estudio SentoVox completo"
+    tagline: "Plan base gratuito con el estudio SentoVox completo"
     sections:
       - title: "Plazos"
         items: ["Duración: 6 meses", "Renovable anualmente"]

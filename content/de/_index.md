@@ -226,7 +226,7 @@ pricing_note: "Der Preis basiert auf den jährlichen Besucherzahlen Ihres Hauses
 
 plan_details:
   - name: "SentoVox Member (Kostenlos)"
-    tagline: "Jahresabonnement mit der vollständigen SentoVox-Studie"
+    tagline: "Kostenloser Basisplan mit der vollständigen SentoVox-Studie"
     sections:
       - title: "Zeitrahmen"
         items: ["Dauer: 6 Monate", "Jährlich verlängerbar"]

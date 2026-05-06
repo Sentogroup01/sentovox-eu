@@ -226,7 +226,7 @@ pricing_note: "Pricing is based on annual visitors at your venue. Excludes VAT. 
 
 plan_details:
   - name: "SentoVox Member (Free)"
-    tagline: "Annual subscription with the full SentoVox visitor study"
+    tagline: "Free baseline plan with the full SentoVox visitor study"
     sections:
       - title: "Timeline"
         items: ["Duration: 6 months", "Can be renewed annually"]

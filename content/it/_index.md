@@ -226,7 +226,7 @@ pricing_note: "Il prezzo si basa sul numero di visitatori annuali della vostra s
 
 plan_details:
   - name: "SentoVox Member (Gratuito)"
-    tagline: "Abbonamento annuale con lo studio SentoVox completo"
+    tagline: "Piano base gratuito con l'indagine SentoVox completa"
     sections:
       - title: "Tempi"
         items: ["Durata: 6 mesi", "Rinnovabile annualmente"]
